@@ -1,0 +1,12 @@
+enum (Planet) {
+  description (The resort's affiliated planetary system (include the planet and its moons))
+  symbol (Mercury)
+  symbol (Venus)
+  symbol (Earth)
+  symbol (Mars)
+  symbol (Jupiter)
+  symbol (Saturn)
+  symbol (Uranus)
+  symbol (Neptune)
+  symbol (Pluto)
+}

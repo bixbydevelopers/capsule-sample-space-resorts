@@ -1,0 +1,13 @@
+action (FindSpaceResorts) {
+  description (Find space resorts)
+  type (Search)
+  collect {
+    input (planet) {
+      type (Planet)
+    }
+    input (sort) {
+      type (Sort)
+    }
+  }
+  output (SpaceResort)
+}

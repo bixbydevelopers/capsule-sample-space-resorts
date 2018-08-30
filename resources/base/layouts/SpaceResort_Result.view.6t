@@ -1,0 +1,22 @@
+result-view {
+  match: SpaceResort(result)
+  render {
+    if (size(result) > 1) {
+      list-of (result) {
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
+          }
+        }
+      }
+    } else-if (size(result) == 1) {
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression(result)
+        }
+      }
+    }
+  }
+}
