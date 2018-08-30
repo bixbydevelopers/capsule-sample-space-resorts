@@ -3,7 +3,7 @@ module.exports = [
     name: "The Mercurial",
     planet: "Mercury",
     gravity: 0.38,
-    description: "A hot destination with holey sites. The Mena crater Cezanne crater are great landscapes for meditation",
+    description: "A hot destination with holey sites. The Mena crater and the Cezanne crater are great landscapes to practice some Bikram yoga with our expert trainers.",
     imageSet: {
       images: [
         {
@@ -19,7 +19,7 @@ module.exports = [
     name: "Venus Space Spa",
     planet: "Venus",
     gravity: 0.904,
-    description: "The most romantic resort on the goddess planet. Firey views of the sun to rekindle your passion.",
+    description: "It's no wonder the most romantic resort is on the planet named after the Roman goddess of love and beauty. You will find the fiery views of the Sun will rekindle your passion like nothing before.",
     imageSet: {
       images: [
         {
@@ -35,7 +35,7 @@ module.exports = [
     name: "The Honey Moon",
     planet: "Earth",
     gravity: 0.1654,
-    description: "Sweet dreams. Admire Earth from above.",
+    description: "Soar like the Eagle and admire Earth from above. Follow the small footsteps of men that took a giant leap for mankind by visiting the historic site of the first lunar landing. End the day on the dance floor, doing the moon walk in the Neil Armstrong Ballroom.",
     imageSet: {
       images: [
         {
@@ -51,7 +51,7 @@ module.exports = [
     name: "Martian Oasis",
     planet: "Mars",
     gravity: 0.376,
-    description: "Best potatoes in the solar system",
+    description: "Visit this culinary institute to taste the best potatoes in the solar system. They are grown from the richest Martian soil as part of the terraforming initiative. Boiled, fried, roasted or mashed, these are miracles of astro-agriculture.",
     imageSet: {
       images: [
         {
@@ -67,7 +67,7 @@ module.exports = [
     name: "Io-Tel",
     planet: "Jupiter",
     gravity: 0.183,
-    description: "",
+    description: "This Hotel on Io offers breathtaking views of Jupiter. Io is the Galilean moon with the innermost orbit. It goes around the planet in less than 2 days. With over 400 active volcanoes to study, this is any geologist’s paradise.",
     imageSet: {
       images: [
         {
@@ -83,7 +83,7 @@ module.exports = [
     name: "Europa's Jewel",
     planet: "Jupiter",
     gravity: 0.134,
-    description: "",
+    description: "The Europa moon colony is a perfect re-creation of Renaissance Europe. Its architecture was able to reach new heights thanks to the low gravity. Stroll through a 5:1 scale reproduction of the Florence Cathedral or admire Jupiter from the observatory on top of the 7:1 reconstruction of St Peter’s Basilica.",
     imageSet: {
       images: [
         {
@@ -96,27 +96,33 @@ module.exports = [
     }
   },
   {
-    name: "Ganymede Motel",
+    name: "Ganymede Moon Motel",
     planet: "Jupiter",
     gravity: 0.146,
-    description: "",
+    description: "Make the perfect pit stop on your way to the outer solar system. Ganymede Moon Motel has no substantial atmosphere, but provides cheap water refills. Turn right at the 3rd Galilean moon exit around Jupiter.",
     imageSet: {
       images: [
         {
           url: "https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/europa_artist_concept_2048x1152.jpg"
+        },
+        {
+          url: "https://www.nasa.gov/sites/default/files/thumbnails/image/light_article_imagery_4.jpg"
         }
       ]
     }
   },
   {
-    name: "Callisto Motel",
+    name: "Callisto Camping",
     planet: "Jupiter",
     gravity: 0.126,
-    description: "",
+    description: "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay.",
     imageSet: {
       images: [
         {
           url: "https://www.nasa.gov/images/content/394700main_galileo20091016-c-516.jpg"
+        },
+        {
+          url: "https://www.nasa.gov/images/content/162418main_pia08332-browse.jpg"
         }
       ]
     }
@@ -125,7 +131,7 @@ module.exports = [
     name: "The Grand Titan",
     planet: "Saturn",
     gravity: 0.14,
-    description: "",
+    description: "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn.",
     imageSet: {
       images: [
         {
@@ -138,10 +144,10 @@ module.exports = [
     }
   },
   {
-    name: "Rhea Real Estate",
+    name: "Rhea B&B",
     planet: "Saturn",
     gravity: 0.02692051,
-    description: "",
+    description: "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system.",
     imageSet: {
       images: [
         {
@@ -154,17 +160,17 @@ module.exports = [
     }
   },
   {
-    name: "Titania",
+    name: "Bella Titania",
     planet: "Uranus",
     gravity: 0.03864724,
-    description: "",
+    description: "Titania is your best choice for medical traveling. It has unparalleled plastic surgeons and rejuvenation chambers. Uranus will shine as you relax and look at the starry night.",
     imageSet: {
       images: [
         {
-          url: ""
+          url: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia18182-uranus-voyager1.png"
         },
         {
-          url: ""
+          url: "https://www.nasa.gov/images/content/513734main_loneAsteroid-43_946-710.jpg"
         }
       ]
     }
@@ -173,14 +179,14 @@ module.exports = [
     name: "Upside Down Space Station",
     planet: "Uranus",
     gravity: 0.000001,
-    description: "",
+    description: "The Upside Down Space Station has all the comforts of Earth, without the gravity. It will lift all the weight off your shoulders and you will come home feeling an inch taller.",
     imageSet: {
       images: [
         {
-          url: ""
+          url: "https://www.nasa.gov/images/content/189889main_abell3627_516.jpg"
         },
         {
-          url: ""
+          url: "https://www.nasa.gov/centers/jpl/images/content/523702main_pia13904-640.jpg"
         }
       ]
     }
@@ -189,11 +195,14 @@ module.exports = [
     name: "Triton Water Park",
     planet: "Neptune",
     gravity: 0.0794,
-    description: "",
+    description: "Surrounded by nitrogen geysers, this water park is full of thrills. It orbits Neptune on its largest moon: Triton. Come jump in the wave pool, slide down the Poseidon water slide and sip an ice cold raw water on a lazy river raft.",
     imageSet: {
       images: [
         {
-          url: "https://www.nasa.gov/sites/default/files/styles/430x323/public/thumbnails/imageneptune_full.jpg"
+          url: "https://www.nasa.gov/specials/60counting/img/neptune.jpg"
+        },
+        {
+          url: "https://www.nasa.gov/images/content/381324main_pia12187-516.jpg"
         }
       ]
     }
@@ -202,20 +211,23 @@ module.exports = [
     name: "Neptune Space Station",
     planet: "Neptune",
     gravity: 0.000001,
-    description: "",
+    description: "This high-tech resort offers the most avant-garde vacation for the futurist gamer. Each room is equipped with the latest JCN VR unit including climate control and full haptic feedback suits. From there you can pretend to be anywhere in the universe, so why go anywhere else?",
     imageSet: {
       images: [
         {
-          url: ""
+          url: "https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_friday_06172016.jpg"
+        },
+        {
+          url: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia21629-1041b.jpg"
         }
       ]
     }
   },
   {
-    name: "Pluto",
+    name: "Pluto Winter Lodge",
     planet: "Pluto",
     gravity: 0.063,
-    description: "",
+    description: "Want to get away from the stress of the postmodern world? You should consider a retreat to Pluto. Here you will fully disconnect, as there is no Internet access nor much gravity to pull you down. We promise full discretion and privacy.",
     imageSet: {
       images: [
         {
@@ -228,17 +240,17 @@ module.exports = [
     }
   },
   {
-    name: "Charon",
+    name: "Charon's Grotto",
     planet: "Pluto",
     gravity: 0.02936783,
-    description: "Solitude and Privacy",
+    description: "Nothing to see here. It’s just a cold barren rock orbiting Pluto. Definitely nothing shady going on under the surface.",
     imageSet: {
       images: [
         {
-          url: "https://www.nasa.gov/sites/default/files/images/137904main_pluto-concept-browse.jpg"
+          url: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/nh-pluto_charon_150709.png"
         },
         {
-          url: "https://www.nasa.gov/sites/default/files/thumbnails/image/nh-spherical-mosaic-9-10-15.jpg"
+          url: "https://www.nasa.gov/sites/default/files/images/516860main_n30004te01_516-387.jpg"
         }
       ]
     }

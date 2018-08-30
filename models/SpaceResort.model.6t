@@ -16,4 +16,8 @@ structure (SpaceResort) {
     min (Required)
     type (entity.ImageSet)
   }
+  property (description) {
+    min (Required)
+    type (Description)
+  }
 }

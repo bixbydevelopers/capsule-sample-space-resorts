@@ -12,7 +12,7 @@
       <borders>false</borders>
       <title>{{spaceResort.name}}</title>
       <content>
-        {{spaceResort.planet}}&nbsp;&bull;&nbsp;{{spaceResort.gravity}}g
+        {{spaceResort.planet}}&nbsp;&bull;&nbsp;{{spaceResort.gravity}}g<br />{{spaceResort.description}}
       </content>
     </layout-macro>
   </content>
