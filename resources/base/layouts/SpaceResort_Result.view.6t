@@ -10,6 +10,36 @@ result-view {
             }
           }
         }
+        highlights {
+          select(pick) {
+            label("High Gravity")
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            filter-by (gravity > 0.8)
+            order-by {
+              sorting (gravity) {
+                by (Desc)
+              }
+            }
+          }
+          select(pick) {
+            label("Low Gravity")
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            filter-by (gravity <= 0.2)
+            order-by {
+              sorting (gravity) {
+                by (Asc)
+              }
+            }
+          }
+        }
       }
     } else-if (size(result) == 1) {
       layout-macro (space-resort-details) {

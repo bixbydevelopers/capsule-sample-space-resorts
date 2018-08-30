@@ -1,0 +1,4 @@
+vocab(Sort) {
+  "GravityASC" { "low gravity" "lower gravity" "lowest gravity" "less gravity" "least gravity"}
+  "GravityDESC" { "high gravity" "higher gravity" "highest gravity" "more gravity" "most gravity"}
+}

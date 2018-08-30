@@ -1,0 +1,11 @@
+dialog (Concept) {
+  match: SpaceResort (this)
+  switch (plural(this)) {
+    case (One) {
+      template (space resort)
+    }
+    default {
+      template (space resorts)
+    }
+  }
+}

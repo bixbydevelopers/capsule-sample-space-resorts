@@ -1,0 +1,4 @@
+train (t-hsok749bc0h6h6zj24azmu3yi) {
+  utterance ("[g:SpaceResort] Find space resorts around (Jupiter)[v:Planet:Jupiter]")
+  plan (Y2BmkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWaQxKIoICcxL7WEgYmBEYgZgCQjAwgwQTAA)
+}

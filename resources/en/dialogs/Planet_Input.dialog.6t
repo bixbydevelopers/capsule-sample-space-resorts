@@ -1,0 +1,32 @@
+dialog (Input) {
+  match: Planet (this)
+  switch (this) {
+    case (Mercury) {
+      template ("on Mercury")
+    }
+    case (Venus) {
+      template ("on Venus")
+    }
+    case (Earth) {
+      template ("near Earth")
+    }
+    case (Mars) {
+      template ("on Mars")
+    }
+    case (Jupiter) {
+      template ("on the moons of Jupiter")
+    }
+    case (Saturn) {
+      template ("around Saturn")
+    }
+    case (Uranus) {
+      template ("in the Uranus planetary system")
+    }
+    case (Neptune) {
+      template ("around Neptune")
+    }
+    case (Pluto) {
+      template ("near Pluto")
+    }
+  }
+}
