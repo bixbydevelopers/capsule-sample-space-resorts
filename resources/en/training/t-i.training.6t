@@ -1,4 +1,4 @@
 train (t-igrxyoyrh02yipbd7rtmtitwl) {
-  utterance ("[g:SpaceResort] Find space resorts with (low gravity)[v:Sort:GravityASC]")
-  plan (Y2BmkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWYQx2YISDcTAyMQMwBJRgYQYIJgAA==)
+  utterance ("[g:SpaceResort] Search for space resorts with (low gravity)[v:SearchCriteria]")
+  plan (Y2BmkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWZQxGZIamJRcoZzUWZJalFmIgMTAyMQMwBJRgYQYIJgAA==)
 }

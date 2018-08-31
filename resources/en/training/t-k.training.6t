@@ -1,0 +1,4 @@
+train (t-kvfm974qf0fxplzyjcg804hyz) {
+  utterance ("[g:bixby.spaceResorts.SpaceResort] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
+  plan (Y2BhkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWaQxKIoICcxL7WEQRGb+amJRckZzkWZJalFmYkMzAyMDExAkgFIgyAEgPhgUQA=)
+}

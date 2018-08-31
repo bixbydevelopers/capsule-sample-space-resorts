@@ -12,7 +12,9 @@
       <borders>false</borders>
       <title>{{spaceResort.name}}</title>
       <content>
-        {{spaceResort.planet}}&nbsp;&bull;&nbsp;{{spaceResort.gravity}}g<br />{{spaceResort.description}}
+        <p>{{spaceResort.planet}}&nbsp;&bull;&nbsp;{{spaceResort.gravity}}g</p> 
+        <p>{{#each spaceResort.attributes:index}}{{#if index > 0 }},{{' '}}{{/if}}{{value(this)}}{{/each}}</p>
+        <p>{{spaceResort.description}}</p>
       </content>
     </layout-macro>
   </content>

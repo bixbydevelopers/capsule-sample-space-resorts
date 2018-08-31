@@ -1,4 +1,4 @@
 train (t-fbat4sw7ltxdnyzym82zcc1qn) {
-  utterance ("[g:bixby.spaceResorts.SpaceResort] Find space resorts on (Mercury)[v:Planet:Mercury]")
+  utterance ("[g:bixby.spaceResorts.SpaceResort] Research space resorts on (Mercury)[v:Planet:Mercury]")
   plan (Y2BmkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWaQxKIoICcxL7WEgYmBEYgZgCQjAwgwQTAA)
 }

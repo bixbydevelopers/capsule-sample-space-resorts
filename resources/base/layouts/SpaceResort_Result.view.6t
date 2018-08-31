@@ -12,32 +12,31 @@ result-view {
         }
         highlights {
           select(pick) {
-            label("High Gravity")
+            label("#{raw(pick.highlight)}")
             layout-macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
             }
-            filter-by (gravity > 0.8)
-            order-by {
-              sorting (gravity) {
-                by (Desc)
-              }
-            }
+            filter-by (exists(pick.highlight))
           }
           select(pick) {
-            label("Low Gravity")
+            label("#{raw(pick.highlight)}")
             layout-macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
             }
-            filter-by (gravity <= 0.2)
-            order-by {
-              sorting (gravity) {
-                by (Asc)
+            filter-by (exists(pick.highlight))
+          }
+          select(pick) {
+            label("#{raw(pick.highlight)}")
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
               }
             }
+            filter-by (exists(pick.highlight))
           }
         }
       }

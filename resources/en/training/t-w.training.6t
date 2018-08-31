@@ -1,0 +1,4 @@
+train (t-wtgaoht71lr421y84c2xokypr) {
+  utterance ("[g:bixby.spaceResorts.SpaceResort] Find me a space resort close to (Earth)[v:Planet:Earth] with a (spa)[v:bixby.spaceResorts.SearchCriteria]")
+  plan (Y2BhkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWaQxKIoICcxL7WEQRGb+amJRckZzkWZJalFmYkMzAyMDExAkgFIgyAEgPhgUQA=)
+}

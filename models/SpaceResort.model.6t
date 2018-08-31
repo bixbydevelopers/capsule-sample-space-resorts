@@ -2,7 +2,23 @@ structure (SpaceResort) {
   description (Space resort)
   property (name) {
     min (Required)
-    type (SpaceResortName)
+    type (Name)
+  }
+  property (imageSet) {
+    min (Required)
+    type (entity.ImageSet)
+  }
+  property (highlight) {
+    type (Highlight)
+  }
+  property (description) {
+    min (Required)
+    type (Description)
+  }
+  property (attributes) {
+    type (Attributes)
+    min (Required)
+    max (Many)
   }
   property (planet) {
     min (Required)
@@ -11,13 +27,5 @@ structure (SpaceResort) {
   property (gravity) {
     min (Required)
     type (Gravity)
-  }
-  property (imageSet) {
-    min (Required)
-    type (entity.ImageSet)
-  }
-  property (description) {
-    min (Required)
-    type (Description)
   }
 }

@@ -5,9 +5,30 @@ action (FindSpaceResorts) {
     input (planet) {
       type (Planet)
     }
-    input (sort) {
-      type (Sort)
+    input (searchCriteria) {
+      type (SearchCriteria)
+      max (Many)
     }
   }
-  output (SpaceResort)
+  output (SpaceResort) {
+    throws {
+      error (UnsupportedSearchCriteria) {
+        on-catch {
+          // TODO: drop the unsupported criterion with a message and continue
+          halt {
+            dialog (Unsupported search criteria.)
+          }
+        }
+      }
+      unknown-error {
+        on-catch {
+          halt {
+            dialog {
+              template (Something's wrong.)
+            }
+          }
+        }
+      }
+    }
+  }
 }

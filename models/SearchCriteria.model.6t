@@ -1,0 +1,3 @@
+name (SearchCriteria) {
+  description (Additional search criteria from the user (ex: low gravity, pet friendly, closest). We do not use an enum because the list is non-exhaustive. We do not use plain text type because we want to add vocabulary.)
+}

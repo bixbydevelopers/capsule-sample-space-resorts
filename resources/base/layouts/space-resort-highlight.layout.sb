@@ -5,6 +5,7 @@
   <content>
     <layout-macro id="common:card">
       <title>{{spaceResort.name}}</title>
+      <titleSize>large</titleSize>
       <image>{{#try}}{{spaceResort.imageSet.images[0].url}}{{/try}}</image>
       <imageType>background</imageType>
       <aspectRatio>3_2</aspectRatio>

@@ -1,0 +1,39 @@
+vocab(SearchCriteria) {
+  // Casino
+  "casino"
+  "casinos"
+  // KidFriendly
+  "kid friendly"
+  "kid-friendly"
+  "good for kids"
+  "family friendly"
+  "family-friendly"
+  // PetFriendly         
+  "pet friendly"
+  "pet-friendly"
+  "dog friendly"
+  "dog-friendly"
+  "cat friendly"
+  "cat-friendly"
+  // Refueling
+  "refueling"
+  "refueling services"
+  "refueling station"
+  "refueling stations"
+  // ScienceBase
+  "science"
+  "science base"
+  "scientific base"
+  // Spa
+  "spa"
+  "spas"
+  // SwimmingPool
+  "swimming pool"
+  "swimming pools"
+  "swimming"
+  "pool"
+  "pools"
+  // ZeroGravity
+  "zero gravity"
+  "no gravity"
+}

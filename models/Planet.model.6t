@@ -1,5 +1,5 @@
 enum (Planet) {
-  description (The resort's affiliated planetary system (include the planet and its moons))
+  description (The resort's affiliated planetary system (include the planet and its moons). Since the list and vocab is exhaustive, we can use an enum.)
   symbol (Mercury)
   symbol (Venus)
   symbol (Earth)

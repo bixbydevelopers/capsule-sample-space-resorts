@@ -1,9 +1,13 @@
+const attributes = require("./attributes.js")
+
 module.exports = [
   {
     name: "The Mercurial",
     planet: "Mercury",
     gravity: 0.38,
     description: "A hot destination with holey sites. The Mena crater and the Cezanne crater are great landscapes to practice some Bikram yoga with our expert trainers.",
+    attributes: [attributes.PetFriendly],
+    highlight: "Hot Destination",
     imageSet: {
       images: [
         {
@@ -20,6 +24,8 @@ module.exports = [
     planet: "Venus",
     gravity: 0.904,
     description: "It's no wonder the most romantic resort is on the planet named after the Roman goddess of love and beauty. You will find the fiery views of the Sun will rekindle your passion like nothing before.",
+    attributes: [attributes.SwimmingPool, attributes.Spa],
+    highlight: "Romantic Resort",
     imageSet: {
       images: [
         {
@@ -36,6 +42,8 @@ module.exports = [
     planet: "Earth",
     gravity: 0.1654,
     description: "Soar like the Eagle and admire Earth from above. Follow the small footsteps of men that took a giant leap for mankind by visiting the historic site of the first lunar landing. End the day on the dance floor, doing the moon walk in the Neil Armstrong Ballroom.",
+    attributes: [attributes.SwimmingPool, attributes.Spa],
+    highlight: "Historical Sites",
     imageSet: {
       images: [
         {
@@ -52,6 +60,8 @@ module.exports = [
     planet: "Mars",
     gravity: 0.376,
     description: "Visit this culinary institute to taste the best potatoes in the solar system. They are grown from the richest Martian soil as part of the terraforming initiative. Boiled, fried, roasted or mashed, these are miracles of astro-agriculture.",
+    attributes: [attributes.SwimmingPool, attributes.Spa, attributes.KidFriendly, attributes.PetFriendly],
+    highlight: "Culinary Excellence",
     imageSet: {
       images: [
         {
@@ -68,6 +78,8 @@ module.exports = [
     planet: "Jupiter",
     gravity: 0.183,
     description: "This Hotel on Io offers breathtaking views of Jupiter. Io is the Galilean moon with the innermost orbit. It goes around the planet in less than 2 days. With over 400 active volcanoes to study, this is any geologist’s paradise.",
+    attributes: [attributes.ScienceBase, attributes.Refueling],
+    highlight: "Visit Volcanoes",
     imageSet: {
       images: [
         {
@@ -84,6 +96,8 @@ module.exports = [
     planet: "Jupiter",
     gravity: 0.134,
     description: "The Europa moon colony is a perfect re-creation of Renaissance Europe. Its architecture was able to reach new heights thanks to the low gravity. Stroll through a 5:1 scale reproduction of the Florence Cathedral or admire Jupiter from the observatory on top of the 7:1 reconstruction of St Peter’s Basilica.",
+    attributes: [attributes.KidFriendly],
+    highlight: "Architectural Marvel",
     imageSet: {
       images: [
         {
@@ -100,6 +114,8 @@ module.exports = [
     planet: "Jupiter",
     gravity: 0.146,
     description: "Make the perfect pit stop on your way to the outer solar system. Ganymede Moon Motel has no substantial atmosphere, but provides cheap water refills. Turn right at the 3rd Galilean moon exit around Jupiter.",
+    attributes: [attributes.Refueling, attributes.PetFriendly],
+    highlight: "Discounted Rates",
     imageSet: {
       images: [
         {
@@ -116,6 +132,8 @@ module.exports = [
     planet: "Jupiter",
     gravity: 0.126,
     description: "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay.",
+    attributes: [attributes.ScienceBase, attributes.SwimmingPool, attributes.KidFriendly, attributes.PetFriendly],
+    highlight: "Natural Preserve",
     imageSet: {
       images: [
         {
@@ -132,6 +150,8 @@ module.exports = [
     planet: "Saturn",
     gravity: 0.14,
     description: "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn.",
+    attributes: [attributes.Casino, attributes.SwimmingPool, attributes.Spa, attributes.Refueling, attributes.PetFriendly],
+    highlight: "Bigger is Better",
     imageSet: {
       images: [
         {
@@ -144,10 +164,12 @@ module.exports = [
     }
   },
   {
-    name: "Rhea B&B",
+    name: "Rhea R&D B&B",
     planet: "Saturn",
     gravity: 0.02692051,
-    description: "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system.",
+    description: "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists from the science base and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system.",
+    attributes: [attributes.ScienceBase, attributes.KidFriendly],
+    highlight: "Healthy Lifestyle",
     imageSet: {
       images: [
         {
@@ -164,6 +186,8 @@ module.exports = [
     planet: "Uranus",
     gravity: 0.03864724,
     description: "Titania is your best choice for medical traveling. It has unparalleled plastic surgeons and rejuvenation chambers. Uranus will shine as you relax and look at the starry night.",
+    attributes: [attributes.Casino, attributes.SwimmingPool, attributes.Spa],
+    highlight: "Medical Tourism",
     imageSet: {
       images: [
         {
@@ -180,6 +204,8 @@ module.exports = [
     planet: "Uranus",
     gravity: 0.000001,
     description: "The Upside Down Space Station has all the comforts of Earth, without the gravity. It will lift all the weight off your shoulders and you will come home feeling an inch taller.",
+    attributes: [attributes.ScienceBase, attributes.ZeroGravity],
+    highlight: "Astronomy Lab",
     imageSet: {
       images: [
         {
@@ -196,6 +222,8 @@ module.exports = [
     planet: "Neptune",
     gravity: 0.0794,
     description: "Surrounded by nitrogen geysers, this water park is full of thrills. It orbits Neptune on its largest moon: Triton. Come jump in the wave pool, slide down the Poseidon water slide and sip an ice cold raw water on a lazy river raft.",
+    attributes: [attributes.SwimmingPool, attributes.KidFriendly],
+    highlight: "Family Fun",
     imageSet: {
       images: [
         {
@@ -211,7 +239,9 @@ module.exports = [
     name: "Neptune Space Station",
     planet: "Neptune",
     gravity: 0.000001,
-    description: "This high-tech resort offers the most avant-garde vacation for the futurist gamer. Each room is equipped with the latest JCN VR unit including climate control and full haptic feedback suits. From there you can pretend to be anywhere in the universe, so why go anywhere else?",
+    description: "This high hi-tech resort offers the most avant-garde vacation for the futurist gamer. Each room is equipped with the latest JCN VR unit including climate control and full haptic feedback suits. From there you can pretend to be anywhere in the universe, so why go anywhere else?",
+    attributes: [attributes.ZeroGravity, attributes.KidFriendly],
+    highlight: "High Hi-Tech",
     imageSet: {
       images: [
         {
@@ -228,6 +258,8 @@ module.exports = [
     planet: "Pluto",
     gravity: 0.063,
     description: "Want to get away from the stress of the postmodern world? You should consider a retreat to Pluto. Here you will fully disconnect, as there is no Internet access nor much gravity to pull you down. We promise full discretion and privacy.",
+    attributes: [attributes.Refueling, attributes.PetFriendly],
+    highlight: "Disconnect and Relax",
     imageSet: {
       images: [
         {
@@ -244,6 +276,7 @@ module.exports = [
     planet: "Pluto",
     gravity: 0.02936783,
     description: "Nothing to see here. It’s just a cold barren rock orbiting Pluto. Definitely nothing shady going on under the surface.",
+    attributes: [attributes.Casino],
     imageSet: {
       images: [
         {

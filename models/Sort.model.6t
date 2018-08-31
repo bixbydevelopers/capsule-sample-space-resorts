@@ -1,9 +1,0 @@
-enum (Sort) {
-  description (Find space resort sorts)
-  symbol (GravityASC) {
-    description (Low to high gravity)
-  }
-  symbol (GravityDESC) {
-    description (High to low gravity)
-  }
-}
