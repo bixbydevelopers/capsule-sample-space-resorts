@@ -1,0 +1,13 @@
+description {
+  name (Space Resorts)
+  displayName (Space Resorts)
+  companyName (Space Resorts)
+  iconUrl (/images/bixby_launcher.png)
+  description ("Example Capsule to find space resorts in the solar system")
+  websiteUrl (https://example.com/)
+  termsUrl (https://example.com/terms-of-use/)
+  dispatch-name (Space Resorts)
+  dispatch-aliases {
+    alias (SpaceResorts)
+  }
+}

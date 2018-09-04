@@ -8,9 +8,6 @@ structure (SpaceResort) {
     min (Required)
     type (entity.ImageSet)
   }
-  property (highlight) {
-    type (Highlight)
-  }
   property (description) {
     min (Required)
     type (Description)
@@ -27,5 +24,8 @@ structure (SpaceResort) {
   property (gravity) {
     min (Required)
     type (Gravity)
+  }
+  property (highlight) {
+    type (Highlight)
   }
 }
