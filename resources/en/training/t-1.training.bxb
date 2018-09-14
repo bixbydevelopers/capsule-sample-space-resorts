@@ -1,0 +1,8 @@
+train (t-1xcjtau1jw65tcbzzg1zp2iya) {
+  utterance ("[g:Cart#buyTickets:continue,r:ChangeTickets] Change that to (2)[v:NumberOfAstronauts:2] tickets")
+  plan (Y2BjkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDFIudUWhmSmZydWlLMII5F2jmxqIRBAZtERmJeeipBrapYJPxKc5NSi/zTHItLivLzEkuB+lkZGBmYGJgZWIAsBiibGUgzgDEIMAPFWIEkAwA=)
+}
+train (t-1y714vrcu50c7icn96mjbl37y) {
+  utterance ("[g:Confirmation:prompt] (Yes)[v:Confirmation:true]")
+  plan (Y2BikEvKrEiq1MvMK05NLkksyizN1XPOz0vLLMpNLMnMzyMozwiEDAw8QMwExEA2AA==)
+}

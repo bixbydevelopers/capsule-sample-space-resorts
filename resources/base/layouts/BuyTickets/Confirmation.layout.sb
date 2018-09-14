@@ -1,0 +1,151 @@
+<layout type="Confirmation">
+  <match>
+    BuyTickets (action)
+  </match>
+  <content>
+
+    <layout-macro id="common:card">
+      <title>{{action.cart.spaceResort.name}}</title>
+      <image>{{#try}}{{action.cart.spaceResort.imageSet.images[0].url}}{{/try}}</image>
+      <imageType>background</imageType>
+      <titleSize>medium</titleSize>
+      <aspectRatio>2_1</aspectRatio>
+    </layout-macro>
+
+    <layout-macro id="common:sectionedContent">
+      <title>Details</title>
+    </layout-macro>
+
+    <layout-macro id="common:builder-row">
+
+      <cell1>
+        <layout-macro id="common:builder-cell">
+          <label>Number of tickets</label>
+          <primary>
+            {{action.cart.hold.opening.numberOfAstronauts}}
+          </primary>
+          <intent>
+            intent {
+            goal: Cart#buyTickets
+            route: ChangeTickets
+            value: PromptFlag(NumberOfAstronauts)
+            }
+          </intent>
+        </layout-macro>
+      </cell1>
+
+    </layout-macro>
+
+    <layout-macro id="common:builder-row">
+
+      <cell1>
+        <layout-macro id="common:builder-cell">
+          <label>Dates</label>
+          <primary>
+            {{#try}}{{action.cart.hold.opening.dateInterval}}{{/try}} <!--TODO-->
+          </primary>
+          <intent>
+            intent {
+            goal: Cart#buyTickets
+            route: ChangeTickets
+            value: PromptFlag(DateInterval)
+            }
+          </intent>
+        </layout-macro>
+      </cell1>
+
+    </layout-macro>
+
+    <layout-macro id="common:builder-row">
+
+      <cell1>
+        <layout-macro id="common:builder-cell">
+          <label>Package</label>
+          <primary>
+            <layout-macro id="common:cell">
+              <title>{{action.cart.hold.opening.name}}</title>
+              <sideDetail>{{action.cart.hold.opening.price}}</sideDetail>
+            </layout-macro>
+          </primary>
+          <intent>
+            intent {
+            goal: Cart#buyTickets
+            route: ChangeTickets
+            value: PromptFlag(Opening)
+            }
+          </intent>
+        </layout-macro>
+      </cell1>
+
+    </layout-macro>
+
+    <!--VIV-19307 Hide contact info when there's an error, unless the error relates to contact info-->
+    {{#if exists(action.cart.self)}}
+    <layout-macro id="common:sectionedContent">
+      <title>Contact information</title>
+    </layout-macro>
+
+    <layout-macro id="common:builder-row">
+
+      <cell1>
+        <layout-macro id="common:builder-cell">
+          <label>Name</label>
+          <primary>
+            {{action.cart.self.firstName}}&nbsp;{{action.cart.self.lastName}}
+          </primary>
+          <intent>
+            intent {
+            goal: Cart#buyTickets
+            route: ChangeTickets
+            value: PromptFlag(Self)
+            }
+          </intent>
+        </layout-macro>
+      </cell1>
+
+    </layout-macro>
+
+    <layout-macro id="common:builder-row">
+
+      <cell1>
+        <layout-macro id="common:builder-cell">
+          <label>Phone number</label>
+          <primary>
+            {{action.cart.self.phoneNumber}}
+          </primary>
+          <intent>
+            intent {
+            goal: Cart#buyTickets
+            route: ChangeTickets
+            value: PromptFlag(Self)
+            }
+          </intent>
+        </layout-macro>
+      </cell1>
+
+    </layout-macro>
+
+    <layout-macro id="common:builder-row">
+
+      <cell1>
+        <layout-macro id="common:builder-cell">
+          <label>Email</label>
+          <primary>
+            {{action.cart.self.emailAddress}}
+          </primary>
+          <intent>
+            intent {
+            goal: Cart#buyTickets
+            route: ChangeTickets
+            value: PromptFlag(Self)
+            }
+          </intent>
+        </layout-macro>
+      </cell1>
+
+    </layout-macro>
+
+    {{/if}}
+
+  </content>
+</layout>

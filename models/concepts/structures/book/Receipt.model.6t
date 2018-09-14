@@ -1,0 +1,18 @@
+structure (Receipt) {
+  description (Receipt)
+  property (spaceResort) {
+    type (SpaceResort)
+    min (Required)
+    visibility (Private)
+  }
+  property (opening) {
+    type (Opening)
+    min (Required)
+    visibility (Private)
+  }
+  property (self) {
+    type (Self)
+    min (Required)
+    visibility (Private)
+  }
+}

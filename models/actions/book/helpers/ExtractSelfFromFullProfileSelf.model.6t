@@ -1,0 +1,20 @@
+action (ExtractSelfFromFullProfileSelf) {
+  description (Extract a Self from a profileSelf that has all the required fields already)
+  type (Constructor)
+  collect {
+    input (profileSelf) {
+      type (self.Self)
+      min (Required) max (One)
+    }
+  }
+  output (Self) {
+    evaluate {
+      Self {
+        firstName: $expr(profileSelf.nameInfo.firstName)
+        lastName: $expr(profileSelf.nameInfo.lastName)
+        phoneNumber: $expr(profileSelf.phoneInfos[0].number) // TODO: Make sure to extract primary number
+        emailAddress: $expr(profileSelf.emailInfos[0].address) // TODO: Make sure to extract primary email
+      }
+    }
+  }
+}

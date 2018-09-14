@@ -1,0 +1,19 @@
+action (BuyTickets) {
+  description (Buy tickets)
+  type (Commit)
+
+  confirmed-by (Confirmation) {
+    mode (Transactional)
+    confirm-label {
+      template("Buy")
+    }
+  }
+
+  collect {
+    input (cart) {
+      type (Cart)
+      min (Required)
+    }
+  }
+  output (Receipt)
+}

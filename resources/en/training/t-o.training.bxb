@@ -1,0 +1,4 @@
+train (t-oarb3ywljx6o1ivq1ft1ft6l7) {
+  utterance ([g:Cart#buyTickets,r:GetTickets] Book a space resort)
+  plan (Y2BlkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDFIudUWhmSmZydWlLMII5F2jmxCLs+99QSmD45LNLBCA4DCwMjAxMDM5BmgLIYwSwQYALzGQA=)
+}

@@ -1,0 +1,10 @@
+<layout type="Summary Details">
+  <match>Opening(this)</match>
+  <content>
+    <layout-macro id="common:cell">
+      <title>{{this.name}}</title>
+      <sideDetail>{{this.price}}</sideDetail>
+    </layout-macro>
+  </content>
+  <style></style>
+</layout>

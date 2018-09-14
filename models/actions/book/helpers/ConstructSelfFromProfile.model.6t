@@ -1,0 +1,41 @@
+action (ConstructSelfFromProfile) {
+  type (Constructor)
+  collect {
+
+    // Get profileSelf from the self capsule
+    input (profileSelf) {
+      type (self.Self)
+      min (Required)
+      max (One)
+    }
+
+    computed-input (self) {
+      type (Self)
+      min (Required)
+      max (One)
+      compute {
+        if (exists(profileSelf.nameInfo) && exists(profileSelf.nameInfo.firstName) && exists(profileSelf.nameInfo.lastName) && size(profileSelf.emailInfos) > 0 && exists(profileSelf.emailInfos[0].address) && size(profileSelf.phoneInfos) > 0 && exists(profileSelf.phoneInfos[0].number)) {
+          // If profileSelf already has all the required fields for Self, we can construct it directly without prompting user
+          intent {
+            goal: ExtractSelfFromFullProfileSelf
+            value: $expr(profileSelf)
+          }
+        } else {
+          // If any of the fields we need in this capsule are missing from profileSelf, prompt with a single input-view form for Self (pre-populated with the fields that do already exist in profileSelf) so that users can edit everything at once
+          intent {
+            goal { @prompt-behavior(AlwaysElicitation) Self}
+          }
+        }
+      }
+    }
+
+    // TODO: VIV-19230 If any of the fields were amended and user wants to save them back to the self capsule profile (only save back amended fields)
+
+  }
+
+  output (Self) {
+    evaluate {
+      $expr(self)
+    }
+  }
+}

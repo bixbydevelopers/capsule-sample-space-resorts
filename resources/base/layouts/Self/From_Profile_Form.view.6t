@@ -1,0 +1,52 @@
+input-view {
+  match: Self(this) {
+    to-input: ConstructSelfFromProfile(action) {
+      from-input: self.Self(profileSelf)
+    }
+  }
+  render {
+    form {
+      elements {
+        text-input {
+          id (firstName)
+          type (contact.FirstName)
+          label("First Name")
+          value("[#{value(profileSelf.nameInfo.firstName)}]")
+          max-length (15)
+        }
+        text-input {
+          id (lastName)
+          type (contact.LastName)
+          label("Last Name")
+          max-length (15)
+          value("[#{value(profileSelf.nameInfo.lastName)}]")
+        }
+        text-input {
+          id (emailAddress)
+          type (contact.EmailAddress)
+          label("Email Address")
+          value("[#{value(profileSelf.emailInfos[0].address)}]")
+          pattern-type (email)
+        }
+        text-input {
+          id (phoneNumber)
+          type (contact.PhoneNumber)
+          label("Phone Number")
+          value("[#{value(profileSelf.phoneInfos[0].number)}]")
+          mask("(100)-000-0000")
+          guide (true)
+          placeholder-char("_")
+        }
+      }
+
+      on-submit {
+        goal: Self {
+          firstName: viv.core.FormElement(firstName)
+          lastName: viv.core.FormElement(lastName)
+          emailAddress: viv.core.FormElement(emailAddress)
+          phoneNumber: viv.core.FormElement(phoneNumber)
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+input-view {
+  match: SpaceResort(result)
+  render {
+    if (size(result) > 1) {
+      selection-of (result) {
+        has-details (true)
+        select-button-text("Book")
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
+          }
+        }
+      }
+    } else-if (size(result) == 1) {
+      // Unexpected
+    }
+  }
+}

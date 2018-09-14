@@ -1,0 +1,28 @@
+endpoints {
+  authorization {
+    none
+  }
+
+  action-endpoints {
+    action-endpoint (BuyTickets) {
+      accepted-inputs (cart)
+      local-endpoint (book/BuyTickets.js)
+    }
+
+    action-endpoint (PlaceHold) {
+      accepted-inputs (opening)
+      local-endpoint (book/PlaceHold.js)
+    }
+
+    action-endpoint (PrepareCart) {
+      accepted-inputs (numberOfAstronauts, dateTimeExpression, cartWithOpenings, opening, hold, self)
+      local-endpoint (book/PrepareCart.js)
+    }
+
+    action-endpoint (SaveToCart) {
+      accepted-inputs (spaceResort, cart, numberOfAstronauts, dateTimeExpression)
+      local-endpoint (book/SaveToCart.js)
+    }
+  }
+
+}

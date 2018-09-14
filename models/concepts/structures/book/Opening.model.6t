@@ -1,0 +1,27 @@
+structure (Opening) {
+  description (Opening)
+  property (name) {
+    type (Name)
+    min (Required)
+    visibility (Private)
+  }
+  property (numberOfAstronauts) {
+    type (NumberOfAstronauts)
+    min (Required)
+    visibility (Private)
+  }
+  property (dateInterval) {
+    type (time.DateTimeInterval)
+    min (Required)
+    visibility (Private)
+  }
+  property (price) {
+    type (money.Price)
+    min (Required)
+    visibility (Private)
+  }
+  property (highlight) {
+    type (Highlight)
+    visibility (Private)
+  }
+}

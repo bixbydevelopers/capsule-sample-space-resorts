@@ -1,0 +1,11 @@
+action (PlaceHold) {
+  description (Place a hold on an opening to lock it for 5 minutes)
+  type (Search)
+  collect {
+    input (opening) {
+      type (Opening)
+      min (Required)
+    }
+  }
+  output (Hold)
+}

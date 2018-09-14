@@ -1,0 +1,4 @@
+train (t-6xia0ityihj3ablhfp7bi69m3) {
+  utterance ([g:Cart#buyTickets:continue:*,r:GetTickets] Get tickets)
+  plan (Y2BlkEzKrEiq1MvMK05NLkksyizN1QtKTU7NLChhkMGUciqtDMlMzk4tKWYQw5R1TizCqss9tQSPrpD80iIGFgZGBiYGZiDNAGUxglkgwATmMwAA)
+}

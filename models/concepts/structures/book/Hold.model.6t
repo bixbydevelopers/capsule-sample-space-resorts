@@ -1,0 +1,6 @@
+structure (Hold) {
+  description (A hold on an opening that locks it for 5 minutes. Uses the $id property)
+  property (opening) {
+    type (Opening)
+  }
+}

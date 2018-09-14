@@ -1,0 +1,56 @@
+action (GetTickets) {
+  description (Get tickets)
+  type (BeginTransaction)
+  collect {
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required)
+      hidden
+      default-init {
+        intent {
+          goal: FindSpaceResorts
+        }
+      }
+    }
+    input(numberOfAstronauts) {
+      type(NumberOfAstronauts)
+      hidden
+    }
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      hidden
+    }
+    computed-input (newCart) {
+      type(Cart)
+      min(Required)
+      hidden
+      compute {
+        intent {
+          goal: SaveToCart
+          value: $expr(spaceResort)
+          if (exists(numberOfAstronauts)) {
+            value: $expr(numberOfAstronauts)
+          }
+          if (exists(dateTimeExpression)) {
+            value: $expr(dateTimeExpression)
+          }
+        }
+      }
+    }
+    computed-input (preparedCart) {
+      type(Cart)
+      min(Required)
+      compute {
+        intent {
+          goal: PrepareCart
+          value: $expr(newCart)
+        }
+      }
+    }
+  }
+  output (Cart) {
+    evaluate {
+      $expr(preparedCart)
+    }
+  }
+}

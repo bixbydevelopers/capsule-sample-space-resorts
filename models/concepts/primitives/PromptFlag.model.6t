@@ -1,0 +1,10 @@
+enum (PromptFlag) {
+  description (Flag to prompt)
+  features {
+    transient
+  }
+  symbol (NumberOfAstronauts)
+  symbol (DateInterval)
+  symbol (Opening)
+  symbol (Self)
+}
