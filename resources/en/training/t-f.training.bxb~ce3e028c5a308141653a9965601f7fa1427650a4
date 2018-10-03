@@ -1,0 +1,4 @@
+train (t-f2fbud6ncmybj3k5qvftymwgp) {
+  utterance ([g:Cart#buyTickets:continue,r:ChangeTickets,v:PromptFlag:Opening] Pick a different opening)
+  plan (Y2BjkEzKrEiq1MvMK05NLkksyizN1QtKTU7NLChhkMGUciqtDMlMzk4tKWYQw5R1TiwqYZDHIp6RmJeeSkgjFusCivJzC0rcchLTGVgZGBmYGJgZWIAsBiibGUgzgDEIMAPFWIEkAwA=)
+}
