@@ -1,6 +1,0 @@
-structure (Hold) {
-  description (A hold on an habitatPod that locks it for 5 minutes. Uses the $id property)
-  property (habitatPod) {
-    type (HabitatPod)
-  }
-}
