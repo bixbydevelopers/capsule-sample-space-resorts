@@ -1,13 +1,7 @@
 action (CommitOrder) {
   description (Commit order)
   type (Commit)
-
-  confirmed-by (Confirmation) {
-    mode (Transactional)
-    confirm-label {
-      template("Buy")
-    }
-  }
+  confirmed-by (common.Confirmation)
 
   collect {
     input (order) {

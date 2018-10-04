@@ -1,0 +1,25 @@
+// TODO: Cannot make it work! Remove Confirmation.layout.bml and uncomment this file to try it out for yourself!
+// confirmation-view {
+//   match: common.Confirmation {
+//     confirming {
+//       CommitOrder(action)
+//     }
+//   }
+//   mode (PositiveEmphasis)
+//   message {
+//     template ("Are you sure you want to do this?")
+//   }
+// 
+//   render {
+//     layout-macro (order-details) {
+//       param (order) {
+//         expression(action.order)
+//       }
+//     }
+//   }
+//   conversation-drivers {
+//     conversation-driver {
+//       template ("Pay")
+//     }
+//   }
+// }
