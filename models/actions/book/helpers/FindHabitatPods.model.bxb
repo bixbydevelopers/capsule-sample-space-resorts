@@ -1,0 +1,19 @@
+action (FindHabitatPods) {
+  description (Find habitatPods)
+  type (Search)
+  collect {
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required)
+    }
+    input(numberOfAstronauts) {
+      type(NumberOfAstronauts)
+      min (Required)
+    }
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Required)
+    }
+  }
+  output (HabitatPod)
+}

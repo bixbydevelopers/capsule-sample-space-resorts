@@ -1,0 +1,19 @@
+structure (Order) {
+  description (Order)
+  features {
+    pre-commit-state
+  }
+  property (habitatPod) {
+    type (HabitatPod)
+    visibility (Private)
+  }
+  property (self) {
+    type(self.SelfInfo)
+    visibility (Private)
+  }
+  named-consumer (commitOrder) {
+    description (Buy the order)
+    action (CommitOrder)
+    input (order)
+  }
+}

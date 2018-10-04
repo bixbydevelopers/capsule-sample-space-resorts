@@ -1,9 +1,12 @@
-structure (Opening) {
-  description (Opening)
+structure (HabitatPod) {
+  description (HabitatPod)
   property (name) {
     type (Name)
     min (Required)
     visibility (Private)
+  }
+  property (spaceResort) {
+    type (SpaceResort)
   }
   property (numberOfAstronauts) {
     type (NumberOfAstronauts)
@@ -11,7 +14,7 @@ structure (Opening) {
     visibility (Private)
   }
   property (dateInterval) {
-    type (time.DateTimeInterval)
+    type (time.DateInterval)
     min (Required)
     visibility (Private)
   }
@@ -23,5 +26,8 @@ structure (Opening) {
   property (highlight) {
     type (Highlight)
     visibility (Private)
+  }
+  features {
+    transient
   }
 }

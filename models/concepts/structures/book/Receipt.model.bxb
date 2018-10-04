@@ -1,17 +1,12 @@
 structure (Receipt) {
   description (Receipt)
-  property (spaceResort) {
-    type (SpaceResort)
-    min (Required)
-    visibility (Private)
-  }
-  property (opening) {
-    type (Opening)
+  property (habitatPod) {
+    type (HabitatPod)
     min (Required)
     visibility (Private)
   }
   property (self) {
-    type (Self)
+    type (self.SelfInfo)
     min (Required)
     visibility (Private)
   }

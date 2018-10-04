@@ -1,5 +1,5 @@
-action (BuyTickets) {
-  description (Buy tickets)
+action (CommitOrder) {
+  description (Commit order)
   type (Commit)
 
   confirmed-by (Confirmation) {
@@ -10,8 +10,8 @@ action (BuyTickets) {
   }
 
   collect {
-    input (cart) {
-      type (Cart)
+    input (order) {
+      type (Order)
       min (Required)
     }
   }

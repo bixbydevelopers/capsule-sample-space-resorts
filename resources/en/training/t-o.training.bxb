@@ -1,4 +1,4 @@
 train (t-oarb3ywljx6o1ivq1ft1ft6l7) {
-  utterance ([g:Cart#buyTickets,r:GetTickets] Book a space resort)
-  plan (Y2BlkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDFIudUWhmSmZydWlLMII5F2jmxCLs+99QSmD45LNLBCA4DCwMjAxMDM5BmgLIYwSwQYALzGQA=)
+  utterance ([g:Order#commitOrder,r:CreateOrder] Book a space resort)
+  plan (bYxNDoJADIUf+HcFo4k7t3MHg24lQS/AYE1mMcykLQRvL4LGzbSb9/VLHzbYWTfYl5FYN1SRBFYxFTXkouKQcEXw3mnJD2JsE342yU+mWmn2x4S/dt4Sl8+TKIe27lSSNbc/YN+73qjzZM5j9X0MlyEyibjQYo0MORZYYjVmfOmz2US/yac73g==)
 }

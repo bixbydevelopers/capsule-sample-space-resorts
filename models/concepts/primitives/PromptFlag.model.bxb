@@ -5,6 +5,6 @@ enum (PromptFlag) {
   }
   symbol (NumberOfAstronauts)
   symbol (DateInterval)
-  symbol (Opening)
+  symbol (HabitatPod)
   symbol (Self)
 }

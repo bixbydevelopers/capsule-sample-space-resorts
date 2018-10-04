@@ -4,25 +4,31 @@ endpoints {
   }
 
   action-endpoints {
-    action-endpoint (BuyTickets) {
-      accepted-inputs (cart)
-      local-endpoint (book/BuyTickets.js)
+    action-endpoint (CommitOrder) {
+      accepted-inputs (order)
+      local-endpoint (book/CommitOrder.js)
     }
 
-    action-endpoint (PlaceHold) {
-      accepted-inputs (opening)
-      local-endpoint (book/PlaceHold.js)
+    action-endpoint (CreateOrder) {
+      accepted-inputs (habitatPod, self)
+      local-endpoint (book/CreateOrder.js)
     }
 
-    action-endpoint (PrepareCart) {
-      accepted-inputs (numberOfAstronauts, dateTimeExpression, cartWithOpenings, opening, hold, self)
-      local-endpoint (book/PrepareCart.js)
+    action-endpoint (UpdateOrder) {
+      accepted-inputs (newHabitatPod, newSelf)
+      local-endpoint (book/UpdateOrder.js)
     }
 
-    action-endpoint (SaveToCart) {
-      accepted-inputs (spaceResort, cart, numberOfAstronauts, dateTimeExpression)
-      local-endpoint (book/SaveToCart.js)
+    action-endpoint (SelectHabitatPod) {
+      accepted-inputs (habitatPods, name)
+      local-endpoint (book/SelectHabitatPod.js)
     }
+
+    action-endpoint (FindHabitatPods) {
+      accepted-inputs (spaceResort, numberOfAstronauts, dateTimeExpression)
+      local-endpoint (book/FindHabitatPods.js)
+    }
+
   }
 
 }

@@ -1,0 +1,18 @@
+result-view {
+  match: Order(result)
+  message {
+    template ("Here's your HomePod order:")
+  }
+  render {
+    layout-macro (order-details) {
+      param (order) {
+        expression(result)
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("Pay")
+    }
+  }
+}

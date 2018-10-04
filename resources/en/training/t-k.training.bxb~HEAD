@@ -1,4 +1,4 @@
 train (t-k7myou56atjbinipfzzmiovuv) {
-  utterance ([g:Cart#buyTickets:continue,r:ChangeTickets,v:PromptFlag:DateInterval] Pick a different date)
+  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,v:PromptFlag:DateInterval] Pick a different date)
   plan (Y2BjkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDFIudUWhmSmZydWlLMII5F2jmxqIRBAZtERmJeeipBrdisDCjKzy0occtJTGdgZWBkYGJgZmABshigbGYgzQDGIMAMFGMFkgwA)
 }

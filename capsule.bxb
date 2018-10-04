@@ -27,7 +27,7 @@ capsule {
     }
     import (viv.self) {
       as (self)
-      version (3.0.0)
+      version (3.0.1)
     }
     import (viv.contact) {
       as (contact)

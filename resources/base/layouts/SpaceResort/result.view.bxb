@@ -51,7 +51,7 @@ result-view {
   conversation-drivers {
     if ("size(result) == 1") {
       conversation-driver {
-        template ("Get tickets")
+        template ("Make Reservation")
       }
       conversation-driver {
         template ("ValetBot")
