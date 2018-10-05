@@ -1,6 +1,6 @@
-module.exports.function = function (newHabitatPod, newSelf) {
+module.exports.function = function (newItem, newSelf) {
   return {
-    habitatPod: newHabitatPod,
+    item: newItem,
     self: newSelf
   }
 }

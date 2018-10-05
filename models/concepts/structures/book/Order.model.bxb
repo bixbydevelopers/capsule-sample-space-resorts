@@ -3,8 +3,8 @@ structure (Order) {
   features {
     pre-commit-state
   }
-  property (habitatPod) {
-    type (HabitatPod)
+  property (item) {
+    type (Item)
     visibility (Private)
   }
   property (self) {

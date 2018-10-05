@@ -1,7 +1,7 @@
 structure (Receipt) {
   description (Receipt)
-  property (habitatPod) {
-    type (HabitatPod)
+  property (item) {
+    type (Item)
     min (Required)
     visibility (Private)
   }

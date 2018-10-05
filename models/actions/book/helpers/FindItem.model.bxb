@@ -1,5 +1,5 @@
-action (FindHabitatPods) {
-  description (Find habitatPods)
+action (FindItems) {
+  description (Find items)
   type (Search)
   collect {
     input (spaceResort) {
@@ -15,5 +15,5 @@ action (FindHabitatPods) {
       min (Required)
     }
   }
-  output (HabitatPod)
+  output (Item)
 }

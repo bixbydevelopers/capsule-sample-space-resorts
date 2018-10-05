@@ -5,8 +5,8 @@
   <content>
 
     <layout-macro id="common:card">
-      <title>{{order.habitatPod.spaceResort.name}}</title>
-      <image>{{#try}}{{order.habitatPod.spaceResort.imageSet.images[0].url}}{{/try}}</image>
+      <title>{{order.item.spaceResort.name}}</title>
+      <image>{{#try}}{{order.item.spaceResort.imageSet.images[0].url}}{{/try}}</image>
       <imageType>background</imageType>
       <titleSize>medium</titleSize>
       <aspectRatio>2_1</aspectRatio>
@@ -22,7 +22,7 @@
         <layout-macro id="common:builder-cell">
           <label>Number of astronauts</label>
           <primary>
-            {{order.habitatPod.numberOfAstronauts}}
+            {{order.item.numberOfAstronauts}}
           </primary>
           <intent>
             intent {
@@ -42,7 +42,7 @@
         <layout-macro id="common:builder-cell">
           <label>Dates</label>
           <primary>
-            {{#try}}{{order.habitatPod.dateInterval}}{{/try}}
+            {{#try}}{{order.item.dateInterval}}{{/try}}
           </primary>
           <intent>
             intent {
@@ -63,15 +63,15 @@
           <label>Package</label>
           <primary>
             <layout-macro id="common:cell">
-              <title>{{order.habitatPod.name}}</title>
-              <sideDetail>{{order.habitatPod.price}}</sideDetail>
+              <title>{{order.item.name}}</title>
+              <sideDetail>{{order.item.price}}</sideDetail>
             </layout-macro>
           </primary>
           <intent>
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(HabitatPod)
+            value: PromptFlag(Item)
             }
           </intent>
         </layout-macro>

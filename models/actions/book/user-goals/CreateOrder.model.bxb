@@ -53,12 +53,12 @@ action (CreateOrder) {
         }
       }
     }
-    computed-input (habitatPod) {
-      type (HabitatPod)
+    computed-input (item) {
+      type (Item)
       min (Required) max(One)
       compute {
         intent {
-          goal: FindHabitatPods
+          goal: FindItems
           value: $expr (spaceResort)
           value: $expr (numberOfAstronauts)
           value: $expr (dateTimeExpression)

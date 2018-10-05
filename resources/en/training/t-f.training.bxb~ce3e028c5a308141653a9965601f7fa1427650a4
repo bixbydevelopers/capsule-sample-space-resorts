@@ -1,4 +1,4 @@
 train (t-f2fbud6ncmybj3k5qvftymwgp) {
-  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,v:PromptFlag:HabitatPod] Pick a different habitatPod)
+  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,v:PromptFlag:Item] Pick a different item)
   plan (Y2BjkEzKrEiq1MvMK05NLkksyizN1QtKTU7NLChhkMGUciqtDMlMzk4tKWYQw5R1TiwqYZDHIp6RmJeeSkgjFusCivJzC0rcchLTGVgZGBmYGJgZWIAsBiibGUgzgDEIMAPFWIEkAwA=)
 }

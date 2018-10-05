@@ -1,6 +1,6 @@
 module.exports.function = function (order) {
   return {
-    habitatPod: order.habitatPod,
+    item: order.item,
     self: order.self
   }
 }

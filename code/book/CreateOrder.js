@@ -1,7 +1,7 @@
-module.exports.function = function (self, habitatPod) {
+module.exports.function = function (self, item) {
   // New order that only persist newly select inputs
   return {
-    habitatPod: habitatPod,
+    item: item,
     self: self
   }
 }

@@ -2,21 +2,21 @@
   <match>Receipt(this)</match>
   <content>
     <layout-macro id="common:orderTotalDisplay">
-      <total>{{habitatPod.price}}</total>
+      <total>{{item.price}}</total>
     </layout-macro>
 
     <layout-macro id="common:card">
       <heroText>
-        {{habitatPod.spaceResort.name}}
+        {{item.spaceResort.name}}
       </heroText>
       <heroTextSize>medium</heroTextSize>
-      <image>{{#try}}{{habitatPod.spaceResort.imageSet.images[0].url}}{{/try}}</image>
+      <image>{{#try}}{{item.spaceResort.imageSet.images[0].url}}{{/try}}</image>
       <imageType>hero</imageType>
-      <heroSubText>{{#try}}{{habitatPod.dateInterval}}{{/try}}</heroSubText><!--TODO-->
+      <heroSubText>{{#try}}{{item.dateInterval}}{{/try}}</heroSubText><!--TODO-->
       <bodyText>
-        {{habitatPod.numberOfAstronauts}}&nbsp;{{#if habitatPod.numberOfAstronauts == 1}}astronaut{{else}}astronauts{{/if}}
+        {{item.numberOfAstronauts}}&nbsp;{{#if item.numberOfAstronauts == 1}}astronaut{{else}}astronauts{{/if}}
         <br />
-        {{habitatPod.name}}
+        {{item.name}}
       </bodyText>
     </layout-macro>
 
@@ -55,7 +55,7 @@
 
       <hr/>
         <layout-macro id="common:receiptBreakdown">
-          <total>{{habitatPod.price}}</total>
+          <total>{{item.price}}</total>
         </layout-macro>
 
   </content>

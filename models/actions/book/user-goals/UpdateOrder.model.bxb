@@ -17,7 +17,7 @@ action (UpdateOrder) {
       default-init {
         intent {
           goal: NumberOfAstronauts
-          value: $expr(order.habitatPod.numberOfAstronauts)
+          value: $expr(order.item.numberOfAstronauts)
         }
       }
     }
@@ -27,7 +27,7 @@ action (UpdateOrder) {
       default-init {
         intent {
           goal: time.DateTimeExpression
-          value: $expr(order.habitatPod.dateInterval)
+          value: $expr(order.item.dateInterval)
         }
       }
     }
@@ -105,22 +105,22 @@ action (UpdateOrder) {
       }
      
     }
-    computed-input (newHabitatPod) {
-      type (HabitatPod)
+    computed-input (newItem) {
+      type (Item)
       min (Required) max(One)
       compute {
-        // We might want to optimize to only SelectHabitatPod when numberOfAstronauts or dateTimeExpression is changed
-        // However maybe better idea to always check if the HabitatPod is still available for reservation
+        // We might want to optimize to only SelectItem when numberOfAstronauts or dateTimeExpression is changed
+        // However maybe better idea to always check if the Item is still available for reservation
         intent {
-          goal: SelectHabitatPod
+          goal: SelectItem
           subplan {
-            goal: FindHabitatPods
+            goal: FindItems
             value: $expr (newNumberOfAstronauts)
             value: $expr (newDateTimeExpression)
-            value: $expr (order.habitatPod.spaceResort)
+            value: $expr (order.item.spaceResort)
           }
-          if (promptFlag != 'HabitatPod') {
-            value: $expr (order.habitatPod.name)
+          if (promptFlag != 'Item') {
+            value: $expr (order.item.name)
           }
         }
       }

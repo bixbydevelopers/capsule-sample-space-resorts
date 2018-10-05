@@ -10,23 +10,23 @@ endpoints {
     }
 
     action-endpoint (CreateOrder) {
-      accepted-inputs (habitatPod, self)
+      accepted-inputs (item, self)
       local-endpoint (book/CreateOrder.js)
     }
 
     action-endpoint (UpdateOrder) {
-      accepted-inputs (newHabitatPod, newSelf)
+      accepted-inputs (newItem, newSelf)
       local-endpoint (book/UpdateOrder.js)
     }
 
-    action-endpoint (SelectHabitatPod) {
-      accepted-inputs (habitatPods, name)
-      local-endpoint (book/SelectHabitatPod.js)
+    action-endpoint (SelectItem) {
+      accepted-inputs (items, name)
+      local-endpoint (book/SelectItem.js)
     }
 
-    action-endpoint (FindHabitatPods) {
+    action-endpoint (FindItems) {
       accepted-inputs (spaceResort, numberOfAstronauts, dateTimeExpression)
-      local-endpoint (book/FindHabitatPods.js)
+      local-endpoint (book/FindItem.js)
     }
 
   }
