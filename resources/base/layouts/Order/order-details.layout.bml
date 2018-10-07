@@ -28,7 +28,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(NumberOfAstronauts)
+            route: PromptForNumberOfAstronauts
             }
           </intent>
         </layout-macro>
@@ -48,7 +48,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(DateInterval)
+            route: PromptForDateInterval
             }
           </intent>
         </layout-macro>
@@ -63,15 +63,15 @@
           <label>Package</label>
           <primary>
             <layout-macro id="common:cell">
-              <title>{{order.item.name}}</title>
-              <sideDetail>{{order.item.price}}</sideDetail>
+              <title>{{order.item.pod.name}}</title>
+              <sideDetail>{{order.item.pod.price}}</sideDetail>
             </layout-macro>
           </primary>
           <intent>
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(Item)
+            route: PromptForPod
             }
           </intent>
         </layout-macro>
@@ -80,7 +80,7 @@
     </layout-macro>
 
     <!--VIV-19307 Hide contact info when there's an error, unless the error relates to contact info-->
-    {{#if exists(order.self)}}
+    {{#if exists(order.buyer)}}
     <layout-macro id="common:sectionedContent">
       <title>Contact information</title>
     </layout-macro>
@@ -91,13 +91,13 @@
         <layout-macro id="common:builder-cell">
           <label>Name</label>
           <primary>
-            {{order.self.firstName}}&nbsp;{{order.self.lastName}}
+            {{order.buyer.firstName}}&nbsp;{{order.buyer.lastName}}
           </primary>
           <intent>
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(Self)
+            route: PromptForBuyer
             }
           </intent>
         </layout-macro>
@@ -111,13 +111,13 @@
         <layout-macro id="common:builder-cell">
           <label>Phone number</label>
           <primary>
-            {{order.self.phoneNumber}}
+            {{order.buyer.phoneNumber}}
           </primary>
           <intent>
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(Self)
+            route: PromptForBuyer
             }
           </intent>
         </layout-macro>
@@ -131,13 +131,13 @@
         <layout-macro id="common:builder-cell">
           <label>Email</label>
           <primary>
-            {{order.self.emailAddress}}
+            {{order.buyer.emailAddress}}
           </primary>
           <intent>
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            value: PromptFlag(Self)
+            route: PromptForBuyer
             }
           </intent>
         </layout-macro>

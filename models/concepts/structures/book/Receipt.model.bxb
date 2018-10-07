@@ -5,8 +5,8 @@ structure (Receipt) {
     min (Required)
     visibility (Private)
   }
-  property (self) {
-    type (self.SelfInfo)
+  property (buyer) {
+    type (Buyer)
     min (Required)
     visibility (Private)
   }

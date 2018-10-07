@@ -1,4 +1,4 @@
-action (SelectItem) {
+action (SelectPod) {
   description (Select a HabitatProd from a list by name or user selection)
   type (Search)
   collect {
@@ -7,36 +7,28 @@ action (SelectItem) {
       min (Required)
       hidden
     }
-    input (items) {
-      type (Item)
+    input (pods) {
+      type (HabitatPod)
       min (Required)
       max (Many)
-      default-init {
-        intent {
-          goal: FindItems
-          value: $expr (order.item.numberOfAstronauts)
-          value: $expr (order.item.dateInterval)
-          value: $expr (order.item.spaceResort)
-        }
-      }
     }
-    input(name) {
-      type(Name)
+    input(podName) {
+      type(PodName)
       min (Optional)
     }
   }
-  output (Item) {
+  output (HabitatPod) {
     throws {
       error (MultipleMatches) {
         property (matches) {
-          type (Item)
+          type (HabitatPod)
           min (Required)
           max (Many)
         }
         on-catch {
           replan {
             intent {
-              goal { Item @prompt-behavior(AlwaysSelection) }
+              goal { HabitatPod @prompt-behavior(AlwaysSelection) }
               value { $expr(matches) }
             }
           }

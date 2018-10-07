@@ -2,6 +2,7 @@ action (CreateOrder) {
   description (Create order)
   type (BeginTransaction)
   collect {
+
     input (spaceResort) {
       type (SpaceResort)
       min (Required)
@@ -12,35 +13,21 @@ action (CreateOrder) {
         }
       }
     }
-    input(numberOfAstronauts) {
-      type(NumberOfAstronauts)
-      hidden
+
+    input (item) {
+      type (Item)
       min (Required)
       default-init {
-       intent {
-         goal-set {
-           @prompt-behavior(AlwaysSelection)
-           NumberOfAstronauts {
-             NumberOfAstronauts(1) NumberOfAstronauts(2) NumberOfAstronauts(3) NumberOfAstronauts(4)
-           }
-         }
-       }
-      }
-    }
-    input (dateTimeExpression) {
-      type (time.DateTimeExpression)
-      hidden
-      min (Required)
-      default-init {
-        // Prompt
         intent {
-          goal { @prompt-behavior(AlwaysElicitation) time.DateInterval }
+          goal: CreateItem
+          value: $expr(spaceResort)
         }
       }
     }
 
-    input (self) {
-      type (self.SelfInfo)
+    input (buyer) {
+      type (Buyer)
+      min (Required)
       default-init {
         intent {
           goal: self.GetSelfInfo
@@ -53,18 +40,7 @@ action (CreateOrder) {
         }
       }
     }
-    computed-input (item) {
-      type (Item)
-      min (Required) max(One)
-      compute {
-        intent {
-          goal: FindItems
-          value: $expr (spaceResort)
-          value: $expr (numberOfAstronauts)
-          value: $expr (dateTimeExpression)
-        }
-      }
-    }
+
   }
   output (Order)
 }

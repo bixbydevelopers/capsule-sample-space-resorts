@@ -2,7 +2,7 @@
   <match>Receipt(this)</match>
   <content>
     <layout-macro id="common:orderTotalDisplay">
-      <total>{{item.price}}</total>
+      <total>{{item.pod.price}}</total>
     </layout-macro>
 
     <layout-macro id="common:card">
@@ -16,7 +16,7 @@
       <bodyText>
         {{item.numberOfAstronauts}}&nbsp;{{#if item.numberOfAstronauts == 1}}astronaut{{else}}astronauts{{/if}}
         <br />
-        {{item.name}}
+        {{item.pod.name}}
       </bodyText>
     </layout-macro>
 
@@ -27,7 +27,7 @@
             <selectable>false</selectable>
             <secondaryText>Name</secondaryText>
             <title>
-              {{value(self.firstName)}}&nbsp;{{value(self.lastName)}}
+              {{value(buyer.firstName)}}&nbsp;{{value(buyer.lastName)}}
             </title>
             <secondarySlotPosition>top</secondarySlotPosition>
           </layout-macro>
@@ -36,7 +36,7 @@
             <selectable>false</selectable>
             <secondaryText>Phone number</secondaryText>
             <title>
-              {{value(self.phoneNumber)}}
+              {{value(buyer.phoneNumber)}}
             </title>
             <secondarySlotPosition>top</secondarySlotPosition>
           </layout-macro>
@@ -45,7 +45,7 @@
             <selectable>false</selectable>
             <secondaryText>Email</secondaryText>
             <title>
-              {{value(self.emailAddress)}}
+              {{value(buyer.emailAddress)}}
             </title>
             <secondarySlotPosition>top</secondarySlotPosition>
           </layout-macro>
@@ -55,7 +55,7 @@
 
       <hr/>
         <layout-macro id="common:receiptBreakdown">
-          <total>{{item.price}}</total>
+          <total>{{item.pod.price}}</total>
         </layout-macro>
 
   </content>

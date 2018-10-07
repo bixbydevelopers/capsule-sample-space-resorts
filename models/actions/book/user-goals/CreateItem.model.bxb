@@ -1,0 +1,48 @@
+action (CreateItem) {
+  type (Constructor)
+  collect {
+
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required)
+    }
+
+    input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+
+      default-init { //Lists all available options - this is used by default-select
+        intent {
+          goal: PromptForNumberOfAstronauts
+        }
+      }
+    }
+
+    input (dateInterval) {
+      type (DateInterval)
+      min (Required)
+      default-init {
+
+        intent { // Prompt for the interval
+          goal: PromptForDateInterval
+        }
+      }
+    }
+
+    input (pod) {
+      type (HabitatPod)
+      min (Required)
+      default-init {
+        //TODO can we replace with prompt for pod?
+        intent {
+          goal: FindPods
+          value: $expr(numberOfAstronauts)
+          value: $expr(dateInterval)
+        }
+      }
+    }
+
+  }
+
+  output (Item)
+}

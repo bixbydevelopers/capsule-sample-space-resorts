@@ -1,5 +1,5 @@
 <layout type="Summary Details">
-  <match>Item(this)</match>
+  <match>HabitatPod(this)</match>
   <content>
     <layout-macro id="common:cell">
       <title>{{this.name}}</title>

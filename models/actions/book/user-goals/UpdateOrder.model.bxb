@@ -5,125 +5,12 @@ action (UpdateOrder) {
     input (order) {
       type (Order)
       min (Required)
-      hidden
     }
-    input (promptFlag) {
-      type (PromptFlag)
-      hidden
+    input (changedItem) {
+      type (ChangedItem)
     }
-    input(numberOfAstronauts) {
-      type(NumberOfAstronauts)
-      hidden
-      default-init {
-        intent {
-          goal: NumberOfAstronauts
-          value: $expr(order.item.numberOfAstronauts)
-        }
-      }
-    }
-    input (dateTimeExpression) {
-      type (time.DateTimeExpression)
-      hidden
-      default-init {
-        intent {
-          goal: time.DateTimeExpression
-          value: $expr(order.item.dateInterval)
-        }
-      }
-    }
-    input (self) {
-      type (self.SelfInfo)
-      hidden
-      default-init {
-        intent {
-          goal: self.GetSelfInfo
-          value: $expr(order.self)
-        }
-      }
-    }
-    computed-input(newNumberOfAstronauts) {
-      type (NumberOfAstronauts)
-      hidden
-      compute {
-        if ("promptFlag == 'NumberOfAstronauts'") {
-         intent {
-           goal-set {
-             @prompt-behavior(AlwaysSelection)
-             NumberOfAstronauts {
-               NumberOfAstronauts(1) NumberOfAstronauts(2) NumberOfAstronauts(3) NumberOfAstronauts(4)
-             }
-           }
-         }
-        } else {
-          intent {
-            goal: NumberOfAstronauts
-            value: $expr(numberOfAstronauts)
-          }
-        }
-      }
-    }
-    
-    computed-input(newDateTimeExpression) {
-      type (time.DateTimeExpression)
-      hidden
-      compute {
-        if ("promptFlag == 'DateInterval'") {
-          // Prompt
-          intent {
-            goal { @prompt-behavior(AlwaysElicitation) time.DateInterval }
-          }
-        } else {
-          intent {
-            goal: time.DateTimeExpression
-            value: $expr(dateTimeExpression)
-          }
-        }
-      }
-    }
-    
-    computed-input (newSelf) {
-      type (self.SelfInfo)
-      compute {
-        if ("promptFlag == 'Self'") {
-          // Prompt
-          intent {
-            goal { self.GetSelfInfo }
-            value: $expr(self)
-            value: self.ForcePrompt(true)
-            value-set: self.RequiredField {
-              self.RequiredField(firstName)
-              self.RequiredField(lastName)
-              self.RequiredField(emailAddress)
-              self.RequiredField(phoneNumber)
-            }            
-          }
-        } else {
-          intent {
-            goal: $expr(self)
-          }
-        }
-      }
-     
-    }
-    computed-input (newItem) {
-      type (Item)
-      min (Required) max(One)
-      compute {
-        // We might want to optimize to only SelectItem when numberOfAstronauts or dateTimeExpression is changed
-        // However maybe better idea to always check if the Item is still available for reservation
-        intent {
-          goal: SelectItem
-          subplan {
-            goal: FindItems
-            value: $expr (newNumberOfAstronauts)
-            value: $expr (newDateTimeExpression)
-            value: $expr (order.item.spaceResort)
-          }
-          if (promptFlag != 'Item') {
-            value: $expr (order.item.name)
-          }
-        }
-      }
+    input (buyer) {
+      type (Buyer)
     }
   }
   output (Order)

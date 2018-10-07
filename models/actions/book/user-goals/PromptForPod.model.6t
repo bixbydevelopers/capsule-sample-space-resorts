@@ -1,0 +1,35 @@
+action (PromptForPod) {
+  type (Constructor)
+  collect {
+
+    input (order) {
+      type (Order)
+      min (Required)
+    }
+
+    computed-input (newPod) {
+      type (HabitatPod)
+      min (Required)
+      //Lists all available options - this is used by default-select
+      compute {
+        intent {
+          goal {
+            @prompt-behavior(AlwaysSelection)
+            HabitatPod
+          }
+          subplan {
+            goal: FindPods
+            value: $expr(order.item.spaceResort)
+            value: $expr(order.item.numberOfAstronauts)
+            value: $expr(order.item.dateInterval)
+          }
+        }
+      }
+    }
+  }
+  output (HabitatPod) {
+    evaluate {
+      $expr (newPod)
+    }
+  }
+}

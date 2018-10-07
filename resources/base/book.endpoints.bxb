@@ -10,25 +10,34 @@ endpoints {
     }
 
     action-endpoint (CreateOrder) {
-      accepted-inputs (item, self)
+      accepted-inputs (item, buyer)
       local-endpoint (book/CreateOrder.js)
     }
 
     action-endpoint (UpdateOrder) {
-      accepted-inputs (newItem, newSelf)
+      accepted-inputs (order, changedItem, buyer)
       local-endpoint (book/UpdateOrder.js)
     }
 
-    action-endpoint (SelectItem) {
-      accepted-inputs (items, name)
-      local-endpoint (book/SelectItem.js)
+    action-endpoint (SelectPod) {
+      accepted-inputs (pods, podName)
+      local-endpoint (book/SelectPod.js)
     }
 
-    action-endpoint (FindItems) {
-      accepted-inputs (spaceResort, numberOfAstronauts, dateTimeExpression)
-      local-endpoint (book/FindItem.js)
+    action-endpoint (CreateItem) {
+      accepted-inputs (spaceResort, numberOfAstronauts, dateInterval, pod)
+      local-endpoint (book/CreateItem.js)
     }
 
+    action-endpoint (FindPods) {
+      accepted-inputs (spaceResort, numberOfAstronauts, dateInterval)
+      local-endpoint (book/FindPods.js)
+    }
+
+    action-endpoint (CreateChangedItem) {
+      accepted-inputs (order, numberOfAstronauts, dateInterval, pod)
+      local-endpoint (book/CreateChangedItem.js)
+    }
   }
 
 }

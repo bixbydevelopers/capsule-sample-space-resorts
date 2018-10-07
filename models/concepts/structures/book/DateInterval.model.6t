@@ -1,0 +1,6 @@
+structure (DateInterval) {
+  role-of(time.DateInterval)
+  features {
+    transient
+  }
+}

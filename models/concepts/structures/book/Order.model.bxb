@@ -7,8 +7,8 @@ structure (Order) {
     type (Item)
     visibility (Private)
   }
-  property (self) {
-    type(self.SelfInfo)
+  property (buyer) {
+    type(Buyer)
     visibility (Private)
   }
   named-consumer (commitOrder) {

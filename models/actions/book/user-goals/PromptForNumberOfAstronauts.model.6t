@@ -1,0 +1,23 @@
+action (PromptForNumberOfAstronauts) {
+  type (Constructor)
+  collect {
+    computed-input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+      //Lists all available options - this is used by default-select
+      compute {
+        intent {
+          goal-set {
+            @prompt-behavior(AlwaysSelection)
+            NumberOfAstronauts {
+              NumberOfAstronauts(1) NumberOfAstronauts(2) NumberOfAstronauts(3) NumberOfAstronauts(4)
+            }
+          }
+        }
+      }
+    }
+  }
+  output (NumberOfAstronauts) {
+    evaluate { $expr(numberOfAstronauts) }
+  }
+}

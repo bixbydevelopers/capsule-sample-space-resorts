@@ -1,0 +1,20 @@
+action (FindPods) {
+  type (Constructor)
+  collect {
+
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required)
+    }
+    input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+    }
+    input (dateInterval) {
+      type (DateInterval)
+      min (Required)
+    }
+  }
+
+  output (HabitatPod)
+}

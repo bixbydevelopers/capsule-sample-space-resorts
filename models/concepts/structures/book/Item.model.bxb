@@ -1,9 +1,8 @@
 structure (Item) {
-  description (Item)
-  property (name) {
-    type (Name)
+  description (A pod reservation)
+  property (pod) {
+    type (HabitatPod)
     min (Required)
-    visibility (Private)
   }
   property (spaceResort) {
     type (SpaceResort)
@@ -14,17 +13,8 @@ structure (Item) {
     visibility (Private)
   }
   property (dateInterval) {
-    type (time.DateInterval)
+    type (DateInterval)
     min (Required)
-    visibility (Private)
-  }
-  property (price) {
-    type (money.Price)
-    min (Required)
-    visibility (Private)
-  }
-  property (highlight) {
-    type (Highlight)
     visibility (Private)
   }
   features {

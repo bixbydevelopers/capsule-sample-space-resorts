@@ -1,0 +1,20 @@
+structure (ChangedItem) {
+  property (item) {
+    type (Item)
+    min (Required)
+    description (item that is changed)
+  }
+
+  property (newNumberOfAstronauts) {
+    type (NumberOfAstronauts)
+    min (Optional)
+  }
+  property (newDateInterval) {
+    type (DateInterval)
+    min (Optional)
+  }
+  property (newPod) {
+    type (HabitatPod)
+    min (Optional)
+  }
+}

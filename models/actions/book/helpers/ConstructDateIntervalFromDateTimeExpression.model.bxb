@@ -1,0 +1,18 @@
+action (ConstructDateIntervalFromDateTimeExpression) {
+  type (Constructor)
+  collect {
+   input (dateTimeExpression) {
+     type (time.DateTimeExpression)
+     min (Required)
+   }
+  }
+  //TODO: defensive: check if dateTimeExpression is not a dateInterval
+  output (DateInterval) {
+    evaluate {
+      DateInterval {
+        start: $expr(dateTimeExpression.dateInterval.start)
+        end: $expr(dateTimeExpression.dateInterval.end)
+      }
+    }
+  }
+}

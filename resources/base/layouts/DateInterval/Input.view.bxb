@@ -1,5 +1,5 @@
 input-view {
-  match: time.DateInterval (this)
+  match: DateInterval (this)
   render {
     calendar {
       allow-range (true)

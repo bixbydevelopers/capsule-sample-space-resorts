@@ -1,0 +1,17 @@
+action (PromptForDateInterval) {
+  type (Constructor)
+  collect {
+    computed-input (dateInterval) {
+      type (DateInterval)
+      min (Required)
+      compute {
+        intent {
+          goal { @prompt-behavior(AlwaysElicitation) DateInterval }
+        }
+      }
+    }
+  }
+  output (DateInterval) {
+    evaluate { $expr(dateInterval) }
+  }
+}
