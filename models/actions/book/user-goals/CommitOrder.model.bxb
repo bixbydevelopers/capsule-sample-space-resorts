@@ -1,7 +1,7 @@
 action (CommitOrder) {
   description (Commit order)
   type (Commit)
-  confirmed-by (common.Confirmation)
+  confirmed-by (Confirmation)
 
   collect {
     input (order) {
