@@ -1,0 +1,4 @@
+action (FindLastReceipt) {
+  output (Receipt)
+  type (ArchiveLookup)
+}

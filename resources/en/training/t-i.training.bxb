@@ -1,4 +1,4 @@
 train (t-igrxyoyrh02yipbd7rtmtitwl) {
-  utterance ("[g:bixby.spaceResorts.SpaceResort] Search for space resorts with (low gravity)[v:bixby.spaceResorts.SearchCriteria]")
+  utterance ("[g:SpaceResort] Search for space resorts with (low gravity)[v:SearchCriteria]")
   plan (Y2BmkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWZQxGZIamJRcoZzUWZJalFmIgMTAyMQMwBJRgYQYIJgAA==)
 }

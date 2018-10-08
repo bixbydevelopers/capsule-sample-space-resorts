@@ -1,9 +1,12 @@
 capsule {
-  id (bixby.spaceResorts)
+  id (example.spaceResorts)
   version (1.0.0)
   format (3)
   targets {
     target (bixby-mobile-en-US)
+  }
+  permissions {
+    user-profile-access
   }
   capsule-imports {
     import (viv.core) {

@@ -49,6 +49,26 @@ endpoints {
       local-endpoint (book/ConstructDateIntervalFromDateTimeExpression.js)
     }
 
+    action-endpoint (CheckStatus) {
+      accepted-inputs (receipt)
+      local-endpoint ("book/CheckStatus.js")
+    }
+    
+    action-endpoint (CancelOrder) {
+      accepted-inputs (order)
+      local-endpoint ("book/CancelOrder.js")
+    }
+
+    action-endpoint (CancelCommittedOrder) {
+      accepted-inputs (receipt)
+      local-endpoint ("book/CancelCommittedOrder.js")
+    }
+    
+    action-endpoint (FindLastReceipt) {
+      accepted-inputs ()
+      local-endpoint ("book/FindLastReceipt.js")
+    }
+    
   }
 
 }

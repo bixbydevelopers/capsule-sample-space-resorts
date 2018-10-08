@@ -1,8 +1,8 @@
 train (t-o9cm329ghna15lrdfv68w9rbu) {
-  utterance ("[g:bixby.spaceResorts.HabitatPod:prompt] (The Lab)[v:bixby.spaceResorts.PodName]")
+  utterance ("[g:HabitatPod:prompt] (The Lab)[v:PodName]")
   plan (Y2BhkE3KrEiq1CsuSExODUotzi8qKdbzSEzKLEksCchPYZDBIh2cmpOaDJYloFkKizRQ3C8xN5WBmYGRgQlIMgBpEIQAJiAGigEA)
 }
 train (t-oarb3ywljx6o1ivq1ft1ft6l7) {
-  utterance ([g:bixby.spaceResorts.Order#commitOrder,r:bixby.spaceResorts.CreateOrder] Book a space resort)
+  utterance ([g:Order#commitOrder,r:CreateOrder] Book a space resort)
   plan (Y2BnkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDDIuecn5ubWeJflJJaxCCBRR4ig1VnUWpiSSpunU6llUAZcSwyniWpuViNDEZwGNgYGBmYGJgZWBhYgWwGKA8EGcE8GGACizMAAA==)
 }

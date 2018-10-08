@@ -1,4 +1,4 @@
 train (t-n9byevgdglkf6t465mgrr397k) {
-  utterance ("[g:SpaceResort] Look for a space resort that is (good for kids)[v:bixby.spaceResorts.SearchCriteria]")
+  utterance ("[g:SpaceResort] Look for a space resort that is (good for kids)[v:SearchCriteria]")
   plan (Y2BmkEvKrEiq1CsuSExODUotzi8qKdYLRnAYlLHIu2XmpSCpKWZQxGZIamJRcoZzUWZJalFmIgMTAyMQMwBJRgYQYIJgAA==)
 }

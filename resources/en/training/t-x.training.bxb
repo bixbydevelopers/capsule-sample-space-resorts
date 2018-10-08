@@ -1,4 +1,4 @@
 train (t-x9om5hd8jzfjm7641qqa2a76x) {
-  utterance ("[g:bixby.spaceResorts.HabitatPod:prompt] (Honeymoon)[v:bixby.spaceResorts.PodName]")
+  utterance ("[g:HabitatPod:prompt] (Honeymoon)[v:PodName]")
   plan (Y2BlkE3KrEiq1CsuSExODUotzi8qKdbzSEzKLEksCchPYZDBIh2cmpOaDJYloFkCi7R/UUpqEYMUFhmgDr/E3FQGFgZGBiYGZiDNAGRBIAwwATFQHAA=)
 }

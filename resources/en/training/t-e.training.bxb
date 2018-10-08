@@ -1,4 +1,4 @@
 train (t-e5vxm59rxm85bx7e76c10h1y8) {
-  utterance ([g:bixby.spaceResorts.Order#commitOrder:continue,r:bixby.spaceResorts.UpdateOrder,r:bixby.spaceResorts.PromptForNumberOfAstronauts] Change number of astronauts)
+  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,r:PromptForNumberOfAstronauts] Change number of astronauts)
   plan (fY5NDoJADIUf4g/cwLhwpVvuYEhM3Igh8QADVGQxzKRTEr29E3DBYjRN2+R97zVFil3Vvap35qyqqSRnWFxWUk2dFewDLDdad1JwQ4xtgE8klLzbRgn95vlT9S01FyGNQ4gz+fzcdQy4roOuiIvHyQmbXg3i/ryZBciNjbZyNhy4lCLCAjGWWGGNja8EmGnxqEejNjW+O/aexE98AA==)
 }

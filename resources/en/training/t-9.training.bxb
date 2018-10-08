@@ -1,4 +1,4 @@
 train (t-9dsv38aqogqbt6op3cisqr024) {
-  utterance ("[g:bixby.spaceResorts.NumberOfAstronauts:prompt] (4)[v:bixby.spaceResorts.NumberOfAstronauts]")
+  utterance ("[g:NumberOfAstronauts:prompt] (4)[v:NumberOfAstronauts]")
   plan (Y2BiUE3KrEiq1CsuSExODUotzi8qKdbzK81NSi3yT3MsLinKz0ssLSkmVhkjEDIw8AAxExAD2QA=)
 }

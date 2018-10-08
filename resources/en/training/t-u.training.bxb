@@ -1,4 +1,4 @@
 train (t-updkg8112imk49ndflq2r6lx2) {
-  utterance ("[g:bixby.spaceResorts.Order#commitOrder:continue,r:bixby.spaceResorts.UpdateOrder] Change that to (December 10th)[v:viv.time.DateTimeExpression]")
+  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] Change that to (December 10th)[v:viv.time.DateTimeExpression]")
   plan (fY9NCsIwEEY/rVrtCURBN657BDdVoSuh6AH6M2jApCEZS7290W5aiE6Ygcx732IQYVWItnjFVuclZWRrwzbOqCShGRsPS2opBZ9NRQZLD++IL3nVVc70myf3XN2oSpkkdj5uyOX71tZjHZyTKibT5A/svQcoy+ZZct88mVp+/hch6dhqQ9aKWv05cN2IJmZnx55YhBHGCDDBFDOEmLu3AAbbwM3QbTDoroKv5xJv)
 }

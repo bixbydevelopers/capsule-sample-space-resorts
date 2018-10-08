@@ -1,4 +1,4 @@
 train (t-7bcyyj38mt1cg9u66y809kzqy) {
-  utterance ([g:bixby.spaceResorts.SpaceResort] Find space resorts)
+  utterance ([g:SpaceResort] Find space resorts)
   plan (Y2BkkEvKrEiq1CsuSExODUotzi8qKdYLRnAYQIARRAAA)
 }

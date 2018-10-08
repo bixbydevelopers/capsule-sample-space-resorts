@@ -1,0 +1,83 @@
+activity-support {
+  match: Receipt (this)
+
+  time (this.item.dateInterval.start)
+
+  states {
+    
+    if ("this.cancelled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
+
+      state (Recent) {
+
+        summary-view {
+          title {
+            if (this.cancelled) {             
+              template("#{value(this.item.spaceResort.name)} is cancelled!")
+            } else {
+              template("#{value(this.item.spaceResort.name)}")
+            }
+          }
+          details{
+            template("[#{value(this.item.pod.name)}]")
+          }
+          message {
+            if (this.cancelled) {             
+              template("#{value(this.item.spaceResort.name)} cancelled!")
+            } else {
+              template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
+            }
+          }
+        }
+        detail-view {
+          layout-match(this) {
+            mode(Details)
+          }
+        }
+      }
+    } else-if (exists(this.relevantDateTime) && isFuture(this.relevantDateTime)) {
+
+      state (Scheduled) {
+        expires(this.relevantDateTime)
+        
+        summary-view {
+          title {
+            template("#{value(this.item.numberOfAstronauts)} astronauts going to #{value(this.item.spaceResort.name)}")
+          }
+          details {
+            template("")
+          }
+          message {
+            template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
+          }
+        }
+        detail-view {
+          layout-match(this) {
+            mode(Details)
+          }
+        }
+      }
+    } else {
+      state (Relevant) {
+        expires(this.item.dateInterval.start)
+
+        summary-view {
+          title {
+            template("#{value(this.item.numberOfAstronauts)} astronauts going to #{value(this.item.spaceResort.name)}")
+          }
+          details{
+            template("[#{value(this.item.pod.name)}]")
+          }
+          message {
+            template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
+          }
+        }
+        detail-view {
+          layout-match(this) {
+            mode(Details)
+          }
+        }
+
+      }
+    }
+  }
+}

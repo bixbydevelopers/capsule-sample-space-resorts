@@ -1,8 +1,8 @@
 train (t-1xcjtau1jw65tcbzzg1zp2iya) {
-  utterance ("[g:bixby.spaceResorts.Order#commitOrder:continue,r:bixby.spaceResorts.UpdateOrder] Change that to (2)[v:bixby.spaceResorts.NumberOfAstronauts:2] astronauts")
+  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] Change that to (2)[v:NumberOfAstronauts:2] astronauts")
   plan (fY6xDsIwDESvBEo/ATEwwdp/QJ1YqFSJD0gaAxnSRIkrwd8TkaVDwNZ5uHcnGQ32yrzUu41ejjRQdIFjO9BIxjMOBdY5aw33QVPArsAzKTVvXkum37x7yulB+sJkcSzxQKm/TJ0KqetsFYX+fo4c3CRnjn/ebFBhBYE1NqixTYuFI5Kqr5OVRyRep4sP)
 }
 train (t-1y714vrcu50c7icn96mjbl37y) {
-  utterance ("[g:bixby.spaceResorts.Confirmation:prompt] (Yes)[v:bixby.spaceResorts.Confirmation:true]")
+  utterance ("[g:Confirmation:prompt] (Yes)[v:Confirmation:true]")
   plan (Y2BikE/KrEiq1CsuSExODUotzi8qKdZzzs9LyyzKTSzJzM8jrIARCBkYeICYCYiBbAA=)
 }
