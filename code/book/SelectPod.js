@@ -14,6 +14,6 @@ module.exports.function = function (pods, podName) {
     return matches[0]
   }
 
-  //TODO: handle gracefully
+  //TODO: handle error cases gracefully
   return null
 }
