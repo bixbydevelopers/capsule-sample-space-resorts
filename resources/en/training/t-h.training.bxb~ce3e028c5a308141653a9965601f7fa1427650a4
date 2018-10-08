@@ -1,4 +1,0 @@
-train (t-htdqccd5w3fam62xd1q5kqfs8) {
-  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,r:PromptForBuyer] Change contact information)
-  plan (Y2BjkEzKrEiq1MvMK05NLkksyizN1QtKTU7NLChhkMGUciqtDMlMzk4tKWYQw5R1TiwqYZDHIp6RmJeeSkgjFusCivJzC0rcchLTGVgZGBmYGJgZWIAsBiibGUgzgDEIMAPFWIEkAwA=)
-}
