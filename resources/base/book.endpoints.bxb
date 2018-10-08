@@ -38,6 +38,12 @@ endpoints {
       accepted-inputs (order, numberOfAstronauts, dateInterval, pod)
       local-endpoint (book/CreateChangedItem.js)
     }
+
+    action-endpoint (GetPossibleNumberOfAstronauts) {
+      accepted-inputs ()
+      local-endpoint (book/GetPossibleNumberOfAstronauts.js)
+    }
+
   }
 
 }

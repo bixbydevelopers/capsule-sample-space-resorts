@@ -2,7 +2,7 @@ module.exports.function = function (order, changedItem, buyer) {
   var item = null
   if (changedItem) {
     item = changedItem.item
-    //TODO validate if the new number of astraunats and new date interval works, if not throw checked errors
+    //TODO validate if the new number of astronauts and new date interval works, if not throw checked errors
     if (changedItem.newNumberOfAstronauts) {
       item.numberOfAstronauts = changedItem.newNumberOfAstronauts
     }
