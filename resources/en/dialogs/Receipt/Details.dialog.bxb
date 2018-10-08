@@ -1,4 +1,4 @@
 dialog (Result) {
   match: Receipt(this)
-  template("I hope you have a great time at #{value(this.item.spaceResort.name)} on #{value(this.item.spaceResort.planet)}.")
+  template("I hope you have a great time at #{value(this.item.spaceResort.name)}.")
 }
