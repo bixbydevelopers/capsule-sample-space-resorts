@@ -1,5 +1,6 @@
 input-view {
   match: SpaceResort(result)
+  message("Which space resort would you like?")
   render {
     if (size(result) > 1) {
       selection-of (result) {

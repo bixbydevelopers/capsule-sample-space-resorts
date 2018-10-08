@@ -1,5 +1,8 @@
 input-view {
   match: HabitatPod(pods)
+  message {
+    template ("Which habitat pod would you like?")
+  }
   render {
     if (size(pods) > 1) {
       selection-of (pods) {
