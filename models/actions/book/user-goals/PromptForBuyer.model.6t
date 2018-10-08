@@ -1,5 +1,6 @@
 action (PromptForBuyer) {
- type (Constructor)
+  description (Prompt user to enter personal data)
+  type (Constructor)
   collect {
     computed-input (buyer) {
       type (Buyer)

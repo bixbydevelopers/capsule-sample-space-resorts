@@ -2,7 +2,7 @@ module.exports.function = function (pods, podName) {
   var matches = []
   //a lot can be improved here to improve matching the items
   for (var i=0; i<pods.length; i++) {
-     if (textLib.fuzzyMatch(pods[i].podName, podName)) {
+     if (textLib.fuzzyMatch(pods[i].name, podName)) {
        matches.push(pods[i])
      }
   }

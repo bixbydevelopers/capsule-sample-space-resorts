@@ -1,4 +1,5 @@
 action (PromptForPod) {
+  description (Select a HabitatProd from a list by prompting the user for selection)
   type (Constructor)
   collect {
 
@@ -28,8 +29,6 @@ action (PromptForPod) {
     }
   }
   output (HabitatPod) {
-    evaluate {
-      $expr (newPod)
-    }
+    evaluate { $expr (newPod) }
   }
 }

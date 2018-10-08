@@ -1,4 +1,5 @@
 action (PromptForDateInterval) {
+  description (Prompt user to enter a date interval)
   type (Constructor)
   collect {
     computed-input (dateInterval) {

@@ -1,5 +1,8 @@
 action (PromptForNumberOfAstronauts) {
   type (Constructor)
+  description (Select a NumberOfAstronauts from a list by either prompting the user for selection or auto selecting
+  using selection rule and selection learning)
+
   collect {
     input (autoSelect) {
       type (AutoSelect)

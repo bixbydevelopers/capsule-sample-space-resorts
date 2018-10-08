@@ -44,6 +44,11 @@ endpoints {
       local-endpoint (book/GetPossibleNumberOfAstronauts.js)
     }
 
+    action-endpoint (ConstructDateIntervalFromDateTimeExpression) {
+      accepted-inputs (dateTimeExpression)
+      local-endpoint (book/ConstructDateIntervalFromDateTimeExpression.js)
+    }
+
   }
 
 }

@@ -1,20 +1,32 @@
 action (SelectPod) {
-  description (Select a HabitatProd from a list by name or user selection)
+  description (Select a HabitatProd from a list by name)
   type (Search)
   collect {
     input (order) {
       type (Order)
-      min (Required)
+      min (Optional)
       hidden
     }
+
     input (pods) {
       type (HabitatPod)
       min (Required)
       max (Many)
+      default-init {
+        if (exists(order)) {
+          intent {
+            goal: FindPods
+            value: $expr(order.item.spaceResort)
+            value: $expr(order.item.numberOfAstronauts)
+            value: $expr(order.item.dateInterval)
+          }
+        }
+      }
     }
+
     input(podName) {
-      type(PodName)
-      min (Optional)
+      type (PodName)
+      min (Required)
     }
   }
   output (HabitatPod) {
