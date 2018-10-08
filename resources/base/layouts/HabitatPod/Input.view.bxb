@@ -1,0 +1,16 @@
+input-view {
+  match: HabitatPod(pods)
+  render {
+    if (size(pods) > 1) {
+      selection-of (pods) {
+        where-each (pod) {
+          layout-match (pod) {
+            mode (Summary)
+          }
+        }
+      }
+    } else-if (size(pods) == 1) {
+      // Unexpected
+    }
+  }
+}
