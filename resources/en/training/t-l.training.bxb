@@ -1,0 +1,4 @@
+train (t-l5gxgu5w6asbonxyip40gsqm0) {
+  utterance ([g:CheckStatus] Do I have an upcoming space trip?)
+  plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yRmpwdXJJYUlpMQD8TAyMQMwBJRgYGGA0A)
+}
