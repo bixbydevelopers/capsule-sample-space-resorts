@@ -5,13 +5,47 @@ action (PromptForPod) {
 
     input (order) {
       type (Order)
+      min (Optional)
+    }
+
+    input (spaceResort) {
+      type (SpaceResort)
       min (Required)
+      default-init {
+        intent {
+          goal: SpaceResort
+          value: $expr(order.item.spaceResort)
+        }
+      }
+    }
+
+    input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+      default-init {
+        intent {
+          goal: NumberOfAstronauts
+          value: $expr(order.item.numberOfAstronauts)
+        }
+      }
+    }
+
+    input (dateInterval) {
+      type (DateInterval)
+      min (Required)
+      default-init {
+        intent {
+          goal: DateInterval
+          value: $expr(order.item.dateInterval)
+        }
+      }
     }
 
     computed-input (newPod) {
       type (HabitatPod)
       min (Required)
-      //Lists all available options - this is used by default-select
+      max (One)
+      //Prompts user if there are more than one option available
       compute {
         intent {
           goal {
@@ -20,9 +54,9 @@ action (PromptForPod) {
           }
           subplan {
             goal: FindPods
-            value: $expr(order.item.spaceResort)
-            value: $expr(order.item.numberOfAstronauts)
-            value: $expr(order.item.dateInterval)
+            value: $expr(spaceResort)
+            value: $expr(numberOfAstronauts)
+            value: $expr(dateInterval)
           }
         }
       }

@@ -34,11 +34,11 @@ action (CreateItem) {
       type (HabitatPod)
       min (Required)
       default-init {
-        //TODO can we replace with prompt for pod?
         intent {
-          goal: FindPods
+          goal: PromptForPod
           value: $expr(numberOfAstronauts)
           value: $expr(dateInterval)
+          value: $expr(spaceResort)
         }
       }
     }

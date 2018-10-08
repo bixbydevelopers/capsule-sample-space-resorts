@@ -2,6 +2,8 @@ action (SelectPod) {
   description (Select a HabitatProd from a list by name)
   type (Search)
   collect {
+
+    //order can be null if the prompt is before CreateOrder
     input (order) {
       type (Order)
       min (Optional)
@@ -20,11 +22,17 @@ action (SelectPod) {
             value: $expr(order.item.numberOfAstronauts)
             value: $expr(order.item.dateInterval)
           }
+        } else {
+          //get the candidates from the input-view (prompt context)
+          intent {
+            goal-set: HabitatPod {$expr("getPreviousPage('HabitatPod')")}
+          }
         }
       }
     }
 
     input(podName) {
+      description (PodName to match)
       type (PodName)
       min (Required)
     }

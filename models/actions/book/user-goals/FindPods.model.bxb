@@ -6,10 +6,12 @@ action (FindPods) {
       type (SpaceResort)
       min (Required)
     }
+
     input (numberOfAstronauts) {
       type (NumberOfAstronauts)
       min (Required)
     }
+
     input (dateInterval) {
       type (DateInterval)
       min (Required)
