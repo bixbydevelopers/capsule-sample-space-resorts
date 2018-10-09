@@ -31,6 +31,7 @@ action (CreateOrder) {
       default-init {
         intent {
           goal: self.GetSelfInfo
+          value: self.Imaginary(true)
           value-set: self.RequiredField {
             self.RequiredField(firstName)
             self.RequiredField(lastName)

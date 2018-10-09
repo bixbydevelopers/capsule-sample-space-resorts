@@ -9,6 +9,7 @@ action (PromptForBuyer) {
         intent {
           goal: self.GetSelfInfo
           value: self.ForcePrompt(true)
+          value: self.Imaginary(true)
           value-set: self.RequiredField {
             self.RequiredField(firstName)
             self.RequiredField(lastName)

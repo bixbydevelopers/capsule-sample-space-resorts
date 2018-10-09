@@ -5,9 +5,9 @@ capsule {
   targets {
     target (bixby-mobile-en-US)
   }
-  permissions {
-    user-profile-access
-  }
+  // permissions {
+  //   user-profile-access
+  // }
   capsule-imports {
     import (viv.core) {
       as (core)
@@ -30,7 +30,7 @@ capsule {
     }
     import (viv.self) {
       as (self)
-      version (3.0.2)
+      version (3.0.3)
     }
     import (viv.contact) {
       as (contact)
