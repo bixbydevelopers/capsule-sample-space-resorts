@@ -3,9 +3,15 @@
     <param name="receipt" type="Receipt" min="Required" max="One"/>
   </params>
   <content>
+    {{#if exists(receipt.cancelled) && receipt.cancelled == true}}
+    <layout-macro id="common:orderTotalDisplay">
+      <total>Cancelled</total>
+    </layout-macro>
+    {{else}}
     <layout-macro id="common:orderTotalDisplay">
       <total>{{receipt.item.pod.price}}</total>
     </layout-macro>
+    {{/if}}
 
     <layout-macro id="common:card">
       <heroText>

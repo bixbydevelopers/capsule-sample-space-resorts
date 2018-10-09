@@ -1,4 +1,8 @@
 dialog (Result) {
   match: Receipt(this)
-  template("I hope you have a great time at #{value(this.item.spaceResort.name)}.")
+  if ("exists(this.cancelled) && this.cancelled == true") {
+    template ("Your trip has been cancelled.")
+  } else {
+    template("I hope you have a great time at #{value(this.item.spaceResort.name)}.")
+  }
 }
