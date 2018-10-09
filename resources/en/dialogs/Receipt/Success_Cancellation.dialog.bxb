@@ -1,0 +1,4 @@
+dialog () {
+  match: __MATCH_PATTERN__
+  template("__TEMPLATE_TEXT__")
+}
