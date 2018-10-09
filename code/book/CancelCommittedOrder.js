@@ -1,6 +1,4 @@
 exports.function = function(receipt) {
-  if (receipt.state == "Ordered") {
-    receipt.cancelled = true
-  }
+  receipt.cancelled = true
   return receipt
 }
