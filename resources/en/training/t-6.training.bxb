@@ -1,4 +1,0 @@
-train (t-6xia0ityihj3ablhfp7bi69m3) {
-  utterance ([g:Order#commitOrder:continue:*,r:CreateOrder] Get order)
-  plan (Y2BnkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDDIuecn5ubWeJflJJaxCCBRR4ig1VnUWpiSSpunU6llUAZcSwyniWpuViNDEZwGNgYGBmYGJgZWBhYgWwGKA8EGcE8GGACizMAAA==)
-}

@@ -1,4 +1,4 @@
 train (t-bzgmf11fzx2nv8si00p6q6kqg) {
-  utterance ([g:Order#commitOrder,r:CreateOrder] Make reservation)
-  plan (Y2BnkErKrEiq1CsuSExODUotzi8qKdYLSk1OzSwoYZDDIuecn5ubWeJflJJaxCCBRR4ig1VnUWpiSSpunU6llUAZcSwyniWpuViNDEZwGNgYGBmYGJgZWBhYgWwGKA8EGcE8GGACizMAAA==)
+  utterance ([g:Order#commitOrder:continue:SpaceResort,r:CreateOrder, r:CreateItem] Make reservation)
+  plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
 }

@@ -3,26 +3,9 @@ action (CreateOrder) {
   type (BeginTransaction)
   collect {
 
-    input (spaceResort) {
-      type (SpaceResort)
-      min (Required)
-      hidden
-      default-init {
-        intent {
-          goal: FindSpaceResorts
-        }
-      }
-    }
-
     input (item) {
       type (Item)
       min (Required)
-      default-init {
-        intent {
-          goal: CreateItem
-          value: $expr(spaceResort)
-        }
-      }
     }
 
     input (buyer) {

@@ -5,6 +5,11 @@ action (CreateItem) {
     input (spaceResort) {
       type (SpaceResort)
       min (Required)
+      default-init {
+        intent {
+          goal: FindSpaceResorts
+        }
+      }
     }
 
     input (numberOfAstronauts) {
