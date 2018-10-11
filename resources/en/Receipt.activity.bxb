@@ -5,26 +5,30 @@ activity-support {
 
   states {
     
-    if ("this.cancelled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
+    if ("this.canceled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
 
       state (Recent) {
 
         summary-view {
           title {
-            if (this.cancelled) {             
-              template("#{value(this.item.spaceResort.name)} is cancelled!")
+            if (this.canceled) {
+              template("#{value(this.item.spaceResort.name)} canceled!")
             } else {
-              template("#{value(this.item.spaceResort.name)}")
+              template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
             }
           }
           details{
             template("[#{value(this.item.pod.name)}]")
           }
           message {
-            if (this.cancelled) {             
-              template("#{value(this.item.spaceResort.name)} cancelled!")
+            if (this.canceled) {
+              template("#{value(this.item.spaceResort.name)} is canceled!")
             } else {
-              template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
+              if (this.item.numberOfAstronauts == 1) {
+                template("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort.name)}!")
+              } else {
+                template("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort.name)}!")
+              }
             }
           }
         }
@@ -41,13 +45,17 @@ activity-support {
         
         summary-view {
           title {
-            template("#{value(this.item.numberOfAstronauts)} astronauts going to #{value(this.item.spaceResort.name)}")
+            template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
           }
           details {
             template("")
           }
           message {
-            template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
+            if (this.item.numberOfAstronauts == 1) {
+              template("#{value(this.item.numberOfAstronauts)} astronaut going to #{value(this.item.spaceResort.name)}")
+            } else {
+              template("#{value(this.item.numberOfAstronauts)} astronauts going to #{value(this.item.spaceResort.name)}")
+            }
           }
         }
         detail-view {
@@ -62,13 +70,17 @@ activity-support {
 
         summary-view {
           title {
-            template("#{value(this.item.numberOfAstronauts)} astronauts going to #{value(this.item.spaceResort.name)}")
+            template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
           }
           details{
             template("[#{value(this.item.pod.name)}]")
           }
           message {
-            template("#{value(this.item.spaceResort.name)}[ • #{value(this.item.dateInterval.start)}]")
+            if (this.item.numberOfAstronauts == 1) {
+              template("#{value(this.item.numberOfAstronauts)} astronaut going to #{value(this.item.spaceResort.name)}")
+            } else {
+              template("#{value(this.item.numberOfAstronauts)} astronauts going to #{value(this.item.spaceResort.name)}")
+            }
           }
         }
         detail-view {
