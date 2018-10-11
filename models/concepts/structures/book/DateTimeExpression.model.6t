@@ -1,6 +1,0 @@
-//structure (DateTimeExpression) {
-//  extends(time.DateTimeExpression)
-//  features {
-//    transient
-//  }
-//}
