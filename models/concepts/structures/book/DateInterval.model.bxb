@@ -1,6 +1,3 @@
 structure (DateInterval) {
-  role-of(time.DateInterval)
-  features {
-    transient
-  }
+  role-of (time.DateInterval)
 }
