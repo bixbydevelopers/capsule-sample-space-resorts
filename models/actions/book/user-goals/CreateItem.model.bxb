@@ -18,7 +18,7 @@ action (CreateItem) {
 
       default-init { //Lists all available options - this is used by default-select
         intent {
-          goal: PromptForNumberOfAstronauts
+          goal: GetNumberOfAstronauts
           value: AutoSelect(true)
         }
       }
@@ -30,7 +30,7 @@ action (CreateItem) {
       default-init {
 
         intent { // Prompt for the interval
-          goal: PromptForDateInterval
+          goal: GetDateInterval
         }
       }
     }
@@ -40,7 +40,7 @@ action (CreateItem) {
       min (Required)
       default-init {
         intent {
-          goal: PromptForPod
+          goal: GetPod
           value: $expr(numberOfAstronauts)
           value: $expr(dateInterval)
           value: $expr(spaceResort)

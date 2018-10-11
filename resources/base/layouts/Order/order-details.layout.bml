@@ -28,7 +28,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            route: PromptForNumberOfAstronauts
+            route: GetNumberOfAstronauts
             }
           </intent>
         </layout-macro>
@@ -48,7 +48,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            route: PromptForDateInterval
+            route: GetDateInterval
             }
           </intent>
         </layout-macro>
@@ -71,7 +71,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            route: PromptForPod
+            route: GetPod
             }
           </intent>
         </layout-macro>
@@ -97,7 +97,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            route: PromptForBuyer
+            route: GetBuyer
             }
           </intent>
         </layout-macro>
@@ -117,7 +117,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            route: PromptForBuyer
+            route: GetBuyer
             }
           </intent>
         </layout-macro>
@@ -137,7 +137,7 @@
             intent {
             goal: Order#commitOrder
             route: UpdateOrder
-            route: PromptForBuyer
+            route: GetBuyer
             }
           </intent>
         </layout-macro>

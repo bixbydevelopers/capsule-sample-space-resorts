@@ -1,5 +1,5 @@
-action (PromptForPod) {
-  description (Select a HabitatProd from a list by prompting the user for selection)
+action (GetPod) {
+  description (Select a value for HabitatProd from a list by prompting the user for selection)
   type (Constructor)
   collect {
 

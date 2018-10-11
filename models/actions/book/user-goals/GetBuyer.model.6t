@@ -1,4 +1,4 @@
-action (PromptForBuyer) {
+action (GetBuyer) {
   description (Prompt user to enter personal data)
   type (Constructor)
   collect {

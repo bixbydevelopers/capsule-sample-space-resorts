@@ -1,6 +1,6 @@
-action (PromptForNumberOfAstronauts) {
+action (GetNumberOfAstronauts) {
   type (Constructor)
-  description (Select a NumberOfAstronauts from a list by either prompting the user for selection or auto selecting
+  description (Select a value for NumberOfAstronauts from a list by either prompting the user for selection or auto selecting
   using selection rule and selection learning)
 
   collect {

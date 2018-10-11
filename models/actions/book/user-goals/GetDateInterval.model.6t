@@ -1,4 +1,4 @@
-action (PromptForDateInterval) {
+action (GetDateInterval) {
   description (Prompt user to enter a date interval)
   type (Constructor)
   collect {
