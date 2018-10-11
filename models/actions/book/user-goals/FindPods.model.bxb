@@ -1,5 +1,5 @@
 action (FindPods) {
-  type (Constructor)
+  type (Search)
   collect {
 
     input (spaceResort) {
