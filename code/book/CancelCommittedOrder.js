@@ -1,4 +1,4 @@
 exports.function = function(receipt) {
-  receipt.cancelled = true
+  receipt.canceled = true
   return receipt
 }

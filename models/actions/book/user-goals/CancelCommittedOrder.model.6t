@@ -39,10 +39,10 @@ action (CancelCommittedOrder) {
             }
           }
         }
-        if (receipt.cancelled) {
+        if (receipt.canceled) {
           halt {
             dialog{
-              template("This order is already cancelled!")
+              template("This order is already canceled!")
             }
           }
         }

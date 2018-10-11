@@ -3,9 +3,9 @@
     <param name="receipt" type="Receipt" min="Required" max="One"/>
   </params>
   <content>
-    {{#if exists(receipt.cancelled) && receipt.cancelled == true}}
+    {{#if exists(receipt.canceled) && receipt.canceled == true}}
     <layout-macro id="common:orderTotalDisplay">
-      <total>Cancelled</total>
+      <total>Canceled</total>
     </layout-macro>
     {{else}}
     <layout-macro id="common:orderTotalDisplay">

@@ -19,7 +19,7 @@ structure (Receipt) {
     description (The item is relevant whenever the relevantDateTime is in the past but item.dateInterval.start is in the future.)
   }
 
-  property (cancelled) {
+  property (canceled) {
     type (core.Boolean)
     visibility(Private)
   }
