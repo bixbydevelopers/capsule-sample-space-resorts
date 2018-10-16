@@ -1,0 +1,3 @@
+integer (NumberOfAstronauts) {
+  description (Number of astronauts. Must have ISS space travel certification level 3 or above)
+}

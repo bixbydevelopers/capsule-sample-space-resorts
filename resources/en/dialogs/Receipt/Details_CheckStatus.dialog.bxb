@@ -1,0 +1,6 @@
+dialog (Result) {
+  match: Receipt(this) {
+    from-output: CheckStatus
+  }
+  template("Your trip to #{value(this.item.spaceResort.name)} is on #{value(this.relevantDateTime.date)}.")
+}

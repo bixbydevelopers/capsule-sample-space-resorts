@@ -1,0 +1,4 @@
+train (t-gvztevvro0pukvg8871ctme7v) {
+  utterance ("[g:DateInterval:prompt] (next weekend)[v:viv.time.DateTimeExpression]")
+  plan (Y2BmkE/KrEiq1CsuSExODUotzi8qKdZzSSxJ9cwrSS0qS8xhsMOiwDk/r7ikqDS5BFmlW1F+Logfkpmb6lpRUJRaXJyZn8cgXZZZplcCFNPDIsnEwAjEDECSkQEEmCAYAA==)
+}

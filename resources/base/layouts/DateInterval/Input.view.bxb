@@ -1,0 +1,11 @@
+input-view {
+  match: DateInterval (this)
+  render {
+    calendar {
+      allow-range (true)
+      restrictions {
+        block-past-dates (true)
+      }
+    }
+  }
+}

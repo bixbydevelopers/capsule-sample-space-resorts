@@ -1,0 +1,59 @@
+action (SelectPod) {
+  description (Select a HabitatProd from a list by name)
+  type (Search)
+  collect {
+
+    //order can be null if the prompt is before CreateOrder
+    input (order) {
+      type (Order)
+      min (Optional)
+      hidden
+    }
+
+    input (pods) {
+      type (HabitatPod)
+      min (Required)
+      max (Many)
+      default-init {
+        if (exists(order)) {
+          intent {
+            goal: FindPods
+            value: $expr(order.item.spaceResort)
+            value: $expr(order.item.numberOfAstronauts)
+            value: $expr(order.item.dateInterval)
+          }
+        } else {
+          //get the candidates from the input-view (prompt context)
+          intent {
+            goal-set: HabitatPod {$expr("getPreviousPage('HabitatPod')")}
+          }
+        }
+      }
+    }
+
+    input(podName) {
+      description (PodName to match)
+      type (PodName)
+      min (Required)
+    }
+  }
+  output (HabitatPod) {
+    throws {
+      error (MultipleMatches) {
+        property (matches) {
+          type (HabitatPod)
+          min (Required)
+          max (Many)
+        }
+        on-catch {
+          replan {
+            intent {
+              goal { HabitatPod @prompt-behavior(AlwaysSelection) }
+              value { $expr(matches) }
+            }
+          }
+        }
+      }
+    }
+  }
+}

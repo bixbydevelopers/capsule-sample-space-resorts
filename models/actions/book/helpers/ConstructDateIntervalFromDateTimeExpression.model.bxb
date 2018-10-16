@@ -1,0 +1,10 @@
+action (ConstructDateIntervalFromDateTimeExpression) {
+  type (Constructor)
+  collect {
+   input (dateTimeExpression) {
+     type (time.DateTimeExpression)
+     min (Required)
+   }
+  }
+  output (DateInterval)
+}

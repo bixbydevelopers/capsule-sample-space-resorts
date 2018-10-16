@@ -1,0 +1,4 @@
+train (t-88agu0kg25gkuj851aw222hhl) {
+  utterance ([g:CancelCommittedOrder] Cancel my space trip)
+  plan (Y2BikEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChh0MQq65yYl5ya45yfm5tZUpKa4l+UklrEwAiEDFAMJAE=)
+}

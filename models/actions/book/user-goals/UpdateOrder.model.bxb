@@ -1,0 +1,17 @@
+action (UpdateOrder) {
+  description (Update order)
+  type (UpdateTransaction)
+  collect {
+    input (order) {
+      type (Order)
+      min (Required)
+    }
+    input (changedItem) {
+      type (ChangedItem)
+    }
+    input (buyer) {
+      type (Buyer)
+    }
+  }
+  output (Order)
+}

@@ -1,0 +1,68 @@
+action (GetPod) {
+  description (Select a value for HabitatProd from a list by prompting the user for selection)
+  type (Constructor)
+  collect {
+
+    input (order) {
+      type (Order)
+      min (Optional)
+    }
+
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required)
+      default-init {
+        intent {
+          goal: SpaceResort
+          value: $expr(order.item.spaceResort)
+        }
+      }
+    }
+
+    input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+      default-init {
+        intent {
+          goal: NumberOfAstronauts
+          value: $expr(order.item.numberOfAstronauts)
+        }
+      }
+    }
+
+    input (dateInterval) {
+      type (DateInterval)
+      min (Required)
+      default-init {
+        intent {
+          goal: DateInterval
+          value: $expr(order.item.dateInterval)
+        }
+      }
+    }
+
+    computed-input (newPod) {
+      type (HabitatPod)
+      min (Required)
+      max (One)
+      //Prompts user if there are more than one option available
+      compute {
+        intent {
+          goal {
+            @prompt-behavior(AlwaysSelection)
+            HabitatPod
+          }
+          subplan {
+            goal: FindPods
+            value: $expr(spaceResort)
+            value: $expr(numberOfAstronauts)
+            value: $expr(dateInterval)
+          }
+        }
+      }
+    }
+  }
+  output (HabitatPod) {
+    evaluate { $expr (newPod) }
+  }
+}

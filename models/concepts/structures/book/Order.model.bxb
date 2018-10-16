@@ -1,0 +1,19 @@
+structure (Order) {
+  description (Order)
+  features {
+    pre-commit-state
+  }
+  property (item) {
+    type (Item)
+    visibility (Private)
+  }
+  property (buyer) {
+    type(Buyer)
+    visibility (Private)
+  }
+  named-consumer (commitOrder) {
+    description (Buy the order)
+    action (CommitOrder)
+    input (order)
+  }
+}

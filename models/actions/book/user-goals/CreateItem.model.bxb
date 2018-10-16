@@ -1,0 +1,54 @@
+action (CreateItem) {
+  type (Constructor)
+  collect {
+
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required)
+      default-init {
+        intent {
+          goal: FindSpaceResorts
+        }
+      }
+    }
+
+    input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+
+      default-init { //Lists all available options - this is used by default-select
+        intent {
+          goal: GetNumberOfAstronauts
+          value: AutoSelect(true)
+        }
+      }
+    }
+
+    input (dateInterval) {
+      type (DateInterval)
+      min (Required)
+      default-init {
+
+        intent { // Prompt for the interval
+          goal: GetDateInterval
+        }
+      }
+    }
+
+    input (pod) {
+      type (HabitatPod)
+      min (Required)
+      default-init {
+        intent {
+          goal: GetPod
+          value: $expr(numberOfAstronauts)
+          value: $expr(dateInterval)
+          value: $expr(spaceResort)
+        }
+      }
+    }
+
+  }
+
+  output (Item)
+}

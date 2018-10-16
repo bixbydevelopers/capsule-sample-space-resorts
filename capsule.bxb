@@ -1,18 +1,40 @@
 capsule {
-  id (bixby.spaceResorts)
-  version (0.1.0)
+  id (example.spaceResorts)
+  version (1.0.0)
   format (3)
   targets {
     target (bixby-mobile-en-US)
   }
+  // permissions {
+  //   user-profile-access
+  // }
   capsule-imports {
+    import (viv.core) {
+      as (core)
+    }
     import (viv.entity) {
       as (entity)
-      version (3.8.0)
+      version (3.8.1)
     }
     import (viv.common) {
       as (common)
       version-from (entity)
+    }
+    import (viv.time) {
+      as (time)
+      version-from (entity)
+    }
+    import (viv.money) {
+      as (money)
+      version (2.16.14)
+    }
+    import (viv.self) {
+      as (self)
+      version (3.0.3)
+    }
+    import (viv.contact) {
+      as (contact)
+      version-from (self)
     }
   }
 }

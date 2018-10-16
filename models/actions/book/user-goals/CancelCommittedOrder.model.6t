@@ -1,0 +1,54 @@
+action (CancelCommittedOrder) {
+
+  type (CancelActivity)
+
+  confirmed-by (core.Confirmation) {
+    mode (PositiveEmphasis)
+    on-abort {
+      intent { //The intent to execute when user aborts the confirmation
+        goal {CheckStatus}
+      }
+    }
+    confirm-label {
+      if (exists(receipt)) {
+        template ("Cancel Order}")
+      }
+    }
+
+    abort-label {
+      template ("Keep it")
+    }
+  }
+
+  collect {
+    input(receipt){
+      type(Receipt)
+      min (Optional)
+
+      default-init {
+        intent {
+          goal: FindLastReceipt
+        }
+      }
+
+      validate {
+        if (!exists(receipt)) {
+          halt {
+            dialog {
+              template("Not sure what to cancel. I didn't find any recent orders.")
+            }
+          }
+        }
+        if (receipt.canceled) {
+          halt {
+            dialog{
+              template("This order is already canceled!")
+            }
+          }
+        }
+      }
+    }
+  }
+
+  output(Receipt)
+}

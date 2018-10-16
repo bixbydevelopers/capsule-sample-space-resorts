@@ -1,0 +1,30 @@
+action (CreateChangedItem) {
+  type (Constructor)
+  collect {
+    //the order that is updated
+    input (order) {
+      type (Order)
+      min (Required)
+    }
+
+    //the new numberOfAstronauts (straight from utterance) to be assigned to the item
+    input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Optional)
+    }
+
+    //the new dateInterval (straight from utterance) to be assigned to the item
+    input (dateInterval) {
+      type (DateInterval)
+      min (Optional)
+    }
+
+    //the new pod (straight from user) to be assigned to the item
+    input (pod) {
+      type (HabitatPod)
+      min (Optional)
+    }
+  }
+
+  output (ChangedItem)
+}

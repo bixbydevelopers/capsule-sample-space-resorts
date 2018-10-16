@@ -1,0 +1,70 @@
+<layout-macro-def id="receipt-details">
+  <params>
+    <param name="receipt" type="Receipt" min="Required" max="One"/>
+  </params>
+  <content>
+    {{#if exists(receipt.canceled) && receipt.canceled == true}}
+    <layout-macro id="common:orderTotalDisplay">
+      <total>Canceled</total>
+    </layout-macro>
+    {{else}}
+    <layout-macro id="common:orderTotalDisplay">
+      <total>{{receipt.item.pod.price}}</total>
+    </layout-macro>
+    {{/if}}
+
+    <layout-macro id="common:card">
+      <heroText>
+        {{receipt.item.spaceResort.name}}
+      </heroText>
+      <heroTextSize>medium</heroTextSize>
+      <image>{{#try}}{{receipt.item.spaceResort.imageSet.images[0].url}}{{/try}}</image>
+      <imageType>hero</imageType>
+      <heroSubText>{{#try}}{{receipt.item.dateInterval}}{{/try}}</heroSubText><!--TODO-->
+      <bodyText>
+        {{receipt.item.numberOfAstronauts}}&nbsp;{{#if receipt.item.numberOfAstronauts == 1}}astronaut{{else}}astronauts{{/if}}
+        <br />
+        {{receipt.item.pod.name}}
+      </bodyText>
+    </layout-macro>
+
+      <layout-macro id="common:sectionedContent">
+        <title>Contact information</title>
+        <content>
+          <layout-macro id="common:cell">
+            <selectable>false</selectable>
+            <secondaryText>Name</secondaryText>
+            <title>
+              {{value(receipt.buyer.firstName)}}&nbsp;{{value(receipt.buyer.lastName)}}
+            </title>
+            <secondarySlotPosition>top</secondarySlotPosition>
+          </layout-macro>
+
+          <layout-macro id="common:cell">
+            <selectable>false</selectable>
+            <secondaryText>Phone number</secondaryText>
+            <title>
+              {{value(receipt.buyer.phoneNumber)}}
+            </title>
+            <secondarySlotPosition>top</secondarySlotPosition>
+          </layout-macro>
+
+          <layout-macro id="common:cell">
+            <selectable>false</selectable>
+            <secondaryText>Email</secondaryText>
+            <title>
+              {{value(receipt.buyer.emailAddress)}}
+            </title>
+            <secondarySlotPosition>top</secondarySlotPosition>
+          </layout-macro>
+
+        </content>
+      </layout-macro>
+
+      <hr/>
+        <layout-macro id="common:receiptBreakdown">
+          <total>{{receipt.item.pod.price}}</total>
+        </layout-macro>
+
+  </content>
+</layout>

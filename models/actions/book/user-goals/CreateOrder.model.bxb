@@ -1,0 +1,30 @@
+action (CreateOrder) {
+  description (Create order)
+  type (BeginTransaction)
+  collect {
+
+    input (item) {
+      type (Item)
+      min (Required)
+    }
+
+    input (buyer) {
+      type (Buyer)
+      min (Required)
+      default-init {
+        intent {
+          goal: self.GetSelfInfo
+          value: self.Imaginary(true)
+          value-set: self.RequiredField {
+            self.RequiredField(firstName)
+            self.RequiredField(lastName)
+            self.RequiredField(emailAddress)
+            self.RequiredField(phoneNumber)
+          }
+        }
+      }
+    }
+
+  }
+  output (Order)
+}
