@@ -3,7 +3,8 @@ capsule {
   version (1.0.0)
   format (3)
   targets {
-    target (bixby-mobile-en-US)
+    target (bixby-mobile-en-US)    
+    target (bixby-mobile-ko-KR) // Add localization target for Korean language
   }
   // permissions {
   //   user-profile-access

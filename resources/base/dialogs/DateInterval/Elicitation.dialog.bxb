@@ -1,4 +1,4 @@
 dialog (Elicitation) {
   match: DateInterval
-  template("When do you want to stay?")
+  template-macro (WhenDoYouWantToStay)
 }

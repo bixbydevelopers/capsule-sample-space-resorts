@@ -1,11 +1,13 @@
 <layout type="Confirmation">
   <match>CancelCommittedOrder(action)</match>
   <content>
-  <layout-macro id="receipt-details">
-    <receipt>
-      {{action.receipt}}
-    </receipt>
+    {{#if exists(action.receipt)}}
+    <layout-macro id="receipt-details">
+      <receipt>
+        {{action.receipt}}
+      </receipt>
     </layout-macro>
+    {{/if}}
   </content>
   <style></style>
 </layout>

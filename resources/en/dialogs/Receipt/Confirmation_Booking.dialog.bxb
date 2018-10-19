@@ -1,4 +1,0 @@
-dialog (Confirmation) {
-  match: Receipt
-  template("Are you sure you want to book this trip?")
-}

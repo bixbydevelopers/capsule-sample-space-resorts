@@ -11,12 +11,12 @@ action (CancelCommittedOrder) {
     }
     confirm-label {
       if (exists(receipt)) {
-        template ("Cancel Order}")
+        template-macro (CancelOrder)
       }
     }
 
     abort-label {
-      template ("Keep it")
+      template-macro (KeepIt)
     }
   }
 
@@ -35,14 +35,14 @@ action (CancelCommittedOrder) {
         if (!exists(receipt)) {
           halt {
             dialog {
-              template("Not sure what to cancel. I didn't find any recent orders.")
+              template-macro (NotSureWhatToCancel)
             }
           }
         }
         if (receipt.canceled) {
           halt {
             dialog{
-              template("This order is already canceled!")
+              template-macro (ThisOrderIsAlreadyCanceled)
             }
           }
         }

@@ -1,7 +1,7 @@
 input-view {
   match: NumberOfAstronauts(noOfAstronauts)
   message {
-    template("How many astronauts?")
+    template-macro (HowManyAstronauts)
   }
   render {
     if (size(noOfAstronauts) > 1) {
@@ -12,8 +12,9 @@ input-view {
           }
         }
       }
-    } else-if (size(noOfAstronauts) == 1) {
-      // Unexpected
     }
+    // else-if (size(noOfAstronauts) == 1) {
+    //   // Unexpected
+    // }
   }
 }

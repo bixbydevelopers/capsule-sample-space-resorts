@@ -1,0 +1,161 @@
+activity-support {
+  match: Receipt (this)
+
+  time (this.item.dateInterval.start)
+
+  states {
+    
+    if ("this.canceled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
+
+      state (Recent) {
+
+        summary-view {
+          title {
+            if (this.canceled) {
+              template-macro (SpaceResortCenceled) {
+                param (resortName) {
+                  if (exists(this.item.spaceResort.name)) {
+                    expression (this.item.spaceResort.name)
+                  }
+                }
+              }
+              // template("#{value(this.item.spaceResort.name)} canceled!")
+            } else {
+              template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+            }
+          }
+          details{
+            template("[#{value(this.item.pod.name)}]")
+          }
+          message {
+            if (this.canceled) {
+              template-macro (SpaceResortCenceled) {
+                param (resortName) {
+                  if (exists(this.item.spaceResort.name)) {
+                    expression (this.item.spaceResort.name)
+                  }
+                }
+              }
+            } else {
+              if (this.item.numberOfAstronauts == 1) {
+                template-macro (AstronautOneInSpaceResort) {
+                  param (numberOfAstronaut) {
+                    expression (this.item.numberOfAstronauts)
+                  }
+                  param(resortName) {
+                    if (exists(this.item.spaceResort.name)) {
+                      expression (this.item.spaceResort.name)
+                    }
+                  }
+                }
+              } else {
+                template-macro (AstronautManyInSpaceResort) {
+                  param (numberOfAstronaut) {
+                    expression (this.item.numberOfAstronauts)
+                  }
+                  param(resortName) {
+                    if (exists(this.item.spaceResort.name)) {
+                      expression (this.item.spaceResort.name)
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        detail-view {
+          layout-match(this) {
+            mode(Details)
+          }
+        }
+      }
+    } else-if (exists(this.relevantDateTime) && isFuture(this.relevantDateTime)) {
+
+      state (Scheduled) {
+        expires(this.relevantDateTime)
+        
+        summary-view {
+          title {
+            template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+          }
+          details {
+            template("")
+          }
+          message {
+            if (this.item.numberOfAstronauts == 1) {
+              template-macro (AstronautOneGoingToSpaceResort) {
+                param (numberOfAstronaut) {
+                  expression (this.item.numberOfAstronauts)
+                }
+                param(resortName) {
+                  if (exists(this.item.spaceResort.name)) {
+                    expression (this.item.spaceResort.name)
+                  }
+                }
+              }
+            } else {              
+              template-macro (AstronautManyGoingToSpaceResort) {
+                param (numberOfAstronaut) {
+                  expression (this.item.numberOfAstronauts)
+                }
+                param(resortName) {
+                  if (exists(this.item.spaceResort.name)) {
+                    expression (this.item.spaceResort.name)
+                  }
+                }
+              }
+            }
+          }
+        }
+        detail-view {
+          layout-match(this) {
+            mode(Details)
+          }
+        }
+      }
+    } else {
+      state (Relevant) {
+        expires(this.item.dateInterval.start)
+
+        summary-view {
+          title {
+            template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+          }
+          details{
+            template("[#{value(this.item.pod.name)}]")
+          }
+          message {
+            if (this.item.numberOfAstronauts == 1) {
+              template-macro (AstronautOneGoingToSpaceResort) {
+                param (numberOfAstronaut) {
+                  expression (this.item.numberOfAstronauts)
+                }
+                param(resortName) {
+                  if (exists(this.item.spaceResort.name)) {
+                    expression (this.item.spaceResort.name)
+                  }
+                }
+              }
+            } else {
+              template-macro (AstronautManyGoingToSpaceResort) {
+                param (numberOfAstronaut) {
+                  expression (this.item.numberOfAstronauts)
+                }
+                param(resortName) {
+                  if (exists(this.item.spaceResort.name)) {
+                    expression (this.item.spaceResort.name)
+                  }
+                }
+              }
+            }
+          }
+        }
+        detail-view {
+          layout-match(this) {
+            mode(Details)
+          }
+        }
+      }
+    }
+  }
+}
