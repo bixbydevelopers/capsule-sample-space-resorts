@@ -30,7 +30,7 @@ template-macro-def (WhenDoYouWantToStay) {
 }
 
 // HabitatPod
-template-macro-def (WhichHavitatPodWouldYouLike) {
+template-macro-def (WhichHabitatPodWouldYouLike) {
   content {
     template ("Which habitat pod would you like?")
   }
@@ -161,7 +161,7 @@ template-macro-def (AstronautManyGoingToSpaceResort) {
   }
 }
 
-template-macro-def (SpaceResortCenceled) {
+template-macro-def (SpaceResortCanceled) {
   params {
     param (resortName) {
       type (viv.core.Text)

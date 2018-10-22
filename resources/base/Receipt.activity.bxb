@@ -12,7 +12,7 @@ activity-support {
         summary-view {
           title {
             if (this.canceled) {
-              template-macro (SpaceResortCenceled) {
+              template-macro (SpaceResortCanceled) {
                 param (resortName) {
                   if (exists(this.item.spaceResort.name)) {
                     expression (this.item.spaceResort.name)
@@ -29,7 +29,7 @@ activity-support {
           }
           message {
             if (this.canceled) {
-              template-macro (SpaceResortCenceled) {
+              template-macro (SpaceResortCanceled) {
                 param (resortName) {
                   if (exists(this.item.spaceResort.name)) {
                     expression (this.item.spaceResort.name)
