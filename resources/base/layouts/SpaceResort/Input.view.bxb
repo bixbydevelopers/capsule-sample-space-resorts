@@ -14,8 +14,9 @@ input-view {
           }
         }
       }
-    } else-if (size(result) == 1) {
-      // Unexpected
     }
+    // else-if (size(result) == 1) {
+    //   // Unexpected
+    // }
   }
 }

@@ -1,0 +1,89 @@
+template-macro-def (MakeReservation) {
+  content {
+    template ("예약해줘")
+  }
+}
+
+template-macro-def (Details) {
+  content {
+    template ("상세정보")
+  }
+}
+
+template-macro-def (NumberOfAstronauts) {
+  content {
+    template ("우주 여행객 수")
+  }
+}
+
+template-macro-def (Dates) {
+  content {
+    template ("일정")
+  }
+}
+
+template-macro-def (Package) {
+  content {
+    template ("패키지")
+  }
+}
+
+template-macro-def (ContactInformation) {
+  content {
+    template ("연락처")
+  }
+}
+
+template-macro-def (Name) {
+  content {
+    template ("이름")
+  }
+}
+
+template-macro-def (PhoneNumber) {
+  content {
+    template ("전화번호")
+  }
+}
+
+template-macro-def (Email) {
+  content {
+    template ("이메일")
+  }
+}
+
+template-macro-def (AstronautOne) {
+  content {
+    template ("명의 우주 여행객")
+  }
+}
+
+template-macro-def (AstronautMany) {
+  content {
+    template ("명의 우주 여행객")
+  }
+}
+
+template-macro-def (CancelOrder) {
+  content {
+    template ("예약을 취소해줘")
+  }
+}
+
+template-macro-def (KeepIt) {
+  content {
+    template ("그대로 유지할래")
+  }
+}
+
+template-macro-def (NotSureWhatToCancel) {
+  content {
+    template ("취소할 예약이 없습니다. 최근에 예약하신 내용을 찾지 못했습니다.")
+  }
+}
+
+template-macro-def (ThisOrderIsAlreadyCanceled) {
+  content {
+    template ("이 예약은 이미 취소되었습니다.")
+  }
+}

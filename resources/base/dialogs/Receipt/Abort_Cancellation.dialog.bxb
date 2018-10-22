@@ -2,5 +2,5 @@ dialog (ActionAborted) {
   match: Receipt {
     from-output: CancelCommittedOrder
   }
-  template("OK, I won't cancel it.")
+  template-macro (IWontCancelIt)
 }

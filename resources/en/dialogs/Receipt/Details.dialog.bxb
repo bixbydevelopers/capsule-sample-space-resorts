@@ -1,8 +1,0 @@
-dialog (Result) {
-  match: Receipt(this)
-  if ("exists(this.canceled) && this.canceled == true") {
-    template ("Your trip has been canceled.")
-  } else {
-    template("I hope you have a great time at #{value(this.item.spaceResort.name)}.")
-  }
-}

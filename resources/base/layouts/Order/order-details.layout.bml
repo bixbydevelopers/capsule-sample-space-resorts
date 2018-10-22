@@ -5,7 +5,7 @@
   <content>
 
     <layout-macro id="common:card">
-      <title>{{order.item.spaceResort.name}}</title>
+      <title>{{#try}}{{order.item.spaceResort.name}}{{/try}}</title>
       <image>{{#try}}{{order.item.spaceResort.imageSet.images[0].url}}{{/try}}</image>
       <imageType>background</imageType>
       <titleSize>medium</titleSize>
@@ -13,16 +13,20 @@
     </layout-macro>
 
     <layout-macro id="common:sectionedContent">
-      <title>Details</title>
+      <title>
+        <template-macro id="Details"/>
+      </title>
     </layout-macro>
 
     <layout-macro id="common:builder-row">
 
       <cell1>
         <layout-macro id="common:builder-cell">
-          <label>Number of astronauts</label>
+          <label>
+            <template-macro id="NumberOfAstronauts"/>
+          </label>
           <primary>
-            {{order.item.numberOfAstronauts}}
+            {{#try}}{{order.item.numberOfAstronauts}}{{/try}}
           </primary>
           <intent>
             intent {
@@ -40,7 +44,9 @@
 
       <cell1>
         <layout-macro id="common:builder-cell">
-          <label>Dates</label>
+          <label>
+            <template-macro id="Dates"/>
+          </label>
           <primary>
             {{#try}}{{order.item.dateInterval}}{{/try}}
           </primary>
@@ -60,11 +66,13 @@
 
       <cell1>
         <layout-macro id="common:builder-cell">
-          <label>Package</label>
+          <label>
+            <template-macro id="Package"/>
+          </label>
           <primary>
             <layout-macro id="common:cell">
-              <title>{{order.item.pod.name}}</title>
-              <sideDetail>{{order.item.pod.price}}</sideDetail>
+              <title>{{#try}}{{order.item.pod.name}}{{/try}}</title>
+              <sideDetail>{{#try}}{{order.item.pod.price}}{{/try}}</sideDetail>
             </layout-macro>
           </primary>
           <intent>
@@ -82,16 +90,20 @@
     <!--VIV-19307 Hide contact info when there's an error, unless the error relates to contact info-->
     {{#if exists(order.buyer)}}
     <layout-macro id="common:sectionedContent">
-      <title>Contact information</title>
+      <title>
+        <template-macro id="ContactInformation"/>
+      </title>
     </layout-macro>
 
     <layout-macro id="common:builder-row">
 
       <cell1>
         <layout-macro id="common:builder-cell">
-          <label>Name</label>
+          <label>
+            <template-macro id="Name"/>
+          </label>
           <primary>
-            {{order.buyer.firstName}}&nbsp;{{order.buyer.lastName}}
+            {{#try}}{{order.buyer.firstName}}&nbsp;{{order.buyer.lastName}}{{/try}}
           </primary>
           <intent>
             intent {
@@ -109,9 +121,11 @@
 
       <cell1>
         <layout-macro id="common:builder-cell">
-          <label>Phone number</label>
+          <label>
+            <template-macro id="PhoneNumber"/>
+          </label>
           <primary>
-            {{order.buyer.phoneNumber}}
+            {{#try}}{{order.buyer.phoneNumber}}{{/try}}
           </primary>
           <intent>
             intent {
@@ -129,9 +143,11 @@
 
       <cell1>
         <layout-macro id="common:builder-cell">
-          <label>Email</label>
+          <label>
+            <template-macro id="Email"/>
+          </label>
           <primary>
-            {{order.buyer.emailAddress}}
+            {{#try}}{{order.buyer.emailAddress}}{{/try}}
           </primary>
           <intent>
             intent {

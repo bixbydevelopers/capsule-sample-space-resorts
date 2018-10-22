@@ -1,0 +1,187 @@
+template-macro-def (FindSpaceResortResultOne) {
+  params {
+    param (value) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("Check out this #{concept(value)}.")
+  }
+}
+
+template-macro-def (FindSpaceResortResultMany) {
+  params {
+    param (value) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("I found these #{concept(value)}.")
+  }
+}
+
+// DateInterval
+template-macro-def (WhenDoYouWantToStay) {
+  content {
+    template ("When do you want to stay?")
+  }
+}
+
+// HabitatPod
+template-macro-def (WhichHabitatPodWouldYouLike) {
+  content {
+    template ("Which habitat pod would you like?")
+  }
+}
+
+// NumberOfAstronauts
+template-macro-def (HowManyAstronauts) {
+  content {
+    template ("How many astronauts?")
+  }
+}
+
+// Receipt
+template-macro-def (AreYouSureYouWantToBookThisTrip) {
+  content {
+    template ("Are you sure you want to book this trip?")
+  }
+}
+
+template-macro-def (AreYouSureYouWantToCancelThisTrip) {
+  content {
+    template ("Are you sure you want to cancel this trip?")
+  }
+}
+
+template-macro-def (YourTripHasBeenCanceled) {
+  content {
+    template ("Your trip has been canceled.")
+  }
+}
+
+template-macro-def (IHopeYouHaveAGreatTimeAt) {
+  params {
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("I hope you have a great time at #{resortName}.")
+  }
+}
+
+template-macro-def (IWontCancelIt) {
+  content {
+    template ("OK, I won't cancel it.")
+  }
+}
+
+template-macro-def (YourTripToPlaceIsOnDate) {
+  params {
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+    param (date) {
+      type (viv.time.Date)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("Your trip to #{resortName} is on #{value(date)}.")
+  }
+}
+
+// Activity
+template-macro-def (AstronautOneInSpaceResort) {
+  params {
+    param (numberOfAstronaut) {
+      type (viv.core.Integer)
+      min (Required) max (One)
+    }
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{numberOfAstronaut} astronaut in #{resortName}!")
+  }
+}
+
+template-macro-def (AstronautManyInSpaceResort) {
+  params {
+    param (numberOfAstronaut) {
+      type (viv.core.Integer)
+      min (Required) max (One)
+    }
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{numberOfAstronaut} astronauts in #{resortName}!")
+  }
+}
+
+template-macro-def (AstronautOneGoingToSpaceResort) {
+  params {
+    param (numberOfAstronaut) {
+      type (viv.core.Integer)
+      min (Required) max (One)
+    }
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{numberOfAstronaut} astronaut going to #{resortName}")
+  }
+}
+
+template-macro-def (AstronautManyGoingToSpaceResort) {
+  params {
+    param (numberOfAstronaut) {
+      type (viv.core.Integer)
+      min (Required) max (One)
+    }
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{numberOfAstronaut} astronauts going to #{resortName}")
+  }
+}
+
+template-macro-def (SpaceResortCanceled) {
+  params {
+    param (resortName) {
+      type (viv.core.Text)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{resortName} canceled!")
+  }
+}
+
+// Exception handling
+template-macro-def (UnsupportedSearchOption) {
+  content {
+    template ("Unsupported search criteria.")
+  }
+}
+
+template-macro-def (UnknownError) {
+  content {
+    template ("Something's wrong.")
+  }
+}

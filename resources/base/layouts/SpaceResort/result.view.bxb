@@ -51,7 +51,7 @@ result-view {
   conversation-drivers {
     if ("size(result) == 1") {
       conversation-driver {
-        template ("Make Reservation")
+        template-macro (MakeReservation)
       }
     }
   }

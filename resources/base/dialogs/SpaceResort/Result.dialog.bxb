@@ -1,0 +1,16 @@
+dialog (Result) {
+  match: SpaceResort (this)
+  if(size(this) == 1) {
+    template-macro (FindSpaceResortResultOne) {
+      param(value) {
+        expression (this)
+      }
+    }
+  } else {
+    template-macro (FindSpaceResortResultMany) {
+      param(value) {
+        expression (this)
+      }
+    }
+  }
+}
