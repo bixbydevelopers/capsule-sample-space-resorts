@@ -2,5 +2,5 @@ dialog (Concept) {
   match: SpaceResort (this){
     from-output: FindSpaceResorts(action)
   }
-  template("#{concept(this)}[ #{input(action.planet)}]")
+  template("#{concept(this)}[ #{input(action.planet)}][ #{input(action.searchCriteria)}]")
 }
