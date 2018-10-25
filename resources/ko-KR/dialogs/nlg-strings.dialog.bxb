@@ -1,24 +1,60 @@
-template-macro-def (FindSpaceResortResultOne) {
+template-macro-def (SpaceResortResultDetails) {
   params {
-    param (value) {
+    param (spaceResort) {
       type (SpaceResort)
       min (Required) max (One)
     }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
   }
   content {
-    template ("#{concept(value)}를 확인해보세요.")
+    template ("#{concept(spaceResort)}를 확인해보세요.")
   }
 }
 
-template-macro-def (FindSpaceResortResultMany) {
+template-macro-def (SpaceResortResultSummary) {
   params {
-    param (value) {
+    param (spaceResort) {
       type (SpaceResort)
       min (Required) max (One)
     }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
   }
   content {
-    template ("여러개의 #{concept(value)}를 찾았어요.")
+    template ("여러개의 #{concept(spaceResort)}를 찾았어요.")
+  }
+}
+
+template-macro-def (SpaceResortNoResult) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
+  }
+  content {
+    template ("I couldn't find any #{concept(spaceResort)}.")  //TODO translate
   }
 }
 
