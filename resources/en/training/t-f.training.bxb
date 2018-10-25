@@ -2,6 +2,10 @@ train (t-fbat4sw7ltxdnyzym82zcc1qn) {
   utterance ("[g:FindSpaceResorts] Research space resorts on (Mercury)[v:Planet:Mercury]")
   plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
 }
+train (t-feh2otm01albduww5e7cvjqq2) {
+  utterance ("[g:FindSpaceResorts] Show me space resorts with (low gravity)[v:SearchCriteria]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCAA5QMA)
+}
 train (t-fkqrqt36ifvv2fh5hwzevz03d) {
   utterance ([g:Order#commitOrder:continue,r:UpdateOrder,r:GetPod]  Change the pod)
   plan (fc9BbsIwEAXQDyltChwAVaJsypY7ICoEG4iCOICTDCVSHUfjAcHtMWFBFtNqZFnW+1+2McRHVl6y68zXJqeUvGPxs5RyKmvBp2ILZ20pWy6IMVL8IVpzXxdG6G9fHE31Q8VayOJLc6bQb6fGSmplslKMJK7453kTRRJ2tpal43tVC3yH29eVEJ/NL6ZKYHOyGfH2MPfCrjIn8eo/d88Dhuigiwgv6OEVb2FivKOPAdCSqNG4mU4jj4XWjpDqBo+AGw==)
