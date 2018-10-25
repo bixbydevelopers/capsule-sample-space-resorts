@@ -1,0 +1,16 @@
+dialog (NoResult) {
+  match: SpaceResort (this) {
+    from-output: FindSpaceResorts (find)
+  }
+  template-macro (SpaceResortNoResult) {
+    param (spaceResort) {
+      expression (this)
+    }
+    param (planet) {
+      expression (find.planet)
+    }
+    param (searchCriteria) {
+      expression (find.searchCriteria)
+    }
+  }
+}

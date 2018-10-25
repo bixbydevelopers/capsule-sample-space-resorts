@@ -1,24 +1,113 @@
-template-macro-def (FindSpaceResortResultOne) {
+template-macro-def (SpaceResortResultDetails) {
   params {
-    param (value) {
+    param (spaceResort) {
       type (SpaceResort)
       min (Required) max (One)
     }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
   }
   content {
-    template ("Check out this #{concept(value)}.")
+    template-macro (SpaceResort) {
+      param (beginText) { literal ("Check out this") }
+      param (spaceResort) { expression (spaceResort) }
+      param (planet) { expression (planet) }
+      param (searchCriteria) { expression (searchCriteria) }
+    }
   }
 }
 
-template-macro-def (FindSpaceResortResultMany) {
+template-macro-def (SpaceResortResultSummary) {
   params {
-    param (value) {
+    param (spaceResort) {
       type (SpaceResort)
       min (Required) max (One)
     }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
   }
   content {
-    template ("I found these #{concept(value)}.")
+    template-macro (SpaceResort) {
+      param (beginText) { literal ("I found these") }
+      param (spaceResort) { expression (spaceResort) }
+      param (planet) { expression (planet) }
+      param (searchCriteria) { expression (searchCriteria) }
+    }
+  }
+}
+
+template-macro-def (SpaceResortNoResult) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
+  }
+  content {
+    template-macro (SpaceResort) {
+      param (beginText) { literal ("I couldn't find any") }
+      param (spaceResort) { expression (spaceResort) }
+      param (planet) { expression (planet) }
+      param (searchCriteria) { expression (searchCriteria) }
+    }
+  }
+}
+
+template-macro-def (SpaceResort) {
+  params {
+    param (beginText) {
+      type (core.Text)
+    }
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+    param (planet) {
+      type (Planet)
+      min (Optional) max (One)
+    }
+    param (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (Many)
+    }
+  }
+  content {
+    if (exists(planet) && exists(searchCriteria)) {
+      if (size(searchCriteria) == 1) {
+        template ("#{beginText} #{concept(spaceResort)} on #{value(planet)} with that option.")        
+      } else {
+        template ("#{beginText} #{concept(spaceResort)} on #{value(planet)} with your options.")                
+      }
+    } else-if (exists(planet)) {
+        template ("#{beginText} #{concept(spaceResort)} on #{value(planet)}.")        
+    } else-if (exists(searchCriteria)) {
+      if (size(searchCriteria) == 1) {
+        template ("#{beginText} #{concept(spaceResort)} with that option.")        
+      } else {
+        template ("#{beginText} #{concept(spaceResort)} with your options.")                
+      }
+    }
+    template ("#{beginText} #{concept(spaceResort)}.")
   }
 }
 
