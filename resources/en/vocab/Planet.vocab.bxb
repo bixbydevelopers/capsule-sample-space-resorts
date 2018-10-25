@@ -1,8 +1,8 @@
 vocab(Planet) {
   "Mercury" { "Mercury" }
   "Venus" { "Venus" }
-  "Earth" { "Earth" }
-  "Mars" { "Mars" }
+  "Earth" { "Earth" "The Old Earth" }
+  "Mars" { "Mars" "The Red Planet" }
   "Jupiter" { "Jupiter" }
   "Saturn" { "Saturn" }
   "Uranus" { "Uranus" }

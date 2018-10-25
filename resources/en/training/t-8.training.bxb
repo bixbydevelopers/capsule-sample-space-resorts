@@ -2,3 +2,7 @@ train (t-88agu0kg25gkuj851aw222hhl) {
   utterance ([g:CancelCommittedOrder] Cancel my space trip)
   plan (Y2BikEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChh0MQq65yYl5ya45yfm5tZUpKa4l+UklrEwAiEDFAMJAE=)
 }
+train (t-8pmpvzp89m61z877whv265g1p) {
+  utterance ([g:FindSpaceResorts] Find hotels near Mars)
+  plan (Y2BiUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzMAIhAxQDCQB)
+}
