@@ -1,3 +1,7 @@
+train (t-p0xltp3ympg12v0v80yc3jy1o) {
+  utterance ("[g:SpaceResort] Find space resorts with (refueling services)[v:SearchCriteria] around (Jupiter)[v:Planet:Jupiter]")
+  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+}
 train (t-p9awei12qfzo1kcgr6xmko7cl) {
   utterance ("[g:Order#commitOrder:continue,r:UpdateOrder]  Change that to (The Lab)[v:PodName]")
   plan (hZDNDoIwEIQH8QfhBYwRT555CS56UYPxAQrdaBMrpN2Dvr0NXDismkm7yXwzm6bIsK7Nq34XvlMNVeRbx76oqCHTMbYCK1trDZ+cJoeVwAciNa+dVkzfeXlXzxvpA5PFTuKOQn+cyoXUXtWGFZ9b/eN5G4Fc6EFN3/uzVvqx4B+VJWSIMEGMKWaYYxGUYIkUGPlxz5KgqPeHg9GMQzYNNz4=)
