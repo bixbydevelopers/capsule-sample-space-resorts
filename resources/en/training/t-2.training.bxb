@@ -1,4 +1,0 @@
-train (t-2dolezwwtbgndk6ebqeq39cyu) {
-  utterance ("[g:example.spaceResorts.SpaceResort] Find (kid friendly)[v:SearchCriteria] space resorts near (Pluto)[v:example.spaceResorts.Planet:Pluto]")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
-}
