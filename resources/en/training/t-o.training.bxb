@@ -1,3 +1,7 @@
+train (t-o2jeimoauz8b7c8v617labsea) {
+  utterance ("[g:DateInterval:prompt] (the third weekend in December)[v:time.DateTimeExpression]")
+  plan (Y2BmUEytSMwtyEnVKy5ITE4NSi3OLyop1nNJLEn1zCtJLSpLzGFwwKrEOT+vuKSoNLkEWa1bUX4uiB+SmZvqWlFQlFpcnJmfxyBdllmmVwIU08MiycTACMQMQJKRAQSYIBgA)
+}
 train (t-o9cm329ghna15lrdfv68w9rbu) {
   utterance ("[g:HabitatPod:prompt] (The Lab)[v:PodName]")
   plan (Y2BhkE3KrEiq1CsuSExODUotzi8qKdbzSEzKLEksCchPYZDBIh2cmpOaDJYloFkKizRQ3C8xN5WBmYGRgQlIMgBpEIQAJiAGigEA)

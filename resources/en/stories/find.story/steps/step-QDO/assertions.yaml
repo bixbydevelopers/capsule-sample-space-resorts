@@ -1,0 +1,4 @@
+- enabled: true
+  fatal: true
+  file: assertions/onMars2.js
+  program: mocha
