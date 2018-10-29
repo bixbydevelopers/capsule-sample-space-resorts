@@ -1,5 +1,5 @@
 module.exports = {
-  Mercurial: "A hot destination with holey sites. The Mena crater and the Cezanne crater are great landscapes to practice some Bikram yoga with our expert trainers.",
+  Mercurial: "A hot destination with holey sites. The Mena crater and the Cezanne crater are great for canyoneering and the heat is perfect to practice some Bikram yoga with our expert trainers.",
   VenusSpaceSpa: "It's no wonder the most romantic resort is on the planet named after the Roman goddess of love and beauty. You will find the fiery views of the Sun will rekindle your passion like nothing before.",
   HoneyMoon: "Soar like the Eagle and admire Earth from above. Follow the small footsteps of men that took a giant leap for mankind by visiting the historic site of the first lunar landing. End the day on the dance floor, doing the moon walk in the Neil Armstrong Ballroom.",
   MartianOasis: "Visit this culinary institute to taste the best potatoes in the solar system. They are grown from the richest Martian soil as part of the terraforming initiative. Boiled, fried, roasted or mashed, these are miracles of astro-agriculture.",
@@ -9,7 +9,7 @@ module.exports = {
   CallistoCamping: "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay.",
   GrandTitan: "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn.",
   RheaRnDBnB: "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists from the science base and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system.",
-  BellaTitania: "Titania is your best choice for medical traveling. It has unparalleled plastic surgeons and rejuvenation chambers. Uranus will shine as you relax and look at the starry night.",
+  BellaTitania: "Titania is your best choice for medical traveling. It has unparalleled plastic surgeons and rejuvenation chambers. Put on an exoskeleton and you will feel light and nimble as you relax under the starry night.",
   UpsideDownSpaceStation: "The Upside Down Space Station has all the comforts of Earth, without the gravity. It will lift all the weight off your shoulders and you will come home feeling an inch taller.",
   TritonWaterPark: "Surrounded by nitrogen geysers, this water park is full of thrills. It orbits Neptune on its largest moon: Triton. Come jump in the wave pool, slide down the Poseidon water slide and sip an ice cold raw water on a lazy river raft.",
   NeptuneSpaceStation: "This high hi-tech resort offers the most avant-garde vacation for the futurist gamer. Each room is equipped with the latest JCN VR unit including climate control and full haptic feedback suits. From there you can pretend to be anywhere in the universe, so why go anywhere else?",
