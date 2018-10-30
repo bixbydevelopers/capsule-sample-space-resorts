@@ -3,6 +3,9 @@ module.exports = {
     "en": "The Mercurial",
     "ko": "" // TODO: translate all names
   },
+  "Icarus": {
+    "en": "The Icarus"
+  },
   "VenusSpaceSpa": {
     "en": "Venus Space Spa"
   },
@@ -11,6 +14,9 @@ module.exports = {
   },
   "MartianOasis": {
     "en": "Martian Oasis"
+  },
+  "SpaceY": {
+    "en": "Space Y"
   },
   "IoTel": {
     "en": "Io-Tel"
@@ -23,6 +29,12 @@ module.exports = {
   },
   "CallistoCamping": {
     "en": "Callisto Camping"
+  },
+  "AirBB": {
+    "en": "Air B&B"
+  },
+  "Babylon": {
+    "en": "The Babylon"
   },
   "GrandTitan": {
     "en": "The Grand Titan"

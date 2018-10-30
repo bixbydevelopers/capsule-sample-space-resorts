@@ -25,6 +25,17 @@ module.exports = [
     }
   },
   {
+    name: loc(names.Icarus),
+    planet: planets.Mercury,
+    gravity: 0.38,
+    description: loc(descriptions.Icarus),
+    amenities: [loc(amenities.SpaceshipRentals), loc(amenities.Refueling), loc(amenities.QuantumBungee), loc(amenities.LaserTag), loc(amenities.ExoskeletonDemos), loc(amenities.Cantina), loc(amenities.CraterCanyoneering), loc(amenities.PetFriendly), loc(amenities.RoverRentals)],
+    highlight: loc(highlights.Icarus),
+    imageSet: {
+      images: images.Icarus
+    }
+  },
+  {
     name: loc(names.VenusSpaceSpa),
     planet: planets.Venus,
     gravity: 0.904,
@@ -55,6 +66,17 @@ module.exports = [
     highlight: loc(highlights.MartianOasis),
     imageSet: {
       images: images.MartianOasis
+    }
+  },
+  {
+    name: loc(names.SpaceY),
+    planet: planets.Mars,
+    gravity: 0.376,
+    description: loc(descriptions.SpaceY),
+    amenities: [loc(amenities.TerraformingMuseum), loc(amenities.RoverRentals), loc(amenities.RobotRepairs), loc(amenities.QuantumBungee), loc(amenities.ExoskeletonDemos), loc(amenities.CaveDiving), loc(amenities.BuildABot)],
+    highlight: loc(highlights.SpaceY),
+    imageSet: {
+      images: images.SpaceY
     }
   },
   {
@@ -99,6 +121,28 @@ module.exports = [
     highlight: loc(highlights.CallistoCamping),
     imageSet: {
       images: images.CallistoCamping
+    }
+  },
+  {
+    name: loc(names.AirBB),
+    planet: planets.Jupiter,
+    gravity: 0.000001,
+    description: loc(descriptions.AirBB),
+    amenities: [loc(amenities.ZeroGravity), loc(amenities.VRBattleArena), loc(amenities.SpaceshipRentals), loc(amenities.Refueling), loc(amenities.QuantumBungee), loc(amenities.OrbitalZiplining), loc(amenities.LaserTag), loc(amenities.HologramTeleconferencing), loc(amenities.ExoskeletonDemos), loc(amenities.CentrifugeGym), loc(amenities.BuildABot), loc(amenities.AsteroidTrapeze)],
+    highlight: loc(highlights.AirBB),
+    imageSet: {
+      images: images.AirBB
+    }
+  },
+  {
+    name: loc(names.Babylon),
+    planet: planets.Jupiter,
+    gravity: 0.000001,
+    description: loc(descriptions.Babylon),
+    amenities: [loc(amenities.ARSafari), loc(amenities.AsteroidTrapeze), loc(amenities.CentrifugeGym), loc(amenities.ContinentalBreakfast), loc(amenities.DeepSpaceMassage), loc(amenities.ExoskeletonDemos), loc(amenities.GeneTherapy), loc(amenities.HydroponicGardens), loc(amenities.KidFriendly), loc(amenities.OxygenBar), loc(amenities.ScienceBase), loc(amenities.ZeroGravity)],
+    highlight: loc(highlights.Babylon),
+    imageSet: {
+      images: images.Babylon
     }
   },
   {

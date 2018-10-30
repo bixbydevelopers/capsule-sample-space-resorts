@@ -3,6 +3,9 @@ module.exports = {
     "en": "A hot destination with holey sites. The Mena crater and the Cezanne crater are great for canyoneering and the heat is perfect to practice some Bikram yoga with our expert trainers.",
     "ko": "" // TODO: translate all descriptions
   },
+  "Icarus": {
+    "en": "Rent wings made of the latest nanotechnology materials and blastoff into space to tour around Mercury. Then come sun bathing at the spa and end the day with a spicy dinner and cocktail. Your troubles will melt away."
+  },
   "VenusSpaceSpa": {
     "en": "It's no wonder the most romantic resort is on the planet named after the Roman goddess of love and beauty. You will find the fiery views of the Sun will rekindle your passion like nothing before."
   },
@@ -11,6 +14,9 @@ module.exports = {
   },
   "MartianOasis": {
     "en": "Visit this culinary institute to taste the best potatoes in the solar system. They are grown from the richest Martian soil as part of the terraforming initiative. Boiled, fried, roasted or mashed, these are miracles of astro-agriculture."
+  },
+  "SpaceY": {
+    "en": "This underground hotel was built in the abandoned tunnels of the first space colony. Get into a self driving hyperpod for a tour of the ancient mines and learn how the Mars terraforming initiative came about."
   },
   "IoTel": {
     "en": "This Hotel on Io offers breathtaking views of Jupiter. Io is the Galilean moon with the innermost orbit. It goes around the planet in less than 2 days. With over 400 active volcanoes to study, this is any geologist’s paradise."
@@ -23,6 +29,12 @@ module.exports = {
   },
   "CallistoCamping": {
     "en": "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay."
+  },
+  "AirBB": {
+    "en": "Rent a vessel from our spaceport and go out for the adventure of a lifetime in the asteroid belt. Our ships offer manual override so you can steer around obstacles like in the good old days."
+  },
+  "Babylon": {
+    "en": "The modern incarnation of the Floating Gardens of Babylon, this space station uses greenery to generate it's oxygen supply. Plants grow tall and lush in low gravity. All the food is grown on ship, using the latest advances in genetic engineering."
   },
   "GrandTitan": {
     "en": "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn."

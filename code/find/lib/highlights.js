@@ -3,6 +3,9 @@ module.exports = {
     "en": "Hot Destination",
     "ko": "" // TODO: translate all highlights
   },
+  "Icarus": {
+    "en": "Soar To The Sun"
+  },
   "VenusSpaceSpa": {
     "en": "Romantic Resort"
   },
@@ -11,6 +14,9 @@ module.exports = {
   },
   "MartianOasis": {
     "en": "Culinary Excellence"
+  },
+  "SpaceY": {
+    "en": "Not So Boring"
   },
   "IoTel": {
     "en": "Visit Volcanoes"
@@ -24,8 +30,14 @@ module.exports = {
   "CallistoCamping": {
     "en": "Natural Preserve"
   },
+  "AirBB": {
+    "en": "Aerial Thrills"
+  },
+  "Babylon": {
+    "en": "Floating Gardens"
+  },
   "GrandTitan": {
-    "en": "Bigger is Better"
+    "en": "Bigger Is Better"
   },
   "HerschelHotel": {
     "en": "Symphony Hall"
@@ -55,7 +67,7 @@ module.exports = {
     "en": "High Hi-Tech"
   },
   "PlutoWinterLodge": {
-    "en": "Disconnect and Relax"
+    "en": "Disconnect And Relax"
   },
   "CharonsGrotto": {
     "en": "Charon's Grotto"
