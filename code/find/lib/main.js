@@ -1,5 +1,4 @@
-const attributes = require("./attributes.js")
-const data = require("./data.js")
+const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 
 module.exports = {
@@ -14,57 +13,26 @@ module.exports = {
 
     if (searchCriteria) {
       [].concat(searchCriteria).forEach(function(searchCriterion){
-        switch (searchCriterion.toLowerCase()) {
-          case "casino":
-          case "casinos":
-            candidates = filterByAttribute(candidates, attributes.Casino)
-            break;
-          case "kid friendly":
-          case "kid-friendly":
-          case "good for kids":
-          case "family friendly":
-          case "family-friendly":
-            candidates = filterByAttribute(candidates, attributes.KidFriendly)
-            break;          
-          case "pet friendly":
-          case "pet-friendly":
-          case "dog friendly":
-          case "dog-friendly":
-          case "cat friendly":
-          case "cat-friendly":
-            candidates = filterByAttribute(candidates, attributes.PetFriendly)
-            break;
-          case "refueling":
-          case "refueling services":
-          case "refueling station":
-          case "refueling stations":
-            candidates = filterByAttribute(candidates, attributes.Refueling)
-            break;
-          case "science":
-          case "science base":
-          case "scientific base":
-            candidates = filterByAttribute(candidates, attributes.ScienceBase)
-            break;
-          case "spa":
-          case "spas":
-            candidates = filterByAttribute(candidates, attributes.Spa)
-            break;
-          case "swimming pool":
-          case "swimming pools":
-          case "swimming":
-          case "pool": 
-          case "pools": 
-            candidates = filterByAttribute(candidates, attributes.SwimmingPool)
-            break;
-          case "zero gravity":
-          case "no gravity":
-            candidates = filterByAttribute(candidates, attributes.ZeroGravity)
-            break;
-          default:
-            throw fail.checkedError("Unsupported search criterion: " + searchCriterion, "UnsupportedSearchCriteria", searchCriterion)
-        }
+        searchCriterion = searchCriterion.toLowerCase()
+        candidates = candidates.filter(function(candidate) {
+          return candidate.amenities.find(function(amenity) {
+            return amenity.keywords.find(function(keyword) {
+              keyword = keyword.toLowerCase()
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
+            })
+          })
+        })
       })
     }
+
+    // Flatten out the amenities to only keep the attribute as the label.
+    candidates = candidates.map(function(candidate) {
+      candidate.attributes = candidate.amenities.map(function(amenity) {
+        return amenity.attribute
+      })
+      delete candidate.amenities
+      return candidate
+    })
 
     return candidates;
   }
@@ -72,8 +40,10 @@ module.exports = {
 
 function filterByAttribute(spaceResorts, desiredAttribute) {
   return spaceResorts.filter(function(candidate) {
-    return candidate.attributes.find(function(attribute) {
-      return attribute === desiredAttribute
+    return candidate.amenities.find(function(amenity) {
+      return amenity.keywords.find(function(keyword) {
+        return textLib.fuzzyMatch(keyword, desiredAttribute, 3)
+      })
     })
   })
 }
