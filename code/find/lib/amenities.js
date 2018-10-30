@@ -1,5 +1,5 @@
 // Localized attributes
-// "attribute" is the text to be show to the user
+// "attribute" is the text to be shown to the user
 // "keywords" are search terms to help filter resorts by attributes
 module.exports = {
   "ARSafari": {
