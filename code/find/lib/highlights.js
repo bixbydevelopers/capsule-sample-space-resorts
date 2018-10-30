@@ -27,8 +27,20 @@ module.exports = {
   "GrandTitan": {
     "en": "Bigger is Better"
   },
+  "HerschelHotel": {
+    "en": "Symphony Hall"
+  },
+  "Robotel": {
+    "en": "More Than Meets The Eye"
+  },
+  "CassiniCruise": {
+    "en": "Photo Op"
+  },
   "RheaRnDBnB": {
     "en": "Healthy Lifestyle"
+  },
+  "SkyResort": {
+    "en": "Ski Year Round"
   },
   "BellaTitania": {
     "en": "Medical Tourism"

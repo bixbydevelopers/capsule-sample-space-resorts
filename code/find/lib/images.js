@@ -65,10 +65,37 @@ module.exports = {
   ],
   GrandTitan: [
     {
+      url: "https://imagecache.jpl.nasa.gov/images/edu/activities/cassini_pia14922-640x350.jpg"
+    },
+    {
       url: "https://www.nasa.gov/images/content/724402main_pia12481-946.jpg"
     },
     {
       url: "https://www.nasa.gov/images/content/484298main_cassini20100923-226.jpg"
+    }
+  ],
+  HerschelHotel: [
+    {
+      url: "https://www.jpl.nasa.gov/images/galex/galex-20070620-browse.jpg"
+    },
+    {
+      url: "https://solarsystem.nasa.gov/system/resources/detail_files/12644_PIA06258.jpg"
+    }
+  ],
+  Robotel: [
+    {
+      url: "https://solarsystem.nasa.gov/system/resources/detail_files/13354_PIA08332.jpg"
+    },
+    {
+      url: "https://www.jpl.nasa.gov/images/cassini/2004-07-22/pia05421-browse.jpg"
+    }
+  ],
+  CassiniCruise: [
+    {
+      url: "https://www.jpl.nasa.gov/images/spacecraft/cassini_saturn_browse.jpg"
+    },
+    {
+      url: "https://imagecache.jpl.nasa.gov/images/640x350/cassini20170425-16-640x350.jpg"
     }
   ],
   RheaRnDBnB: [
@@ -77,6 +104,14 @@ module.exports = {
     },
     {
       url: "https://www.nasa.gov/images/content/298817main_pia11143-516.jpg"
+    }
+  ],
+  SkyResort: [
+    {
+      url: "https://solarsystem.nasa.gov/system/news_items/main_images/13090_50_Enceladus_768_%281%29.jpg"
+    },
+    {
+      url: "https://imagecache.jpl.nasa.gov/images/640x350/pia19058-16-640x350.jpg"
     }
   ],
   BellaTitania: [

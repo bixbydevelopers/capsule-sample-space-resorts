@@ -113,6 +113,39 @@ module.exports = [
     }
   },
   {
+    name: loc(names.HerschelHotel),
+    planet: planets.Saturn,
+    gravity: 0.00648,
+    description: loc(descriptions.HerschelHotel),
+    amenities: [loc(amenities.QuantumBungee), loc(amenities.OxygenBar), loc(amenities.HologramTeleconferencing), loc(amenities.AsteroidTrapeze), loc(amenities.ExtracontinentalBreakfast)],
+    highlight: loc(highlights.HerschelHotel),
+    imageSet: {
+      images: images.HerschelHotel
+    }
+  },
+  {
+    name: loc(names.Robotel),
+    planet: planets.Saturn,
+    gravity: 0.000001,
+    description: loc(descriptions.Robotel),
+    amenities: [loc(amenities.ExoskeletonDemos), loc(amenities.SpaceshipRentals), loc(amenities.BuildABot), loc(amenities.Cantina), loc(amenities.VRBattleArena), loc(amenities.RobotRepairs), loc(amenities.QuantumBungee), loc(amenities.LaserTag), loc(amenities.ZeroGravity), loc(amenities.CentrifugeGym)],
+    highlight: loc(highlights.Robotel),
+    imageSet: {
+      images: images.Robotel
+    }
+  },
+  {
+    name: loc(names.CassiniCruise),
+    planet: planets.Saturn,
+    gravity: 0.000001,
+    description: loc(descriptions.CassiniCruise),
+    amenities: [loc(amenities.CryoSpa), loc(amenities.DeepSpaceMassage), loc(amenities.ZeroGravity), loc(amenities.OxygenBar), loc(amenities.AsteroidTrapeze), loc(amenities.CentrifugeGym), loc(amenities.SubAtomicMagic), loc(amenities.Casino), loc(amenities.HologramTeleconferencing)],
+    highlight: loc(highlights.CassiniCruise),
+    imageSet: {
+      images: images.CassiniCruise
+    }
+  },
+  {
     name: loc(names.RheaRnDBnB),
     planet: planets.Saturn,
     gravity: 0.02692051,
@@ -121,6 +154,17 @@ module.exports = [
     highlight: loc(highlights.RheaRnDBnB),
     imageSet: {
       images: images.RheaRnDBnB
+    }
+  },
+  {
+    name: loc(names.SkyResort),
+    planet: planets.Saturn,
+    gravity: 0.02692051,
+    description: loc(descriptions.SkyResort),
+    amenities: [loc(amenities.RobotRepairs), loc(amenities.RoverRentals), loc(amenities.QuantumBungee), loc(amenities.ExoskeletonDemos), loc(amenities.CryoSpa), loc(amenities.KidFriendly), loc(amenities.ExtracontinentalBreakfast)],
+    highlight: loc(highlights.SkyResort),
+    imageSet: {
+      images: images.SkyResort
     }
   },
   {
@@ -139,7 +183,7 @@ module.exports = [
     planet: planets.Uranus,
     gravity: 0.000001,
     description: loc(descriptions.UpsideDownSpaceStation),
-    amenities: [loc(amenities.ScienceBase), loc(amenities.CryoSpa), loc(amenities.DeepSpaceMassage), loc(amenities.ZeroGravity), loc(amenities.OxygenBar), loc(amenities.AsteroidTrapeze), loc(amenities.CentrifugeGym), ],
+    amenities: [loc(amenities.ScienceBase), loc(amenities.CryoSpa), loc(amenities.DeepSpaceMassage), loc(amenities.ZeroGravity), loc(amenities.OxygenBar), loc(amenities.AsteroidTrapeze), loc(amenities.CentrifugeGym)],
     highlight: loc(highlights.UpsideDownSpaceStation),
     imageSet: {
       images: images.UpsideDownSpaceStation

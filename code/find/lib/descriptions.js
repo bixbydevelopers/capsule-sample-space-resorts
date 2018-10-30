@@ -27,8 +27,20 @@ module.exports = {
   "GrandTitan": {
     "en": "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn."
   },
+  "HerschelHotel": {
+    "en": "This hotel was built in honor of the great astronomers and musician siblings: Caroline and William Herschel. It houses a symphony hall with unique acoustic properties where stars from near and far come to perform."
+  },
+  "Robotel": {
+    "en": "In geosynchronous orbit over Saturn's Eye, Robotel is a feat of engineering. It is fully self-sustainable and operated by robots. Here you can try out the latest exoskeletons or rent a shiny spacecraft from the hangar to go on an excursion."
+  },
+  "CassiniCruise": {
+    "en": "Retrace the course of the historical Cassini–Huygens mission. Take a spin around the rings of Saturn and get close up views of its natural satellites. Each room comes with its own astrophotography telescope to let you take the most memorable souvenir shots."
+  },
   "RheaRnDBnB": {
     "en": "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists from the science base and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system."
+  },
+  "SkyResort": {
+    "en": "This ski resort is located on the surface of Enceladus, the 6th largest moon of Saturn, which is hundreds of degrees below freezing temperature and covered in ice and snow. The doors open to a helipad to shuttle you to the slopes. For the adrenaline rush of your life, try out the quadruple black diamond trails down the south pole cryovolcanoes."
   },
   "BellaTitania": {
     "en": "Titania is your best choice for medical traveling. It has unparalleled plastic surgeons and rejuvenation chambers. Put on an exoskeleton and you will feel light and nimble as you relax under the starry night."

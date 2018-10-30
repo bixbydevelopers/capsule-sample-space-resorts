@@ -27,8 +27,20 @@ module.exports = {
   "GrandTitan": {
     "en": "The Grand Titan"
   },
+  "HerschelHotel": {
+    "en": "The Herschel Hotel"
+  },
+  "Robotel": {
+    "en": "Robotel"
+  },
+  "CassiniCruise": {
+    "en": "Cassini Cruise"
+  },
   "RheaRnDBnB": {
     "en": "Rhea R&D B&B"
+  },
+  "SkyResort": {
+    "en": "Sky Resort"
   },
   "BellaTitania": {
     "en": "Bella Titania"
