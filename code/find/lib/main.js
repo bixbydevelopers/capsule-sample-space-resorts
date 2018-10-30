@@ -13,9 +13,26 @@ module.exports = {
 
     if (searchCriteria) {
       [].concat(searchCriteria).forEach(function(searchCriterion){
-        candidates = filterByAttribute(candidates, searchCriterion)
+        searchCriterion = searchCriterion.toLowerCase()
+        candidates = candidates.filter(function(candidate) {
+          return candidate.amenities.find(function(amenity) {
+            return amenity.keywords.find(function(keyword) {
+              keyword = keyword.toLowerCase()
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
+            })
+          })
+        })
       })
     }
+
+    // Flatten out the amenities to only keep the attribute as the label.
+    candidates = candidates.map(function(candidate) {
+      candidate.attributes = candidate.amenities.map(function(amenity) {
+        return amenity.attribute
+      })
+      delete candidate.amenities
+      return candidate
+    })
 
     return candidates;
   }
@@ -23,8 +40,10 @@ module.exports = {
 
 function filterByAttribute(spaceResorts, desiredAttribute) {
   return spaceResorts.filter(function(candidate) {
-    return candidate.attributes.find(function(attribute) {
-      return textLib.fuzzyMatch(attribute, desiredAttribute, 4)
+    return candidate.amenities.find(function(amenity) {
+      return amenity.keywords.find(function(keyword) {
+        return textLib.fuzzyMatch(keyword, desiredAttribute, 3)
+      })
     })
   })
 }

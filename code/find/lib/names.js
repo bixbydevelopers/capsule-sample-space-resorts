@@ -1,18 +1,51 @@
 module.exports = {
-  Mercurial: "The Mercurial",
-  VenusSpaceSpa: "Venus Space Spa",
-  HoneyMoon: "The Honey Moon",
-  MartianOasis: "Martian Oasis",
-  IoTel: "Io-Tel",
-  EuropaJewel: "Europa's Jewel",
-  GanymedeMoonMotel: "Ganymede Moon Motel",
-  CallistoCamping: "Callisto Camping",
-  GrandTitan: "The Grand Titan",
-  RheaRnDBnB: "Rhea R&D B&B",
-  BellaTitania: "Bella Titania",
-  UpsideDownSpaceStation: "Upside Down Space Station",
-  TritonWaterPark: "Triton Water Park",
-  NeptuneSpaceStation: "Neptune Space Station",
-  PlutoWinterLodge: "Pluto Winter Lodge",
-  CharonsGrotto: "Charon's Grotto"
+  "Mercurial": {
+    "en": "The Mercurial",
+    "ko": "" // TODO: translate all names
+  },
+  "VenusSpaceSpa": {
+    "en": "Venus Space Spa"
+  },
+  "HoneyMoon": {
+    "en": "The Honey Moon"
+  },
+  "MartianOasis": {
+    "en": "Martian Oasis"
+  },
+  "IoTel": {
+    "en": "Io-Tel"
+  },
+  "EuropaJewel": {
+    "en": "Europa's Jewel"
+  },
+  "GanymedeMoonMotel": {
+    "en": "Ganymede Moon Motel"
+  },
+  "CallistoCamping": {
+    "en": "Callisto Camping"
+  },
+  "GrandTitan": {
+    "en": "The Grand Titan"
+  },
+  "RheaRnDBnB": {
+    "en": "Rhea R&D B&B"
+  },
+  "BellaTitania": {
+    "en": "Bella Titania"
+  },
+  "UpsideDownSpaceStation": {
+    "en": "Upside Down Space Station"
+  },
+  "TritonWaterPark": {
+    "en": "Triton Water Park"
+  },
+  "NeptuneSpaceStation": {
+    "en": "Neptune Space Station"
+  },
+  "PlutoWinterLodge": {
+    "en": "Pluto Winter Lodge"
+  },
+  "CharonsGrotto": {
+    "en": "Charon's Grotto"
+  }
 }

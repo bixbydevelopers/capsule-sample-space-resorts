@@ -1,182 +1,189 @@
-const attributes = require("./attributes.js")
+const amenities = require("./amenities.js")
 const descriptions = require("./descriptions.js")
 const highlights = require("./highlights.js")
 const images = require("./images.js")
 const names = require("./names.js")
 const planets = require("./planets.js")
 
+// Extract the right locale translation
+function loc (data) {
+  if (data) {
+    return data[config.get("locale")]
+  }
+}
+
 module.exports = [
   {
-    name: names.Mercurial,
+    name: loc(names.Mercurial),
     planet: planets.Mercury,
     gravity: 0.38,
-    description: descriptions.Mercurial,
-    attributes: [attributes.CraterCanyoneering, attributes.PetFriendly, attributes.RoverRentals],
-    highlight: highlights.Mercurial,
+    description: loc(descriptions.Mercurial),
+    amenities: [loc(amenities.CraterCanyoneering), loc(amenities.PetFriendly), loc(amenities.RoverRentals)],
+    highlight: loc(highlights.Mercurial),
     imageSet: {
       images: images.Mercurial
     }
   },
   {
-    name: names.VenusSpaceSpa,
+    name: loc(names.VenusSpaceSpa),
     planet: planets.Venus,
     gravity: 0.904,
-    description: descriptions.VenusSpaceSpa,
-    attributes: [attributes.CryoSpa, attributes.SwimmingPool, attributes.SubAtomicMagic, attributes.OxygenBar, attributes.ExtracontinentalBreakfast],
-    highlight: highlights.VenusSpaceSpa,
+    description: loc(descriptions.VenusSpaceSpa),
+    amenities: [loc(amenities.CryoSpa), loc(amenities.SwimmingPool), loc(amenities.SubAtomicMagic), loc(amenities.OxygenBar), loc(amenities.ExtracontinentalBreakfast)],
+    highlight: loc(highlights.VenusSpaceSpa),
     imageSet: {
       images: images.VenusSpaceSpa
     }
   },
   {
-    name: names.HoneyMoon,
+    name: loc(names.HoneyMoon),
     planet: planets.Earth,
     gravity: 0.1654,
-    description: descriptions.HoneyMoon,
-    attributes: [attributes.ARSafari, attributes.RoverRentals, attributes.CryoSpa, attributes.SwimmingPool, attributes.OxygenBar, attributes.HydroponicGardens, attributes.ContinentalBreakfast],
-    highlight: highlights.HoneyMoon,
+    description: loc(descriptions.HoneyMoon),
+    amenities: [loc(amenities.ARSafari), loc(amenities.RoverRentals), loc(amenities.CryoSpa), loc(amenities.SwimmingPool), loc(amenities.OxygenBar), loc(amenities.HydroponicGardens), loc(amenities.ContinentalBreakfast)],
+    highlight: loc(highlights.HoneyMoon),
     imageSet: {
       images: images.HoneyMoon
     }
   },
   {
-    name: names.MartianOasis,
+    name: loc(names.MartianOasis),
     planet: planets.Mars,
     gravity: 0.376,
-    description: descriptions.MartianOasis,
-    attributes: [attributes.ExtracontinentalBreakfast, attributes.HydroponicGardens, attributes.RoverRentals, attributes.TerraformingMuseum, attributes.SwimmingPool, attributes.CryoSpa, attributes.Cantina],
-    highlight: highlights.MartianOasis,
+    description: loc(descriptions.MartianOasis),
+    amenities: [loc(amenities.ExtracontinentalBreakfast), loc(amenities.HydroponicGardens), loc(amenities.RoverRentals), loc(amenities.TerraformingMuseum), loc(amenities.SwimmingPool), loc(amenities.CryoSpa), loc(amenities.Cantina)],
+    highlight: loc(highlights.MartianOasis),
     imageSet: {
       images: images.MartianOasis
     }
   },
   {
-    name: names.IoTel,
+    name: loc(names.IoTel),
     planet: planets.Jupiter,
     gravity: 0.183,
-    description: descriptions.IoTel,
-    attributes: [attributes.VolcanicSpelunking, attributes.OrbitalZiplining, attributes.CraterCanyoneering, attributes.ScienceBase, attributes.PrimordialOozeSampling, attributes.Rovers, attributes.ExoskeletonDemos, attributes.Refueling],
-    highlight: highlights.IoTel,
+    description: loc(descriptions.IoTel),
+    amenities: [loc(amenities.VolcanicSpelunking), loc(amenities.OrbitalZiplining), loc(amenities.CraterCanyoneering), loc(amenities.ScienceBase), loc(amenities.PrimordialOozeSampling), loc(amenities.RoverRentals), loc(amenities.ExoskeletonDemos), loc(amenities.Refueling)],
+    highlight: loc(highlights.IoTel),
     imageSet: {
       images: images.IoTel
     }
   },
   {
-    name: names.EuropaJewel,
+    name: loc(names.EuropaJewel),
     planet: planets.Jupiter,
     gravity: 0.134,
-    description: descriptions.EuropaJewel,
-    attributes: [attributes.TerraformingMuseum, attributes.ContinentalBreakfast, attributes.SubAtomicMagic, attributes.GrowAClone, attributes.KidFriendly, attributes.OrbitalZiplining, attributes.Cantina],
-    highlight: highlights.EuropaJewel,
+    description: loc(descriptions.EuropaJewel),
+    amenities: [loc(amenities.TerraformingMuseum), loc(amenities.ContinentalBreakfast), loc(amenities.SubAtomicMagic), loc(amenities.GrowAClone), loc(amenities.KidFriendly), loc(amenities.OrbitalZiplining), loc(amenities.Cantina)],
+    highlight: loc(highlights.EuropaJewel),
     imageSet: {
       images: images.EuropaJewel
     }
   },
   {
-    name: names.GanymedeMoonMotel,
+    name: loc(names.GanymedeMoonMotel),
     planet: planets.Jupiter,
     gravity: 0.146,
-    description: descriptions.GanymedeMoonMotel,
-    attributes: [attributes.OrbitalZiplining, attributes.Refueling, attributes.SpaceshipRentals, attributes.RobotRepairs, attributes.PetFriendly, attributes.Cantina],
-    highlight: highlights.GanymedeMoonMotel,
+    description: loc(descriptions.GanymedeMoonMotel),
+    amenities: [loc(amenities.OrbitalZiplining), loc(amenities.Refueling), loc(amenities.SpaceshipRentals), loc(amenities.RobotRepairs), loc(amenities.PetFriendly), loc(amenities.Cantina)],
+    highlight: loc(highlights.GanymedeMoonMotel),
     imageSet: {
       images: images.GanymedeMoonMotel
     }
   },
   {
-    name: names.CallistoCamping,
+    name: loc(names.CallistoCamping),
     planet: planets.Jupiter,
     gravity: 0.126,
-    description: descriptions.CallistoCamping,
-    attributes: [attributes.ARSafari, attributes.CraterCanyoneering, attributes.ScienceBase, attributes.OrbitalZiplining, attributes.RoverRentals, attributes.PrimordialOozeSampling, attributes.SwimmingPool, attributes.KidFriendly, attributes.PetFriendly],
-    highlight: highlights.CallistoCamping,
+    description: loc(descriptions.CallistoCamping),
+    amenities: [loc(amenities.ARSafari), loc(amenities.CraterCanyoneering), loc(amenities.ScienceBase), loc(amenities.OrbitalZiplining), loc(amenities.RoverRentals), loc(amenities.PrimordialOozeSampling), loc(amenities.SwimmingPool), loc(amenities.KidFriendly), loc(amenities.PetFriendly)],
+    highlight: loc(highlights.CallistoCamping),
     imageSet: {
       images: images.CallistoCamping
     }
   },
   {
-    name: names.GrandTitan,
+    name: loc(names.GrandTitan),
     planet: planets.Saturn,
     gravity: 0.14,
-    description: descriptions.GrandTitan,
-    attributes: [attributes.Casino, attributes.HologramTeleconferencing, attributes.VRBattleArena, attributes.SwimmingPool, attributes.CryoSpa, attributes.BuildABot, attributes.SubAtomicMagic, attributes.Refueling, attributes.ExoskeletonDemos, attributes.SpaceshipRentals, attributes.PetFriendly, attributes.ExtracontinentalBreakfast],
-    highlight: highlights.GrandTitan,
+    description: loc(descriptions.GrandTitan),
+    amenities: [loc(amenities.Casino), loc(amenities.HologramTeleconferencing), loc(amenities.VRBattleArena), loc(amenities.SwimmingPool), loc(amenities.CryoSpa), loc(amenities.BuildABot), loc(amenities.SubAtomicMagic), loc(amenities.Refueling), loc(amenities.ExoskeletonDemos), loc(amenities.SpaceshipRentals), loc(amenities.PetFriendly), loc(amenities.ExtracontinentalBreakfast)],
+    highlight: loc(highlights.GrandTitan),
     imageSet: {
       images: images.GrandTitan
     }
   },
   {
-    name: names.RheaRnDBnB,
+    name: loc(names.RheaRnDBnB),
     planet: planets.Saturn,
     gravity: 0.02692051,
-    description: descriptions.RheaRnDBnB,
-    attributes: [attributes.ScienceBase, attributes.HydroponicGardens, attributes.ARSafari, attributes.PrimordialOozeSampling, attributes.RoverRentals, attributes.KidFriendly, attributes.ExtracontinentalBreakfast],
-    highlight: highlights.RheaRnDBnB,
+    description: loc(descriptions.RheaRnDBnB),
+    amenities: [loc(amenities.ScienceBase), loc(amenities.HydroponicGardens), loc(amenities.ARSafari), loc(amenities.PrimordialOozeSampling), loc(amenities.RoverRentals), loc(amenities.KidFriendly), loc(amenities.ExtracontinentalBreakfast)],
+    highlight: loc(highlights.RheaRnDBnB),
     imageSet: {
       images: images.RheaRnDBnB
     }
   },
   {
-    name: names.BellaTitania,
+    name: loc(names.BellaTitania),
     planet: planets.Uranus,
     gravity: 0.03864724,
-    description: descriptions.BellaTitania,
-    attributes: [attributes.GeneTherapy, attributes.GrowAClone, attributes.ExoskeletonDemos, attributes.Casino, attributes.SwimmingPool, attributes.CryoSpa, attributes.DeepSpaceMassage, attributes.OxygenBar, attributes.CentrifugeGym, attributes.ExtracontinentalBreakfast],
-    highlight: highlights.BellaTitania,
+    description: loc(descriptions.BellaTitania),
+    amenities: [loc(amenities.GeneTherapy), loc(amenities.GrowAClone), loc(amenities.ExoskeletonDemos), loc(amenities.Casino), loc(amenities.SwimmingPool), loc(amenities.CryoSpa), loc(amenities.DeepSpaceMassage), loc(amenities.OxygenBar), loc(amenities.CentrifugeGym), loc(amenities.ExtracontinentalBreakfast)],
+    highlight: loc(highlights.BellaTitania),
     imageSet: {
       images: images.BellaTitania
     }
   },
   {
-    name: names.UpsideDownSpaceStation,
+    name: loc(names.UpsideDownSpaceStation),
     planet: planets.Uranus,
     gravity: 0.000001,
-    description: descriptions.UpsideDownSpaceStation,
-    attributes: [attributes.ScienceBase, attributes.CryoSpa, attributes.DeepSpaceMassage, attributes.ZeroGravity, attributes.OxygenBar, attributes.AsteroidTrapeze, attributes.CentrifugeGym, ],
-    highlight: highlights.UpsideDownSpaceStation,
+    description: loc(descriptions.UpsideDownSpaceStation),
+    amenities: [loc(amenities.ScienceBase), loc(amenities.CryoSpa), loc(amenities.DeepSpaceMassage), loc(amenities.ZeroGravity), loc(amenities.OxygenBar), loc(amenities.AsteroidTrapeze), loc(amenities.CentrifugeGym), ],
+    highlight: loc(highlights.UpsideDownSpaceStation),
     imageSet: {
       images: images.UpsideDownSpaceStation
     }
   },
   {
-    name: names.TritonWaterPark,
+    name: loc(names.TritonWaterPark),
     planet: planets.Neptune,
     gravity: 0.0794,
-    description: descriptions.TritonWaterPark,
-    attributes: [attributes.SwimmingPool, attributes.KidFriendly,attributes.ARSafari, attributes.BuildABot, attributes.PrimordialOozeSampling, attributes.CaveDiving, attributes.DeepSeaExploration],
-    highlight: highlights.TritonWaterPark,
+    description: loc(descriptions.TritonWaterPark),
+    amenities: [loc(amenities.SwimmingPool), loc(amenities.KidFriendly),loc(amenities.ARSafari), loc(amenities.BuildABot), loc(amenities.PrimordialOozeSampling), loc(amenities.CaveDiving), loc(amenities.DeepSeaExploration)],
+    highlight: loc(highlights.TritonWaterPark),
     imageSet: {
       images: images.TritonWaterPark
     }
   },
   {
-    name: names.NeptuneSpaceStation,
+    name: loc(names.NeptuneSpaceStation),
     planet: planets.Neptune,
     gravity: 0.000001,
-    description: descriptions.NeptuneSpaceStation,
-    attributes: [attributes.ZeroGravity, attributes.VRBattleArena, attributes.DeepSpaceMassage, attributes.KidFriendly, attributes.HologramTeleconferencing],
-    highlight: highlights.NeptuneSpaceStation,
+    description: loc(descriptions.NeptuneSpaceStation),
+    amenities: [loc(amenities.ZeroGravity), loc(amenities.VRBattleArena), loc(amenities.DeepSpaceMassage), loc(amenities.KidFriendly), loc(amenities.HologramTeleconferencing)],
+    highlight: loc(highlights.NeptuneSpaceStation),
     imageSet: {
       images: images.NeptuneSpaceStation
     }
   },
   {
-    name: names.PlutoWinterLodge,
+    name: loc(names.PlutoWinterLodge),
     planet: planets.Pluto,
     gravity: 0.063,
-    description: descriptions.PlutoWinterLodge,
-    attributes: [attributes.CryoSpa, attributes.Refueling, attributes.PetFriendly, attributes.Cantina],
-    highlight: highlights.PlutoWinterLodge,
+    description: loc(descriptions.PlutoWinterLodge),
+    amenities: [loc(amenities.CryoSpa), loc(amenities.Refueling), loc(amenities.PetFriendly), loc(amenities.Cantina)],
+    highlight: loc(highlights.PlutoWinterLodge),
     imageSet: {
       images: images.PlutoWinterLodge
     }
   },
   {
-    name: names.CharonsGrotto,
+    name: loc(names.CharonsGrotto),
     planet: planets.Pluto,
     gravity: 0.02936783,
-    description: descriptions.CharonsGrotto,
-    attributes: [attributes.Casino, attributes.GeneTherapy, attributes.GrowAClone, attributes.Cantina],
+    description: loc(descriptions.CharonsGrotto),
+    amenities: [loc(amenities.Casino), loc(amenities.GeneTherapy), loc(amenities.GrowAClone), loc(amenities.Cantina)],
     highlight: undefined,
     imageSet: {
       images: images.CharonsGrotto

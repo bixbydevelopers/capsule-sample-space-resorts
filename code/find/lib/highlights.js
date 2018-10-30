@@ -1,18 +1,51 @@
 module.exports = {
-  Mercurial: "Hot Destination",
-  VenusSpaceSpa: "Romantic Resort",
-  HoneyMoon: "Historical Sites",
-  MartianOasis: "Culinary Excellence",
-  IoTel: "Visit Volcanoes",
-  EuropaJewel: "Architectural Marvel",
-  GanymedeMoonMotel: "Discounted Rates",
-  CallistoCamping: "Natural Preserve",
-  GrandTitan: "Bigger is Better",
-  RheaRnDBnB: "Healthy Lifestyle",
-  BellaTitania: "Medical Tourism",
-  UpsideDownSpaceStation: "Astronomy Lab",
-  TritonWaterPark: "Family Fun",
-  NeptuneSpaceStation: "High Hi-Tech",
-  PlutoWinterLodge: "Disconnect and Relax",
-  CharonsGrotto: "Charon's Grotto"
+  "Mercurial": {
+    "en": "Hot Destination",
+    "ko": "" // TODO: translate all highlights
+  },
+  "VenusSpaceSpa": {
+    "en": "Romantic Resort"
+  },
+  "HoneyMoon": {
+    "en": "Historical Sites"
+  },
+  "MartianOasis": {
+    "en": "Culinary Excellence"
+  },
+  "IoTel": {
+    "en": "Visit Volcanoes"
+  },
+  "EuropaJewel": {
+    "en": "Architectural Marvel"
+  },
+  "GanymedeMoonMotel": {
+    "en": "Discounted Rates"
+  },
+  "CallistoCamping": {
+    "en": "Natural Preserve"
+  },
+  "GrandTitan": {
+    "en": "Bigger is Better"
+  },
+  "RheaRnDBnB": {
+    "en": "Healthy Lifestyle"
+  },
+  "BellaTitania": {
+    "en": "Medical Tourism"
+  },
+  "UpsideDownSpaceStation": {
+    "en": "Astronomy Lab"
+  },
+  "TritonWaterPark": {
+    "en": "Family Fun"
+  },
+  "NeptuneSpaceStation": {
+    "en": "High Hi-Tech"
+  },
+  "PlutoWinterLodge": {
+    "en": "Disconnect and Relax"
+  },
+  "CharonsGrotto": {
+    "en": "Charon's Grotto"
+  }
 }
