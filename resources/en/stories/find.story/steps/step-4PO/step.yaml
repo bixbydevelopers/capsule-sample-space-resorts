@@ -1,0 +1,5 @@
+data:
+  aligned: >-
+    [g:example.spaceResorts.SpaceResort:continue:SpaceResort] that are (good for
+    kids)[v:example.spaceResorts.SearchCriteria]
+type: intent

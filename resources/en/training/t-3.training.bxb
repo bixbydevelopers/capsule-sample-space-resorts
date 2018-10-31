@@ -1,0 +1,4 @@
+train (t-3ktlcvll2yqe8v2uu5y1czlp7) {
+  utterance ("[g:Order#commitOrder] make a reservation at a space resort with a (spa)[v:SearchCriteria] for (two)[v:NumberOfAstronauts:2] astronauts")
+  plan (fY/RasJAEEWvRm21+gFKoS1FfPMfqiL6omK/YEymdMFNwuxE9O9NoqgPG1lYdvace9lFD+98JJvueexSCnnLLhF14y2HbFLFp5dOE2uNriViwcBrXFhFWpiUn6Un2SlnfS9bKlt8PCkuhS+vMCtwrCwH2ld0LGhnlHSTRBh5hVVmdyzrvx+nksSUqav45u99wNBrzE0cPVgO3/4iJgn/p2LyhxtCFzXUEaCBJlp4wSva6OAtv8eVBCW5rILUSoLbfj8Fud8ukmc=)
+}

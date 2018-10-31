@@ -1,0 +1,4 @@
+- enabled: true
+  fatal: true
+  file: assertions/withASpa.js
+  program: mocha

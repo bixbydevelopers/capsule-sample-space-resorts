@@ -60,7 +60,7 @@ template-macro-def (AstronautOne) {
 
 template-macro-def (AstronautMany) {
   content {
-    template ("astronaus")
+    template ("astronauts")
   }
 }
 
