@@ -1,0 +1,48 @@
+layout-macro-def (order-contact-information) {
+  params {
+    param (order) {
+      type (Order)
+      max (One) min (Required)
+    }
+  }
+  content {
+    section {
+      title ("Contact information")
+      content {
+        input-cell {
+          label ("Name")
+          value ("#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}")
+          on-click {
+            intent {
+              goal: Order#commitOrder
+              route: UpdateOrder
+              route: GetBuyer
+            }
+          }
+        }
+        input-cell {
+          label ("Name")
+          value ("#{value(order.buyer.phoneNumber)}")
+          on-click {
+            intent {
+              goal: Order#commitOrder
+              route: UpdateOrder
+              route: GetBuyer
+            }
+          }
+        }
+        input-cell {
+          label ("Email")
+          value ("#{value(order.buyer.emailAddress)}")
+          on-click {
+            intent {
+              goal: Order#commitOrder
+              route: UpdateOrder
+              route: GetBuyer
+            }
+          }
+        }
+      }
+    }
+  }
+}

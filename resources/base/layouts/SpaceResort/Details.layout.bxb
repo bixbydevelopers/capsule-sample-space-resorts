@@ -1,0 +1,49 @@
+layout-macro-def (space-resort-details) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      content {
+        title-area {
+          hAlign (Center)
+          slot1 {
+            text {
+              value ("#{value(spaceResort.name)}")
+              style (Title_L)
+            }
+          }
+          slot2 {
+            single-line {
+              text {
+                value ("#{value(spaceResort.planet)} • #{value(spaceResort.gravity)}g")
+                style (Title_XS)
+              }
+            }
+          }
+        }
+        paragraph {
+          value ("#{value(spaceResort.description)}")
+          style (Detail_M)
+        }
+        partitioned {
+          content {
+            for-each (spaceResort.attributes) {
+              as (attribute) {
+                single-line {
+                  text {
+                    value ("#{value(attribute)}")
+                    style (Label_L)
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -87,4 +87,3 @@ template-macro-def (ThisOrderIsAlreadyCanceled) {
     template ("This order is already canceled!")
   }
 }
-
