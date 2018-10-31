@@ -1,0 +1,24 @@
+layout-macro-def (habitat-pod-summary) {
+  params {
+    param (habitatPod) {
+      type (HabitatPod)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+        content {
+          primary {
+            template ("#{value(habitatPod.name)}")
+          }
+        }
+      }
+      slot3 {
+        label {
+          value ("#{value(habitatPod.price)}")
+        }
+      }
+    }
+  }
+}

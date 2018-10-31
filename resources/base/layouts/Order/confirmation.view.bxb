@@ -1,25 +1,48 @@
-// TODO: Cannot make it work! Remove Confirmation.layout.bml and uncomment this file to try it out for yourself!
-// confirmation-view {
-//   match: common.Confirmation {
-//     confirming {
-//       CommitOrder(action)
-//     }
-//   }
-//   mode (PositiveEmphasis)
-//   message {
-//     template ("Are you sure you want to do this?")
-//   }
-// 
-//   render {
-//     layout-macro (order-details) {
-//       param (order) {
-//         expression(action.order)
-//       }
-//     }
-//   }
-//   conversation-drivers {
-//     conversation-driver {
-//       template ("Pay")
-//     }
-//   }
-// }
+confirmation-view {
+  match {
+    Confirmation {
+      confirming {
+        CommitOrder (action)
+      }
+    }
+  }
+
+  message {
+    template-macro (AreYouSureYouWantToBookThisTrip)
+  }
+
+  mode (PositiveEmphasis)
+
+  // Confirming with a `value: Confirmation(true)` doesn't work without this block. DO NOT remove confirm-options.
+  confirm-options {
+    on-confirm {
+      if (false) {
+        halt {
+          dialog ("")
+        }
+      }
+    }
+  }
+
+  render {
+    layout {
+      layout-macro (order-image-card) {
+        param (order) {
+          expression (action.order)
+        }
+      }
+      layout-macro (order-details) {
+        param (order) {
+          expression (action.order)
+        }
+      }
+      if (exists(action.order.buyer)) {
+        layout-macro (order-contact-information) {
+          param (order) {
+            expression (action.order)
+          }
+        }
+      }
+    }
+  }
+}

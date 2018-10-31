@@ -4,10 +4,6 @@ structure (SpaceResort) {
     min (Required)
     type (Name)
   }
-  property (imageSet) {
-    min (Required)
-    type (entity.ImageSet)
-  }
   property (description) {
     min (Required)
     type (Description)
@@ -27,5 +23,9 @@ structure (SpaceResort) {
   }
   property (highlight) {
     type (Highlight)
+  }
+  property (images) {
+    type (Image)
+    max (Many)
   }
 }

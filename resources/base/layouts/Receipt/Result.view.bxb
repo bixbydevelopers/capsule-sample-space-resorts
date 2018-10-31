@@ -1,0 +1,25 @@
+result-view {
+  match {
+    Receipt (receipt)
+  }
+
+  render {
+    layout {
+      layout-macro (receipt-header) {
+        param (receipt) {
+          expression (receipt)
+        }
+      }
+      layout-macro (receipt-contact-information) {
+        param (receipt) {
+          expression (receipt)
+        }
+      }
+      layout-macro (receipt-order-total) {
+        param (receipt) {
+          expression (receipt)
+        }
+      }
+    }
+  }
+}

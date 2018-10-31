@@ -7,8 +7,10 @@ input-view {
     if (size(pods) > 1) {
       selection-of (pods) {
         where-each (pod) {
-          layout-match (pod) {
-            mode (Summary)
+          layout-macro (habitat-pod-summary) {
+            param (habitatPod) {
+              expression (pod)
+            }
           }
         }
       }

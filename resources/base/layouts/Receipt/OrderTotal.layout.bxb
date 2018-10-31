@@ -1,0 +1,23 @@
+layout-macro-def (receipt-order-total) {
+  params {
+    param (receipt) {
+      type (Receipt)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      content {
+        title-area {
+          hAlign (Start)
+          slot1 {
+            text {
+              style (Detail_L_Soft)
+              value ("Order total: #{value(receipt.item.pod.price)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

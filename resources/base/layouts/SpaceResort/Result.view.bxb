@@ -1,5 +1,8 @@
 result-view {
-  match: SpaceResort(result)
+  match {
+    SpaceResort (result)
+  }
+
   render {
     if (size(result) > 1) {
       list-of (result) {
@@ -41,13 +44,21 @@ result-view {
         }
       }
     } else-if (size(result) == 1) {
-      layout-macro (space-resort-details) {
-        param (spaceResort) {
-          expression(result)
+      layout {
+        layout-macro (space-resort-image-carousel) {
+          param (spaceResort) {
+            expression (result)
+          }
+        }
+        layout-macro (space-resort-details) {
+          param (spaceResort) {
+            expression (result)
+          }
         }
       }
     }
   }
+
   conversation-drivers {
     if ("size(result) == 1") {
       conversation-driver {
