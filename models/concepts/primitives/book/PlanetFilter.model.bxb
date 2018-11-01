@@ -1,0 +1,4 @@
+enum (PlanetFilter) {
+  description (Planet used to filter space resorts)
+  role-of (Planet)
+}
