@@ -11,28 +11,23 @@ function findSpaceResorts(planet, searchCriteria) {
 }
 
 function selectSpaceResorts(resorts, name, planet, searchCriteria) {
-  console.log("selectSpaceResorts")
   var candidates = data;
-  console.log("size: ", candidates.length)
-  if (resorts && resorts.length < candidates.length) {
+  if (resorts) {
+    //keep candidates that are in resorts (not a efficient!)
     candidates = candidates.filter(function(candidate) {
       return resorts.find(function(resort) {
         if (candidate.name.toLowerCase() == resort.name.toLowerCase()) {
-          console.log("Matched: ", resort.name.toLowerCase())
           return true
         }
       })
     })
   }
-  console.log("size: ", candidates.length)
   if (name) {
     candidates = candidates.filter(function(candidate){
       return candidate.name.toLowerCase() == name.toLowerCase()
     })
   }
-  console.log("size: ", candidates.length)
   candidates = filterSpaceResorts(candidates, planet, searchCriteria)
-  console.log("final size: ", candidates.length)
   return candidates
 }
 
