@@ -12,12 +12,22 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "", // TODO: translate all attributes
-      "keywords": [""] // // TODO: translate all keywords
+      "attribute": "AR Safari",
+      "keywords": [
+        "AR Safari",
+        "Augmented Reality Safari",
+        "Safari"
+      ]
     }
   },
   "AsteroidTrapeze": {
     "en": {
+      "attribute": "Asteroid Trapeze",
+      "keywords": [
+        "Asteroid Trapeze"
+      ]
+    },
+    "ko": {
       "attribute": "Asteroid Trapeze",
       "keywords": [
         "Asteroid Trapeze"
@@ -31,10 +41,23 @@ module.exports = {
         "Build-A-Bot",
         "Build a Bot"
       ]
+    },
+    "ko": {
+      "attribute": "Build-A-Bot",
+      "keywords": [
+        "Build-A-Bot",
+        "Build a Bot"
+      ]
     }
   },
   "Cantina": {
     "en": {
+      "attribute": "Cantina",
+      "keywords": [
+        "Cantina"
+      ]
+    },
+    "ko": {
       "attribute": "Cantina",
       "keywords": [
         "Cantina"
@@ -48,10 +71,23 @@ module.exports = {
         "Casino",
         "Casinos"
       ]
+    },
+    "ko": {
+      "attribute": "Casino",
+      "keywords": [
+        "Casino",
+        "Casinos"
+      ]
     }
   },
   "CaveDiving": {
     "en": {
+      "attribute": "Cave Diving",
+      "keywords": [
+        "Cave Diving"
+      ]
+    },
+    "ko": {
       "attribute": "Cave Diving",
       "keywords": [
         "Cave Diving"
@@ -64,10 +100,22 @@ module.exports = {
       "keywords": [
         "Centrifuge Gym"
       ]
+    },
+    "ko": {
+      "attribute": "Centrifuge Gym",
+      "keywords": [
+        "Centrifuge Gym"
+      ]
     }
   },
   "ContinentalBreakfast": {
     "en": {
+      "attribute": "Continental Breakfast",
+      "keywords": [
+        "Continental Breakfast"
+      ]
+    },
+    "ko": {
       "attribute": "Continental Breakfast",
       "keywords": [
         "Continental Breakfast"
@@ -80,10 +128,22 @@ module.exports = {
       "keywords": [
         "Crater Canyoneering"
       ]
+    },
+    "ko": {
+      "attribute": "Crater Canyoneering",
+      "keywords": [
+        "Crater Canyoneering"
+      ]
     }
   },
   "CryoSpa": {
     "en": {
+      "attribute": "Cryo Spa",
+      "keywords": [
+        "Cryo Spa"
+      ]
+    },
+    "ko": {
       "attribute": "Cryo Spa",
       "keywords": [
         "Cryo Spa"
@@ -104,10 +164,22 @@ module.exports = {
       "keywords": [
         "Deep Space Massage"
       ]
+    },
+    "ko": {
+      "attribute": "Deep Space Massage",
+      "keywords": [
+        "Deep Space Massage"
+      ]
     }
   },
   "ExtracontinentalBreakfast": {
     "en": {
+      "attribute": "Extracontinental Breakfast",
+      "keywords": [
+        "Extracontinental Breakfast"
+      ]
+    },
+    "ko": {
       "attribute": "Extracontinental Breakfast",
       "keywords": [
         "Extracontinental Breakfast"
@@ -121,6 +193,13 @@ module.exports = {
         "Exoskeleton Demos",
         "Exoskeleton Demo"
       ]
+    },
+    "ko": {
+      "attribute": "Exoskeleton Demos",
+      "keywords": [
+        "Exoskeleton Demos",
+        "Exoskeleton Demo"
+      ]
     }
   },
   "GeneTherapy": {
@@ -129,10 +208,23 @@ module.exports = {
       "keywords": [
         "Gene Therapy"
       ]
+    },
+    "ko": {
+      "attribute": "Gene Therapy",
+      "keywords": [
+        "Gene Therapy"
+      ]
     }
   },
   "GrowAClone": {
     "en": {
+      "attribute": "Grow-A-Clone",
+      "keywords": [
+        "Grow-A-Clone",
+        "Grow a Clone"
+      ]
+    },
+    "ko": {
       "attribute": "Grow-A-Clone",
       "keywords": [
         "Grow-A-Clone",
@@ -149,10 +241,26 @@ module.exports = {
         "Hologram Teleconference Room",
         "Hologram Teleconference Center"
       ]
+    },
+    "ko": {
+      "attribute": "Hologram Teleconferencing",
+      "keywords": [
+        "Hologram Teleconferencing",
+        "Hologram Teleconference",
+        "Hologram Teleconference Room",
+        "Hologram Teleconference Center"
+      ]
     }
   },
   "HydroponicGardens": {
     "en": {
+      "attribute": "Hydroponic Gardens",
+      "keywords": [
+        "Hydroponic Gardens",
+        "Hydroponic Garden"
+      ]
+    },
+    "ko": {
       "attribute": "Hydroponic Gardens",
       "keywords": [
         "Hydroponic Gardens",
@@ -167,10 +275,23 @@ module.exports = {
         "Good for Kids",
         "Kid Friendly"
       ]
+    },
+    "ko": {
+      "attribute": "Good for Kids",
+      "keywords": [
+        "Good for Kids",
+        "Kid Friendly"
+      ]
     }
   },
   "LaserTag": {
     "en": {
+      "attribute": "Laser Tag",
+      "keywords": [
+        "Laser Tag"
+      ]
+    },
+    "ko": {
       "attribute": "Laser Tag",
       "keywords": [
         "Laser Tag"
@@ -184,6 +305,13 @@ module.exports = {
         "Orbital Ziplining",
         "Ziplining"
       ]
+    },
+    "ko": {
+      "attribute": "Orbital Ziplining",
+      "keywords": [
+        "Orbital Ziplining",
+        "Ziplining"
+      ]
     }
   },
   "OxygenBar": {
@@ -192,10 +320,24 @@ module.exports = {
       "keywords": [
         "Oxygen Bar"
       ]
+    },
+    "ko": {
+      "attribute": "Oxygen Bar",
+      "keywords": [
+        "Oxygen Bar"
+      ]
     }
   },
   "PetFriendly": {
     "en": {
+      "attribute": "Pet Friendly",
+      "keywords": [
+        "Pet Friendly",
+        "Cat Friendly",
+        "Dog Friendly"
+      ]
+    },
+    "ko": {
       "attribute": "Pet Friendly",
       "keywords": [
         "Pet Friendly",
@@ -211,10 +353,25 @@ module.exports = {
         "Primordial Ooze Sampling",
         "Primordial Soup Sampling"
       ]
+    },
+    "ko": {
+      "attribute": "Primordial Ooze Sampling",
+      "keywords": [
+        "Primordial Ooze Sampling",
+        "Primordial Soup Sampling"
+      ]
     }
   },
   "QuantumBungee": {
     "en": {
+      "attribute": "Quantum Bungee Jumping",
+      "keywords": [
+        "Quantum Bungee Jumping",
+        "Quantum Bungee",
+        "Quantum Bungee Jump"
+      ]
+    },
+    "ko": {
       "attribute": "Quantum Bungee Jumping",
       "keywords": [
         "Quantum Bungee Jumping",
@@ -230,10 +387,23 @@ module.exports = {
         "Refueling Station",
         "Refueling Services"
       ]
+    },
+    "ko": {
+      "attribute": "주유소",
+      "keywords": [
+        "주유소",
+        "주유 서비스"
+      ]
     }
   },
   "RobotRepairs": {
     "en": {
+      "attribute": "Robot Repairs",
+      "keywords": [
+        "Robot Repairs"
+      ]
+    },
+    "ko": {
       "attribute": "Robot Repairs",
       "keywords": [
         "Robot Repairs"
@@ -247,6 +417,13 @@ module.exports = {
         "Rover Rentals",
         "Rover Rental"
       ]
+    },
+    "ko": {
+      "attribute": "Rover Rentals",
+      "keywords": [
+        "Rover Rentals",
+        "Rover Rental"
+      ]
     }
   },
   "ScienceBase": {
@@ -255,10 +432,25 @@ module.exports = {
       "keywords": [
         "Science Base"
       ]
+    },
+    "ko": {
+      "attribute": "Science Base",
+      "keywords": [
+        "Science Base"
+      ]
     }
   },
   "SpaceshipRentals": {
     "en": {
+      "attribute": "Spaceship Rentals",
+      "keywords": [
+        "Spaceship Rentals",
+        "Spaceship Rental",
+        "Spacecraft Rentals",
+        "Spacecraft Rentals"
+      ]
+    },
+    "ko": {
       "attribute": "Spaceship Rentals",
       "keywords": [
         "Spaceship Rentals",
@@ -275,6 +467,13 @@ module.exports = {
         "Subatomic Magic Shows",
         "Magic Shows"
       ]
+    },
+    "ko": {
+      "attribute": "Subatomic Magic Shows",
+      "keywords": [
+        "Subatomic Magic Shows",
+        "Magic Shows"
+      ]
     }
   },
   "SwimmingPool": {
@@ -285,6 +484,13 @@ module.exports = {
         "Swimming Pools",
         "Pool"
       ]
+    },
+    "ko": {
+      "attribute": "수영장",
+      "keywords": [
+        "수영장",
+        "풀장"
+      ]
     }
   },
   "TerraformingMuseum": {
@@ -293,10 +499,23 @@ module.exports = {
       "keywords": [
         "Terraforming Museum"
       ]
+    },
+    "ko": {
+      "attribute": "Terraforming Museum",
+      "keywords": [
+        "Terraforming Museum"
+      ]
     }
   },
   "VolcanicSpelunking": {
     "en": {
+      "attribute": "Volcanic Spelunking",
+      "keywords": [
+        "Volcanic Spelunking",
+        "Volcano Spelunking"
+      ]
+    },
+    "ko": {
       "attribute": "Volcanic Spelunking",
       "keywords": [
         "Volcanic Spelunking",
@@ -311,10 +530,24 @@ module.exports = {
         "VR Battle Arena",
         "Virtual Reality Battle Arena"
       ]
+    },
+    "ko": {
+      "attribute": "VR Battle Arena",
+      "keywords": [
+        "VR Battle Arena",
+        "Virtual Reality Battle Arena"
+      ]
     }
   },
   "ZeroGravity": {
     "en": {
+      "attribute": "Zero Gravity",
+      "keywords": [
+        "Zero Gravity",
+        "No Gravity"
+      ]
+    },
+    "ko": {
       "attribute": "Zero Gravity",
       "keywords": [
         "Zero Gravity",

@@ -1,0 +1,4 @@
+dialog (Concept) {
+  match: SearchCriteria
+  template("검색 조건")
+}
