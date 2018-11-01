@@ -15,7 +15,7 @@ capsule {
     }
     import (viv.entity) {
       as (entity)
-      version (3.8.1)
+      version (3.9.7)
     }
     import (viv.common) {
       as (common)
