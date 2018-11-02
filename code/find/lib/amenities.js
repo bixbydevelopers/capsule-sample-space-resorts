@@ -156,6 +156,12 @@ module.exports = {
       "keywords": [
         "Deep Sea Exploration"
       ]
+    },
+    "ko": {
+      "attribute": "Deep Sea Exploration",
+      "keywords": [
+        "Deep Sea Exploration"
+      ]
     }
   },
   "DeepSpaceMassage": {
