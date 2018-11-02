@@ -1,0 +1,32 @@
+dialog (Value) {
+  match: Planet (this)
+  switch (this) {
+    case (Mercury) {
+      template("수성")
+    }
+    case (Venus) {
+      template("금성")
+    }
+    case (Earth) {
+      template("지구")
+    }
+    case (Mars) {
+      template("화성")
+    }
+    case (Jupiter) {
+      template("목성")
+    }
+    case (Saturn) {
+      template("토성")
+    }
+    case (Uranus) {
+      template("천왕성")
+    }
+    case (Neptune) {
+      template("해왕성")
+    }
+    case (Pluto) {
+      template("명왕성")
+    }
+  }
+}

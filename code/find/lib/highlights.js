@@ -1,75 +1,98 @@
 module.exports = {
   "Mercurial": {
     "en": "Hot Destination",
-    "ko": "" // TODO: translate all highlights
+    "ko": "Hot Destination" // TODO: translate all highlights
   },
   "Icarus": {
-    "en": "Soar To The Sun"
+    "en": "Soar To The Sun",
+    "ko": "Soar To The Sun"
   },
   "VenusSpaceSpa": {
-    "en": "Romantic Resort"
+    "en": "Romantic Resort",
+    "ko": "낭만적인 리조트"
   },
   "HoneyMoon": {
-    "en": "Historical Sites"
+    "en": "Historical Sites",
+    "ko": "Historical Sites",
   },
   "MartianOasis": {
-    "en": "Culinary Excellence"
+    "en": "Culinary Excellence",
+    "ko": "Culinary Excellence"
   },
   "SpaceY": {
-    "en": "Not So Boring"
+    "en": "Not So Boring",
+    "ko": "지루하지 않아요"
   },
   "IoTel": {
-    "en": "Visit Volcanoes"
+    "en": "Visit Volcanoes",
+    "ko": "Visit Volcanoes"
   },
   "EuropaJewel": {
-    "en": "Architectural Marvel"
+    "en": "Architectural Marvel",
+    "ko": "Architectural Marvel"
   },
   "GanymedeMoonMotel": {
-    "en": "Discounted Rates"
+    "en": "Discounted Rates",
+    "ko": "Discounted Rates"
   },
   "CallistoCamping": {
-    "en": "Natural Preserve"
+    "en": "Natural Preserve",
+    "ko": "Natural Preserve"
   },
   "AirBB": {
-    "en": "Aerial Thrills"
+    "en": "Aerial Thrills",
+    "ko": "Aerial Thrills"
   },
   "Babylon": {
-    "en": "Floating Gardens"
+    "en": "Floating Gardens",
+    "ko": "Floating Gardens"
   },
   "GrandTitan": {
-    "en": "Bigger Is Better"
+    "en": "Bigger Is Better",
+    "ko": "Bigger Is Better"
   },
   "HerschelHotel": {
-    "en": "Symphony Hall"
+    "en": "Symphony Hall",
+    "ko": "Symphony Hall"
   },
   "Robotel": {
-    "en": "More Than Meets The Eye"
+    "en": "More Than Meets The Eye",
+    "ko": "More Than Meets The Eye"
   },
   "CassiniCruise": {
-    "en": "Photo Op"
+    "en": "Photo Op",
+    "ko": "Photo Op"
   },
   "RheaRnDBnB": {
-    "en": "Healthy Lifestyle"
+    "en": "Healthy Lifestyle",
+    "ko": "Healthy Lifestyle"
   },
   "SkyResort": {
-    "en": "Ski Year Round"
+    "en": "Ski Year Round",
+    "ko": "Ski Year Round"
   },
   "BellaTitania": {
-    "en": "Medical Tourism"
+    "en": "Medical Tourism",
+    "ko": "Medical Tourism"
   },
   "UpsideDownSpaceStation": {
-    "en": "Astronomy Lab"
+    "en": "Astronomy Lab",
+    "ko": "Astronomy Lab"
   },
   "TritonWaterPark": {
-    "en": "Family Fun"
+    "en": "Family Fun",
+    "ko": "Family Fun"
   },
   "NeptuneSpaceStation": {
-    "en": "High Hi-Tech"
+    "en": "High Hi-Tech",
+    "ko": "High Hi-Tech"
   },
   "PlutoWinterLodge": {
-    "en": "Disconnect And Relax"
+    "en": "Disconnect And Relax",
+    "ko": "Disconnect And Relax"
   },
   "CharonsGrotto": {
-    "en": "Charon's Grotto"
+    "en": "Charon's Grotto",
+    "ko": "Charon's Grotto"
   }
 }

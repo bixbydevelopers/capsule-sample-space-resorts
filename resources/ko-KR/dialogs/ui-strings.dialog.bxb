@@ -87,3 +87,8 @@ template-macro-def (ThisOrderIsAlreadyCanceled) {
     template ("이 예약은 이미 취소되었습니다.")
   }
 }
+template-macro-def (Book) {
+  content {
+    template ("예약")
+  }
+}

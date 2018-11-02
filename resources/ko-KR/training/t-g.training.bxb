@@ -1,0 +1,4 @@
+train (t-gaafuxy1d7k7drqtcgvwpiyje) {
+  utterance ([g:CancelCommittedOrder] 내 우주 여행 취소해줘)
+  plan (Y2BikEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChh0MQq65yYl5ya45yfm5tZUpKa4l+UklrEwAiEDFAMJAE=)
+}

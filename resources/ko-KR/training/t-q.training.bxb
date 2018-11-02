@@ -1,0 +1,4 @@
+train (t-qz42256rzyo3x8h3spyydxuu2) {
+  utterance ("[g:DateInterval:prompt] (다음 주 수요일부터 금요일까지)[v:time.DateTimeExpression]")
+  plan (Y2BmUEytSMwtyEnVKy5ITE4NSi3OLyop1nNJLEn1zCtJLSpLzGFwwKrEOT+vuKSoNLkEWa1bUX4uiB+SmZvqWlFQlFpcnJmfxyBdllmmVwIU08MiycTACMQMQJKRAQSYIBgA)
+}
