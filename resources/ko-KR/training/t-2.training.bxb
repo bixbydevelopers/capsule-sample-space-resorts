@@ -1,0 +1,4 @@
+train (t-2y1wwjeb83flf4dfws5jcunjo) {
+  utterance ([g:CheckStatus] 내 우주 여행이 언제로 예약되어 있지)
+  plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yRmpwdXJJYUlpMQD8TAyMQMwBJRgYGGA0A)
+}

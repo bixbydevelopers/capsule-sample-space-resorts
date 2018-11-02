@@ -1,0 +1,4 @@
+train (t-det3e8bdhulvoz6dkd3t4aduu) {
+  utterance ("[g:Confirmation:prompt] (좋아)[v:Confirmation:true]")
+  plan (Y2BiUEytSMwtyEnVKy5ITE4NSi3OLyop1nPOz0vLLMpNLMnMzyNGCSMQMjDwADETEAPZAA==)
+}
