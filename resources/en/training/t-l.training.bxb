@@ -2,3 +2,7 @@ train (t-l5gxgu5w6asbonxyip40gsqm0) {
   utterance ([g:CheckStatus] Do I have an upcoming space trip?)
   plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yRmpwdXJJYUlpMQD8TAyMQMwBJRgYGGA0A)
 }
+train (t-l6bt7in2tf6beqrw4wrea78w9) {
+  utterance ("[g:SpaceResort:prompt] with a {[g:SearchCriteriaFilter] (pool)[v:SearchCriteria]}")
+  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBE4dKkKRzUWZJalFmoltmDpBmUCZCKRHOZ2VgZGBiYGZgAbIYoGxGIAQBFjDJDMYsQDFmAA==)
+}

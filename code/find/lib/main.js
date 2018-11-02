@@ -2,40 +2,67 @@ const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 
 module.exports = {
-  "findSpaceResorts": function (planet, searchCriteria) {
-    var candidates = data;
+  "findSpaceResorts": findSpaceResorts,
+  "selectSpaceResorts": selectSpaceResorts
+}
 
-    if (planet) {
-      candidates = candidates.filter(function(candidate){
-        return candidate.planet == planet
+function findSpaceResorts(planet, searchCriteria) {
+  return filterSpaceResorts(data, planet, searchCriteria)
+}
+
+function selectSpaceResorts(resorts, name, planet, searchCriteria) {
+  var candidates = data;
+  if (resorts) {
+    //keep candidates that are in resorts (not a efficient!)
+    candidates = candidates.filter(function(candidate) {
+      return resorts.find(function(resort) {
+        if (candidate.name.toLowerCase() == resort.name.toLowerCase()) {
+          return true
+        }
       })
-    }
+    })
+  }
+  if (name) {
+    candidates = candidates.filter(function(candidate){
+      return candidate.name.toLowerCase() == name.toLowerCase()
+    })
+  }
+  candidates = filterSpaceResorts(candidates, planet, searchCriteria)
+  return candidates
+}
 
-    if (searchCriteria) {
-      [].concat(searchCriteria).forEach(function(searchCriterion){
-        searchCriterion = searchCriterion.toLowerCase()
-        candidates = candidates.filter(function(candidate) {
-          return candidate.amenities.find(function(amenity) {
-            return amenity.keywords.find(function(keyword) {
-              keyword = keyword.toLowerCase()
-              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
-            })
+function filterSpaceResorts(candidates, planet, searchCriteria) {
+
+  if (planet) {
+    candidates = candidates.filter(function(candidate){
+      return candidate.planet == planet
+    })
+  }
+
+  if (searchCriteria) {
+    [].concat(searchCriteria).forEach(function(searchCriterion){
+      searchCriterion = searchCriterion.toLowerCase()
+      candidates = candidates.filter(function(candidate) {
+        return candidate.amenities.find(function(amenity) {
+          return amenity.keywords.find(function(keyword) {
+            keyword = keyword.toLowerCase()
+            return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
           })
         })
       })
-    }
-
-    // Flatten out the amenities to only keep the attribute as the label.
-    candidates = candidates.map(function(candidate) {
-      candidate.attributes = candidate.amenities.map(function(amenity) {
-        return amenity.attribute
-      })
-      delete candidate.amenities
-      return candidate
     })
-
-    return candidates;
   }
+
+  // Flatten out the amenities to only keep the attribute as the label.
+  candidates = candidates.map(function(candidate) {
+    candidate.attributes = candidate.amenities.map(function(amenity) {
+      return amenity.attribute
+    })
+    delete candidate.amenities
+    return candidate
+  })
+
+  return candidates;
 }
 
 function filterByAttribute(spaceResorts, desiredAttribute) {
