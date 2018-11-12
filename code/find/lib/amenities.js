@@ -12,11 +12,11 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "AR Safari",
+      "attribute": "AR 사파리",
       "keywords": [
-        "AR Safari",
-        "Augmented Reality Safari",
-        "Safari"
+        "AR 사파리",
+        "증강현실 사파리",
+        "사파리"
       ]
     }
   },
@@ -28,9 +28,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Asteroid Trapeze",
+      "attribute": "소행성 공중그네",
       "keywords": [
-        "Asteroid Trapeze"
+        "소행성 공중그네"
       ]
     }
   },
@@ -58,9 +58,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Cantina",
+      "attribute": "바(Bar)",
       "keywords": [
-        "Cantina"
+        "바"
       ]
     }
   },
@@ -73,10 +73,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Casino",
+      "attribute": "카지노",
       "keywords": [
-        "Casino",
-        "Casinos"
+        "카지노",
+        "카지노장"
       ]
     }
   },
@@ -88,9 +88,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Cave Diving",
+      "attribute": "동굴 다이빙",
       "keywords": [
-        "Cave Diving"
+        "동굴 다이빙"
       ]
     }
   },
@@ -102,9 +102,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Centrifuge Gym",
+      "attribute": "원심 분리기 체육관",
       "keywords": [
-        "Centrifuge Gym"
+        "원심 분리기 체육관",
+        "원심 분리기"
       ]
     }
   },
@@ -116,9 +117,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Continental Breakfast",
+      "attribute": "유럽식 조식",
       "keywords": [
-        "Continental Breakfast"
+        "유럽식 조식"
       ]
     }
   },
@@ -130,9 +131,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Crater Canyoneering",
+      "attribute": "분화구 캐뇨니어링",
       "keywords": [
-        "Crater Canyoneering"
+        "분화구 캐뇨니어링"
       ]
     }
   },
@@ -144,9 +145,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Cryo Spa",
+      "attribute": "저온 스파",
       "keywords": [
-        "Cryo Spa"
+        "저온 스파"
       ]
     }
   },
@@ -158,9 +159,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Deep Sea Exploration",
+      "attribute": "심해 탐사",
       "keywords": [
-        "Deep Sea Exploration"
+        "심해 탐사"
       ]
     }
   },
@@ -172,9 +173,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Deep Space Massage",
+      "attribute": "심우주 마사지",
       "keywords": [
-        "Deep Space Massage"
+        "심우주 마사지"
       ]
     }
   },
@@ -186,9 +187,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Extracontinental Breakfast",
+      "attribute": "한식 조식",
       "keywords": [
-        "Extracontinental Breakfast"
+        "한식 조식"
       ]
     }
   },
@@ -201,10 +202,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Exoskeleton Demos",
+      "attribute": "엑소스켈레톤 체험",
       "keywords": [
-        "Exoskeleton Demos",
-        "Exoskeleton Demo"
+        "엑소스켈레톤 체험"
       ]
     }
   },
@@ -216,9 +216,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Gene Therapy",
+      "attribute": "유전자 치료",
       "keywords": [
-        "Gene Therapy"
+        "유전자 치료"
       ]
     }
   },
@@ -231,10 +231,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Grow-A-Clone",
+      "attribute": "복제 재배 체험",
       "keywords": [
-        "Grow-A-Clone",
-        "Grow a Clone"
+        "복제 재배 체험",
+        "복제 재배"
       ]
     }
   },
@@ -249,12 +249,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Hologram Teleconferencing",
+      "attribute": "홀로그램 화상회의",
       "keywords": [
-        "Hologram Teleconferencing",
-        "Hologram Teleconference",
-        "Hologram Teleconference Room",
-        "Hologram Teleconference Center"
+        "홀로그램 화상회의",
+        "홀로그램 화상회의실"
       ]
     }
   },
@@ -267,10 +265,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Hydroponic Gardens",
+      "attribute": "수경재배 정원",
       "keywords": [
-        "Hydroponic Gardens",
-        "Hydroponic Garden"
+        "수경재배 정원"
       ]
     }
   },
@@ -283,10 +280,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Good for Kids",
+      "attribute": "키즈 프로그램",
       "keywords": [
-        "Good for Kids",
-        "Kid Friendly"
+        "키즈 프로그램",
+        "어린이"
       ]
     }
   },
@@ -298,9 +295,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Laser Tag",
+      "attribute": "레이저 태그",
       "keywords": [
-        "Laser Tag"
+        "레이저 태그"
       ]
     }
   },
@@ -313,10 +310,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Orbital Ziplining",
+      "attribute": "궤도 짚라인",
       "keywords": [
-        "Orbital Ziplining",
-        "Ziplining"
+        "궤도 짚라인",
+        "짚라인"
       ]
     }
   },
@@ -328,9 +325,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Oxygen Bar",
+      "attribute": "산소 바",
       "keywords": [
-        "Oxygen Bar"
+        "산소 바"
       ]
     }
   },
@@ -344,11 +341,12 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Pet Friendly",
+      "attribute": "반려동물 동반 가능",
       "keywords": [
-        "Pet Friendly",
-        "Cat Friendly",
-        "Dog Friendly"
+        "반려동물 동반 가능",
+        "반려묘 동반",
+        "반려견 동반",
+        "반려동물 동반"
       ]
     }
   },
@@ -361,10 +359,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Primordial Ooze Sampling",
+      "attribute": "원시 퇴적층 샘플링",
       "keywords": [
-        "Primordial Ooze Sampling",
-        "Primordial Soup Sampling"
+        "원시 퇴적층 샘플링"
       ]
     }
   },
@@ -378,11 +375,11 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Quantum Bungee Jumping",
+      "attribute": "퀀텀 번지 점프",
       "keywords": [
-        "Quantum Bungee Jumping",
-        "Quantum Bungee",
-        "Quantum Bungee Jump"
+        "퀀텀 번지 점프",
+        "양자 번지 점프",
+        "퀀텀 번지"
       ]
     }
   },
@@ -398,7 +395,8 @@ module.exports = {
       "attribute": "주유소",
       "keywords": [
         "주유소",
-        "주유 서비스"
+        "주유 서비스",
+        "연료 충전소"
       ]
     }
   },
@@ -410,9 +408,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Robot Repairs",
+      "attribute": "로봇 수리",
       "keywords": [
-        "Robot Repairs"
+        "로봇 수리"
       ]
     }
   },
@@ -425,10 +423,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Rover Rentals",
+      "attribute": "탐사선 렌트",
       "keywords": [
-        "Rover Rentals",
-        "Rover Rental"
+        "탐사선 렌트",
+        "탐사선 렌탈"
       ]
     }
   },
@@ -440,9 +438,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Science Base",
+      "attribute": "과학 본부",
       "keywords": [
-        "Science Base"
+        "과학 본부"
       ]
     }
   },
@@ -457,12 +455,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Spaceship Rentals",
+      "attribute": "우주선 렌트",
       "keywords": [
-        "Spaceship Rentals",
-        "Spaceship Rental",
-        "Spacecraft Rentals",
-        "Spacecraft Rentals"
+        "우주선 렌트",
+        "우주선 렌탈"
       ]
     }
   },
@@ -475,10 +471,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Subatomic Magic Shows",
+      "attribute": "아원자 마술 공연",
       "keywords": [
-        "Subatomic Magic Shows",
-        "Magic Shows"
+        "아원자 마술 공연",
+        "마술 공연"
       ]
     }
   },
@@ -507,9 +503,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Terraforming Museum",
+      "attribute": "테라포밍 박물관",
       "keywords": [
-        "Terraforming Museum"
+        "테라포밍 박물관"
       ]
     }
   },
@@ -522,10 +518,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Volcanic Spelunking",
+      "attribute": "화산 동굴 탐험",
       "keywords": [
-        "Volcanic Spelunking",
-        "Volcano Spelunking"
+        "화산 동굴 탐험"
       ]
     }
   },
@@ -538,10 +533,10 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "VR Battle Arena",
+      "attribute": "VR 배틀 아레나",
       "keywords": [
-        "VR Battle Arena",
-        "Virtual Reality Battle Arena"
+        "VR 배틀 아레나",
+        "가상 현실 배틀 아레나"
       ]
     }
   },
@@ -554,10 +549,9 @@ module.exports = {
       ]
     },
     "ko": {
-      "attribute": "Zero Gravity",
+      "attribute": "무중력",
       "keywords": [
-        "Zero Gravity",
-        "No Gravity"
+        "무중력"
       ]
     }
   }

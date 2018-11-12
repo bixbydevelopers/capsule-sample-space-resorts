@@ -1,11 +1,11 @@
 module.exports = {
   "Mercurial": {
     "en": "Hot Destination",
-    "ko": "Hot Destination" // TODO: translate all highlights
+    "ko": "MD의 Pick! 핫 플레이스" // TODO: translate all highlights
   },
   "Icarus": {
     "en": "Soar To The Sun",
-    "ko": "Soar To The Sun"
+    "ko": "태양 초근접 여행지"
   },
   "VenusSpaceSpa": {
     "en": "Romantic Resort",
