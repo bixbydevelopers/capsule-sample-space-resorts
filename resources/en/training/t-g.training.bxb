@@ -1,6 +1,6 @@
 train (t-g21w6mogz4dvodpjfu5ucys0n) {
-  utterance ("[g:FindSpaceResorts] Show space resorts around (The Old Earth)[v:Planet:Earth]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
+  utterance ("[g:SpaceResort] Show space resorts around (The Old Earth)[v:Planet:Earth]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
 }
 train (t-gedzmuz0vnki6mcw65z1vo0vh) {
   utterance ("[g:SpaceResort:continue] on (mars)[v:Planet:Mars]")
