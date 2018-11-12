@@ -6,11 +6,11 @@ module.exports = {
   "selectSpaceResorts": selectSpaceResorts
 }
 
-function findSpaceResorts(planet, searchCriteria) {
-  return filterSpaceResorts(data, planet, searchCriteria)
+function findSpaceResorts(planet, searchCriteria, $vivContext) {
+  return filterSpaceResorts(data, planet, searchCriteria, $vivContext)
 }
 
-function selectSpaceResorts(resorts, name, planet, searchCriteria) {
+function selectSpaceResorts(resorts, name, planet, searchCriteria, $vivContext) {
   var candidates = data;
   if (resorts) {
     //keep candidates that are in resorts (not a efficient!)
@@ -27,11 +27,11 @@ function selectSpaceResorts(resorts, name, planet, searchCriteria) {
       return candidate.name.toLowerCase() == name.toLowerCase()
     })
   }
-  candidates = filterSpaceResorts(candidates, planet, searchCriteria)
+  candidates = filterSpaceResorts(candidates, planet, searchCriteria, $vivContext)
   return candidates
 }
 
-function filterSpaceResorts(candidates, planet, searchCriteria) {
+function filterSpaceResorts(candidates, planet, searchCriteria, $vivContext) {
 
   if (planet) {
     candidates = candidates.filter(function(candidate){
@@ -46,7 +46,14 @@ function filterSpaceResorts(candidates, planet, searchCriteria) {
         return candidate.amenities.find(function(amenity) {
           return amenity.keywords.find(function(keyword) {
             keyword = keyword.toLowerCase()
-            return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
+            
+            if ($vivContext.locale == "ko-KR") {
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
+            }
+            else {
+              // fuzzyMatch is too costly, so using simple levenshtein instead
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 
+            }
           })
         })
       })
