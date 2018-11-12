@@ -147,7 +147,8 @@ module.exports = {
     "ko": {
       "attribute": "저온 스파",
       "keywords": [
-        "저온 스파"
+        "저온 스파",
+        "스파"
       ]
     }
   },

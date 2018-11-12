@@ -1,5 +1,5 @@
 const main = require("./lib/main.js")
 
-module.exports.function = function findSpaceResorts (planet, searchCriteria) {
-  return main.findSpaceResorts(planet, searchCriteria);
+module.exports.function = function findSpaceResorts (planet, searchCriteria, $vivContext) {
+  return main.findSpaceResorts(planet, searchCriteria, $vivContext);
 }
