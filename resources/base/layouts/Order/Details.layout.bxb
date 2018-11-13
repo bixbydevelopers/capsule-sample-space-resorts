@@ -1,0 +1,68 @@
+layout-macro-def (order-details) {
+  params {
+    param (order) {
+      type (Order)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      title (Details)
+      content {
+        input-cell {
+          label ("Number of astronauts")
+          value {
+            template ("#{value(order.item.numberOfAstronauts)}")
+          }
+          on-click {
+            intent {
+              goal: Order#commitOrder
+              route: UpdateOrder
+              route: GetNumberOfAstronauts
+            }
+          }
+        }
+        input-cell {
+          label ("Dates")
+          value ("#{value(order.item.dateInterval)}")
+          on-click {
+            intent {
+              goal: Order#commitOrder
+              route: UpdateOrder
+              route: GetDateInterval
+            }
+          }
+        }
+        compound-card {
+          content {
+            single-line {
+              text {
+                value ("Package")
+                style (Detail_M_Soft)
+              }
+            }
+            cell-area {
+              slot2 {
+                content {
+                  primary ("#{value(order.item.pod.name)}")
+                }
+              }
+              slot3 {
+                label {
+                  value ("#{value(order.item.pod.price)}")
+                }
+              }
+            }
+          }
+          on-click {
+            intent {
+              goal: Order#commitOrder
+              route: UpdateOrder
+              route: GetPod
+            }
+          }
+        }
+      }
+    }
+  }
+}

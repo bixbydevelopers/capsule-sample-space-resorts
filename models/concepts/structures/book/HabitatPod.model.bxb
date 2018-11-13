@@ -1,0 +1,16 @@
+structure (HabitatPod) {
+  property (name) {
+    type (PodName)
+    min (Required)
+    visibility (Private)
+  }
+  property (highlight) {
+    type (Highlight)
+    visibility (Private)
+  }
+  property (price) {
+    type (money.Price)
+    min (Required)
+    visibility (Private)
+  }
+}

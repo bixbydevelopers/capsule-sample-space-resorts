@@ -1,0 +1,11 @@
+vocab(Planet) {
+  "Mercury" { "Mercury" }
+  "Venus" { "Venus" }
+  "Earth" { "Earth" "The Old Earth" }
+  "Mars" { "Mars" "The Red Planet" }
+  "Jupiter" { "Jupiter" }
+  "Saturn" { "Saturn" }
+  "Uranus" { "Uranus" }
+  "Neptune" { "Neptune" }
+  "Pluto" { "Pluto" }
+}

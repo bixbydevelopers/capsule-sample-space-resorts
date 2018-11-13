@@ -1,0 +1,3 @@
+structure (DateInterval) {
+  role-of (time.DateInterval)
+}

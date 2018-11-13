@@ -1,0 +1,11 @@
+dialog (Input) {
+  match: SearchCriteria (this)
+  switch (plural(this)) {
+    case (One) {
+      template ("with that option")
+    }
+    default {
+      template ("with your options")
+    }
+  }
+}

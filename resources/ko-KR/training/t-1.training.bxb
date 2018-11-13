@@ -1,0 +1,4 @@
+train (t-16efoezsrxu2274fl7on6hadv) {
+  utterance ([g:CancelOrder] 이거 취소해줘)
+  plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yYl5ya41+UklrEIIVVBUSOiYERiBmAJCMDA4wGAA==)
+}

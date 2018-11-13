@@ -1,0 +1,89 @@
+template-macro-def (MakeReservation) {
+  content {
+    template ("Make reservation")
+  }
+}
+
+template-macro-def (Details) {
+  content {
+    template ("Details")
+  }
+}
+
+template-macro-def (NumberOfAstronauts) {
+  content {
+    template ("Number of astronauts")
+  }
+}
+
+template-macro-def (Dates) {
+  content {
+    template ("Dates")
+  }
+}
+
+template-macro-def (Package) {
+  content {
+    template ("Package")
+  }
+}
+
+template-macro-def (ContactInformation) {
+  content {
+    template ("Contact information")
+  }
+}
+
+template-macro-def (Name) {
+  content {
+    template ("Name")
+  }
+}
+
+template-macro-def (PhoneNumber) {
+  content {
+    template ("Phone number")
+  }
+}
+
+template-macro-def (Email) {
+  content {
+    template ("Email")
+  }
+}
+
+template-macro-def (AstronautOne) {
+  content {
+    template ("astronaut")
+  }
+}
+
+template-macro-def (AstronautMany) {
+  content {
+    template ("astronauts")
+  }
+}
+
+template-macro-def (CancelOrder) {
+  content {
+    template ("Cancel Order")
+  }
+}
+
+template-macro-def (KeepIt) {
+  content {
+    template ("Keep it")
+  }
+}
+
+template-macro-def (NotSureWhatToCancel) {
+  content {
+    template ("Not sure what to cancel. I didn't find any recent orders.")
+  }
+}
+
+template-macro-def (ThisOrderIsAlreadyCanceled) {
+  content {
+    template ("This order is already canceled!")
+  }
+}

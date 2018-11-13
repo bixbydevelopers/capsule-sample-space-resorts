@@ -1,0 +1,20 @@
+input-view {
+  match: NumberOfAstronauts(noOfAstronauts)
+  message {
+    template-macro (HowManyAstronauts)
+  }
+  render {
+    if (size(noOfAstronauts) > 1) {
+      selection-of (noOfAstronauts) {
+        where-each (noOfAstronaut) {
+          layout-match (noOfAstronaut) {
+            mode (Summary)
+          }
+        }
+      }
+    }
+    // else-if (size(noOfAstronauts) == 1) {
+    //   // Unexpected
+    // }
+  }
+}

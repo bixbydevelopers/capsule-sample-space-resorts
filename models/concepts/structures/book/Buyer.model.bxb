@@ -1,0 +1,6 @@
+structure (Buyer) {
+  role-of(self.SelfInfo)
+  features {
+    transient
+  }
+}

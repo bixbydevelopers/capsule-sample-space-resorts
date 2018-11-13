@@ -1,0 +1,8 @@
+train (t-k7f05t66hgx3yuetl9gdbfksk) {
+  utterance ("[g:SpaceResort:prompt] with {[g:SearchCriteriaFilter] (refueling station)[v:SearchCriteria]}")
+  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBE4dKkKRzUWZJalFmoltmDpBmUCZCKRHOZ2VgZGBiYGZgAbIYoGxGIAQBFjDJDMYsQDFmAA==)
+}
+train (t-kvfm974qf0fxplzyjcg804hyz) {
+  utterance ("[g:SpaceResort] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
+  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+}

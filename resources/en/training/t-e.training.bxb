@@ -1,0 +1,4 @@
+train (t-e5vxm59rxm85bx7e76c10h1y8) {
+  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,r:GetNumberOfAstronauts] Change number of astronauts)
+  plan (fY9BCsJADEV/HbX2CuLClYKL3kG6EDcWCh5gbGMtOJ1hJgWP76gLFUIT8hf/vwSCDCt6aOPulAena6ooWM8hr6imzjHWYlpYYzoufUMeS5H4ZPL22TWaaYwobrpvqTkyGWxkwlO88cttRe40mAv58roP7G2vBw7YieCBWGDHnsuQYAKFKWaYI8UiNv48FTV5e995lYpMGhVP)
+}

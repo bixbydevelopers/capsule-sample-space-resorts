@@ -1,0 +1,12 @@
+train (t-1joz3e7q1zyop8dh4di3jrxce) {
+  utterance ("[g:SpaceResort:prompt] with a {[g:SearchCriteriaFilter] (spa)[v:SearchCriteria]}")
+  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBE4dKkKRzUWZJalFmoltmDpBmUCZCKRHOZ2VgZGBiYGZgAbIYoGxGIAQBFjDJDMYsQDFmAA==)
+}
+train (t-1xcjtau1jw65tcbzzg1zp2iya) {
+  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] Change that to (2)[v:NumberOfAstronauts:2] astronauts")
+  plan (fY4xDsIwDEV/CZSeATEwwdY7oE4sVKrEAUJjoFLTRI4rcXwisnSIaut7+P/ZMioc6autH6kOXvfUUXAsoe6op8ELTtm0cdYO0rIhxiFLpCy//fBGC60RzUdPbzI3IYtznmCKN5bcJcvdZ/skbl/XIOwmPUtYfbhCgQ0UttihxD42Fo6KKv5OUioV8zJO/AA=)
+}
+train (t-1y714vrcu50c7icn96mjbl37y) {
+  utterance ("[g:Confirmation:prompt] (Yes)[v:Confirmation:true]")
+  plan (Y2BiUEytSMwtyEnVKy5ITE4NSi3OLyop1nPOz0vLLMpNLMnMzyNGCSMQMjDwADETEAPZAA==)
+}

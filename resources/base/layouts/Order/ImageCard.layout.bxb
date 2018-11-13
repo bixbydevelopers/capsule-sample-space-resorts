@@ -1,0 +1,29 @@
+layout-macro-def (order-image-card) {
+  params {
+    param (order) {
+      type (Order)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      content {
+        image-card {
+          image-url {
+            template ("#{value(order.item.spaceResort.images[0].url)}")
+          }
+          size (S)
+          title-area {
+            hAlign (Start)
+            slot1 {
+              text {
+                style (Title_M)
+                value ("#{value(order.item.spaceResort.name)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

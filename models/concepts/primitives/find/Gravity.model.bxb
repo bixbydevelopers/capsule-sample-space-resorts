@@ -1,0 +1,3 @@
+decimal (Gravity) {
+  description (Surface gravity in g (Earth = 1g))
+}

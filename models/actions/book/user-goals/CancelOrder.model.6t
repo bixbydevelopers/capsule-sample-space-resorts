@@ -1,0 +1,10 @@
+action (CancelOrder) {
+  type (CancelTransaction)
+  collect {
+    input (order) {
+      type (Order)
+      min (Required)
+    }
+  }
+  output (Receipt)
+}

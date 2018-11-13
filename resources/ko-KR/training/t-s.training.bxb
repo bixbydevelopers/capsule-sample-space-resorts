@@ -1,0 +1,8 @@
+train (t-s472prb9rpwxxawhsmbjtmzwq) {
+  utterance ("[g:SpaceResort] (목성)[v:Planet:Jupiter]에 (주유소)[v:SearchCriteria]가 있는 리조트 찾아줘")
+  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+}
+train (t-skla3dultjfzdvy3ihezlv07d) {
+  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] (4)[v:NumberOfAstronauts:4]명으로 변경해줘")
+  plan (fY4xDsIwDEV/CZSeATEwwdY7oE4sVKrEAUJjoFLTRI4rcXwisnSIaut7+P/ZMioc6autH6kOXvfUUXAsoe6op8ELTtm0cdYO0rIhxiFLpCy//fBGC60RzUdPbzI3IYtznmCKN5bcJcvdZ/skbl/XIOwmPUtYfbhCgQ0UttihxD42Fo6KKv5OUioV8zJO/AA=)
+}

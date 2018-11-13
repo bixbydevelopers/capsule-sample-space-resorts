@@ -1,0 +1,8 @@
+train (t-uasvklpz3139egpwv9yfdmfw4) {
+  utterance ("[g:SpaceResort:prompt] The ones on {[g:PlanetFilter] (Jupiter)[v:Planet:Jupiter]}")
+  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOQOHYQE5iXmpJW6ZOSWpRQzSeJQQ4VxWBkYGJgZmBhYgiwHKZgRCEGABk8xgzAIUYwYA)
+}
+train (t-updkg8112imk49ndflq2r6lx2) {
+  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] Change that to (December 10th)[v:viv.time.DateTimeExpression]")
+  plan (fc9BCsIwEAXQr1WrPYK60I3LnEGoCl0JRQ8Q2kEDTRuSsfT4RrtpIZqQQGbeDwwSbKmT2lQknJEF5eQay07kVJAyjF2wmzZaK77akizWQdH3wum7KSXTP5E+Zf2gMmPSOISFJf/H0O2D7uRVVjPZVlY4/himdmxfBQ/txTb6874pTefOWHJONfXfYTetagV7LwLBBBNMEWGGORaIsfR7BYyqkb9jX8Ho9Cv6Op94Aw==)
+}

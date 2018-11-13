@@ -1,0 +1,5 @@
+dialog (ActionAborted) {
+  match: CommitOrder
+  
+  template-macro (YourTripHasBeenCanceled)
+}

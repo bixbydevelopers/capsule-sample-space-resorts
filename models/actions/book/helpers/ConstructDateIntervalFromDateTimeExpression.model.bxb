@@ -1,0 +1,15 @@
+action (ConstructDateIntervalFromDateTimeExpression) {
+  type (Constructor)
+  collect {
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Required)
+      default-select {
+        with-rule {
+          select-first
+        }
+      }
+    }
+  }
+  output (DateInterval)
+}

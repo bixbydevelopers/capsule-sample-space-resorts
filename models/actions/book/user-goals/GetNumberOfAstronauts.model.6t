@@ -1,0 +1,44 @@
+action (GetNumberOfAstronauts) {
+  type (Constructor)
+  description (Select a value for NumberOfAstronauts from a list by either prompting the user for selection or auto selecting
+  using selection rule and selection learning)
+
+  collect {
+    input (autoSelect) {
+      type (AutoSelect)
+    }
+    computed-input (numberOfAstronauts) {
+      type (NumberOfAstronauts)
+      min (Required)
+      //Lists all available options - this is used by default-select
+      compute {
+        if (exists(autoSelect)) {
+          intent {
+            goal: NumberOfAstronauts
+            route: GetPossibleNumberOfAstronauts
+          }
+        } else {
+          intent {
+            goal {
+              @prompt-behavior(AlwaysSelection)
+              NumberOfAstronauts
+            }
+            route: GetPossibleNumberOfAstronauts
+          }
+        }
+      }
+      default-select {
+        with-rule {
+          select-min {
+            expression (numberOfAstronauts == 2 ? 0 : 1)
+          }
+        }
+        with-learning {
+        }
+      }
+    }
+  }
+  output (NumberOfAstronauts) {
+    evaluate { $expr(numberOfAstronauts) }
+  }
+}

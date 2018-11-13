@@ -1,0 +1,36 @@
+action (FindSpaceResorts) {
+  description (Find space resorts)
+  type (Search)
+  collect {
+    input (planet) {
+      type (Planet)
+    }
+    input (searchCriteria) {
+      type (SearchCriteria)
+      max (Many)
+    }
+  }
+  output (SpaceResort) {
+    throws {
+      error (UnsupportedSearchCriteria) {
+        on-catch {
+          // TODO: drop the unsupported criterion with a message and continue
+          halt {
+            dialog {
+              template-macro (UnsupportedSearchOption)
+            }
+          }
+        }
+      }
+      unknown-error {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (UnknownError)
+            }
+          }
+        }
+      }
+    }
+  }
+}

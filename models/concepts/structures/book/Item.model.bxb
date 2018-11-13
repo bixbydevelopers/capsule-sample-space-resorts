@@ -1,0 +1,23 @@
+structure (Item) {
+  description (A pod reservation)
+  property (pod) {
+    type (HabitatPod)
+    min (Required)
+  }
+  property (spaceResort) {
+    type (SpaceResort)
+  }
+  property (numberOfAstronauts) {
+    type (NumberOfAstronauts)
+    min (Required)
+    visibility (Private)
+  }
+  property (dateInterval) {
+    type (DateInterval)
+    min (Required)
+    visibility (Private)
+  }
+  features {
+    transient
+  }
+}

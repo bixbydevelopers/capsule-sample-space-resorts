@@ -1,0 +1,4 @@
+dialog (Concept) {
+  match: SpaceResort (this)
+  template (스페이스 리조트)  
+}

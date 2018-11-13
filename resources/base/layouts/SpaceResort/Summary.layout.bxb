@@ -1,0 +1,23 @@
+layout-macro-def (space-resort-summary) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    image-card {
+      size (S)
+      image-url ("#{value(spaceResort.images[0].url)}")
+      title-area {
+        hAlign (Start)
+        slot1 {
+          text {
+            value ("#{value(spaceResort.name)}")
+            style (Title_L)
+          }
+        }
+      }
+    }
+  }
+}

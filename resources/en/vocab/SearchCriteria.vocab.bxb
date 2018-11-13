@@ -1,0 +1,118 @@
+vocab(SearchCriteria) {
+  // ARSafari
+  "AR safari"
+  "augmented reality safari"
+  // AsteroidTrapeze
+  "asteroid trapeze"
+  // BuildABot
+  "build-a-bot"
+  "build a bot"
+  // Cantina
+  "cantina"
+  // Casino
+  "casino"
+  "casinos"
+  // CaveDiving
+  "cave diving"
+  // CentrifugeGym
+  "centrifuge gym"
+  // ContinentalBreakfast
+  "continental breakfast"
+  // CraterCanyoneering
+  "crater canyoneering"
+  "canyoneering"
+  // CryoSpa
+  "cryo spa"
+  "cryo-spa"
+  // DeepSeaExploration
+  "deep sea exploration"
+  // DeepSpaceMassage
+  "deep space massage"
+  // ExtracontinentalBreakfast
+  "extracontinental breakfast"
+  // ExoskeletonDemos
+  "exoskeleton demo"
+  "exoskeleton demos"
+  // GeneTherapy
+  "gene therapy"
+  // GrowAClone
+  "grow a clone"
+  "grow-a-clone"
+  // HologramTeleconferencing
+  "hologram Teleconferencing"
+  "hologram teleconference"
+  "hologram teleconference center"
+  "hologram teleconference room"
+  // HydroponicGardens
+  "hydroponic garden"
+  "hydroponic gardens"
+  // KidFriendly
+  "kid friendly"
+  "kid-friendly"
+  "good for kids"
+  "family friendly"
+  "family-friendly"
+  // LaserTag
+  "laser tag"
+  "laser-tag"
+  // OrbitalZiplining
+  "orbital ziplining"
+  "ziplining"
+  // OxygenBar
+  "oxygen bar"
+  "oxygen bars"
+  // PetFriendly         
+  "pet friendly"
+  "pet-friendly"
+  "dog friendly"
+  "dog-friendly"
+  "cat friendly"
+  "cat-friendly"
+  // PrimordialOozeSampling
+  "primordial ooze sampling"
+  "primordial soup sampling"
+  // QuantumBungee
+  "quantum bungee"
+  "quantum bungee jump"
+  "quantum bungee jumping"
+  // Refueling
+  "refueling"
+  "refueling services"
+  "refueling station"
+  "refueling stations"
+  // RobotRepairs
+  "robot repair"
+  "robot repairs"
+  // RoverRentals
+  "rover rental"
+  "rover rentals"
+  // ScienceBase
+  "science"
+  "science base"
+  "scientific base"
+  // SpaceshipRentals
+  "spaceship rental"
+  "spaceship rentals"
+  "spacecraft rental"
+  "spacecraft rentals"
+  // SubAtomicMagic
+  "subatomic magic"
+  // SwimmingPool
+  "swimming pool"
+  "swimming pools"
+  "swimming"
+  "pool"
+  "pools"
+  // TerraformingMuseum
+  "terraforming museum"
+  // VolcanicSpelunking
+  "volcano spelunking"
+  "volcanic spelunking"
+  // VRBattleArena
+  "VR battle arena"
+  "battle arena"
+  "virtual reality battle arena"
+  // ZeroGravity
+  "zero gravity"
+  "no gravity"
+}

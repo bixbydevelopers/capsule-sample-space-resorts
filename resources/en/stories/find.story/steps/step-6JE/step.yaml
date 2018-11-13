@@ -1,0 +1,5 @@
+data:
+  aligned: >-
+    [g:example.spaceResorts.SpaceResort:continue:SpaceResort] on
+    (mars)[v:example.spaceResorts.Planet:Mars]
+type: intent

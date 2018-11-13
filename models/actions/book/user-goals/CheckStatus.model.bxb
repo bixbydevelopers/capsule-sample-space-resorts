@@ -1,0 +1,15 @@
+action (CheckStatus) {
+  type (RefreshActivity)
+  collect {
+    input (receipt) {
+      type (Receipt)
+      min (Required)
+      default-init {
+        intent {
+          goal: FindLastReceipt
+        }
+      }
+    }
+  }
+  output (Receipt)
+}

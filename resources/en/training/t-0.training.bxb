@@ -1,0 +1,4 @@
+train (t-0mqp8n20ccpc7bb5re344z6wa) {
+  utterance ("[g:SpaceResort:prompt] The ones with {[g:SearchCriteriaFilter] (refueling station)[v:SearchCriteria]}")
+  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBE4dKkKRzUWZJalFmoltmDpBmUCZCKRHOZ2VgZGBiYGZgAbIYoGxGIAQBFjDJDMYsQDFmAA==)
+}

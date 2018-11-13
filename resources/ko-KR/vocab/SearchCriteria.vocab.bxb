@@ -1,0 +1,18 @@
+vocab(SearchCriteria) {
+  // Casino
+  "카지노"
+  // KidFriendly
+  "유아동반"
+  // PetFriendly         
+  "애완동물"
+  // Refueling
+  "주유소"
+  // ScienceBase
+  "첨단 과학"
+  // Spa
+  "스파"
+  // SwimmingPool
+  "수영장"
+  // ZeroGravity
+  "무중력"
+}

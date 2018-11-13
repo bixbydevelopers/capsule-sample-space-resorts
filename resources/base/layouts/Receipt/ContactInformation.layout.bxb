@@ -1,0 +1,58 @@
+layout-macro-def (receipt-contact-information) {
+  params {
+    param (receipt) {
+      type (Receipt)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+      title ("Contact Information")
+      content {
+        partitioned {
+          content {
+            cell-area {
+              slot2 {
+                content {
+                  order (SecondaryPrimary)
+                  secondary {
+                    template ("Name")
+                  }
+                  primary {
+                    template ("[#{value(receipt.buyer.firstName)} #{value(receipt.buyer.lastName)}]")
+                  }
+                }
+              }
+            }
+            cell-area {
+              slot2 {
+                content {
+                  order (SecondaryPrimary)
+                  secondary {
+                    template ("Phone Number")
+                  }
+                  primary {
+                    template ("[#{value(receipt.buyer.phoneNumber)}]")
+                  }
+                }
+              }
+            }
+            cell-area {
+              slot2 {
+                content {
+                  order (SecondaryPrimary)
+                  secondary {
+                    template ("Email")
+                  }
+                  primary {
+                    template ("[#{value(receipt.buyer.emailAddress)}]")
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

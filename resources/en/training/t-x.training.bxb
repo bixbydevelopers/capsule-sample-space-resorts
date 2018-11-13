@@ -1,0 +1,8 @@
+train (t-x9om5hd8jzfjm7641qqa2a76x) {
+  utterance ("[g:HabitatPod:prompt] (Honeymoon)[v:PodName]")
+  plan (Y2BhkE+tSMwtyEnVKy5ITE4NSi3OLyop1vNITMosSSwJyE9hkMOqIDg1JzUZLE/QABmsCoAyfom5qQzMDIwMTECSAUiDIAQwATFQDAA=)
+}
+train (t-xaasz1cbnts69gdpujy6b014a) {
+  utterance ("[g:SpaceResort:prompt] {[g:NameFilter] (Ganymede Moon Motel)[v:Name]}")
+  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBHqtKv8TcVLfMnJLUIgZJnAqIcCorAyMDEwMzAwuQxQBlMwIhCLCASWYwZgGKMQMA)
+}

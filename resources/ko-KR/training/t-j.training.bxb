@@ -1,0 +1,4 @@
+train (t-jdtewzorvhm1zrmj1dcmsn3l7) {
+  utterance ("[g:SpaceResort] (금성)[v:Planet:Venus]에 있는 호텔 찾아줘")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+}

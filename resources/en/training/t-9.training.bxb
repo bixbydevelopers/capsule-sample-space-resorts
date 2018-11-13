@@ -1,0 +1,4 @@
+train (t-9dsv38aqogqbt6op3cisqr024) {
+  utterance ("[g:NumberOfAstronauts:prompt] (4)[v:NumberOfAstronauts]")
+  plan (Y2BiUE+tSMwtyEnVKy5ITE4NSi3OLyop1vMrzU1KLfJPcywuKcrPSywtKSZeISMQMjDwADETEAPZAA==)
+}

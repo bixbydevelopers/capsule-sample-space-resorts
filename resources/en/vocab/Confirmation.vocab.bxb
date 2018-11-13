@@ -1,0 +1,22 @@
+vocab(Confirmation) {
+  "true" {
+    "Book"
+    "Book it"
+    "Buy"
+    "Buy it"
+    "Confirm"
+    "Do it"
+    "Order"
+    "Order it"
+    "Place the order"
+    "Place order"
+    "Yes"
+  }
+  "false" {
+    "No"
+    "Cancel"
+    "Don't do it"
+    "Do not do it"
+    "Forget it"
+  }
+}

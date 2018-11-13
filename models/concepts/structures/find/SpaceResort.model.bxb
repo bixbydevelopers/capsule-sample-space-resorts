@@ -1,0 +1,31 @@
+structure (SpaceResort) {
+  description (Space resort)
+  property (name) {
+    min (Required)
+    type (Name)
+  }
+  property (description) {
+    min (Required)
+    type (Description)
+  }
+  property (attributes) {
+    type (Attributes)
+    min (Required)
+    max (Many)
+  }
+  property (planet) {
+    min (Required)
+    type (Planet)
+  }
+  property (gravity) {
+    min (Required)
+    type (Gravity)
+  }
+  property (highlight) {
+    type (Highlight)
+  }
+  property (images) {
+    type (Image)
+    max (Many)
+  }
+}

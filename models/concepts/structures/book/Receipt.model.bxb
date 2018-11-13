@@ -1,0 +1,30 @@
+structure (Receipt) {
+  description (Receipt)
+
+  property (item) {
+    type (Item)
+    min (Required)
+    visibility (Private)
+  }
+
+  property (buyer) {
+    type (Buyer)
+    min (Required)
+    visibility (Private)
+  }
+
+ property (relevantDateTime) {
+    type (time.DateTime)
+    visibility(Private)
+    description (The item is relevant whenever the relevantDateTime is in the past but item.dateInterval.start is in the future.)
+  }
+
+  property (canceled) {
+    type (core.Boolean)
+    visibility(Private)
+  }
+
+  features {
+    activity
+  }  
+}

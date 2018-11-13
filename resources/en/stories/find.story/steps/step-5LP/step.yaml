@@ -1,0 +1,5 @@
+data:
+  aligned: >-
+    [g:example.spaceResorts.SpaceResort:continue:SpaceResort] with a
+    (spa)[v:example.spaceResorts.SearchCriteria]
+type: intent

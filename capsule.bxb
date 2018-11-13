@@ -1,0 +1,41 @@
+capsule {
+  id (example.spaceResorts)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)    
+    target (bixby-mobile-ko-KR) // Add localization target for Korean language
+  }
+  // permissions {
+  //   user-profile-access
+  // }
+  capsule-imports {
+    import (viv.core) {
+      as (core)
+    }
+    import (viv.entity) {
+      as (entity)
+      version (3.9.7)
+    }
+    import (viv.common) {
+      as (common)
+      version-from (entity)
+    }
+    import (viv.time) {
+      as (time)
+      version-from (entity)
+    }
+    import (viv.money) {
+      as (money)
+      version (2.16.14)
+    }
+    import (viv.self) {
+      as (self)
+      version (3.0.3)
+    }
+    import (viv.contact) {
+      as (contact)
+      version-from (self)
+    }
+  }
+}

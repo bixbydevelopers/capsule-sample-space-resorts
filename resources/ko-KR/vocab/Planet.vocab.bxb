@@ -1,0 +1,39 @@
+vocab(Planet) {
+  "Mercury" {
+    "Mercury"
+    "수성"
+  }
+  "Venus" {
+    "Venus"
+    "금성"
+    "샛별"
+  }
+  "Earth" {
+    "Earth"
+    "지구"
+  }
+  "Mars" {
+    "Mars"
+    "화성"
+  }
+  "Jupiter" {
+    "Jupiter"
+    "목성"
+  }
+  "Saturn" {
+    "Saturn"
+    "토성"
+  }
+  "Uranus" {
+    "Uranus"
+    "천왕성"
+  }
+  "Neptune" {
+    "Neptune"
+    "해왕성"
+  }
+  "Pluto" {
+    "Pluto"
+    "명왕성"
+  }
+}

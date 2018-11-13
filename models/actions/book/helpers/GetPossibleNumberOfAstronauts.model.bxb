@@ -1,0 +1,4 @@
+action (GetPossibleNumberOfAstronauts) {
+  output (NumberOfAstronauts)
+  type (Search)
+}

@@ -1,0 +1,67 @@
+layout-macro-def (receipt-header) {
+  params {
+    param (receipt) {
+      type (Receipt)
+      min (Required) max (One)
+    }
+  }
+  content {
+    section {
+        content {
+          title-area {
+            hAlign (Center)
+            slot1 {
+              text {
+                style (Title_L)
+                value ("#{value(receipt.item.pod.price)}")
+              }
+            }
+          }
+          compound-card {
+            content {
+              image-card {
+                image-url ("#{value(receipt.item.spaceResort.images[0].url)}")
+                size (S)
+                title-area {
+                  hAlign (Start)
+                  slot1 {
+                    text {
+                      style (Title_M)
+                      value ("[#{value(receipt.item.spaceResort.name)}]")
+                    }
+                  }
+                  slot2 {
+                    single-line {
+                      text {
+                        style (Detail_M)
+                        value ("[#{value(receipt.item.dateInterval)}]")
+                      }
+                    }
+                  }
+                }
+              }
+              single-line {
+                if (receipt.item.numberOfAstronauts == 1) {
+                  text {
+                    style (Detail_M)
+                    value ("#{value(receipt.item.numberOfAstronauts)} astronaut")
+                  }
+                } else {
+                  text {
+                    style (Detail_M)
+                    value ("#{value(receipt.item.numberOfAstronauts)} astronauts")
+                  }
+                }
+              }
+              single-line {
+                text {
+                  style (Detail_M_Soft)
+                  value ("#{value(receipt.item.pod.name)}")
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}
