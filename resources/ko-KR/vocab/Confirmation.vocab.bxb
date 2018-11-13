@@ -13,6 +13,7 @@ vocab(Confirmation) {
     "응"
   }
   "false" {
+    "아니오"
     "아니"
     "취소"
     "취소해"
