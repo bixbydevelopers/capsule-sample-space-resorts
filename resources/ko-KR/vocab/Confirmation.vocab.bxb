@@ -11,6 +11,8 @@ vocab(Confirmation) {
     "좋아"
     "알았어"
     "응"
+    "예"
+    "네"
   }
   "false" {
     "아니오"

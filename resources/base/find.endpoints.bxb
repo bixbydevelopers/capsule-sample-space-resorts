@@ -5,11 +5,11 @@ endpoints {
     
   action-endpoints {
     action-endpoint (FindSpaceResorts) {
-      accepted-inputs (planet, searchCriteria, $vivContext)
+      accepted-inputs (planet, searchCriteria)
       local-endpoint (find/FindSpaceResorts.js)
     }
     action-endpoint (SelectResort) {
-      accepted-inputs (resorts, name, planet, searchCriteria, $vivContext)
+      accepted-inputs (resorts, name, planet, searchCriteria)
       local-endpoint (find/SelectResort.js)
     }
   }
