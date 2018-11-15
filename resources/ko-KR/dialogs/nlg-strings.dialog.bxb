@@ -177,7 +177,7 @@ template-macro-def (AstronautOneGoingToSpaceResort) {
     }
   }
   content {
-    template ("#{numberOfAstronaut}명의 우주 여행객이 #{resortName}로 이동하고 있습니다")
+    template ("#{numberOfAstronaut}명의 우주 여행객이 #{resortName}로 여행합니다")
   }
 }
 
@@ -193,7 +193,7 @@ template-macro-def (AstronautManyGoingToSpaceResort) {
     }
   }
   content {
-    template ("#{numberOfAstronaut}명의 우주 여행객이 #{resortName}로 이동하고 있습니다")
+    template ("#{numberOfAstronaut}명의 우주 여행객이 #{resortName}로 여행합니다")
   }
 }
 
