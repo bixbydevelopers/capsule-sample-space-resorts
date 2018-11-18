@@ -29,11 +29,11 @@ module.exports = {
   },
   "EuropaJewel": {
     "en": "The Europa moon colony is a perfect re-creation of Renaissance Europe. Its architecture was able to reach new heights thanks to the low gravity. Stroll through a 5:1 scale reproduction of the Florence Cathedral or admire Jupiter from the observatory on top of the 7:1 reconstruction of St Peter’s Basilica.",
-    "ko": "The Europa moon colony is a perfect re-creation of Renaissance Europe. Its architecture was able to reach new heights thanks to the low gravity. Stroll through a 5:1 scale reproduction of the Florence Cathedral or admire Jupiter from the observatory on top of the 7:1 reconstruction of St Peter’s Basilica."
+    "ko": "유로파의 달 콜로니는 르네상스 유럽을 완벽하게 재창조 한 곳입니다. 그곳의 높은 건축물들은 낮은 중력 덕분입니다. 피렌체 대성당을 5:1 크기로 만든 건물을 돌아보시고, 성 피터 대성당을 7:1 크기로 재현한 건축물의 옥상에 있는 관측소에서 목성을 감상해 보세요"
   },
   "GanymedeMoonMotel": {
     "en": "Make the perfect pit stop on your way to the outer solar system. Ganymede Moon Motel has no substantial atmosphere, but provides cheap water refills. Turn right at the 3rd Galilean moon exit around Jupiter.",
-    "ko": "Make the perfect pit stop on your way to the outer solar system. Ganymede Moon Motel has no substantial atmosphere, but provides cheap water refills. Turn right at the 3rd Galilean moon exit around Jupiter."
+    "ko": "태양계 바깥으로 나가는 길에 있는 아주 완벽한 피트 스톱입니다. 가니메데 문 모텔은 많은 대기를 가지고 있지는 않지만, 저렴한 식수를 제고합니다. 목성 주변의 갈릴리 달 출구에서 우회전 하십시오"
   },
   "CallistoCamping": {
     "en": "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay.",
