@@ -1,11 +1,11 @@
 input-view {
   match: SpaceResort(result)
-  message("Which space resort would you like?")
+  message { template-macro (WhichSpaceResortWouldYouLike)}
   render {
     if (size(result) > 1) {
       selection-of (result) {
         has-details (true)
-        select-button-text("Book")
+        select-button-text{ template-macro (Book)}
         where-each (item) {
           layout-macro (space-resort-summary) {
             param (spaceResort) {

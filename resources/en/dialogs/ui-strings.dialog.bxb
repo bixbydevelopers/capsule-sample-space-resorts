@@ -87,3 +87,19 @@ template-macro-def (ThisOrderIsAlreadyCanceled) {
     template ("This order is already canceled!")
   }
 }
+
+template-macro-def (Book) {
+  content{
+    template ("Book")
+  }
+}
+template-macro-def (OrderTotal) {
+  params{
+    param (value) {
+      type (viv.core.Text)
+    }
+  }
+  content {
+    template ("Order total: [#{value}]")
+  }
+}
