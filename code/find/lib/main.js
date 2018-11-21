@@ -46,7 +46,14 @@ function filterSpaceResorts(candidates, planet, searchCriteria) {
         return candidate.amenities.find(function(amenity) {
           return amenity.keywords.find(function(keyword) {
             keyword = keyword.toLowerCase()
-            return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
+            
+            if (config.get("locale") == "ko") {
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
+            }
+            else {
+              // fuzzyMatch is too costly, so using simple levenshtein instead
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 
+            }
           })
         })
       })
