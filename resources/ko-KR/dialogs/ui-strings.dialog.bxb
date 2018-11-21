@@ -92,3 +92,13 @@ template-macro-def (Book) {
     template ("예약")
   }
 }
+template-macro-def (OrderTotal) {
+  params{
+    param (value) {
+      type (viv.core.Text)
+    }
+  }
+  content {
+    template ("총 주문금액: [#{value}]")
+  }
+}

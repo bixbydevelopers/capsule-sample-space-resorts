@@ -54,10 +54,14 @@ template-macro-def (SpaceResortNoResult) {
     }
   }
   content {
-    template ("I couldn't find any #{concept(spaceResort)}.")  //TODO translate
+    template ("#{concept(spaceResort)}를 찾지 못했어요.")  //TODO translate
   }
 }
-
+template-macro-def (WhichSpaceResortWouldYouLike) {
+  content {
+    template ("어떤 리조트를 원하시나요?")
+  }
+}
 // DateInterval
 template-macro-def (WhenDoYouWantToStay) {
   content {
@@ -128,7 +132,7 @@ template-macro-def (YourTripToPlaceIsOnDate) {
     }
   }
   content {
-    template ("#{resortName}로 가시는 여행 일정은 #{value(date)}입니다.")
+    template ("#{resortName}(으)로 가시는 여행 일정은 #{value(date)}입니다.")
   }
 }
 

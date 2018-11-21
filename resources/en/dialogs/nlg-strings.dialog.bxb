@@ -110,6 +110,11 @@ template-macro-def (SpaceResort) {
     template ("#{beginText} #{concept(spaceResort)}.")
   }
 }
+template-macro-def (WhichSpaceResortWouldYouLike) {
+  content {
+    template ("Which space resort would you like?")
+  }
+}
 
 // DateInterval
 template-macro-def (WhenDoYouWantToStay) {
