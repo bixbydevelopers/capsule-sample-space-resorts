@@ -21,11 +21,11 @@ module.exports = {
   },
   "SpaceY": {
     "en": "This underground hotel was built in the abandoned tunnels of the first space colony. Get into a self driving hyperpod for a tour of the ancient mines and learn how the Mars terraforming initiative came about.",
-    "ko": "This underground hotel was built in the abandoned tunnels of the first space colony. Get into a self driving hyperpod for a tour of the ancient mines and learn how the Mars terraforming initiative came about."
+    "ko": "이 지하 호텔은 첫번째 우주 식민지의 버려진 터널에 지어졌습니다. 고대 광산 탐험용 하이퍼 포드를 운전해서, 화성 테라포밍 계획 어떻게 시작되었는지 배워보십시오."
   },
   "IoTel": {
     "en": "This Hotel on Io offers breathtaking views of Jupiter. Io is the Galilean moon with the innermost orbit. It goes around the planet in less than 2 days. With over 400 active volcanoes to study, this is any geologist’s paradise.",
-    "ko": "This Hotel on Io offers breathtaking views of Jupiter. Io is the Galilean moon with the innermost orbit. It goes around the planet in less than 2 days. With over 400 active volcanoes to study, this is any geologist’s paradise."
+    "ko": "Io 행성에 있는 이 호텔에서 목성의 멋진 전망을 볼 수 있습니다. Io는 가장 안쪽 궤도에 있는 Galilean 달입니다. 행성을 한바퀴 도는데 2일이 안걸립니다. 400개가 넘는 활화산이 있어, 이곳은 지질학 자의 천국입니다."
   },
   "EuropaJewel": {
     "en": "The Europa moon colony is a perfect re-creation of Renaissance Europe. Its architecture was able to reach new heights thanks to the low gravity. Stroll through a 5:1 scale reproduction of the Florence Cathedral or admire Jupiter from the observatory on top of the 7:1 reconstruction of St Peter’s Basilica.",
@@ -37,35 +37,35 @@ module.exports = {
   },
   "CallistoCamping": {
     "en": "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay.",
-    "ko": "Sleep under the stars in the Callisto Natural Preserve & Sanctuary on Jupiter’s undomesticated moon. Ice fishing permits must be purchased separately at the International Space Station at least 3 months ahead of your stay."
+    "ko": "목성의 비옥한 달에있는 Callisto Natural Preserve & Sanctuary에서 별빛을 바라보며 주무십시오. 얼음 낚시 허가증은 최소 3 개월 전에 국제 우주 정거장에서 별도로 구매해야 합니다."
   },
   "AirBB": {
     "en": "Rent a vessel from our spaceport and go out for the adventure of a lifetime in the asteroid belt. Our ships offer manual override so you can steer around obstacles like in the good old days.",
-    "ko": "Rent a vessel from our spaceport and go out for the adventure of a lifetime in the asteroid belt. Our ships offer manual override so you can steer around obstacles like in the good old days."
+    "ko": "우리 우주 공항에서 우주선을 임대하고 소행성대에서 평생 모험을 떠나십시오. 우리 우주선은 수동 운전 기능을 제공하므로 옛날 처럼 장애물을 피해 직접 조종 할 수 있습니다."
   },
   "Babylon": {
     "en": "The modern incarnation of the Floating Gardens of Babylon, this space station uses greenery to generate it's oxygen supply. Plants grow tall and lush in low gravity. All the food is grown on ship, using the latest advances in genetic engineering.",
-    "ko": "The modern incarnation of the Floating Gardens of Babylon, this space station uses greenery to generate it's oxygen supply. Plants grow tall and lush in low gravity. All the food is grown on ship, using the latest advances in genetic engineering."
+    "ko": "바빌론의 떠다니는 정원의 현대판인 이 우주 정거장은 녹지를 이용하여 산소 공급원을 만듭니다. 식물은 키가 크고 낮은 중력에서 자랍니다. 모든 식품은 최신 유전 공학 기술을 사용하여 우주선에서 재배됩니다."
   },
   "GrandTitan": {
     "en": "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn.",
-    "ko": "Titan is Saturn’s largest moon, and The Grand is the largest hotel in the solar system. You can pick between queen, king or even ace size beds.  Stars were born competing in the rocket races which are held weekly. Come throw your hat in the rings of Saturn."
+    "ko": "타이탄은 토성의 가장 큰 달이며, 그랜드는 태양계에서 가장 큰 호텔입니다. 침대는 킹, 퀸 사이즈 또는 에이스 사이즈 침대 중 하나를 선택할 수 있습니다. 매주 개최되는 로켓 경기에서 스타가 태어납니다. 토성의 고리에 오셔서 시합에 출전해 보세요."
   },
   "HerschelHotel": {
     "en": "This hotel was built in honor of the great astronomers and musician siblings: Caroline and William Herschel. It houses a symphony hall with unique acoustic properties where stars from near and far come to perform.",
-    "ko": "This hotel was built in honor of the great astronomers and musician siblings: Caroline and William Herschel. It houses a symphony hall with unique acoustic properties where stars from near and far come to perform."
+    "ko": "이 호텔은 훌륭한 천문학자와 음악가인 형제에게 경의를 표하며 지어졌습니다 : Caroline과 William Herschel. 가깝고 먼 별에서 온 독특한 악기들을 보유하고 있습니다."
   },
   "Robotel": {
     "en": "In geosynchronous orbit over Saturn's Eye, Robotel is a feat of engineering. It is fully self-sustainable and operated by robots. Here you can try out the latest exoskeletons or rent a shiny spacecraft from the hangar to go on an excursion.",
-    "ko": "In geosynchronous orbit over Saturn's Eye, Robotel is a feat of engineering. It is fully self-sustainable and operated by robots. Here you can try out the latest exoskeletons or rent a shiny spacecraft from the hangar to go on an excursion."
+    "ko": "토성의 눈 위의 정지 궤도에서 Robotel은 공학의 위업입니다. 그것은 완벽하게 자급 자족이 가능하며 로봇에 의해 작동됩니다. 여기에서 최신 외골격을 시험해 보거나 격납고에서 빛나는 우주선을 빌려 여행을 떠나보십시오."
   },
   "CassiniCruise": {
     "en": "Retrace the course of the historical Cassini–Huygens mission. Take a spin around the rings of Saturn and get close up views of its natural satellites. Each room comes with its own astrophotography telescope to let you take the most memorable souvenir shots.",
-    "ko": "Retrace the course of the historical Cassini–Huygens mission. Take a spin around the rings of Saturn and get close up views of its natural satellites. Each room comes with its own astrophotography telescope to let you take the most memorable souvenir shots."
+    "ko": "역사적인 카시니-호이겐스 임무의 과정을 되돌아 봅니다. 토성의 고리 주위를 회전하여 천연 위성을 가까이에서 볼 수 있습니다. 각 객실에는 가장 기억에 남을만한 사진을 찍을 수 있는 천체 망원경이 있습니다."
   },
   "RheaRnDBnB": {
     "en": "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists from the science base and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system.",
-    "ko": "Fly off the beaten path and try out this little resort hidden on Rhea. Mingle with the local colonists from the science base and learn how they grown low gravity tea leaves and how they brew it into organic kombucha exported to all of the Saturn planetary system."
+    "ko": "인적이 드문 레아에 숨겨진이 작은 리조트에 숙박해 보세요. 과학 기지의 지역 식민지 주민들과 어울려 어떻게 저런 낮은 중력에서 찻잎을 재배했는지, 그리고 어떻게 토성 행성계에 수출 된 유기농 콤바 차를 추출하는 지 배워보세요."
   },
   "SkyResort": {
     "en": "This ski resort is located on the surface of Enceladus, the 6th largest moon of Saturn, which is hundreds of degrees below freezing temperature and covered in ice and snow. The doors open to a helipad to shuttle you to the slopes. For the adrenaline rush of your life, try out the quadruple black diamond trails down the south pole cryovolcanoes.",
