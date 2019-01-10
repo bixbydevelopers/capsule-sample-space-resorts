@@ -9,7 +9,7 @@ layout-macro-def (space-resort-details) {
     section {
       content {
         title-area {
-          hAlign (Center)
+          halign (Center)
           slot1 {
             text {
               value ("#{value(spaceResort.name)}")
