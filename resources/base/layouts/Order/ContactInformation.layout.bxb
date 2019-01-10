@@ -11,7 +11,7 @@ layout-macro-def (order-contact-information) {
       content {
         input-cell {
           label {template-macro (Name)}
-          value ("#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}")
+          value ("[#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}]")
           on-click {
             intent {
               goal: Order#commitOrder
@@ -22,7 +22,7 @@ layout-macro-def (order-contact-information) {
         }
         input-cell {
           label {template-macro (PhoneNumber)}
-          value ("#{value(order.buyer.phoneNumber)}")
+          value ("[#{value(order.buyer.phoneNumber)}]")
           on-click {
             intent {
               goal: Order#commitOrder
@@ -33,7 +33,7 @@ layout-macro-def (order-contact-information) {
         }
         input-cell {
           label {template-macro (Email)}
-          value ("#{value(order.buyer.emailAddress)}")
+          value ("[#{value(order.buyer.emailAddress)}]")
           on-click {
             intent {
               goal: Order#commitOrder

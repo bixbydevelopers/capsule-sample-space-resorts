@@ -10,15 +10,15 @@ layout-macro-def (order-image-card) {
       content {
         image-card {
           image-url {
-            template ("#{value(order.item.spaceResort.images[0].url)}")
+            template ("[#{value(order.item.spaceResort.images[0].url)}]")
           }
           size (S)
           title-area {
-            hAlign (Start)
+            halign (Start)
             slot1 {
               text {
                 style (Title_M)
-                value ("#{value(order.item.spaceResort.name)}")
+                value ("[#{value(order.item.spaceResort.name)}]")
               }
             }
           }

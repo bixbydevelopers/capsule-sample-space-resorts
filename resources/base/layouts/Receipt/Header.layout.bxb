@@ -9,7 +9,7 @@ layout-macro-def (receipt-header) {
     section {
         content {
           title-area {
-            hAlign (Center)
+            halign (Center)
             slot1 {
               text {
                 style (Title_L)
@@ -20,10 +20,10 @@ layout-macro-def (receipt-header) {
           compound-card {
             content {
               image-card {
-                image-url ("#{value(receipt.item.spaceResort.images[0].url)}")
+                image-url ("[#{value(receipt.item.spaceResort.images[0].url)}]")
                 size (S)
                 title-area {
-                  hAlign (Start)
+                  halign (Start)
                   slot1 {
                     text {
                       style (Title_M)

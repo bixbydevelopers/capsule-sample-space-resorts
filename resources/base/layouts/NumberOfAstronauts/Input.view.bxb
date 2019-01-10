@@ -7,8 +7,14 @@ input-view {
     if (size(noOfAstronauts) > 1) {
       selection-of (noOfAstronauts) {
         where-each (noOfAstronaut) {
-          layout-match (noOfAstronaut) {
-            mode (Summary)
+          cell-card {
+            slot2 {
+              content {
+                primary {
+                  template ("#{value (noOfAstronaut)}")
+                }
+              }
+            }
           }
         }
       }

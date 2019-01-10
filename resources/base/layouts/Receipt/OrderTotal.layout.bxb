@@ -9,7 +9,7 @@ layout-macro-def (receipt-order-total) {
     section {
       content {
         title-area {
-          hAlign (Start)
+          halign (Start)
           slot1 {
             text {
               style (Detail_L_Soft)
