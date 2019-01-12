@@ -8,9 +8,5 @@ endpoints {
       accepted-inputs (planet, searchCriteria)
       local-endpoint (find/FindSpaceResorts.js)
     }
-    action-endpoint (SelectResort) {
-      accepted-inputs (resorts, name, planet, searchCriteria)
-      local-endpoint (find/SelectResort.js)
-    }
   }
 }
