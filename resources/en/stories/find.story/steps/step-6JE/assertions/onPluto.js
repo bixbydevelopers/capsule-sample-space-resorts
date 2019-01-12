@@ -3,7 +3,7 @@
  * https://qa.bixbydevelopers.com/dev/docs/reference/assertions_api/step
  */
 
-describe('onMars', () => {
+describe('onPluto', () => {
   it('results', () => {
     const { results } = step.currentNode
     expect(results).toBeTruthy()

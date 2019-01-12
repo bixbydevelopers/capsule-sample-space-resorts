@@ -1,4 +1,4 @@
 - enabled: true
   fatal: true
-  file: assertions/withASpa.js
+  file: assertions/withRefueling.js
   program: mocha

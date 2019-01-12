@@ -1,5 +1,3 @@
 data:
-  aligned: >-
-    [g:example.spaceResorts.SpaceResort:continue:SpaceResort] on
-    (mars)[v:example.spaceResorts.Planet:Mars]
+  aligned: '[g:SpaceResort:continue] on (Pluto)[v:Planet:Pluto]'
 type: intent
