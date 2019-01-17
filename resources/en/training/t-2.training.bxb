@@ -1,0 +1,10 @@
+train (t-20449fehpojne5sbp9h4eoz2n) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] with a (refueling station)[v:SearchCriteria]")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
+  last-modified (1547753441286)
+}
+train (t-20okiuzts1vl6a6htx075csi6) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] on (Jupiter)[v:Planet:Jupiter]")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGqvKgJzEvNQSItzCwsDIwMTADKQZwCxGIIQBZjAG8gE=)
+  last-modified (1547753454526)
+}

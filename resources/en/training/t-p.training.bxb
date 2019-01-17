@@ -3,6 +3,11 @@ train (t-p0xltp3ympg12v0v80yc3jy1o) {
   plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQiAiwIA)
   last-modified (1547752602581)
 }
+train (t-p65k12lzx32efijdjjt6n7sy7) {
+  utterance ("[g:Order#commitOrder,r:CreateItem,r:CreateOrder] Book a space resort on (Pluto)[v:Planet:Pluto]")
+  plan (fY/JCsJADIb/WnfrA7iAehBvvoMLohcVfYKxjVDotGUmFX17u4j1MJVASPJ9CQR9jOkpZBzQUsfCpQvpSLFeXsglP2ZMjXQTSenzSXmkMDQaBavYViSY/m2vk1fKBkZ2YJKY/DmcCzOjsM1wyKQeIqi4sRc3nwWfIw8Lo3BM5I3U6b7SrKJQJKwr3ryWDeZGY+eH3o+lMTJq50CExHBgoQYbdTTQRAttdNBFL53jQ+ycFJERKyf45rKqp76TWjbwBg==)
+  last-modified (1547754065664)
+}
 train (t-p9awei12qfzo1kcgr6xmko7cl) {
   utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] Change that to (The Lab)[v:PodName]")
   plan (hZBNDoJADEY/xB+EGxijrlxyCTa6UYPxAJVplISRydCFx3cCGxYNpplp0vfaNEWGLX/JuobzzlHFJXetly4vueLaCQ4qLVpra7l6wx4b1RiY3v1whoSnjOJNnxebs7DFUTc8hxljb696J3rWQnJrzeSiO5XdueGq7/07XL9iIBeyjAwRZogxxwJLrEIkWCMFRvW4Z0mIqK8PD6McBzcNP34=)

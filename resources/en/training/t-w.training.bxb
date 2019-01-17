@@ -1,3 +1,8 @@
+train (t-wqe5e2i5wsv7j7s10cb6ltry7) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] with (zero gravity)[v:SearchCriteria]")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
+  last-modified (1547753647805)
+}
 train (t-wtgaoht71lr421y84c2xokypr) {
   utterance ("[g:FindSpaceResorts] Find me a space resort close to (Earth)[v:Planet:Earth] with a (spa)[v:SearchCriteria]")
   plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQiAiwIA)
