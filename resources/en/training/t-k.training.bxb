@@ -1,4 +1,5 @@
 train (t-kvfm974qf0fxplzyjcg804hyz) {
-  utterance ("[g:SpaceResort] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:FindSpaceResorts] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
+  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQiAiwIA)
+  last-modified (1547752570924)
 }
