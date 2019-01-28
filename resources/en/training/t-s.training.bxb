@@ -5,7 +5,7 @@ train (t-s4g3zknk1jr2ddr2fh8tdaht9) {
 train (t-sk0zgndhhzh1irhopmxe59o4c) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (The Mercurial)[v:Name]")
   plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBEqtKv8TcVCJcwsLAyMDEwAykGcAsRiCEAWYwBvIB)
-  last-modified (1547753494240)
+  last-modified (1548442357948)
 }
 train (t-ssg7w2bubn5xdbj4mlx9np2x2) {
   utterance ("[g:FindSpaceResorts:continue] around (Neptune)[v:Planet:Neptune]")

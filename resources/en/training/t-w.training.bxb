@@ -8,3 +8,8 @@ train (t-wtgaoht71lr421y84c2xokypr) {
   plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQiAiwIA)
   last-modified (1547752627691)
 }
+train (t-wuzrw8nd7eblrzhgdywe4xitx) {
+  utterance ("[g:SpaceResort#planet,r:ProjectResort] Where is (The Mercurial)[v:Name]?")
+  plan (Y2BjkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRVrCrcMvNSkFQVM0hiVeaXmJvKwMrAyMDEwMzAAmQxwNlMQBYDGDMA+YxAOSYGBgA=)
+  last-modified (1548702226243)
+}

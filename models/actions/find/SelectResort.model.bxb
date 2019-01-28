@@ -1,6 +1,7 @@
 action (SelectResort) {
   description (Select a HabitatProd from a list by name)
-  type (Search)
+  type (Calculation)
+  
   collect {
 
     input (resorts) {

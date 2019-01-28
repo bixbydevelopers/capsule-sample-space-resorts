@@ -2,6 +2,9 @@ action (FindSpaceResorts) {
   description (Find space resorts)
   type (Search)
   collect {
+    input (name) {
+      type (Name)
+    }
     input (planet) {
       type (Planet)
     }

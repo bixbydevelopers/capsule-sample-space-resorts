@@ -1,0 +1,14 @@
+// TODO: Should be property result, but that doesn't work
+dialog (Result) {
+  match: Planet (this)
+  if (size(this) == 1) {
+    template-macro (PlanetResultDetails) {
+      param (planet) {
+        expression (this)
+      }
+    }
+  } else {
+    // TODO
+    template (TODO)
+  }
+}

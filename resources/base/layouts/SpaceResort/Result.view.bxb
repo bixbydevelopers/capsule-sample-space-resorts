@@ -44,16 +44,9 @@ result-view {
         }
       }
     } else-if (size(result) == 1) {
-      layout {
-        layout-macro (space-resort-image-carousel) {
-          param (spaceResort) {
-            expression (result)
-          }
-        }
-        layout-macro (space-resort-details) {
-          param (spaceResort) {
-            expression (result)
-          }
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression (result)
         }
       }
     }

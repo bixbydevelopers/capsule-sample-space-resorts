@@ -5,7 +5,7 @@ endpoints {
 
   action-endpoints {
     action-endpoint (FindSpaceResorts) {
-      accepted-inputs (planet, searchCriteria)
+      accepted-inputs (name, planet, searchCriteria)
       local-endpoint (find/FindSpaceResorts.js)
     }
 
