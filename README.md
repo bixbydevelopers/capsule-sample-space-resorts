@@ -1,41 +1,55 @@
-## Use cases
+<p align="Center">
+  <img src="https://bixbydevelopers.com/dev/static/bixby2logo.svg" width="25%" height="25%">
+  <br/>
+  <h1 align="Center">Space Resorts - Bixby Fully Developed Capsule</h1>
+</p>
 
-### Find Flow
+## Overview
+[Space Resorts Sample Capsule](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/space-resorts)
 
-#### Outer Queries
+The Space Resorts sample capsule demonstrates a fully-developed capsule that uses several of the features and abilities discussed in the [Bixby Developer Guides](https://bixbydevelopers.com/dev/docs/dev-guide/developers), while also using the best practices described in the [Bixby Design Guides](https://bixbydevelopers.com/dev/docs/dev-guide/design-guides/).
 
-Find space resorts
-
-Show me space hotels with crater canyoneering
-
-Search for hotels around The Red Planet
-
-Look for space hotels with quantum bungee jumping around Saturn
-
-#### Inner Queries (Continuations)
-
-On Jupiter
-
-With low gravity
-
-Only the ones that are kid-friendly
+More in-depth information on the example.spaceResorts sample capsule can be found in the these [videos](https://bixbydevelopers.com/dev/docs/sample-capsules/videos).
 
 
-### Book Flow
+## Sample Usage
 
-#### Outer Queries
-Make a reservation for a space resort on Mars the third weekend in December for 2 astronauts
+### Search
+"Find space resorts"
 
-Do I have an upcoming space trip?
+"Show me space hotels with crater canyoneering"
 
-Cancel my space trip
+"Search for hotels around The Red Planet"
 
+"Look for space hotels with quantum bungee jumping around Saturn"
 
-#### Inner Queries (Continuations)
-Make reservation
+#### Refine your queries with [Continuations](https://bixbydevelopers.com/dev/docs/sample-capsules/samples/continuation) such as 
 
-Change that to December 10th
+"On Jupiter"
 
-Change the habitat pod
+"With low gravity"
 
-Change that to 2 astronauts
+"Only the ones that are kid-friendly"
+
+### Book
+"Make a reservation for a space resort on Mars the third weekend in December for 2 astronauts"
+
+"Do I have an upcoming space trip?"
+
+"Cancel my space trip"
+
+---
+
+## Additional Resources
+
+### Your Souce for Everything Bixby
+* [Bixby Developer Center](http://bixbydevelopers.com) - Everything you need to get started with Bixby Development!
+
+### Guides & Best Practices
+* [Quick Start Guide](https://bixbydevelopers.com/dev/docs/get-started/quick-start) - Build your first capsule
+* [Design Guides](https://bixbydevelopers.com/dev/docs/dev-guide/design-guides) - Best practices for designing your capsules
+* [Developer Guides](https://bixbydevelopers.com/dev/docs/dev-guide/developers) - Guides that take you from design and modeling all the way through deployment of your capsules
+
+### Need Support?
+* Have a feature request? Please suggest it in our [Support Community](https://support.bixbydevelopers.com/hc/en-us/community/topics/360000183273-Feature-Requests) to help us prioritize.
+* Have a technical question? Ask on [Stack Overflow](https://stackoverflow.com/questions/tagged/bixby) with tag “bixby”
