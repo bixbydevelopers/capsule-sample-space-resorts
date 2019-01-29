@@ -57,7 +57,7 @@ You can see all trained utterances and plans by entering this query in the train
 - Do I have an upcoming space trip?
 - Cancel my space trip
 
-We train these to the goal `Order#commitOrder` where `commitOrder is a named-consumer on the `Order` with two flagged signal routes: `CreateItem` and `CreateOrder`. 
+We train these to the goal `Order#commitOrder` where `commitOrder` is a named-consumer on the `Order` with two flagged signal routes: `CreateItem` and `CreateOrder`. 
 We annotate as Values any present inputs for either "find" or "book", such as resort name, planet, search criteria, number of astronauts, etc. 
 This is to create a plan where we first find a space resort that matches the search inputs, and then prepare an `Order` and pass it to the `CommitOrder` Action which will present the user with a Confirmation screen to review and agree to the reservation.
 
