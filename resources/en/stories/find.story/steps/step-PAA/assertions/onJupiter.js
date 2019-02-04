@@ -4,10 +4,10 @@
  */
 
 describe('simple', () => {
-  it('withASpa', () => {
+  it('onJupiter', () => {
     const { results } = step.currentNode
     expect(results).toBeTruthy()
-    expect(results.length).toBe(5)
-    expect(results[0].name).toEqual("Venus Space Spa")
+    expect(results.length).toBe(6)
+    expect(results[0].name).toEqual("Io-Tel")
   })
 })

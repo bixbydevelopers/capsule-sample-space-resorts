@@ -4,10 +4,10 @@
  */
 
 describe('simple', () => {
-  it('onJupiter', () => {
+  it('withRefueling', () => {
     const { results } = step.currentNode
     expect(results).toBeTruthy()
-    expect(results.length).toBe(4)
-    expect(results[0].name).toEqual("Io-Tel")
+    expect(results.length).toBe(6)
+    expect(results[0].name).toEqual("The Icarus")
   })
 })

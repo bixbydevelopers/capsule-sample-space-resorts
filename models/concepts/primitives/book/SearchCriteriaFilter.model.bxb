@@ -1,4 +1,0 @@
-name (SearchCriteriaFilter) {
-  description (SearchCriteria used to filter space resorts)
-  role-of (SearchCriteria)
-}

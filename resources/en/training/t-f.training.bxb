@@ -1,10 +1,12 @@
 train (t-fbat4sw7ltxdnyzym82zcc1qn) {
-  utterance ("[g:SpaceResort] Research space resorts on (Mercury)[v:Planet:Mercury]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+  utterance ("[g:FindSpaceResorts] Research space resorts on (Mercury)[v:Planet:Mercury]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
+  last-modified (1547752515727)
 }
 train (t-feh2otm01albduww5e7cvjqq2) {
-  utterance ("[g:SpaceResort] Show me space resorts with (low gravity)[v:SearchCriteria]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCDABMEA)
+  utterance ("[g:FindSpaceResorts] Show me space resorts with (low gravity)[v:SearchCriteria]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCAA5QMA)
+  last-modified (1547752522553)
 }
 train (t-fkqrqt36ifvv2fh5hwzevz03d) {
   utterance ([g:Order#commitOrder:continue,r:UpdateOrder,r:GetPod] Change the pod)

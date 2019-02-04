@@ -1,6 +1,7 @@
 action (SelectResort) {
   description (Select a HabitatProd from a list by name)
-  type (Search)
+  type (Calculation)
+  
   collect {
 
     input (resorts) {
@@ -20,17 +21,17 @@ action (SelectResort) {
       collect {
         input (name) {
           description (space resort name)
-          type (NameFilter)
+          type (Name)
           min (Optional)
         }
         input (planet) {
           description (space resort name)
-          type (PlanetFilter)
+          type (Planet)
           min (Optional)
         }
         input(searchCriteria) {
           description (search criteria)
-          type (SearchCriteriaFilter)
+          type (SearchCriteria)
           min (Optional)
           max (Many)
         }
@@ -38,6 +39,9 @@ action (SelectResort) {
     }
   }
   output (SpaceResort) {
+    on-empty {
+      // TODO
+    }
     throws {
       error (MultipleMatches) {
         property (matches) {

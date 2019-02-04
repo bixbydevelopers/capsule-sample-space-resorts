@@ -213,6 +213,31 @@ template-macro-def (SpaceResortCanceled) {
   }
 }
 
+// TODO: translate
+template-macro-def (GravityResultDetails) {
+  params {
+    param (gravity) {
+      type (Gravity)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("The gravity is #{value(gravity)}.")
+  }
+}
+
+// TODO: translate
+template-macro-def (PlanetResultDetails) {
+  params {
+    param (planet) {
+      type (Planet)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("It is #{input(planet)}.")
+  }
+}
 
 // Exception handling
 template-macro-def (UnsupportedSearchOption) {

@@ -1,8 +1,10 @@
 train (t-n9byevgdglkf6t465mgrr397k) {
-  utterance ("[g:SpaceResort] Look for a space resort that is (good for kids)[v:SearchCriteria]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCDABMEA)
+  utterance ("[g:FindSpaceResorts] Look for a space resort that is (good for kids)[v:SearchCriteria]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCAA5QMA)
+  last-modified (1547752585169)
 }
 train (t-nulj1naqlp1k0fz8zadvztese) {
-  utterance ("[g:SpaceResort:continue] with (zero gravity)[v:SearchCriteria]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCDABMEA)
+  utterance ("[g:FindSpaceResorts:continue] with (zero gravity)[v:SearchCriteria]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCAA5QMA)
+  last-modified (1547752593175)
 }

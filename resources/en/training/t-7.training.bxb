@@ -1,4 +1,5 @@
 train (t-7bcyyj38mt1cg9u66y809kzqy) {
-  utterance ([g:SpaceResort] Find space resorts)
-  plan (Y2BkUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhAgBFEAAA=)
+  utterance ([g:FindSpaceResorts] Find space resorts)
+  plan (Y2BiUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzMAIhAxQDCQB)
+  last-modified (1547752468929)
 }

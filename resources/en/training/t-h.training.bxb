@@ -1,4 +1,10 @@
+train (t-h1qxjbllwahqzceal3117ixhq) {
+  utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] What planet is it on?)
+  plan (Y2BhkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRmBkYGJiDJAKaZgCQIMIF5DAA=)
+  last-modified (1548702214779)
+}
 train (t-hsok749bc0h6h6zj24azmu3yi) {
-  utterance ("[g:SpaceResort] Look for space resorts around (Jupiter)[v:Planet:Jupiter]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+  utterance ("[g:FindSpaceResorts] Look for space resorts around (Jupiter)[v:Planet:Jupiter]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
+  last-modified (1547752556292)
 }
