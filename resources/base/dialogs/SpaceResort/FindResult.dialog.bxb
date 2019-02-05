@@ -1,6 +1,8 @@
 dialog (Result) {
-  match: SpaceResort (this) {
-    from-output: FindSpaceResorts (find)
+  match : core.Boolean(all) {
+    from-property: SpaceResort (this) {
+      from-output: FindSpaceResorts (find)
+    }
   }
   if (size(this) == 1) {
     template-macro (SpaceResortResultDetails) {

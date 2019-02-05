@@ -1,5 +1,7 @@
 dialog (Result) {
-  match: SpaceResort (this)
+  match : core.Boolean(all) {
+    from-property: SpaceResort (this)
+  }
   if (size(this) == 1) {
     template-macro (SpaceResortResultDetails) {
       param (spaceResort) {

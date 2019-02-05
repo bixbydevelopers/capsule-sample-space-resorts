@@ -1,5 +1,7 @@
 dialog (NoResult) {
-  match: SpaceResort (this)
+  match : core.Boolean(all) {
+    from-property: SpaceResort (this)
+  }
   template-macro (SpaceResortNoResult) {
     param (spaceResort) {
       expression (this)
