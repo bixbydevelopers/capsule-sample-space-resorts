@@ -28,4 +28,9 @@ structure (SpaceResort) {
     type (Image)
     max (Many)
   }
+  property (all) {
+    description (Training goal for generic find space resort queries)
+    type (core.Boolean)
+    min (Required) max (One)
+  }
 }

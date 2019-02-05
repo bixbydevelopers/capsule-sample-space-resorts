@@ -3,7 +3,7 @@ train (t-88agu0kg25gkuj851aw222hhl) {
   plan (Y2BikEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChh0MQq65yYl5ya45yfm5tZUpKa4l+UklrEwAiEDFAMJAE=)
 }
 train (t-8pmpvzp89m61z877whv265g1p) {
-  utterance ("[g:FindSpaceResorts] Find hotels near (Mars)[v:Planet:Mars]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
-  last-modified (1548702276245)
+  utterance ("[g:SpaceResort#all] Find hotels near (Mars)[v:Planet:Mars]")
+  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDMwMjAxOQZADTTEASBEA0UAwA)
+  last-modified (1549325522548)
 }

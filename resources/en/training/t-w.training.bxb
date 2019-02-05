@@ -4,9 +4,9 @@ train (t-wqe5e2i5wsv7j7s10cb6ltry7) {
   last-modified (1547753647805)
 }
 train (t-wtgaoht71lr421y84c2xokypr) {
-  utterance ("[g:FindSpaceResorts] Find me a space resort close to (Earth)[v:Planet:Earth] with a (spa)[v:SearchCriteria]")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQiAiwIA)
-  last-modified (1547752627691)
+  utterance ("[g:SpaceResort#all] Find me a space resort close to (Earth)[v:Planet:Earth] with a (spa)[v:SearchCriteria]")
+  plan (Y2BlECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExlYGBgZmBiYgTQDmAWCjAwQwAxkgWUA)
+  last-modified (1549325528125)
 }
 train (t-wuzrw8nd7eblrzhgdywe4xitx) {
   utterance ("[g:SpaceResort#planet,r:ProjectResort] Where is (The Mercurial)[v:Name]?")

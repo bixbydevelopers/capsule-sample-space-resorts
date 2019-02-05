@@ -4,7 +4,7 @@ train (t-h1qxjbllwahqzceal3117ixhq) {
   last-modified (1548702214779)
 }
 train (t-hsok749bc0h6h6zj24azmu3yi) {
-  utterance ("[g:FindSpaceResorts] Look for space resorts around (Jupiter)[v:Planet:Jupiter]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
-  last-modified (1547752556292)
+  utterance ("[g:SpaceResort#all] Look for space resorts around (Jupiter)[v:Planet:Jupiter]")
+  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDMwMjAxOQZADTTEASBEA0UAwA)
+  last-modified (1549325523002)
 }
