@@ -4,7 +4,7 @@ train (t-n9byevgdglkf6t465mgrr397k) {
   last-modified (1549325524455)
 }
 train (t-nulj1naqlp1k0fz8zadvztese) {
-  utterance ("[g:SpaceResort#all:continue:SpaceResort] with (zero gravity)[v:SearchCriteria]")
-  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBmYGRgYmIMkAppmAJAiAaKAYAA==)
-  last-modified (1549325524770)
+  utterance ("[g:SpaceResort:continue:SpaceResort] with (zero gravity)[v:SearchCriteria]")
+  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCDABMEA)
+  last-modified (1549328146660)
 }
