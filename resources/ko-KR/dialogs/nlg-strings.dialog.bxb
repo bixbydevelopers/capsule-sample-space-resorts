@@ -6,7 +6,7 @@ template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
     }
   }
   content {
-    template ("Suit up, your trip[ to #{value(receipt.item.spaceResort.planet)}] is starting soon!")// TODO: translate
+    template ("우주복은 준비 되었나요? 여행이 곧 시작됩니다!")
   }
 }
 
