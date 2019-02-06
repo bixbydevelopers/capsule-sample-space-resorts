@@ -1,140 +1,3 @@
-template-macro-def (SpaceResortResultDetails) {
-  params {
-    param (spaceResort) {
-      type (SpaceResort)
-      min (Required) max (One)
-    }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
-  }
-  content {
-    template ("#{concept(spaceResort)}를 확인해보세요.")
-  }
-}
-
-template-macro-def (SpaceResortResultSummary) {
-  params {
-    param (spaceResort) {
-      type (SpaceResort)
-      min (Required) max (One)
-    }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
-  }
-  content {
-    template ("여러개의 #{concept(spaceResort)}를 찾았어요.")
-  }
-}
-
-template-macro-def (SpaceResortNoResult) {
-  params {
-    param (spaceResort) {
-      type (SpaceResort)
-      min (Required) max (One)
-    }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
-  }
-  content {
-    template ("#{concept(spaceResort)}를 찾지 못했어요.")  //TODO translate
-  }
-}
-template-macro-def (WhichSpaceResortWouldYouLike) {
-  content {
-    template ("어떤 리조트를 원하시나요?")
-  }
-}
-// DateInterval
-template-macro-def (WhenDoYouWantToStay) {
-  content {
-    template ("언제 방문하고 싶으신가요?")
-  }
-}
-
-// HabitatPod
-template-macro-def (WhichHabitatPodWouldYouLike) {
-  content {
-    template ("원하시는 패키지를 선택해주세요.")
-  }
-}
-
-// NumberOfAstronauts
-template-macro-def (HowManyAstronauts) {
-  content {
-    template ("우주 여행객 수가 몇명인가요?")
-  }
-}
-
-// Receipt
-template-macro-def (AreYouSureYouWantToBookThisTrip) {
-  content {
-    template ("이 여행을 예약하시겠습니까?")
-  }
-}
-
-template-macro-def (AreYouSureYouWantToCancelThisTrip) {
-  content {
-    template ("이 여행을 취소하시겠습니까?")
-  }
-}
-
-template-macro-def (YourTripHasBeenCanceled) {
-  content {
-    template ("여행이 취소되었습니다.")
-  }
-}
-
-template-macro-def (IHopeYouHaveAGreatTimeAt) {
-  params {
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{resortName}에서 즐거운 여행되시길 바랍니다.")
-  }
-}
-
-template-macro-def (IWontCancelIt) {
-  content {
-    template ("네, 취소하지 않을께요.")
-  }
-}
-
-template-macro-def (YourTripToPlaceIsOnDate) {
-  params {
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-    param (date) {
-      type (viv.time.Date)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{resortName}(으)로 가시는 여행 일정은 #{value(date)}입니다.")
-  }
-}
 
 // Activity
 template-macro-def (AstronautOneInSpaceResort) {
@@ -201,52 +64,60 @@ template-macro-def (AstronautManyGoingToSpaceResort) {
   }
 }
 
-template-macro-def (SpaceResortCanceled) {
+template-macro-def (RECEIPT_RESULT) {
   params {
-    param (resortName) {
-      type (viv.core.Text)
+    param (receipt) {
+      type (Receipt)
       min (Required) max (One)
     }
   }
   content {
-    template ("#{resortName}은(는) 취소되었습니다!")
+    if ("exists(receipt.canceled) && receipt.canceled == true") {
+      template ("여행이 취소되었습니다.")
+    } else {
+      template ("#{value(receipt.item.spaceResort)}에서 즐거운 여행되시길 바랍니다.")
+    }
   }
 }
 
-// TODO: translate
-template-macro-def (GravityResultDetails) {
-  params {
-    param (gravity) {
-      type (Gravity)
-      min (Required) max (One)
-    }
-  }
+template-macro-def (SPACE_RESORT_SELECTION) {
   content {
-    template ("The gravity is #{value(gravity)}.")
+    template ("어떤 리조트를 원하시나요?")
   }
 }
 
-// TODO: translate
-template-macro-def (PlanetResultDetails) {
-  params {
-    param (planet) {
-      type (Planet)
-      min (Required) max (One)
-    }
-  }
+template-macro-def (NUMBER_OF_ASTRONAUTS_SELECTION) {
   content {
-    template ("It is #{input(planet)}.")
+    template ("우주 여행객 수가 몇명인가요?")
+  }
+}
+
+template-macro-def (HABITAT_POD_SELECTION) {
+  content {
+    template ("원하시는 패키지를 선택해주세요.")
+  }
+}
+
+template-macro-def (DATE_INTERVAL_ELICITATION) {
+  content {
+    template ("언제 방문하고 싶으신가요?")
+  }
+}
+
+template-macro-def (COMMIT_ORDER_CONFIRMATION) {
+  content {
+    template ("이 여행을 예약하시겠습니까?")
   }
 }
 
 // Exception handling
-template-macro-def (UnsupportedSearchOption) {
+template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {
     template ("지원하지 않는 검색 옵션입니다.")
   }
 }
 
-template-macro-def (UnknownError) {
+template-macro-def (UNKNOWN_ERROR) {
   content {
     template ("문제가 발생했습니다.")
   }

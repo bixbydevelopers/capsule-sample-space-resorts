@@ -1,0 +1,32 @@
+dialog (Value) {
+  match: Planet (this)
+  switch (this) {
+    case (Mercury) {
+      template ("Mercury")
+    }
+    case (Venus) {
+      template ("Venus")
+    }
+    case (Earth) {
+      template ("Earth")
+    }
+    case (Mars) {
+      template ("Mars")
+    }
+    case (Jupiter) {
+      template ("Jupiter")
+    }
+    case (Saturn) {
+      template ("Saturn")
+    }
+    case (Uranus) {
+      template ("Uranus")
+    }
+    case (Neptune) {
+      template ("Neptune")
+    }
+    case (Pluto) {
+      template ("Pluto")
+    }
+  }
+}

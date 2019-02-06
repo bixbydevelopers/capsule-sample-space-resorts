@@ -1,10 +1,11 @@
+// TODO
 activity-support {
   match: Receipt (this)
 
   time (this.item.dateInterval.start)
 
   states {
-    
+
     if ("this.canceled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
 
       state (Recent) {
@@ -12,14 +13,7 @@ activity-support {
         summary-view {
           title {
             if (this.canceled) {
-              template-macro (SpaceResortCanceled) {
-                param (resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
-              // template("#{value(this.item.spaceResort.name)} canceled!")
+              template ("#{value(this.item.spaceResort)} canceled!")
             } else {
               template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
             }
@@ -29,36 +23,12 @@ activity-support {
           }
           message {
             if (this.canceled) {
-              template-macro (SpaceResortCanceled) {
-                param (resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
+              template ("#{value(this.item.spaceResort)} canceled!")
             } else {
               if (this.item.numberOfAstronauts == 1) {
-                template-macro (AstronautOneInSpaceResort) {
-                  param (numberOfAstronaut) {
-                    expression (this.item.numberOfAstronauts)
-                  }
-                  param(resortName) {
-                    if (exists(this.item.spaceResort.name)) {
-                      expression (this.item.spaceResort.name)
-                    }
-                  }
-                }
+                template ("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort)}!")
               } else {
-                template-macro (AstronautManyInSpaceResort) {
-                  param (numberOfAstronaut) {
-                    expression (this.item.numberOfAstronauts)
-                  }
-                  param(resortName) {
-                    if (exists(this.item.spaceResort.name)) {
-                      expression (this.item.spaceResort.name)
-                    }
-                  }
-                }
+                template ("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort)}!")
               }
             }
           }
@@ -73,7 +43,7 @@ activity-support {
 
       state (Scheduled) {
         expires(this.relevantDateTime)
-        
+
         summary-view {
           title {
             template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
@@ -83,27 +53,9 @@ activity-support {
           }
           message {
             if (this.item.numberOfAstronauts == 1) {
-              template-macro (AstronautOneGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
-            } else {              
-              template-macro (AstronautManyGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
+              template ("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort)}!")
+            } else {
+              template ("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort)}!")
             }
           }
         }
@@ -126,27 +78,9 @@ activity-support {
           }
           message {
             if (this.item.numberOfAstronauts == 1) {
-              template-macro (AstronautOneGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
+              template ("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort)}!")
             } else {
-              template-macro (AstronautManyGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
+              template ("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort)}!")
             }
           }
         }

@@ -1,5 +1,4 @@
 dialog (ActionAborted) {
   match: CommitOrder
-  
-  template-macro (YourTripHasBeenCanceled)
+  template ("Your order has been canceled.")
 }

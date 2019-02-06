@@ -1,0 +1,6 @@
+dialog (Confirmation) {
+  match: Receipt {
+    from-output: CancelCommittedOrder
+  }
+  template ("Are you sure you want to cancel this trip?")
+}

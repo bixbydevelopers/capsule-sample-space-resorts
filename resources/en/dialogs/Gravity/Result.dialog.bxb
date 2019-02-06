@@ -1,12 +1,9 @@
 // TODO: Should be property result, but that doesn't work
 dialog (Result) {
-  match: Planet (this)
+  match: Gravity (this)
   if (size(this) == 1) {
-    template-macro (PlanetResultDetails) {
-      param (planet) {
-        expression (this)
-      }
-    }
+    template ("The gravity is #{value(this)}.")
+    // template ("중력은 #{value(gravity)}입니다.")
   } else {
     // TODO
     template (TODO)

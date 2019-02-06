@@ -3,8 +3,8 @@ dialog (Input) {
   if (size(this) == 0) {
     template("")
   } else-if (size(this) == 1) {
-    template ("with that #{concept(this)}")
+    template ("#{concept(this)}으로")
   } else {
-    template ("with your #{concept(this)}")
+    template ("#{concept(this)}함께")
   }
 }

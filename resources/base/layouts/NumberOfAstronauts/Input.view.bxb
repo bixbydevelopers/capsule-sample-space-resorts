@@ -1,7 +1,7 @@
 input-view {
   match: NumberOfAstronauts(noOfAstronauts)
   message {
-    template-macro (HowManyAstronauts)
+    template-macro (NUMBER_OF_ASTRONAUTS_SELECTION)
   }
   render {
     if (size(noOfAstronauts) > 1) {

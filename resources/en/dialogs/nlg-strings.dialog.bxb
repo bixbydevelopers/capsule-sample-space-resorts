@@ -1,304 +1,63 @@
-template-macro-def (SpaceResortResultDetails) {
+template-macro-def (A) {
+  content {
+    template ("")
+  }
+}
+
+template-macro-def (RECEIPT_RESULT) {
   params {
-    param (spaceResort) {
-      type (SpaceResort)
+    param (receipt) {
+      type (Receipt)
       min (Required) max (One)
     }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
   }
   content {
-    template-macro (SpaceResort) {
-      param (beginText) { literal ("Check out this") }
-      param (spaceResort) { expression (spaceResort) }
-      param (planet) { expression (planet) }
-      param (searchCriteria) { expression (searchCriteria) }
+    if ("exists(receipt.canceled) && receipt.canceled == true") {
+      template ("Your trip has been canceled.")
+    } else {
+      template ("I hope you have a great time[ at #{value(receipt.item.spaceResort)}].")
     }
   }
 }
 
-template-macro-def (SpaceResortResultSummary) {
-  params {
-    param (spaceResort) {
-      type (SpaceResort)
-      min (Required) max (One)
-    }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
-  }
+template-macro-def (SPACE_RESORT_SELECTION) {
   content {
-    template-macro (SpaceResort) {
-      param (beginText) { literal ("I found these") }
-      param (spaceResort) { expression (spaceResort) }
-      param (planet) { expression (planet) }
-      param (searchCriteria) { expression (searchCriteria) }
-    }
+    template("Which space resort would you like?")
   }
 }
 
-template-macro-def (SpaceResortNoResult) {
-  params {
-    param (spaceResort) {
-      type (SpaceResort)
-      min (Required) max (One)
-    }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
-  }
-  content {
-    template-macro (SpaceResort) {
-      param (beginText) { literal ("I couldn't find any") }
-      param (spaceResort) { expression (spaceResort) }
-      param (planet) { expression (planet) }
-      param (searchCriteria) { expression (searchCriteria) }
-    }
-  }
-}
-
-template-macro-def (SpaceResort) {
-  params {
-    param (beginText) {
-      type (core.Text)
-    }
-    param (spaceResort) {
-      type (SpaceResort)
-      min (Required) max (One)
-    }
-    param (planet) {
-      type (Planet)
-      min (Optional) max (One)
-    }
-    param (searchCriteria) {
-      type (SearchCriteria)
-      min (Optional) max (Many)
-    }
-  }
-  content {
-    if (exists(planet) && exists(searchCriteria)) {
-      if (size(searchCriteria) == 1) {
-        template ("#{beginText} #{concept(spaceResort)} on #{value(planet)} with that option.")        
-      } else {
-        template ("#{beginText} #{concept(spaceResort)} on #{value(planet)} with your options.")                
-      }
-    } else-if (exists(planet)) {
-        template ("#{beginText} #{concept(spaceResort)} on #{value(planet)}.")        
-    } else-if (exists(searchCriteria)) {
-      if (size(searchCriteria) == 1) {
-        template ("#{beginText} #{concept(spaceResort)} with that option.")        
-      } else {
-        template ("#{beginText} #{concept(spaceResort)} with your options.")                
-      }
-    }
-    template ("#{beginText} #{concept(spaceResort)}.")
-  }
-}
-template-macro-def (WhichSpaceResortWouldYouLike) {
-  content {
-    template ("Which space resort would you like?")
-  }
-}
-
-// DateInterval
-template-macro-def (WhenDoYouWantToStay) {
-  content {
-    template ("When do you want to stay?")
-  }
-}
-
-// HabitatPod
-template-macro-def (WhichHabitatPodWouldYouLike) {
-  content {
-    template ("Which habitat pod would you like?")
-  }
-}
-
-// NumberOfAstronauts
-template-macro-def (HowManyAstronauts) {
+template-macro-def (NUMBER_OF_ASTRONAUTS_SELECTION) {
   content {
     template ("How many astronauts?")
   }
 }
 
-// Receipt
-template-macro-def (AreYouSureYouWantToBookThisTrip) {
+template-macro-def (HABITAT_POD_SELECTION) {
+  content {
+    template ("Which habitat pod would you like?")
+  }
+}
+
+template-macro-def (DATE_INTERVAL_ELICITATION) {
+  content {
+    template ("When do you want to stay?")
+  }
+}
+
+template-macro-def (COMMIT_ORDER_CONFIRMATION) {
   content {
     template ("Are you sure you want to book this trip?")
   }
 }
 
-template-macro-def (AreYouSureYouWantToCancelThisTrip) {
-  content {
-    template ("Are you sure you want to cancel this trip?")
-  }
-}
-
-template-macro-def (YourTripHasBeenCanceled) {
-  content {
-    template ("Your trip has been canceled.")
-  }
-}
-
-template-macro-def (IHopeYouHaveAGreatTimeAt) {
-  params {
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("I hope you have a great time at #{resortName}.")
-  }
-}
-
-template-macro-def (IWontCancelIt) {
-  content {
-    template ("OK, I won't cancel it.")
-  }
-}
-
-template-macro-def (YourTripToPlaceIsOnDate) {
-  params {
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-    param (date) {
-      type (viv.time.Date)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("Your trip to #{resortName} is on #{value(date)}.")
-  }
-}
-
-// Activity
-template-macro-def (AstronautOneInSpaceResort) {
-  params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{numberOfAstronaut} astronaut in #{resortName}!")
-  }
-}
-
-template-macro-def (AstronautManyInSpaceResort) {
-  params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{numberOfAstronaut} astronauts in #{resortName}!")
-  }
-}
-
-template-macro-def (AstronautOneGoingToSpaceResort) {
-  params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{numberOfAstronaut} astronaut going to #{resortName}")
-  }
-}
-
-template-macro-def (AstronautManyGoingToSpaceResort) {
-  params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{numberOfAstronaut} astronauts going to #{resortName}")
-  }
-}
-
-template-macro-def (SpaceResortCanceled) {
-  params {
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{resortName} canceled!")
-  }
-}
-
-template-macro-def (GravityResultDetails) {
-  params {
-    param (gravity) {
-      type (Gravity)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("The gravity is #{value(gravity)}.")
-  }
-}
-
-template-macro-def (PlanetResultDetails) {
-  params {
-    param (planet) {
-      type (Planet)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("It is #{input(planet)}.")
-  }
-}
-
 // Exception handling
-template-macro-def (UnsupportedSearchOption) {
+template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {
     template ("Unsupported search criteria.")
   }
 }
 
-template-macro-def (UnknownError) {
+template-macro-def (UNKNOWN_ERROR) {
   content {
     template ("Something's wrong.")
   }

@@ -1,7 +1,7 @@
 input-view {
   match: HabitatPod(pods)
   message {
-    template-macro (WhichHabitatPodWouldYouLike)
+    template-macro (HABITAT_POD_SELECTION)
   }
   render {
     if (size(pods) > 1) {

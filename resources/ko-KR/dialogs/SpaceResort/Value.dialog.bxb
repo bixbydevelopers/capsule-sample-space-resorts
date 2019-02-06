@@ -1,0 +1,4 @@
+dialog (Value) {
+  match: SpaceResort(this)
+  template("#{value(this.name)}")
+}
