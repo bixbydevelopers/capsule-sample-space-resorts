@@ -1,66 +1,28 @@
-
-// Activity
-template-macro-def (AstronautOneInSpaceResort) {
+template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
   params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
+    param (receipt) {
+      type (Receipt)
       min (Required) max (One)
     }
   }
   content {
-    template ("#{numberOfAstronaut}명의 우주 여행객이 지금 #{resortName}에 있습니다!")
+    template ("Suit up, your trip[ to #{value(receipt.item.spaceResort.planet)}] is starting soon!")// TODO: translate
   }
 }
 
-template-macro-def (AstronautManyInSpaceResort) {
+template-macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
   params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
+    param (receipt) {
+      type (Receipt)
       min (Required) max (One)
     }
   }
   content {
-    template ("#{numberOfAstronaut}명의 우주 여행객이 지금 #{resortName}에 있습니다!")
-  }
-}
-
-template-macro-def (AstronautOneGoingToSpaceResort) {
-  params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
+    if (receipt.canceled) {
+      template ("예약 취소")
+    } else {
+      template("#{value(receipt.item.numberOfAstronauts)} 명 예약")
     }
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{numberOfAstronaut}명의 우주 여행객이 #{resortName}로 여행합니다")
-  }
-}
-
-template-macro-def (AstronautManyGoingToSpaceResort) {
-  params {
-    param (numberOfAstronaut) {
-      type (viv.core.Integer)
-      min (Required) max (One)
-    }
-    param (resortName) {
-      type (viv.core.Text)
-      min (Required) max (One)
-    }
-  }
-  content {
-    template ("#{numberOfAstronaut}명의 우주 여행객이 #{resortName}로 여행합니다")
   }
 }
 

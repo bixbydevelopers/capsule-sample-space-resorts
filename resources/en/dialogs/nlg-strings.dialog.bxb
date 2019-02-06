@@ -1,6 +1,28 @@
-template-macro-def (A) {
+template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+  params {
+    param (receipt) {
+      type (Receipt)
+      min (Required) max (One)
+    }
+  }
   content {
-    template ("")
+    template ("Suit up, your trip[ to #{value(receipt.item.spaceResort.planet)}] is starting soon!")
+  }
+}
+
+template-macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
+  params {
+    param (receipt) {
+      type (Receipt)
+      min (Required) max (One)
+    }
+  }
+  content {
+    if (receipt.canceled) {
+      template ("Reservation canceled")
+    } else {
+      template("Reservation for #{value(receipt.item.numberOfAstronauts)}")
+    }
   }
 }
 

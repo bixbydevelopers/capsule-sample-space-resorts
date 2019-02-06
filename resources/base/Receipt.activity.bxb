@@ -11,26 +11,21 @@ activity-support {
       state (Recent) {
 
         summary-view {
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
+          }
           title {
-            if (this.canceled) {
-              template ("#{value(this.item.spaceResort)} canceled!")
-            } else {
-              template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
-            }
+            template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template("[#{value(this.item.pod.name)}]")
-          }
-          message {
-            if (this.canceled) {
-              template ("#{value(this.item.spaceResort)} canceled!")
-            } else {
-              if (this.item.numberOfAstronauts == 1) {
-                template ("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort)}!")
-              } else {
-                template ("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort)}!")
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
               }
             }
+          }
+          message {
+            template ("")
           }
         }
         detail-view {
@@ -45,18 +40,21 @@ activity-support {
         expires(this.relevantDateTime)
 
         summary-view {
-          title {
-            template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
           }
-          details {
-            template("")
+          title {
+            template ("[#{value(this.item.spaceResort)}]")
+          }
+          details{
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
+              }
+            }
           }
           message {
-            if (this.item.numberOfAstronauts == 1) {
-              template ("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort)}!")
-            } else {
-              template ("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort)}!")
-            }
+            template ("")
           }
         }
         detail-view {
@@ -70,17 +68,24 @@ activity-support {
         expires(this.item.dateInterval.start)
 
         summary-view {
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
+          }
           title {
-            template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+            template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template("[#{value(this.item.pod.name)}]")
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
+              }
+            }
           }
           message {
-            if (this.item.numberOfAstronauts == 1) {
-              template ("#{value(this.item.numberOfAstronauts)} astronaut in #{value(this.item.spaceResort)}!")
-            } else {
-              template ("#{value(this.item.numberOfAstronauts)} astronauts in #{value(this.item.spaceResort)}!")
+            template-macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+              param (receipt) {
+                expression (this)
+              }
             }
           }
         }
