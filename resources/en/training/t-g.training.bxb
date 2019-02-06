@@ -4,9 +4,9 @@ train (t-g21w6mogz4dvodpjfu5ucys0n) {
   last-modified (1549325522026)
 }
 train (t-gedzmuz0vnki6mcw65z1vo0vh) {
-  utterance ("[g:SpaceResort:continue:SpaceResort] on (mars)[v:Planet:Mars]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
-  last-modified (1549328144851)
+  utterance ("[g:SpaceResort#all:continue] on (mars)[v:Planet:Mars]")
+  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDMwMjAxOQZADTTEASBEA0UAwA)
+  last-modified (1549477079049)
 }
 train (t-gvztevvro0pukvg8871ctme7v) {
   utterance ("[g:DateInterval:prompt] (next weekend)[v:viv.time.DateTimeExpression]")

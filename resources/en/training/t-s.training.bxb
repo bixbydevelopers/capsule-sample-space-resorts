@@ -9,7 +9,7 @@ train (t-sk0zgndhhzh1irhopmxe59o4c) {
   last-modified (1548442357948)
 }
 train (t-ssg7w2bubn5xdbj4mlx9np2x2) {
-  utterance ("[g:SpaceResort:continue:SpaceResort] around (Neptune)[v:Planet:Neptune]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
-  last-modified (1549328148040)
+  utterance ("[g:SpaceResort#all:continue] around (Neptune)[v:Planet:Neptune]")
+  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDMwMjAxOQZADTTEASBEA0UAwA)
+  last-modified (1549477158839)
 }
