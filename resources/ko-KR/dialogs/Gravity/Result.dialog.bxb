@@ -1,10 +1,8 @@
-// TODO: Should be property result, but that doesn't work
 dialog (Result) {
   match: Gravity (this)
   if (size(this) == 1) {
     template ("중력은 #{value(this)}입니다.")
   } else {
-    // TODO
-    template (TODO)
+    // Unexpected
   }
 }

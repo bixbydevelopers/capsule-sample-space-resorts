@@ -1,11 +1,8 @@
-// TODO: Should be property result, but that doesn't work
 dialog (Result) {
   match: Planet (this)
   if (size(this) == 1) {
     template ("It is #{input(this)}.")
-    // template ("#{input(this)}있다.")
   } else {
-    // TODO
-    template (TODO)
+    // Unexpected
   }
 }

@@ -1,3 +1,8 @@
+train (t-w7jkm033bo3cz7th9gvdt4g5s) {
+  utterance ([g:SpaceResort#all:continue:SpaceResort] Give me details for this space resort)
+  plan (Y2BikEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMDACIQMDExCDWQA=)
+  last-modified (1549562113096)
+}
 train (t-wqe5e2i5wsv7j7s10cb6ltry7) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] with (zero gravity)[v:SearchCriteria]")
   plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
@@ -11,5 +16,5 @@ train (t-wtgaoht71lr421y84c2xokypr) {
 train (t-wuzrw8nd7eblrzhgdywe4xitx) {
   utterance ("[g:SpaceResort#planet,r:ProjectResort] Where is (The Mercurial)[v:Name]?")
   plan (Y2BjkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRVrCrcMvNSkFQVM0hiVeaXmJvKwMrAyMDEwMzAAmQxwNlMQBYDGDMA+YxAOSYGBgA=)
-  last-modified (1548702226243)
+  last-modified (1549562559319)
 }

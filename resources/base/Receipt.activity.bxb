@@ -1,4 +1,3 @@
-// TODO
 activity-support {
   match: Receipt (this)
 
