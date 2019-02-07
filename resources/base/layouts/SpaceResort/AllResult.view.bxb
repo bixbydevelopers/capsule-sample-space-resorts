@@ -1,9 +1,17 @@
 result-view {
   match {
-    core.Boolean(all) {
+    ViewAll(all) {
       from-property {
         SpaceResort (result)
       }
+    }
+  }
+
+  message {
+    if (size(result) == 1) {
+      template ("Check out this #{concept(result)}.")
+    } else {
+      template ("I found these #{concept(result)}.")
     }
   }
 

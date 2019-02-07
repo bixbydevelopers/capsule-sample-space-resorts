@@ -30,7 +30,7 @@ structure (SpaceResort) {
   }
   property (all) {
     description (Training goal for generic find space resort queries)
-    type (core.Boolean)
+    type (ViewAll)
     min (Required) max (One)
   }
 }

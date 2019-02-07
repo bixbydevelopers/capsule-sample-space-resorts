@@ -1,5 +1,10 @@
+train (t-ko1y2ykapc33tv3t8h6gegcm7) {
+  utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] Where is it?)
+  plan (Y2BhkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRmBkYGJiDJAKaZgCQIMIF5DAA=)
+  last-modified (1549558986942)
+}
 train (t-kvfm974qf0fxplzyjcg804hyz) {
   utterance ("[g:SpaceResort#all] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
-  plan (Y2BlECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExlYGBgZmBiYgTQDmAWCjAwQwAxkgWUA)
-  last-modified (1549325523434)
+  plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
+  last-modified (1549558938390)
 }

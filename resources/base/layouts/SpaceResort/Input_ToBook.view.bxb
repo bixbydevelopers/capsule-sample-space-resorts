@@ -1,5 +1,7 @@
 input-view {
-  match: SpaceResort(result)
+  match: SpaceResort(result) {
+    to-input: CreateItem(action)
+  }
   message {
     template-macro (SPACE_RESORT_SELECTION)
   }

@@ -1,7 +1,7 @@
 train (t-p0xltp3ympg12v0v80yc3jy1o) {
   utterance ("[g:SpaceResort#all] Find space resorts with (refueling services)[v:SearchCriteria] around (Jupiter)[v:Planet:Jupiter]")
-  plan (Y2BlECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExlYGBgZmBiYgTQDmAWCjAwQwAxkgWUA)
-  last-modified (1549325526197)
+  plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
+  last-modified (1549558939136)
 }
 train (t-p65k12lzx32efijdjjt6n7sy7) {
   utterance ("[g:Order#commitOrder,r:CreateItem,r:CreateOrder] Book a space resort on (Pluto)[v:Planet:Pluto]")

@@ -1,10 +1,10 @@
 train (t-n9byevgdglkf6t465mgrr397k) {
   utterance ("[g:SpaceResort#all] Look for a space resort that is (good for kids)[v:SearchCriteria]")
-  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBmYGRgYmIMkAppmAJAiAaKAYAA==)
-  last-modified (1549325524455)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1549558938729)
 }
 train (t-nulj1naqlp1k0fz8zadvztese) {
   utterance ("[g:SpaceResort#all:continue] with (zero gravity)[v:SearchCriteria]")
-  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBmYGRgYmIMkAppmAJAiAaKAYAA==)
-  last-modified (1549477134581)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1549558938909)
 }

@@ -4,6 +4,6 @@ train (t-88agu0kg25gkuj851aw222hhl) {
 }
 train (t-8pmpvzp89m61z877whv265g1p) {
   utterance ("[g:SpaceResort#all] Find hotels near (Mars)[v:Planet:Mars]")
-  plan (Y2BhECjLLNNLzi9K1XPKz89JTcxjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDMwMjAxOQZADTTEASBEA0UAwA)
-  last-modified (1549325522548)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
+  last-modified (1549558935433)
 }
