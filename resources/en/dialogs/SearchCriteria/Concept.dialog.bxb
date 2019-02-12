@@ -1,0 +1,12 @@
+dialog (Concept) {
+  match: SearchCriteria (this)
+  switch (plural(this)) {
+    case (One) {
+      template (option)
+    }
+    default {
+      template (options)
+    }
+  }
+}
+

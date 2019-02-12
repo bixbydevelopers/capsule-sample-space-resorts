@@ -4,56 +4,10 @@ result-view {
   }
 
   render {
-    if (size(result) > 1) {
-      list-of (result) {
-        where-each (item) {
-          layout-macro (space-resort-summary) {
-            param (spaceResort) {
-              expression(item)
-            }
-          }
-        }
-        highlights {
-          select(pick) {
-            label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
-              param (spaceResort) {
-                expression(pick)
-              }
-            }
-            filter-by (exists(pick.highlight))
-          }
-          select(pick) {
-            label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
-              param (spaceResort) {
-                expression(pick)
-              }
-            }
-            filter-by (exists(pick.highlight))
-          }
-          select(pick) {
-            label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
-              param (spaceResort) {
-                expression(pick)
-              }
-            }
-            filter-by (exists(pick.highlight))
-          }
-        }
-      }
-    } else-if (size(result) == 1) {
-      layout {
-        layout-macro (space-resort-image-carousel) {
-          param (spaceResort) {
-            expression (result)
-          }
-        }
-        layout-macro (space-resort-details) {
-          param (spaceResort) {
-            expression (result)
-          }
+    if (size(result) == 1) {
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression (result)
         }
       }
     }

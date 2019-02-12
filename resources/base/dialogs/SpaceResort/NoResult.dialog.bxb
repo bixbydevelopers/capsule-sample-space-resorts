@@ -1,8 +1,0 @@
-dialog (NoResult) {
-  match: SpaceResort (this)
-  template-macro (SpaceResortNoResult) {
-    param (spaceResort) {
-      expression (this)
-    }
-  }
-}

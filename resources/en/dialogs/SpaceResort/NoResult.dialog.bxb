@@ -1,0 +1,6 @@
+dialog (NoResult) {
+  match : SpaceResort (this) {
+      from-output: FindSpaceResorts (find)
+  }
+  template ("I couldn't find any #{concept(this)}.")
+}

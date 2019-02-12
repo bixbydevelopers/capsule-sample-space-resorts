@@ -1,0 +1,8 @@
+dialog (NoResult) {
+  match : core.Boolean(all) {
+    from-property: SpaceResort (this) {
+      from-output: FindSpaceResorts (find)
+    }
+  }
+  template ("#{concept(this)}를 찾지 못했어요.")
+}

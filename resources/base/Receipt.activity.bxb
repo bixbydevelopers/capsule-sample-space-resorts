@@ -4,63 +4,27 @@ activity-support {
   time (this.item.dateInterval.start)
 
   states {
-    
+
     if ("this.canceled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
 
       state (Recent) {
 
         summary-view {
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
+          }
           title {
-            if (this.canceled) {
-              template-macro (SpaceResortCanceled) {
-                param (resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
-              // template("#{value(this.item.spaceResort.name)} canceled!")
-            } else {
-              template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
-            }
+            template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template("[#{value(this.item.pod.name)}]")
-          }
-          message {
-            if (this.canceled) {
-              template-macro (SpaceResortCanceled) {
-                param (resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
-            } else {
-              if (this.item.numberOfAstronauts == 1) {
-                template-macro (AstronautOneInSpaceResort) {
-                  param (numberOfAstronaut) {
-                    expression (this.item.numberOfAstronauts)
-                  }
-                  param(resortName) {
-                    if (exists(this.item.spaceResort.name)) {
-                      expression (this.item.spaceResort.name)
-                    }
-                  }
-                }
-              } else {
-                template-macro (AstronautManyInSpaceResort) {
-                  param (numberOfAstronaut) {
-                    expression (this.item.numberOfAstronauts)
-                  }
-                  param(resortName) {
-                    if (exists(this.item.spaceResort.name)) {
-                      expression (this.item.spaceResort.name)
-                    }
-                  }
-                }
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
               }
             }
+          }
+          message {
+            template ("")
           }
         }
         detail-view {
@@ -73,38 +37,23 @@ activity-support {
 
       state (Scheduled) {
         expires(this.relevantDateTime)
-        
+
         summary-view {
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
+          }
           title {
-            template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+            template ("[#{value(this.item.spaceResort)}]")
           }
-          details {
-            template("")
-          }
-          message {
-            if (this.item.numberOfAstronauts == 1) {
-              template-macro (AstronautOneGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
-            } else {              
-              template-macro (AstronautManyGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
+          details{
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
               }
             }
+          }
+          message {
+            template ("")
           }
         }
         detail-view {
@@ -118,34 +67,23 @@ activity-support {
         expires(this.item.dateInterval.start)
 
         summary-view {
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
+          }
           title {
-            template("[#{value(this.item.spaceResort.name)}][ • #{value(this.item.dateInterval.start)}]")
+            template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template("[#{value(this.item.pod.name)}]")
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
+              }
+            }
           }
           message {
-            if (this.item.numberOfAstronauts == 1) {
-              template-macro (AstronautOneGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
-              }
-            } else {
-              template-macro (AstronautManyGoingToSpaceResort) {
-                param (numberOfAstronaut) {
-                  expression (this.item.numberOfAstronauts)
-                }
-                param(resortName) {
-                  if (exists(this.item.spaceResort.name)) {
-                    expression (this.item.spaceResort.name)
-                  }
-                }
+            template-macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+              param (receipt) {
+                expression (this)
               }
             }
           }

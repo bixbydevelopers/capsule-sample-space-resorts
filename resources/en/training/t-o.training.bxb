@@ -10,3 +10,13 @@ train (t-oarb3ywljx6o1ivq1ft1ft6l7) {
   utterance ([g:Order#commitOrder,r:CreateOrder,r:CreateItem] Book a space resort)
   plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
 }
+train (t-ofjt1uo89vogb7310kdcw9s89) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] with a (spa)[v:SearchCriteria]")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
+  last-modified (1547753479979)
+}
+train (t-ooyyhs9uge7hpyo9du67pkjin) {
+  utterance ([g:Order#commitOrder:continue:SpaceResort,r:CreateOrder,r:CreateItem] Book it)
+  plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
+  last-modified (1549562791852)
+}

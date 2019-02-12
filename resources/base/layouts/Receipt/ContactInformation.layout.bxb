@@ -7,7 +7,7 @@ layout-macro-def (receipt-contact-information) {
   }
   content {
     section {
-      title ("Contact Information")
+      title {template-macro (ContactInformation)}
       content {
         partitioned {
           content {
@@ -16,7 +16,7 @@ layout-macro-def (receipt-contact-information) {
                 content {
                   order (SecondaryPrimary)
                   secondary {
-                    template ("Name")
+                    template-macro (Name)
                   }
                   primary {
                     template ("[#{value(receipt.buyer.firstName)} #{value(receipt.buyer.lastName)}]")
@@ -29,7 +29,7 @@ layout-macro-def (receipt-contact-information) {
                 content {
                   order (SecondaryPrimary)
                   secondary {
-                    template ("Phone Number")
+                    template-macro (PhoneNumber)
                   }
                   primary {
                     template ("[#{value(receipt.buyer.phoneNumber)}]")
@@ -42,7 +42,7 @@ layout-macro-def (receipt-contact-information) {
                 content {
                   order (SecondaryPrimary)
                   secondary {
-                    template ("Email")
+                    template-macro (Email)
                   }
                   primary {
                     template ("[#{value(receipt.buyer.emailAddress)}]")

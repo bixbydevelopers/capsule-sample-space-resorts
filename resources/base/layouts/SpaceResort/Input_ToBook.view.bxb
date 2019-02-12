@@ -1,0 +1,26 @@
+input-view {
+  match: SpaceResort(result) {
+    to-input: CreateItem(action)
+  }
+  message {
+    template-macro (SPACE_RESORT_SELECTION)
+  }
+  render {
+    if (size(result) > 1) {
+      selection-of (result) {
+        has-details (true)
+        select-button-text{ template-macro (Book)}
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
+          }
+        }
+      }
+    }
+    // else-if (size(result) == 1) {
+    //   // Unexpected
+    // }
+  }
+}

@@ -7,12 +7,14 @@ layout-macro-def (order-details) {
   }
   content {
     section {
-      title (Details)
+      title {template-macro (Details)}
       content {
         input-cell {
-          label ("Number of astronauts")
+          label {
+            template-macro (NumberOfAstronauts)
+          }
           value {
-            template ("#{value(order.item.numberOfAstronauts)}")
+            template ("[#{value(order.item.numberOfAstronauts)}]")
           }
           on-click {
             intent {
@@ -23,8 +25,8 @@ layout-macro-def (order-details) {
           }
         }
         input-cell {
-          label ("Dates")
-          value ("#{value(order.item.dateInterval)}")
+          label { template-macro (Dates)}
+          value ("[#{value(order.item.dateInterval)}]")
           on-click {
             intent {
               goal: Order#commitOrder
@@ -37,19 +39,19 @@ layout-macro-def (order-details) {
           content {
             single-line {
               text {
-                value ("Package")
+                value { template-macro (Package)}
                 style (Detail_M_Soft)
               }
             }
             cell-area {
               slot2 {
                 content {
-                  primary ("#{value(order.item.pod.name)}")
+                  primary ("[#{value(order.item.pod.name)}]")
                 }
               }
               slot3 {
                 label {
-                  value ("#{value(order.item.pod.price)}")
+                  value ("[#{value(order.item.pod.price)}]")
                 }
               }
             }

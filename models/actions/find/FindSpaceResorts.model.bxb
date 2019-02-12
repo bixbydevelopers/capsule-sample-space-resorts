@@ -2,6 +2,9 @@ action (FindSpaceResorts) {
   description (Find space resorts)
   type (Search)
   collect {
+    input (name) {
+      type (Name)
+    }
     input (planet) {
       type (Planet)
     }
@@ -17,7 +20,7 @@ action (FindSpaceResorts) {
           // TODO: drop the unsupported criterion with a message and continue
           halt {
             dialog {
-              template-macro (UnsupportedSearchOption)
+              template-macro (UNSUPPORTED_SEARCH_OPTION)
             }
           }
         }
@@ -26,7 +29,7 @@ action (FindSpaceResorts) {
         on-catch {
           halt {
             dialog {
-              template-macro (UnknownError)
+              template-macro (UNKNOWN_ERROR)
             }
           }
         }

@@ -3,6 +3,7 @@ train (t-rmv7rz9rzq7ka00by5wwgikjv) {
   plan (Y2BnkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yfm5tZ4l+UklrEIIVVBUQOu+7QgpTEklR8up1KK4Fysljl3FNLINL4LGZjYGRgYmBmYGFgBbIZ4DxmIIsBjhmAfCagCmYGBgA=)
 }
 train (t-ru2oakdv0ef8mnscppp0q2rad) {
-  utterance ("[g:SpaceResort] Find (kid friendly)[v:SearchCriteria] space resorts near (Pluto)[v:Planet:Pluto]")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] Find (kid friendly)[v:SearchCriteria] space resorts near (Pluto)[v:Planet:Pluto]")
+  plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
+  last-modified (1549558940132)
 }

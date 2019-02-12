@@ -1,6 +1,0 @@
-dialog (Concept) {
-  match: SpaceResort (this){
-    from-output: FindSpaceResorts(action)
-  }
-  template("[#{input(action.planet)}] #{concept(this)}")
-}

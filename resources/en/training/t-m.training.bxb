@@ -1,4 +1,10 @@
 train (t-m2w86ol4ifxvmeo40hias97u4) {
-  utterance ("[g:SpaceResort] Find a space resort that's (pet-friendly)[v:SearchCriteria]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCDABMEA)
+  utterance ("[g:SpaceResort#all] Find a space resort that's (pet-friendly)[v:SearchCriteria]")
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1549558938558)
+}
+train (t-m8gl2i147r66j059yz2ko5rqh) {
+  utterance ("[g:SpaceResort#gravity,r:ProjectResort] How's the gravity at (Io-Tel)[v:Name]?")
+  plan (Y2BjkEmtSMwtyEnVKy5ITE4NSi3OLyop1nMvSizLLKlkUMAqG4zgMChhVRFQlJ+VmlwCVUPYFFWsKtwy81KQVBUzSGJV5peYm8rAysDIwMTAzMACZDHA2UxAFgMYMwD5jEA5JgYGAA==)
+  last-modified (1549562506147)
 }

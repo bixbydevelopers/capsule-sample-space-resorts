@@ -7,6 +7,6 @@ describe('GoodForKids', () => {
   it('results', () => {
     const { results } = step.currentNode
     expect(results).toBeTruthy()
-    expect(results.length).toBe(6)
+    expect(results.length).toBe(7)
   })
 })

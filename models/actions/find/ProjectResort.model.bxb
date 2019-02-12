@@ -1,0 +1,15 @@
+action (ProjectResort) {
+  description (Project space resort properties. If there were many space resorts, it will prompt to select one.)
+  type (Calculation)
+  collect {
+    input (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  output (SpaceResort) {
+    evaluate {
+      $expr(spaceResort)
+    }
+  }
+}

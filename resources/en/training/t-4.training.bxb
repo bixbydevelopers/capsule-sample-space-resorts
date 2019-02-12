@@ -1,0 +1,5 @@
+train (t-409h95yzv1rkudyhutvqad1b1) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] around (Neptune)[v:Planet:Neptune]")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGqvKgJzEvNQSItzCwsDIwMTADKQZwCxGIIQBZjAG8gE=)
+  last-modified (1547753635384)
+}

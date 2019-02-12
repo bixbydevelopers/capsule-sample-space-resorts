@@ -1,5 +1,5 @@
 train (t-s472prb9rpwxxawhsmbjtmzwq) {
-  utterance ("[g:SpaceResort] (목성)[v:Planet:Jupiter]에 (주유소)[v:SearchCriteria]가 있는 리조트 찾아줘")
+  utterance ("[g:SpaceResort] (목성)[v:Planet:Jupiter] 근처 (주유소)[v:SearchCriteria] 있는 리조트 찾아줘")
   plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
 }
 train (t-skla3dultjfzdvy3ihezlv07d) {

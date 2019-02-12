@@ -4,7 +4,7 @@ capsule {
   format (3)
   targets {
     target (bixby-mobile-en-US)    
-    target (bixby-mobile-ko-KR) // Add localization target for Korean language
+    target (bixby-mobile-ko-KR)
   }
   // permissions {
   //   user-profile-access
@@ -15,7 +15,7 @@ capsule {
     }
     import (viv.entity) {
       as (entity)
-      version (3.9.7)
+      version (3.11.21)
     }
     import (viv.common) {
       as (common)
@@ -27,11 +27,11 @@ capsule {
     }
     import (viv.money) {
       as (money)
-      version (2.16.14)
+      version (2.18.0)
     }
     import (viv.self) {
       as (self)
-      version (3.0.3)
+      version (3.2.24)
     }
     import (viv.contact) {
       as (contact)

@@ -1,0 +1,63 @@
+action (SelectResort) {
+  description (Select a HabitatProd from a list by name)
+  type (Calculation)
+  
+  collect {
+
+    input (resorts) {
+      type (SpaceResort)
+      min (Required)
+      max (Many)
+      default-init {
+        //get the candidates from the input-view (prompt context)
+        intent {
+          goal-set: SpaceResort {$expr("getPreviousPage('SpaceResort')")}
+        }
+      }
+    }
+    
+    input-group(search) {      
+      requires (OneOrMoreOf)
+      collect {
+        input (name) {
+          description (space resort name)
+          type (Name)
+          min (Optional)
+        }
+        input (planet) {
+          description (space resort name)
+          type (Planet)
+          min (Optional)
+        }
+        input(searchCriteria) {
+          description (search criteria)
+          type (SearchCriteria)
+          min (Optional)
+          max (Many)
+        }
+      }
+    }
+  }
+  output (SpaceResort) {
+    on-empty {
+      // TODO
+    }
+    throws {
+      error (MultipleMatches) {
+        property (matches) {
+          type (SpaceResort)
+          min (Required)
+          max (Many)
+        }
+        on-catch {
+          replan {
+            intent {
+              goal { SpaceResort @prompt-behavior(AlwaysSelection) }
+              value { $expr(matches) }
+            }
+          }
+        }
+      }
+    }
+  }
+}
