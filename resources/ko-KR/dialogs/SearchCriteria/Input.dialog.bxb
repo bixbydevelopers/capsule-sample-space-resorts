@@ -1,0 +1,10 @@
+dialog (Input) {
+  match: SearchCriteria (this)
+  if (size(this) == 0) {
+    template("")
+  } else-if (size(this) == 1) {
+    template ("#{concept(this)}으로")
+  } else {
+    template ("#{concept(this)}들로")
+  }
+}

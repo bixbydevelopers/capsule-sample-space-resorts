@@ -9,11 +9,15 @@ layout-macro-def (receipt-order-total) {
     section {
       content {
         title-area {
-          hAlign (Start)
+          halign (Start)
           slot1 {
             text {
               style (Detail_L_Soft)
-              value ("Order total: #{value(receipt.item.pod.price)}")
+              value {
+                template-macro (OrderTotal) {
+                  param (value) { dialog-template("#{value(receipt.item.pod.price)}")}
+                }
+              }
             }
           }
         }

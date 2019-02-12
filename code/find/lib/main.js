@@ -6,8 +6,8 @@ module.exports = {
   "selectSpaceResorts": selectSpaceResorts
 }
 
-function findSpaceResorts(planet, searchCriteria) {
-  return filterSpaceResorts(data, planet, searchCriteria)
+function findSpaceResorts(name, planet, searchCriteria) {
+  return filterSpaceResorts(data, name, planet, searchCriteria)
 }
 
 function selectSpaceResorts(resorts, name, planet, searchCriteria) {
@@ -22,16 +22,17 @@ function selectSpaceResorts(resorts, name, planet, searchCriteria) {
       })
     })
   }
+  candidates = filterSpaceResorts(candidates, name, planet, searchCriteria)
+  return candidates
+}
+
+function filterSpaceResorts(candidates, name, planet, searchCriteria) {
+
   if (name) {
     candidates = candidates.filter(function(candidate){
       return candidate.name.toLowerCase() == name.toLowerCase()
     })
   }
-  candidates = filterSpaceResorts(candidates, planet, searchCriteria)
-  return candidates
-}
-
-function filterSpaceResorts(candidates, planet, searchCriteria) {
 
   if (planet) {
     candidates = candidates.filter(function(candidate){
@@ -46,7 +47,14 @@ function filterSpaceResorts(candidates, planet, searchCriteria) {
         return candidate.amenities.find(function(amenity) {
           return amenity.keywords.find(function(keyword) {
             keyword = keyword.toLowerCase()
-            return textLib.levenshteinDistance(keyword, searchCriterion) < 4 // fuzzyMatch is too costly, so using simple levenshtein instead
+
+            if (config.get("locale") == "ko") {
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
+            }
+            else {
+              // fuzzyMatch is too costly, so using simple levenshtein instead
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 
+            }
           })
         })
       })

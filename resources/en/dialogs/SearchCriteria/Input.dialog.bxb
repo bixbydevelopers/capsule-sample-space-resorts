@@ -1,11 +1,10 @@
 dialog (Input) {
   match: SearchCriteria (this)
-  switch (plural(this)) {
-    case (One) {
-      template ("with that option")
-    }
-    default {
-      template ("with your options")
-    }
+  if (size(this) == 0) {
+    template("")
+  } else-if (size(this) == 1) {
+    template ("with that #{concept(this)}")
+  } else {
+    template ("with your #{concept(this)}")
   }
 }

@@ -2,17 +2,27 @@ vocab(SearchCriteria) {
   // Casino
   "카지노"
   // KidFriendly
-  "유아동반"
-  // PetFriendly         
+  "유아 동반"
+  "키즈룸"
+  // PetFriendly  
   "애완동물"
   // Refueling
   "주유소"
   // ScienceBase
-  "첨단 과학"
+  "과학 본부"
   // Spa
   "스파"
   // SwimmingPool
   "수영장"
-  // ZeroGravity
+  "야외 수영장"
+  "유아풀"
+  // ZeroGravity  
   "무중력"
+  // ARSafari
+  "사파리"
+  // ContinentalBreakfast
+  "유럽식 조식"
 }
+
+
+

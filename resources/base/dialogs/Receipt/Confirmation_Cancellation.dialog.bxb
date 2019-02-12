@@ -1,6 +1,0 @@
-dialog (Confirmation) {
-  match: Receipt {
-    from-output: CancelCommittedOrder
-  }
-  template-macro (AreYouSureYouWantToCancelThisTrip)
-}

@@ -2,3 +2,8 @@ train (t-9dsv38aqogqbt6op3cisqr024) {
   utterance ("[g:NumberOfAstronauts:prompt] (4)[v:NumberOfAstronauts]")
   plan (Y2BiUE+tSMwtyEnVKy5ITE4NSi3OLyop1vMrzU1KLfJPcywuKcrPSywtKSZeISMQMjDwADETEAPZAA==)
 }
+train (t-9u51kmrhkm83xj4v8k27kgt3a) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] (Io-Tel)[v:Name]")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBEqtKv8TcVCJcwsLAyMDEwAykGcAsRiCEAWYwBvIB)
+  last-modified (1547753467104)
+}

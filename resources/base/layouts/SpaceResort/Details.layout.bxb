@@ -8,8 +8,11 @@ layout-macro-def (space-resort-details) {
   content {
     section {
       content {
+        image-carousel {
+          images (spaceResort.images)
+        }
         title-area {
-          hAlign (Center)
+          halign (Center)
           slot1 {
             text {
               value ("#{value(spaceResort.name)}")

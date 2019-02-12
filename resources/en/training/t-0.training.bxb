@@ -1,4 +1,5 @@
-train (t-0mqp8n20ccpc7bb5re344z6wa) {
-  utterance ("[g:SpaceResort:prompt] The ones with {[g:SearchCriteriaFilter] (refueling station)[v:SearchCriteria]}")
-  plan (Y2BjUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBE4dKkKRzUWZJalFmoltmDpBmUCZCKRHOZ2VgZGBiYGZgAbIYoGxGIAQBFjDJDMYsQDFmAA==)
+train (t-081awzidiefy2021a2zx6jcuq) {
+  utterance ("[g:SpaceResort#all:continue] only those with a (swimming pool)[v:SearchCriteria]")
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1549558933137)
 }

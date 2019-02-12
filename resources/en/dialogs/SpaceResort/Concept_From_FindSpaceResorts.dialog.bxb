@@ -1,0 +1,6 @@
+dialog (Concept) {
+  match: SpaceResort (this){
+    from-output: FindSpaceResorts(find)
+  }
+  template("#{concept(this)}[ #{input(find.planet)}][ #{input(find.searchCriteria)}]")
+}

@@ -9,10 +9,10 @@ layout-macro-def (space-resort-highlight) {
     image-card {
       size (M)
       image-url {
-        template ("#{value(spaceResort.images[0].url)}")
+        template ("[#{value(spaceResort.images[0].url)}]")
       }
       title-area {
-        hAlign (Start)
+        halign (Start)
         slot1 {
           text {
             value ("#{value(spaceResort.name)}")

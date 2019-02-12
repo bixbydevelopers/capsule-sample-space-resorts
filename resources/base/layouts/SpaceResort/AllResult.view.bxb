@@ -1,0 +1,74 @@
+result-view {
+  match {
+    ViewAll(all) {
+      from-property {
+        SpaceResort (result)
+      }
+    }
+  }
+
+  message {
+    if (size(result) == 1) {
+      template ("Check out this #{concept(result)}.")
+    } else {
+      template ("I found these #{concept(result)}.")
+    }
+  }
+
+  render {
+    if (size(result) > 1) {
+      list-of (result) {
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
+          }
+        }
+        highlights {
+          select(pick) {
+            label("#{raw(pick.highlight)}")
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            filter-by (exists(pick.highlight))
+          }
+          select(pick) {
+            label("#{raw(pick.highlight)}")
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            filter-by (exists(pick.highlight))
+          }
+          select(pick) {
+            label("#{raw(pick.highlight)}")
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            filter-by (exists(pick.highlight))
+          }
+        }
+      }
+    } else-if (size(result) == 1) {
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression (result)
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    if ("size(result) == 1") {
+      conversation-driver {
+        template-macro (MakeReservation)
+      }
+    }
+  }
+}
