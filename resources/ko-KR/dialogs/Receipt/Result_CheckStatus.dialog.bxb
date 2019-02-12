@@ -1,0 +1,6 @@
+dialog (Result) {
+  match: Receipt(this) {
+    from-output: CheckStatus
+  }
+  template ("#{value(this.item.spaceResort.name)}(으)로 가시는 여행 일정은 #{value(this.relevantDateTime.date)}입니다.")
+}

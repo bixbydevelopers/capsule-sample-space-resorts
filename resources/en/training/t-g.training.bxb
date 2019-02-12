@@ -1,12 +1,12 @@
 train (t-g21w6mogz4dvodpjfu5ucys0n) {
-  utterance ("[g:FindSpaceResorts] Show space resorts around (The Old Earth)[v:Planet:Earth]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
-  last-modified (1547752532536)
+  utterance ("[g:SpaceResort#all] Show space resorts around (The Old Earth)[v:Planet:Earth]")
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
+  last-modified (1549558937216)
 }
 train (t-gedzmuz0vnki6mcw65z1vo0vh) {
-  utterance ("[g:FindSpaceResorts:continue] on (mars)[v:Planet:Mars]")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEIDyAQ==)
-  last-modified (1547752542160)
+  utterance ("[g:SpaceResort#all:continue] on (mars)[v:Planet:Mars]")
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
+  last-modified (1549558937388)
 }
 train (t-gvztevvro0pukvg8871ctme7v) {
   utterance ("[g:DateInterval:prompt] (next weekend)[v:viv.time.DateTimeExpression]")

@@ -2,5 +2,5 @@ dialog (Confirmation) {
   match: Receipt {
     from-output: CancelCommittedOrder
   }
-  template-macro (AreYouSureYouWantToCancelThisTrip)
+  template ("이 여행을 취소하시겠습니까?")
 }

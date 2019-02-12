@@ -1,0 +1,12 @@
+dialog (Result) {
+  match : core.Boolean(all) {
+    from-property: SpaceResort (this) {
+      from-output: FindSpaceResorts (find)
+    }
+    }
+  if (size(this) == 1) {
+    template ("#{concept(this)}를 확인해보세요.")
+  } else {
+    template ("여러개의 #{concept(this)}를 찾았어요.")
+  }
+}

@@ -1,0 +1,24 @@
+input-view {
+  match: SpaceResort(result) {
+    to-input: ProjectResort(action)
+  }
+  message {
+    template-macro (SPACE_RESORT_SELECTION)
+  }
+  render {
+    if (size(result) > 1) {
+      selection-of (result) {
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
+          }
+        }
+      }
+    }
+    // else-if (size(result) == 1) {
+    //   // Unexpected
+    // }
+  }
+}

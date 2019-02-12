@@ -1,4 +1,0 @@
-dialog (Elicitation) {
-  match: DateInterval
-  template-macro (WhenDoYouWantToStay)
-}

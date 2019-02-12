@@ -1,40 +1,55 @@
 ## Use cases
 
-### Find Flow
+### Find Space Resorts Flow
 
 #### Outer "Find" Queries
-You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:FindSpaceResorts -has:continue`. Examples:
+You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
 - Find space resorts
 - Show me space hotels with crater canyoneering
 - Search for hotels around The Red Planet
 - Look for space hotels with quantum bungee jumping around Saturn
 
-We train these to have the goal `FindSpaceResorts` and we annotate any resort names, planets and search criteria as Values. 
+We train these to have the goal `SpaceResort#all` and we annotate any resort names, planets and search criteria as Values. Here `SpaceResort#all` is a property projection to the `all` property of the `SpaceResort`. This property is a boolean which is always true and is used as a proxy sto signify that we want to display the full space resort, instead of focussing on a single property like `gravity` or `planet` (see below). 
 
-Why do we set the goal to `FindSpaceResorts` Action instead of the `SpaceResort` Structure?
+Why don't we set the goal to the `SpaceResort` Structure?
 
 When the user wants to book a space resort and there were many possible candidates in context, we have a Selection Prompt to ask the user to pick a single one in order to pursue with the booking (see SpaceResort Selection Prompt section below for full details).
 The context for that prompt is `SpaceResort`, and **Selection Prompt training must always have the same goal as its context**. 
-Thus the Selection Prompt will definitely need to use `SpaceResort` as its goal. 
-Since the Selection Prompt also uses different annotations patterns compared to these outer "find" queries and **annotation patterns must be consistent for the same goal**, this means that these outer "find" queries cannot use `SpaceResort` as the goal. 
-Instead, we use the more specific Action `FindSpaceResort` as the goal for these outer "find" queries. 
-This makes it very clear how to fulfill the request and provides consistent annotation patterns per goal.
+Thus by definition the Selection Prompt for `SpaceResort` will definitely need to use `SpaceResort` as its goal.
+
+The Selection Prompt training also uses a special flagged signal to route the plan through the `SelectResort` Action that filters the hotels currently in context based on the newly provided inputs.
+It is crucial to add the `SelectResort` flagged signal to the Selection Prompt training annotations to achieve this behavior. 
+However, we do not want to add the `SelectResort` flagged signal to the "find" queries because these should issue a new search via the `FindSpaceResorts` Action instead of filtering existing results via the `SelectResort` Action.
+Since the Selection Prompt requires different annotations patterns compared to the "find" queries, and **annotation patterns must be consistent for the same goal**, this means that they must use a different goal.
+
+We have now demonstrated two points. 
+Firstly, that the Selection Prompt training must use `SpaceResort` as a goal.
+Secondly, that the "find" queries must use a different goal than the Selection Prompts.
+By putting these together, we deduce that the "find" queries cannot use `SpaceResort` as a goal.
+Therefore, we use a distinct goal (`SpaceResort#all`) for the "find" queries in order to provide consistent annotation patterns per goal.
+
+We don't we set the goal to the `FindSpaceResorts` Action?
+
+Another alternative would be to set the goal to the specific `FindSpaceResorts` Action, making it very clear how to fulfill the request.
+This approach would simplify the match patterns for views, so we would not need to use the `from-property` key.
+However, we prefer using the property projection approach so that our final resting context for "find" queries is the same as for property projection queries. 
+This means that we can pivot between all these states seamlessly, or launch the "book" flow from any of these.
 
 #### Inner "Find" Queries (Continuations)
-You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:FindSpaceResorts continue:FindSpaceResorts`. Examples:
+You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:SpaceResort#all has:continue`. Examples:
 - On Jupiter
 - With low gravity
 - Only the ones that are kid-friendly
 
 These are continuations of the outer "find" queries that allow users to refine their space resorts search by providing additional inputs.
-Since the goal for outer "find" queries is `FindSpaceResorts`, we annotate both the goal and the "Continuation of" to also be `FindSpaceResorts`. 
+Since the goal for outer "find" queries is `SpaceResort#all`, we annotate both the goal and the "Continuation of" to also be `SpaceResort#all`. 
 We annotate any resort names, planets and search criteria as Values. 
 This will reissue a search with the new inputs being added to those already in context.
 
 ### Property Projection Flows
 
 #### Outer Property Projections
-You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:SpaceResort#* -has:continue`. For example:
+You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all -has:continue`. For example:
 - What's the gravity at The Mercurial?
 - Where is Io-Tel?
 
@@ -45,11 +60,12 @@ This is in case there were multiple space resorts that matched the search inputs
 Then the `ProjectResort` Action will ask the user to select a single space resort before providing the answer.
 
 #### Inner Property Projections (Continuations)
-You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:SpaceResort#* continuation:SpaceResort`. For example:
+You can see all trained utterances and plans by entering this query in the training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all has:continue`. For example:
 - What's the gravity there?
 - What planet is it on?
 
-We train these just like the outer property projections, with the addition of a "Continuation of" `SpaceResort`. This allow pivoting between inner/outer "find" queries and inner/outer property projections.
+We train these just like the outer property projections, with the addition of a "Continuation of" `SpaceResort`. 
+This allow pivoting between inner/outer "find" queries and inner/outer property projections.
 
 ### Book Flow
 
@@ -118,11 +134,3 @@ You can see all trained utterances and plans by entering this query in the train
 
 For prompt training, the goal must always match the prompt context, so we train these as "At prompt for" `<Concept>` and goal `<Concept>`. 
 Then we annotate the Value in the utterance for that `<Concept>`.
-
-## Changelog
-
-### 1.0.0
-- Book space resorts
-
-### 0.1.0
-- Find space resorts

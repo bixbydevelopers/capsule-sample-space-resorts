@@ -1,5 +1,15 @@
+train (t-k8z3ntk5azflc0db88ytlcajx) {
+  utterance ("[g:SpaceResort#planet,r:ProjectResort] On what planet is (The Grand Titan)[v:Name]?")
+  plan (Y2BjkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRVrCrcMvNSkFQVM0hiVeaXmJvKwMrAyMDEwMzAAmQxwNlMQBYDGDMA+YxAOSYGBgA=)
+  last-modified (1549562596943)
+}
+train (t-ko1y2ykapc33tv3t8h6gegcm7) {
+  utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] Where is it?)
+  plan (Y2BhkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRmBkYGJiDJAKaZgCQIMIF5DAA=)
+  last-modified (1549558986942)
+}
 train (t-kvfm974qf0fxplzyjcg804hyz) {
-  utterance ("[g:FindSpaceResorts] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQiAiwIA)
-  last-modified (1547752570924)
+  utterance ("[g:SpaceResort#all] I need a space resort near (Jupiter)[v:Planet:Jupiter] that has a (refueling station)[v:SearchCriteria]")
+  plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
+  last-modified (1549558938390)
 }
