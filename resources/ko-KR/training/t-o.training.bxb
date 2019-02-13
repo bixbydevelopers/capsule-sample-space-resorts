@@ -1,7 +1,7 @@
 train (t-okdlj6co7ea1i1kc89fbsfagn) {
-  utterance ("[g:SpaceResort#planet,r:ProjectResort] (The Grand Titan)[v:Name] 리조트는 어느 행성에 있어?")
+  utterance ("[g:SpaceResort#planet,r:ProjectResort] (그랜드 타이탄)[v:Name] 리조트는 어느 행성에 있어?")
   plan (Y2BjkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRVrCrcMvNSkFQVM0hiVeaXmJvKwMrAyMDEwMzAAmQxwNlMQBYDGDMA+YxAOSYGBgA=)
-  last-modified (1550018774124)
+  last-modified (1550087197760)
 }
 train (t-oyde2y8f06wallu8539ijk1g8) {
   utterance ("[g:SpaceResort#planet,r:ProjectResort] (이카루스)[v:Name]는 어디있어?")

@@ -1,0 +1,10 @@
+dialog (Concept) {
+  match: NumberOfAstronauts (this)
+
+  if (this == 1) {
+    template("astronaut")
+  }
+  else-if (this > 1) {
+    template("astronauts")
+  }
+}

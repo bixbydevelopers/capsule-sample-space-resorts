@@ -1,7 +1,7 @@
 module.exports = {
   "Mercurial": {
     "en": "The Mercurial",
-    "ko": "머큐리얼 호텔" // TODO: translate all names
+    "ko": "머큐리얼 호텔"
   },
   "Icarus": {
     "en": "The Icarus",
@@ -25,7 +25,7 @@ module.exports = {
   },
   "IoTel": {
     "en": "Io-Tel",
-    "ko": "Io-Tel"
+    "ko": "이오-텔"
   },
   "EuropaJewel": {
     "en": "Europa's Jewel",
@@ -41,7 +41,7 @@ module.exports = {
   },
   "AirBB": {
     "en": "Air B&B",
-    "ko": "Air B&B"
+    "ko": "에어 비&비"
   },
   "Babylon": {
     "en": "The Babylon",
@@ -49,7 +49,7 @@ module.exports = {
   },
   "GrandTitan": {
     "en": "The Grand Titan",
-    "ko": "The Grand Titan"
+    "ko": "그랜드 타이탄"
   },
   "HerschelHotel": {
     "en": "The Herschel Hotel",
@@ -65,7 +65,7 @@ module.exports = {
   },
   "RheaRnDBnB": {
     "en": "Rhea R&D B&B",
-    "ko": "Rhea R&D B&B"
+    "ko": "레아 R&D 모텔"
   },
   "SkyResort": {
     "en": "Sky Resort",

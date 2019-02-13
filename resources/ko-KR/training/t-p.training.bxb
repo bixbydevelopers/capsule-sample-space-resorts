@@ -1,5 +1,5 @@
 train (t-pz8aa7owqpfx02ub4ru5su7wl) {
-  utterance ("[g:SpaceResort#gravity,r:ProjectResort] (Io-Tel)[v:Name]의 중력은 어때?")
+  utterance ("[g:SpaceResort#gravity,r:ProjectResort] (이오-텔)[v:Name]의 중력은 어때?")
   plan (Y2BjkEmtSMwtyEnVKy5ITE4NSi3OLyop1nMvSizLLKlkUMAqG4zgMChhVRFQlJ+VmlwCVUPYFFWsKtwy81KQVBUzSGJV5peYm8rAysDIwMTAzMACZDHA2UxAFgMYMwD5jEA5JgYGAA==)
-  last-modified (1550018756881)
+  last-modified (1550087042689)
 }
