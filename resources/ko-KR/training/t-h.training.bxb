@@ -1,0 +1,5 @@
+train (t-hnbt3te351jx6xkek48884hk2) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] (목성)[v:Planet:Jupiter]에 있는곳으로")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGqvKgJzEvNQSItzCwsDIwMTADKQZwCxGIIQBZjAG8gE=)
+  last-modified (1550019738546)
+}

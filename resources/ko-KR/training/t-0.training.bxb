@@ -1,4 +1,10 @@
 train (t-09gfdi48skky65f5kchyv4iva) {
-  utterance ("[g:SpaceResort:continue] (주유소)[v:SearchCriteria]랑 (저온 스파)[v:SearchCriteria] 있는 데는")
-  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEKipiYWBkYGJgBtIMYBYTkGRg4AFCBqAoA0QGAA==)
+  utterance ("[g:SpaceResort#all:continue] (주유소)[v:SearchCriteria]랑 (저온 스파)[v:SearchCriteria] 있는 데는")
+  plan (Y2BjkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYlUVMTKwMjAxMDMwAJkMUDZzECSEcjjAUIGII8RIgsA)
+  last-modified (1550019967333)
+}
+train (t-0xfszpf303snadbb51wsdvjfd) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] (스파)[v:SearchCriteria] 있는 곳으로")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
+  last-modified (1550019746775)
 }

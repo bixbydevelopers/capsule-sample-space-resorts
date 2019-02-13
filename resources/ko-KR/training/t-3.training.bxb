@@ -2,11 +2,22 @@ train (t-32ajpx7zju61e0robhen392tl) {
   utterance ("[g:Confirmation:prompt] (응)[v:Confirmation:true]")
   plan (Y2BiUEytSMwtyEnVKy5ITE4NSi3OLyop1nPOz0vLLMpNLMnMzyNGCSMQMjDwADETEAPZAA==)
 }
+train (t-36w0x9zm0wxdqi0rcg4rmb8kj) {
+  utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] 어디에 있어?)
+  plan (Y2BhkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRmBkYGJiDJAKaZgCQIMIF5DAA=)
+  last-modified (1550018966750)
+}
 train (t-3mkhp89w4ldbywerxffl9whob) {
   utterance ([g:CancelOrder:continue:Order] 이거 취소해줘)
   plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yYl5ya41+UklrEIIVVBUSOiYERiBmAJCMDA4wGAA==)
 }
 train (t-3wtgssnrygbatsltdabomju5c) {
-  utterance ("[g:SpaceResort] (금성)[v:Planet:Venus]에 (무중력 골프장)[v:SearchCriteria] 있는 리조트 보여줘봐")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (금성)[v:Planet:Venus]에 (무중력 골프장)[v:SearchCriteria] 있는 리조트 보여줘봐")
+  plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
+  last-modified (1550019968338)
+}
+train (t-3yodil25omip8fmv8kxf8kmh6) {
+  utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] 어느 행성에 있어?)
+  plan (Y2BhkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRmBkYGJiDJAKaZgCQIMIF5DAA=)
+  last-modified (1550018941293)
 }
