@@ -12,9 +12,9 @@ train (t-3mkhp89w4ldbywerxffl9whob) {
   plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yYl5ya41+UklrEIIVVBUSOiYERiBmAJCMDA4wGAA==)
 }
 train (t-3wtgssnrygbatsltdabomju5c) {
-  utterance ("[g:SpaceResort#all] (금성)[v:Planet:Venus]에 (무중력 골프장)[v:SearchCriteria] 있는 리조트 보여줘봐")
+  utterance ("[g:SpaceResort#all] (금성)[v:Planet:Venus]에 (무중력 골프장)[v:SearchCriteria]이 있는 리조트 보여줘봐")
   plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
-  last-modified (1550019968338)
+  last-modified (1550092886092)
 }
 train (t-3yodil25omip8fmv8kxf8kmh6) {
   utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] 어느 행성에 있어?)

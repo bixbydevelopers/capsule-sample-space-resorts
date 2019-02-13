@@ -1,5 +1,5 @@
 train (t-4kdymiostyifpeps2idu1kuc7) {
-  utterance ("[g:SpaceResort#all:continue] (최고급 스파)[v:SearchCriteria] 있는 곳으로")
+  utterance ("[g:SpaceResort#all:continue] (최고급 스파)[v:SearchCriteria]가 있는 곳으로")
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
-  last-modified (1550019968538)
+  last-modified (1550092896655)
 }
