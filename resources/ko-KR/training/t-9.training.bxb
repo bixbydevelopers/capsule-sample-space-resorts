@@ -1,4 +1,5 @@
 train (t-9ctzf50p6yzd64fs1kfjt3s97) {
-  utterance ("[g:SpaceResort:continue] (유아 동반)[v:SearchCriteria]되고 (키즈룸)[v:SearchCriteria] 있는 곳은")
-  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEKipiYWBkYGJgBtIMYBYTkGRg4AFCBqAoA0QGAA==)
+  utterance ("[g:SpaceResort#all:continue] (유아 동반)[v:SearchCriteria]되고 (키즈룸)[v:SearchCriteria] 있는 곳은")
+  plan (Y2BjkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYlUVMTKwMjAxMDMwAJkMUDZzECSEcjjAUIGII8RIgsA)
+  last-modified (1550019969795)
 }

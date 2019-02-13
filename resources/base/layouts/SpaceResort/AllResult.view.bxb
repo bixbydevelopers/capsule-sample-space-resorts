@@ -8,10 +8,8 @@ result-view {
   }
 
   message {
-    if (size(result) == 1) {
-      template ("Check out this #{concept(result)}.")
-    } else {
-      template ("I found these #{concept(result)}.")
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
     }
   }
 

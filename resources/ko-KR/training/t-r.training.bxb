@@ -1,0 +1,5 @@
+train (t-rkykzhn8h3buovmqrqdt10eum) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] (주유소)[v:SearchCriteria] 있는 곳으로")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
+  last-modified (1550019309134)
+}

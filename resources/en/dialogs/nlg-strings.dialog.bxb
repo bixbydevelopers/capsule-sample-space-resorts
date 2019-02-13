@@ -72,6 +72,22 @@ template-macro-def (COMMIT_ORDER_CONFIRMATION) {
   }
 }
 
+template-macro-def (SPACE_RESORT_RESULT) {
+  params {
+    param (result) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    if (size(result) == 1) {
+      template ("Check out this #{concept(result)}.")
+    } else {
+      template ("I found these #{concept(result)}.")
+    }
+  }
+}
+
 // Exception handling
 template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {

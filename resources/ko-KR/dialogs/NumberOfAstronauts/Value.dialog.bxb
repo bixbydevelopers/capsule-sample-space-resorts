@@ -1,0 +1,5 @@
+dialog (Value) {
+  match: NumberOfAstronauts (this)
+
+  template("#{concept (this)} #{value (this)}명")
+}

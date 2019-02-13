@@ -72,6 +72,22 @@ template-macro-def (COMMIT_ORDER_CONFIRMATION) {
   }
 }
 
+template-macro-def (SPACE_RESORT_RESULT) {
+  params {
+    param (result) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    if (size(result) == 1) {
+      template ("#{concept(result)}를 찾았습니다.")
+    } else {
+      template ("#{concept(result)}들을 찾았습니다.")
+    }
+  }
+}
+
 // Exception handling
 template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {

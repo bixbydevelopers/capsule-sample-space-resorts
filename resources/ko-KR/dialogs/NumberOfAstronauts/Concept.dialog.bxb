@@ -1,0 +1,12 @@
+dialog (Concept) {
+  match: NumberOfAstronauts (this)
+
+  template ("우주 여행객") // 우주 여행객 1명, 우주 여행객 2명 work for both singluar & plural
+  
+  // if(this == 1) {
+  //   template ("우주 여행객")
+  // }
+  // else-if(this > 1) {
+  //   template ("우주 여행객들")
+  // }
+}
