@@ -2,14 +2,20 @@ action (GetBuyer) {
   description (Prompt user to enter personal data)
   type (Constructor)
   collect {
+    input (order) {
+      type (Order)
+      min (Required)
+      plan-behavior (Role)      
+    }
     computed-input (buyer) {
       type (Buyer)
       min (Required)
       compute {
         intent {
           goal: self.GetSelfInfo
+          value: self.SelfInfo$expr(order.buyer)
           value: self.ForcePrompt(true)
-          value: self.Imaginary(true)
+          //value: self.Imaginary(true)
           value-set: self.RequiredField {
             self.RequiredField(firstName)
             self.RequiredField(lastName)
