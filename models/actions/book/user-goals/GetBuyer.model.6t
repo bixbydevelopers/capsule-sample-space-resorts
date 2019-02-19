@@ -5,7 +5,6 @@ action (GetBuyer) {
     input (order) {
       type (Order)
       min (Required)
-      plan-behavior (Role)      
     }
     computed-input (buyer) {
       type (Buyer)
