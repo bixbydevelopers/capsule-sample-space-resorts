@@ -37,7 +37,10 @@ template-macro-def (RECEIPT_RESULT) {
     if ("exists(receipt.canceled) && receipt.canceled == true") {
       template ("여행이 취소되었습니다.")
     } else {
-      template ("#{value(receipt.item.spaceResort)}에서 즐거운 여행되시길 바랍니다.")
+      if(exists(receipt.item.spaceResort)){
+        template ("#{value(receipt.item.spaceResort)}에서 즐거운 여행되시길 바랍니다.")
+      }
+      //Else Unexpected
     }
   }
 }
