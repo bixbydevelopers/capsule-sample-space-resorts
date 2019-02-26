@@ -2,7 +2,6 @@ dialog (Result) {
   match: Gravity (this)
   if (size(this) == 1) {
     template ("The gravity is #{value(this)}.")
-  } else {
-    // Unexpected
   }
+  // Else Unexpected
 }

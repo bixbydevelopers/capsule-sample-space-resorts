@@ -2,7 +2,6 @@ dialog (Result) {
   match: Planet (this)
   if (size(this) == 1) {
     template ("It is #{input(this)}.")
-  } else {
-    // Unexpected
   }
+  //  Else Unexpected
 }

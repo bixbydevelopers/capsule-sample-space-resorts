@@ -39,7 +39,7 @@ layout-macro-def (space-resort-details) {
                 single-line {
                   text {
                     value ("#{value(attribute)}")
-                    style (Label_L)
+                    style (Detail_L)
                   }
                 }
               }
