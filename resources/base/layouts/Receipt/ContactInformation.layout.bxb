@@ -32,7 +32,7 @@ layout-macro-def (receipt-contact-information) {
                     template-macro (PhoneNumber)
                   }
                   primary {
-                    template ("[#{value(receipt.buyer.phoneNumber)}]")
+                    template ("[#{value(receipt.buyer.phoneInfo.number)}]")
                   }
                 }
               }
@@ -45,7 +45,7 @@ layout-macro-def (receipt-contact-information) {
                     template-macro (Email)
                   }
                   primary {
-                    template ("[#{value(receipt.buyer.emailAddress)}]")
+                    template ("[#{value(receipt.buyer.emailInfo.address)}]")
                   }
                 }
               }
