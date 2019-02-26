@@ -29,13 +29,9 @@ capsule {
       as (money)
       version (2.18.0)
     }
-    import (viv.self) {
-      as (self)
-      version (3.2.50)
-    }
-    import (viv.contact) {
-      as (contact)
-      version-from (self)
+    import (bixby.profile) {
+      as (profile)
+      version (1.0.0)
     }
   }
 }
