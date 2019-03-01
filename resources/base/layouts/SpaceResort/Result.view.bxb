@@ -18,8 +18,16 @@ result-view {
     //     }
     //   }
     // }
-    // Else
+    // else if the device has no screen
     // No layout
+    // Else the device has a tactile screen? How do we even know that our layout will fit above the fold?
+    if (size(result) == 1) {
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression (result)
+        }
+      }
+    }
   }
 
   conversation-drivers {
