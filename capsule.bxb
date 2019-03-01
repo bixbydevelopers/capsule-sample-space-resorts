@@ -4,7 +4,7 @@ capsule {
   format (3)
   targets {
     target (bixby-mobile-en-US)
-    target (bixby-speaker-en-US)   
+    target (bixby-speaker-en-US)
     target (bixby-mobile-ko-KR)
   }
   // permissions {

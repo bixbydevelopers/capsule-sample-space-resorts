@@ -17,11 +17,13 @@ result-view {
   }
 
   render {
-    // TODO: If Device has a screen
-    // How can we know if the device has a screen?
+    // TODO: If Device has a tactile screen
+    // How can we know if the device has a screen and if it is tactile?
     // It would be great to have a $eyesFree UEL, just like we have $handsFree. Some bixby-speaker devices may have a non-tactile screen and some non-bixby-speaker device may be screenless. In future we even have finer grain knowledge of whether the user is in an eyes free position wrt their device based on distance or face detection...
     // Not as convenient, but another platform tweak that would make implementation simpler would be to give us access to the device target in bxb land instead of having to fetch it from JS land (where it's available under $vivContext.device).
     // Current workaround in Yelp is to create a new Concept `Device` and an Action `GetDevice` that declares $vivContext in the endpoints file and then takes $vivContext.device in the JS file and outputs it. Then make `Device` an input to the FindBusiness Action and default-init it to `GetDevice`. Then update the match-pattern to this result-view to add `from-output` so that we have a handle to action.device. Compare it with `bixby-speaker`. It would be even more complicated here because of the match-pattern, since there are 2 actions that can output the SpaceResort. We cannot use `from-output: _(action)` because then it doesn't allow accessing action.device. So we would need to have 2 copies of this file. Aside from being convoluted and lengthy, this approach also has the downside of requiring the capsule developer to be aware of the different devices to know which ones have a screen (see above). 
+    // Otherwise if we want to go by device we could use the resource folder hierarchy (base/ bixby-mobile/ bixby-watch/) to define the layouts per device. It's a bit of a shame to do that since UI kit is striving to provide layouts good across all devices. 
+    // One way to look at this is that the Views and the Controllers are intermingled in this file. Could they be decoupled?
     // if (size(result) == 1) {
     //   layout-macro (space-resort-details) {
     //     param (spaceResort) {
@@ -68,10 +70,86 @@ result-view {
     //     }
     //   }
     // }
-    // else
+    // else if the device has no screen
+    // if (size(result) == 1) {
+    //   // No layout
+    //   // Dialog comes from `message`
+    // } else-if (size(result) > 1) {
+    //   list-of (result) {
+    //     navigation-mode {
+    //       read-one {
+    //         underflow-statement {
+    //           template-macro (UNDERFLOW_STATEMENT)
+    //         }
+    //         item-selection-question {
+    //           template-macro (ITEM_SELECTION_QUESTION)
+    //         }
+    //         list-summary {
+    //           // TODO: what's the interaction with `message` and Result dialog?
+    //           template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } }
+    //         }
+    //         overflow-statement {
+    //           template-macro (OVERFLOW_STATEMENT)
+    //         }
+    //       }
+    //     }
+    //     highlights {
+    //       // TODO: I don't want layouts for these, but it's requesting a label. And I don't get any highlights at all when I don't put a layout.
+    //       select(pick) {
+    //         label("#{raw(pick.highlight.label)}")
+    //         filter-by (exists(pick.highlight))
+    //         layout-macro (space-resort-highlight) {
+    //           param (spaceResort) {
+    //             expression(pick)
+    //           }
+    //         }
+    //         summary {
+    //           template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+    //         }
+    //       }
+    //       select(pick) {
+    //         label("#{raw(pick.highlight.label)}")
+    //         filter-by (exists(pick.highlight))
+    //         // No layout
+    //         summary {
+    //           template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+    //         }
+    //       }
+    //       select(pick) {
+    //         label("#{raw(pick.highlight.label)}")
+    //         filter-by (exists(pick.highlight))
+    //         // No layout
+    //         summary {
+    //           template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+    //         }
+    //       }
+    //     }
+    //     // TODO: it's super confusing to have `where-each` and `where-each-page`
+    //     where-each (item) {
+    //       // No layout
+    //     }
+    //     where-each-page (page) {
+    //       summary {
+    //         template-macro ("SPACE_RESORT_SUMMARY") {
+    //           param(spaceResort) {
+    //             expression(page)
+    //           }
+    //         }
+    //       }
+    //       where-each-item (item) {
+    //         // TODO: This is required but I don't want any layout
+    //       }
+    //     }
+    //   }
+    // }
+    // Else the device has a tactile screen? How do we even know that our layout will fit above the fold?
     if (size(result) == 1) {
-      // No layout
       // Dialog comes from `message`
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression (result)
+        }
+      }
     } else-if (size(result) > 1) {
       list-of (result) {
         navigation-mode {
@@ -92,7 +170,6 @@ result-view {
           }
         }
         highlights {
-          // TODO: I don't want layouts for these, but it's requesting a label. And I don't get any highlights at all when I don't put a layout.
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
@@ -108,7 +185,11 @@ result-view {
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
-            // No layout
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
             summary {
               template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
             }
@@ -116,7 +197,11 @@ result-view {
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
-            // No layout
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
             summary {
               template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
             }
@@ -135,13 +220,18 @@ result-view {
             }
           }
           where-each-item (item) {
-            // TODO: This is required but I don't want any layout
+            layout-macro (space-resort-summary) {
+              param (spaceResort) {
+                expression(item)
+              }
+            }
           }
         }
       }
     }
 
     // TODO: How can we split this file into smaller parts? It can be intimidating for capsule devs to come in and see several hundred lines in a file like this. It's also hard to maintain. Right now layout-macros don't support the same content as the render. It would also be tempting to split this into 2 files with the same match-pattern, each with a different conditional at the top. When the condition for that code path is not met, the file would not return anything to render so the over file can be called instead. However when we do this we see that the platform stop evaluation after a single result--view file, even when it doesn't return anything.
+    // It's also hard to decide how to organize the file because there are 2 dimensions that interweave: number of results and mode. We could split these into 2 files by setting min/max in the match pattern.
   }
 
   conversation-drivers {
