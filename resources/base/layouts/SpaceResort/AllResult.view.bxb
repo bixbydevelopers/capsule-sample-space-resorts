@@ -7,6 +7,9 @@ result-view {
     }
   }
 
+  // TODO: What's the best practice for Result Dialog? 
+  // What is the purpose of this `message` key? Why is it separate from the render block? Is it equivalent to using dialog files that match the Result mode? How does it interact with `list-summary`?
+  // Conceptually it's hard to understand why this message sits here, especially since we already put a lot of navigation related messages in the render block. And we've already split up the render block to have different logic paths for HEF and based on number of results. Now we have to repeat the same logic here to make sure this dialog ties in with the rest of the dialogs inside the render block. It's harder to understand and maintain.
   message {
     template-macro (SPACE_RESORT_RESULT) {
       param (result) {expression (result)}
@@ -14,52 +17,131 @@ result-view {
   }
 
   render {
-    if (size(result) > 1) {
+    // TODO: If Device has a screen
+    // How can we know if the device has a screen?
+    // It would be great to have a $eyesFree UEL, just like we have $handsFree. Some bixby-speaker devices may have a non-tactile screen and some non-bixby-speaker device may be screenless. In future we even have finer grain knowledge of whether the user is in an eyes free position wrt their device based on distance or face detection...
+    // Not as convenient, but another platform tweak that would make implementation simpler would be to give us access to the device target in bxb land instead of having to fetch it from JS land (where it's available under $vivContext.device).
+    // Current workaround in Yelp is to create a new Concept `Device` and an Action `GetDevice` that declares $vivContext in the endpoints file and then takes $vivContext.device in the JS file and outputs it. Then make `Device` an input to the FindBusiness Action and default-init it to `GetDevice`. Then update the match-pattern to this result-view to add `from-output` so that we have a handle to action.device. Compare it with `bixby-speaker`. It would be even more complicated here because of the match-pattern, since there are 2 actions that can output the SpaceResort. We cannot use `from-output: _(action)` because then it doesn't allow accessing action.device. So we would need to have 2 copies of this file. Aside from being convoluted and lengthy, this approach also has the downside of requiring the capsule developer to be aware of the different devices to know which ones have a screen (see above). 
+    // if (size(result) == 1) {
+    //   layout-macro (space-resort-details) {
+    //     param (spaceResort) {
+    //       expression (result)
+    //     }
+    //   }
+    // } else-if (size(result) > 1) {
+    //   list-of (result) {
+    //     where-each (item) {
+    //       layout-macro (space-resort-summary) {
+    //         param (spaceResort) {
+    //           expression(item)
+    //         }
+    //       }
+    //     }
+    //     highlights {
+    //       select(pick) {
+    //         label("#{raw(pick.highlight.label)}")
+    //         layout-macro (space-resort-highlight) {
+    //           param (spaceResort) {
+    //             expression(pick)
+    //           }
+    //         }
+    //         filter-by (exists(pick.highlight))
+    //       }
+    //       select(pick) {
+    //         label("#{raw(pick.highlight.label)}")
+    //         layout-macro (space-resort-highlight) {
+    //           param (spaceResort) {
+    //             expression(pick)
+    //           }
+    //         }
+    //         filter-by (exists(pick.highlight))
+    //       }
+    //       select(pick) {
+    //         label("#{raw(pick.highlight.label)}")
+    //         layout-macro (space-resort-highlight) {
+    //           param (spaceResort) {
+    //             expression(pick)
+    //           }
+    //         }
+    //         filter-by (exists(pick.highlight))
+    //       }
+    //     }
+    //   }
+    // }
+    // else
+    if (size(result) == 1) {
+      // No layout
+      // Dialog comes from `message`
+    } else-if (size(result) > 1) {
       list-of (result) {
-        where-each (item) {
-          layout-macro (space-resort-summary) {
-            param (spaceResort) {
-              expression(item)
+        navigation-mode {
+          read-one {
+            underflow-statement {
+              template-macro (UNDERFLOW_STATEMENT)
+            }
+            item-selection-question {
+              template-macro (ITEM_SELECTION_QUESTION)
+            }
+            list-summary {
+              // TODO: what's the interaction with `message` and Result dialog?
+              template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } }
+            }
+            overflow-statement {
+              template-macro (OVERFLOW_STATEMENT)
             }
           }
         }
         highlights {
+          // TODO: I don't want layouts for these, but it's requesting a label. And I don't get any highlights at all when I don't put a layout.
           select(pick) {
-            label("#{raw(pick.highlight)}")
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
             layout-macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
             }
-            filter-by (exists(pick.highlight))
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
           }
           select(pick) {
-            label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
-              param (spaceResort) {
-                expression(pick)
-              }
-            }
+            label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
+            // No layout
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
           }
           select(pick) {
-            label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
-              param (spaceResort) {
-                expression(pick)
-              }
-            }
+            label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
+            // No layout
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
           }
         }
-      }
-    } else-if (size(result) == 1) {
-      layout-macro (space-resort-details) {
-        param (spaceResort) {
-          expression (result)
+        // TODO: it's super confusing to have `where-each` and `where-each-page`
+        where-each (item) {
+          // No layout
+        }
+        where-each-page (page) {
+          summary {
+            template-macro ("SPACE_RESORT_SUMMARY") {
+              param(spaceResort) {
+                expression(page)
+              }
+            }
+          }
+          where-each-item (item) {
+            // TODO: This is required but I don't want any layout
+          }
         }
       }
     }
+
+    // TODO: How can we split this file into smaller parts? It can be intimidating for capsule devs to come in and see several hundred lines in a file like this. It's also hard to maintain. Right now layout-macros don't support the same content as the render. It would also be tempting to split this into 2 files with the same match-pattern, each with a different conditional at the top. When the condition for that code path is not met, the file would not return anything to render so the over file can be called instead. However when we do this we see that the platform stop evaluation after a single result--view file, even when it doesn't return anything.
   }
 
   conversation-drivers {

@@ -3,14 +3,23 @@ result-view {
     SpaceResort (result)
   }
 
-  render {
-    if (size(result) == 1) {
-      layout-macro (space-resort-details) {
-        param (spaceResort) {
-          expression (result)
-        }
-      }
+  message {
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
     }
+  }
+
+  render {
+    // If the device has a screen
+    // if (size(result) == 1) {
+    //   layout-macro (space-resort-details) {
+    //     param (spaceResort) {
+    //       expression (result)
+    //     }
+    //   }
+    // }
+    // Else
+    // No layout
   }
 
   conversation-drivers {
