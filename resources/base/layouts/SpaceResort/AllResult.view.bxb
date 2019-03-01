@@ -231,7 +231,7 @@ result-view {
     }
 
     // TODO: How can we split this file into smaller parts? It can be intimidating for capsule devs to come in and see several hundred lines in a file like this. It's also hard to maintain. Right now layout-macros don't support the same content as the render. It would also be tempting to split this into 2 files with the same match-pattern, each with a different conditional at the top. When the condition for that code path is not met, the file would not return anything to render so the over file can be called instead. However when we do this we see that the platform stop evaluation after a single result--view file, even when it doesn't return anything.
-    // It's also hard to decide how to organize the file because there are 2 dimensions that interweave: number of results and mode.
+    // It's also hard to decide how to organize the file because there are 2 dimensions that interweave: number of results and mode. We could split these into 2 files by setting min/max in the match pattern.
   }
 
   conversation-drivers {
