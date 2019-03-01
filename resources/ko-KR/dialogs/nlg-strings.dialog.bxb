@@ -91,6 +91,63 @@ template-macro-def (SPACE_RESORT_RESULT) {
   }
 }
 
+template-macro-def (SPACE_RESORT_SUMMARY) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort)} summary") // TODO: Add content to make it interesting, like star ratings or amenities
+  }
+}
+
+template-macro-def (SPACE_RESORT_DETAILS) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort)} details") // TODO: Add content to make it interesting, like star ratings or short description
+  }
+}
+
+template-macro-def (SPACE_RESORT_HIGHLIGHT) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort)} highlight") // TODO: Add content to make it interesting, like the highlight
+  }
+}
+
+template-macro-def (UNDERFLOW_STATEMENT) {
+  content {
+    template ("This is the first option.")
+  }
+}
+
+template-macro-def (OVERFLOW_STATEMENT) {
+  content {
+    template ("That's all I have.")
+  }
+}
+
+template-macro-def (ITEM_SELECTION_QUESTION) {
+  content {
+    choose (Random) {
+      template ("Want to pick this one?")
+      template ("Does that sound good?")
+    }
+  }
+}
+
 // Exception handling
 template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {
