@@ -1,0 +1,30 @@
+navigation-support {
+  match {
+    ViewAll(all) {
+      from-property {
+        SpaceResort (result)
+      }
+    }
+  }
+  // TODO: what are the guidelines here... there's so many possible formulations
+  navigation-commands {
+    next {
+      response (next hotel)
+      response (next resort)
+      response (next space hotel)
+      response (next space resort)
+    }
+    previous {
+      response (previous hotel)
+      response (previous resort)
+      response (previous space hotel)
+      response (previous space resort)
+    }
+  }
+  ordinal-selection-patterns {
+    pattern ("(first)[v:viv.core.OrdinalSelector] hotel")
+    pattern ("(first)[v:viv.core.OrdinalSelector] resort")
+    pattern ("(first)[v:viv.core.OrdinalSelector] space resort")
+    pattern ("(first)[v:viv.core.OrdinalSelector] spcae hotel")
+  }
+}
