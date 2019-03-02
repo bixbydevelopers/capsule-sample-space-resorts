@@ -1,0 +1,21 @@
+result-view {
+  match {
+    _(resultProperty) {
+      from-property{
+        SpaceResort (spaceResort)
+      }
+    }
+  }
+
+  render {
+    // No layout
+  }
+
+  conversation-drivers {
+    if ("size(spaceResort) == 1") {
+      conversation-driver {
+        template-macro (MakeReservation)
+      }
+    }
+  }
+}

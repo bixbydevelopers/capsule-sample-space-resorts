@@ -1,0 +1,98 @@
+result-view {
+  match {
+    ViewAll(all) {
+      from-property {
+        SpaceResort (result)
+      }
+    }
+  }
+
+  message {
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
+      param (device) {literal ("bixby-speaker")}
+    }
+  }
+
+  render {
+    if (size(result) == 1) {
+      // No layout
+      // Dialog comes from `message`
+    } else-if (size(result) > 1) {
+      list-of (result) {
+        navigation-mode {
+          read-one {
+            underflow-statement {
+              template-macro (UNDERFLOW_STATEMENT)
+            }
+            item-selection-question {
+              template-macro (ITEM_SELECTION_QUESTION)
+            }
+            list-summary {
+              // TODO: what's the interaction with `message` and Result dialog?
+              template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } param (device) {literal ("bixby-speaker")}}
+            }
+            overflow-statement {
+              template-macro (OVERFLOW_STATEMENT)
+            }
+          }
+        }
+        highlights {
+          // TODO: I don't want layouts for these, but it's requesting a label. And I don't get any highlights at all when I don't put a layout.
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            // No layout
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            // No layout
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
+          }
+        }
+        // TODO: it's super confusing to have `where-each` and `where-each-page`
+        where-each (item) {
+          // No layout
+        }
+        where-each-page (page) {
+          summary {
+            template-macro ("SPACE_RESORT_SUMMARY") {
+              param(spaceResort) {
+                expression(page)
+              }
+            }
+          }
+          where-each-item (item) {
+            // TODO: This is required but I don't want any layout
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    if ("size(result) == 1") {
+      conversation-driver {
+        template-macro (MakeReservation)
+      }
+    }
+  }
+}

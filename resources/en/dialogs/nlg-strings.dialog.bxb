@@ -78,14 +78,19 @@ template-macro-def (SPACE_RESORT_RESULT) {
       type (SpaceResort)
       min (Required) max (Many)
     }
+    // TODO: Get device from UEL when it becomes exposed
+    param (device) {
+      type (core.Text)
+      min (Required) max (One)
+    }
   }
   content {
     if (size(result) == 1) {
-      // TODO: can this be consolidated (see comments about result-view `message` key)
-      // If device has a screen
-      // template ("Check out this #{concept(result)}.")
-      // Else
-      template ("#{macro('SPACE_RESORT_NAME_WITH_EMPHASIS', result)} #{macro('SPACE_RESORT_DETAILS', result)}")
+      if (device == 'bixby-mobile') {
+        template ("Check out this #{concept(result)}.")        
+      } else-if (device == 'bixby-speaker') {
+        template ("#{macro('SPACE_RESORT_NAME_WITH_EMPHASIS', result)} #{macro('SPACE_RESORT_DETAILS', result)}")        
+      }
     } else-if (size(result) < 10) {
       template ("I found #{size(result)} #{concept(result)}.")
     } else {

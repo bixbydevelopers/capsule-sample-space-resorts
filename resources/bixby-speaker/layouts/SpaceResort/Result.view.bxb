@@ -1,0 +1,24 @@
+result-view {
+  match {
+    SpaceResort (result)
+  }
+
+  message {
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
+      param (device) {literal ("bixby-speaker")}
+    }
+  }
+
+  render {
+    // No layout
+  }
+
+  conversation-drivers {
+    if ("size(result) == 1") {
+      conversation-driver {
+        template-macro (MakeReservation)
+      }
+    }
+  }
+}
