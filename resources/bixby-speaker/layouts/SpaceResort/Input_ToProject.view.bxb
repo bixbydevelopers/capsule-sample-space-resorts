@@ -1,0 +1,34 @@
+input-view {
+  match: SpaceResort(result) {
+    to-input: ProjectResort(action)
+  }
+  message {
+    template-macro (SPACE_RESORT_SELECTION)
+  }
+  render {
+    if (size(result) > 1) {
+      selection-of (result) {
+        
+        // TODO: it's super confusing to have `where-each` and `where-each-page`
+        where-each (item) {
+          // No layout
+        }
+        where-each-page (page) {
+          summary {
+            template-macro ("SPACE_RESORT_SUMMARY") {
+              param(spaceResort) {
+                expression(page)
+              }
+            }
+          }
+          where-each-item (item) {
+            // TODO: This is required but I don't want any layout
+          }
+        }
+      }
+    }
+    // else-if (size(result) == 1) {
+    //   // Unexpected
+    // }
+  }
+}

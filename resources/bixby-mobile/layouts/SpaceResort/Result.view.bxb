@@ -6,21 +6,11 @@ result-view {
   message {
     template-macro (SPACE_RESORT_RESULT) {
       param (result) {expression (result)}
+      param (device) {literal ("bixby-mobile")}
     }
   }
 
   render {
-    // If the device has a screen
-    // if (size(result) == 1) {
-    //   layout-macro (space-resort-details) {
-    //     param (spaceResort) {
-    //       expression (result)
-    //     }
-    //   }
-    // }
-    // else if the device has no screen
-    // No layout
-    // Else the device has a tactile screen? How do we even know that our layout will fit above the fold?
     if (size(result) == 1) {
       layout-macro (space-resort-details) {
         param (spaceResort) {
