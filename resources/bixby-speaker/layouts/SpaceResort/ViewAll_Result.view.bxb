@@ -76,10 +76,6 @@ result-view {
             }
           }
         }
-        // TODO: it's super confusing to have `where-each` and `where-each-page`
-        where-each (item) {
-          // No layout
-        }
         where-each-page (page) {
           summary {
             template-macro ("SPACE_RESORT_SUMMARY") {
