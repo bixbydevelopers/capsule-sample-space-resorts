@@ -1,0 +1,14 @@
+layout-macro-def (space-resort-hide) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    // Nothing.
+    paragraph {
+      value(" ")
+    }
+  }
+}

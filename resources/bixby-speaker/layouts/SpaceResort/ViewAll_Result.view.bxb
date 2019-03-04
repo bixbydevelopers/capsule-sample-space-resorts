@@ -38,11 +38,11 @@ result-view {
           }
         }
         highlights {
-          // TODO: I don't want layouts for these, but it's requesting a label. And I don't get any highlights at all when I don't put a layout.
+          // TODO: VIV-25597 - We don't want layouts for these, but the label is required. And we don't get any highlights at all when I don't put a layout. So using empty layouts until removing them is supported.
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
-            layout-macro (space-resort-highlight) {
+            layout-macro (space-resort-hide) {
               param (spaceResort) {
                 expression(pick)
               }
@@ -54,7 +54,11 @@ result-view {
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
-            // No layout
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
             summary {
               template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
             }
@@ -62,7 +66,11 @@ result-view {
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
-            // No layout
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
             summary {
               template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
             }
@@ -81,7 +89,12 @@ result-view {
             }
           }
           where-each-item (item) {
-            // TODO: This is required but I don't want any layout
+            // TODO: VIV-25599 - This is required but we don't want any layout. Using an empty layout until layoutless views are supported.
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(item)
+              }
+            }
           }
         }
       }
