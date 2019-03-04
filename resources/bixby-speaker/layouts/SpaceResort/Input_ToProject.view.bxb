@@ -8,11 +8,6 @@ input-view {
   render {
     if (size(result) > 1) {
       selection-of (result) {
-        
-        // TODO: it's super confusing to have `where-each` and `where-each-page`
-        where-each (item) {
-          // No layout
-        }
         where-each-page (page) {
           summary {
             template-macro ("SPACE_RESORT_SUMMARY") {
@@ -22,7 +17,12 @@ input-view {
             }
           }
           where-each-item (item) {
-            // TODO: This is required but I don't want any layout
+            // TODO: VIV-25599 - This is required but we don't want any layout. Using an empty layout until layoutless views are supported.
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(item)
+              }
+            }
           }
         }
       }
