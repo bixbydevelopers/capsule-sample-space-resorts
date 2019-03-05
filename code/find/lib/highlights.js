@@ -80,8 +80,8 @@ module.exports = {
     "ko": { label: "천문학 과학실", dialog: "The Upside Down Space Station has the best astronomy lab."}
   },
   "TritonWaterPark": {
-    "en": { label: "Family Fun", dialog: "There's fun for everyone at Triton Water Park"},
-    "ko": { label: "가족과의 즐거운 시간", dialog: ""}
+    "en": { label: "Family Fun", dialog: "There's fun for everyone at Triton Water Park."},
+    "ko": { label: "가족과의 즐거운 시간", dialog: "There's fun for everyone at Triton Water Park."}
   },
   "NeptuneSpaceStation": {
     "en": { label: "High Hi-Tech", dialog: "Experience high hi-tech at Neptune Space Station."},

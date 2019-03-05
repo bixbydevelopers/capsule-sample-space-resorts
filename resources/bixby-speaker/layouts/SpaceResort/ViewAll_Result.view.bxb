@@ -29,7 +29,6 @@ result-view {
               template-macro (ITEM_SELECTION_QUESTION)
             }
             list-summary {
-              // TODO: what's the interaction with `message` and Result dialog?
               template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } param (device) {literal ("bixby-speaker")}}
             }
             overflow-statement {
