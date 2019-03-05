@@ -81,11 +81,6 @@ template-macro-def (SPACE_RESORT_RESULT) {
       type (SpaceResort)
       min (Required) max (One)
     }
-    // TODO: Get device from UEL when it becomes exposed
-    param (device) {
-      type (core.Text)
-      min (Required) max (One)
-    }
   }
   content {
     if (size(result) == 1) {

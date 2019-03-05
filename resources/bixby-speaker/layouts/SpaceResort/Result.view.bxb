@@ -6,7 +6,6 @@ result-view {
   message {
     template-macro (SPACE_RESORT_RESULT) {
       param (result) {expression (result)}
-      param (device) {literal ("bixby-speaker")}
     }
   }
 

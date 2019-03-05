@@ -78,17 +78,12 @@ template-macro-def (SPACE_RESORT_RESULT) {
       type (SpaceResort)
       min (Required) max (Many)
     }
-    // TODO: Get device from UEL when it becomes exposed
-    param (device) {
-      type (core.Text)
-      min (Required) max (One)
-    }
   }
   content {
     if (size(result) == 1) {
-      if (device == 'bixby-mobile') {
+      if ($can.device == 'bixby-mobile') {
         template ("Check out this #{concept(result)}.")        
-      } else-if (device == 'bixby-speaker') {
+      } else-if ($can.device == 'bixby-speaker') {
         template ("#{macro('SPACE_RESORT_NAME_WITH_EMPHASIS', result)} #{macro('SPACE_RESORT_DETAILS', result)}")        
       }
     } else-if (size(result) < 10) {
