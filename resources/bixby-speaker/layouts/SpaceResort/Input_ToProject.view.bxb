@@ -1,0 +1,34 @@
+input-view {
+  match: SpaceResort(result) {
+    to-input: ProjectResort(action)
+  }
+  message {
+    template-macro (SPACE_RESORT_SELECTION)
+  }
+  render {
+    if (size(result) > 1) {
+      selection-of (result) {
+        where-each-page (page) {
+          summary {
+            template-macro ("SPACE_RESORT_SUMMARY") {
+              param(spaceResort) {
+                expression(page)
+              }
+            }
+          }
+          where-each-item (item) {
+            // TODO: VIV-25599 - This is required but we don't want any layout. Using an empty layout until layoutless views are supported.
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(item)
+              }
+            }
+          }
+        }
+      }
+    }
+    // else-if (size(result) == 1) {
+    //   // Unexpected
+    // }
+  }
+}

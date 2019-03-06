@@ -76,14 +76,99 @@ template-macro-def (SPACE_RESORT_RESULT) {
   params {
     param (result) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Required) max (Many)
     }
   }
   content {
     if (size(result) == 1) {
-      template ("Check out this #{concept(result)}.")
+      if ($can.device == 'bixby-mobile') {
+        template ("Check out this #{concept(result)}.")        
+      } else-if ($can.device == 'bixby-speaker') {
+        template ("#{macro('SPACE_RESORT_NAME_WITH_EMPHASIS', result)} #{macro('SPACE_RESORT_DETAILS', result)}")        
+      }
+    } else-if (size(result) < 10) {
+      template ("I found #{size(result)} #{concept(result)}.")
     } else {
       template ("I found these #{concept(result)}.")
+    }
+  }
+}
+
+template-macro-def (SPACE_RESORT_NAME_WITH_EMPHASIS) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    choose (Random) {
+      // TODO: We should not need the ".name" here, remove when VIV-25705 is ready
+      template ("#{value(spaceResort.name)} is great.")
+      template ("#{value(spaceResort.name)} sounds fun.")
+      template ("#{value(spaceResort.name)} is good.")
+      template ("#{value(spaceResort.name)} is lovely.")
+      template ("You'll love #{value(spaceResort.name)}.")
+      template ("You'll enjoy #{value(spaceResort.name)}.")
+    }
+  }
+}
+
+template-macro-def (SPACE_RESORT_SUMMARY) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort)} attributes are #{value(spaceResort.attributes)}")
+  }
+}
+
+template-macro-def (SPACE_RESORT_DETAILS) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort.description)}")
+  }
+}
+
+template-macro-def (SPACE_RESORT_HIGHLIGHT) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort.highlight.dialog)}")
+  }
+}
+
+template-macro-def (UNDERFLOW_STATEMENT) {
+  content {
+    template ("This is the first option.")
+  }
+}
+
+template-macro-def (OVERFLOW_STATEMENT) {
+  content {
+    template ("That's all I have.")
+  }
+}
+
+template-macro-def (ITEM_SELECTION_QUESTION) {
+  content {
+    // TODO: Randomization is not applied more than once per request so we get the same dialog repeated for each item. Should be fixed with VIV-22907
+    choose (Random) {
+      template ("Want to pick this one?")
+      template ("Does that sound good?")
+      template ("Would you like this one?")
     }
   }
 }

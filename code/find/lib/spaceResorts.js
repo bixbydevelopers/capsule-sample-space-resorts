@@ -249,7 +249,7 @@ module.exports = [
     gravity: 0.02936783,
     description: loc(descriptions.CharonsGrotto),
     amenities: [loc(amenities.Casino), loc(amenities.GeneTherapy), loc(amenities.GrowAClone), loc(amenities.Cantina)],
-    highlight: undefined,
+    highlight: loc(highlights.CharonsGrotto),
     images: images.CharonsGrotto,
     all: true
   }

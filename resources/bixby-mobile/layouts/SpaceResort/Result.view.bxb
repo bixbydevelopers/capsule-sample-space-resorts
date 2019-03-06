@@ -3,6 +3,12 @@ result-view {
     SpaceResort (result)
   }
 
+  message {
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
+    }
+  }
+
   render {
     if (size(result) == 1) {
       layout-macro (space-resort-details) {

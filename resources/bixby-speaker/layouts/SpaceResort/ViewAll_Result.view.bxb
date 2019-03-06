@@ -1,0 +1,105 @@
+result-view {
+  match {
+    ViewAll(all) {
+      from-property {
+        SpaceResort (result)
+      }
+    }
+  }
+
+  message {
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
+    }
+  }
+
+  render {
+    if (size(result) == 1) {
+      // No layout
+      // Dialog comes from `message`
+    } else-if (size(result) > 1) {
+      list-of (result) {
+        navigation-mode {
+          read-one {
+            underflow-statement {
+              template-macro (UNDERFLOW_STATEMENT)
+            }
+            item-selection-question {
+              template-macro (ITEM_SELECTION_QUESTION)
+            }
+            list-summary {
+              template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } }
+            }
+            overflow-statement {
+              template-macro (OVERFLOW_STATEMENT)
+            }
+          }
+        }
+        highlights {
+          // TODO: VIV-25597 - We don't want layouts for these, but the label is required. And we don't get any highlights at all when I don't put a layout. So using empty layouts until removing them is supported.
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            summary {
+              template-macro (SPACE_RESORT_HIGHLIGHT)  { param (spaceResort) { expression (pick) } }
+            }
+          }
+        }
+        where-each-page (page) {
+          summary {
+            template-macro ("SPACE_RESORT_SUMMARY") {
+              param(spaceResort) {
+                expression(page)
+              }
+            }
+          }
+          where-each-item (item) {
+            // TODO: VIV-25599 - This is required but we don't want any layout. Using an empty layout until layoutless views are supported.
+            layout-macro (space-resort-hide) {
+              param (spaceResort) {
+                expression(item)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    if ("size(result) == 1") {
+      conversation-driver {
+        template-macro (MakeReservation)
+      }
+    }
+  }
+}

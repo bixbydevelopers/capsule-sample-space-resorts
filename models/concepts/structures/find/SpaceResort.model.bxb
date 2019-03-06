@@ -23,6 +23,7 @@ structure (SpaceResort) {
   }
   property (highlight) {
     type (Highlight)
+    min (Required)
   }
   property (images) {
     type (Image)
