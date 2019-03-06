@@ -103,7 +103,7 @@ template-macro-def (SPACE_RESORT_NAME_WITH_EMPHASIS) {
   }
   content {
     choose (Random) {
-      // TODO: We should not need the ".name" here, remove when VIV-25705 is ready
+      // TODO: Remove the ".name" part when VIV-25705 is ready
       template ("#{value(spaceResort.name)} is great.")
       template ("#{value(spaceResort.name)} sounds fun.")
       template ("#{value(spaceResort.name)} is good.")
@@ -164,7 +164,6 @@ template-macro-def (OVERFLOW_STATEMENT) {
 
 template-macro-def (ITEM_SELECTION_QUESTION) {
   content {
-    // TODO: Randomization is not applied more than once per request so we get the same dialog repeated for each item. Should be fixed with VIV-22907
     choose (Random) {
       template ("Want to pick this one?")
       template ("Does that sound good?")

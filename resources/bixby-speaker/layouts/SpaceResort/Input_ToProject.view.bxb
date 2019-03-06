@@ -17,7 +17,6 @@ input-view {
             }
           }
           where-each-item (item) {
-            // TODO: VIV-25599 - This is required but we don't want any layout. Using an empty layout until layoutless views are supported.
             layout-macro (space-resort-hide) {
               param (spaceResort) {
                 expression(item)
