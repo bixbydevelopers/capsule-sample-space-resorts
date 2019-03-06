@@ -36,7 +36,7 @@ result-view {
           }
         }
         highlights {
-          // TODO: VIV-25597 - We don't want layouts for these, but the label is required. And we don't get any highlights at all when I don't put a layout. So using empty layouts until removing them is supported.
+          // TODO: Remove labels when VIV-25597 is ready
           select(pick) {
             label("#{raw(pick.highlight.label)}")
             filter-by (exists(pick.highlight))
@@ -83,7 +83,6 @@ result-view {
             }
           }
           where-each-item (item) {
-            // TODO: VIV-25599 - This is required but we don't want any layout. Using an empty layout until layoutless views are supported.
             layout-macro (space-resort-hide) {
               param (spaceResort) {
                 expression(item)

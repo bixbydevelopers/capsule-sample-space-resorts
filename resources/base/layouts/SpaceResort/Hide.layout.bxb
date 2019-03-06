@@ -1,3 +1,4 @@
+// TODO: Remove when VIV-25599 is ready
 layout-macro-def (space-resort-hide) {
   params {
     param (spaceResort) {

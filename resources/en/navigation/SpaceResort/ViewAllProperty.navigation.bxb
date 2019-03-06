@@ -6,7 +6,7 @@ navigation-support {
       }
     }
   }
-  // TODO: what are the guidelines here... there's so many possible formulations. Revisit after DOC-819 is ready
+  // TODO: See DOC-819
   navigation-commands {
     next {
       response (next hotel)
