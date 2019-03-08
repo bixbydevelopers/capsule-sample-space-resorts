@@ -14,10 +14,11 @@ result-view {
   }
 
   render {
-    if (size(result) == 1) {
-      // No layout
-      // Dialog comes from `message`
-    } else-if (size(result) > 1) {
+    // if (size(result) == 1) {
+    //   No layout
+    //   Dialog comes from `message`
+    // } else-
+    if (size(result) > 1) {
       list-of (result) {
         navigation-mode {
           read-one {

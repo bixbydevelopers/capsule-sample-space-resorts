@@ -254,3 +254,4 @@ module.exports = [
     all: true
   }
 ]
+var config = require('config')

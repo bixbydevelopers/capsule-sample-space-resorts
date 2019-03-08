@@ -1,3 +1,4 @@
+var config = require('config')
 module.exports.function = function (spaceResort, numberOfAstronauts, dateInterval) {
   switch (config.get("locale")) {
     case "ko" :

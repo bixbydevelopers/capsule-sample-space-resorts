@@ -1,3 +1,4 @@
+var console = require('console')
 module.exports.function = function (dateTimeExpression) {
   console.log("dateTimeExpression:", dateTimeExpression)
   if (dateTimeExpression.dateInterval) {

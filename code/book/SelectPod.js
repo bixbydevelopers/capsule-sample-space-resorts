@@ -1,3 +1,6 @@
+var textLib = require('textLib')
+var console = require('console')
+var fail = require('fail')
 module.exports.function = function (pods, podName) {
   var matches = []
   //a lot can be improved here to improve matching the items
