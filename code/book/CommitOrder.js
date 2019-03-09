@@ -1,3 +1,5 @@
+var dates = require('dates')
+var config = require('config')
 module.exports.function = function (order) {
   return {
     $id:  "" + Math.floor(Math.random() * 10000000),
