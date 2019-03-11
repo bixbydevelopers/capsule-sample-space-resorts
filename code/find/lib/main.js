@@ -1,5 +1,7 @@
 const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
+var config = require('config')
+var textLib = require('textLib')
 
 module.exports = {
   "findSpaceResorts": findSpaceResorts,
