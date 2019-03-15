@@ -1,6 +1,5 @@
 const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
-var config = require('config')
 var textLib = require('textLib')
 
 module.exports = {
@@ -8,12 +7,12 @@ module.exports = {
   "selectSpaceResorts": selectSpaceResorts
 }
 
-function findSpaceResorts(name, planet, searchCriteria) {
-  return filterSpaceResorts(data, name, planet, searchCriteria)
+function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
+  return filterSpaceResorts(data($vivContext.locale), name, planet, searchCriteria, $vivContext)
 }
 
-function selectSpaceResorts(resorts, name, planet, searchCriteria) {
-  var candidates = data;
+function selectSpaceResorts(resorts, name, planet, searchCriteria, $vivContext) {
+  var candidates = data($vivContext.locale);
   if (resorts) {
     //keep candidates that are in resorts (not a efficient!)
     candidates = candidates.filter(function(candidate) {
@@ -24,11 +23,11 @@ function selectSpaceResorts(resorts, name, planet, searchCriteria) {
       })
     })
   }
-  candidates = filterSpaceResorts(candidates, name, planet, searchCriteria)
+  candidates = filterSpaceResorts(candidates, name, planet, searchCriteria, $vivContext)
   return candidates
 }
 
-function filterSpaceResorts(candidates, name, planet, searchCriteria) {
+function filterSpaceResorts(candidates, name, planet, searchCriteria, $vivContext) {
 
   if (name) {
     candidates = candidates.filter(function(candidate){
@@ -50,7 +49,7 @@ function filterSpaceResorts(candidates, name, planet, searchCriteria) {
           return amenity.keywords.find(function(keyword) {
             keyword = keyword.toLowerCase()
 
-            if (config.get("locale") == "ko") {
+            if ($vivContext.locale.split('-')[0] === "ko") {
               return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
             }
             else {
