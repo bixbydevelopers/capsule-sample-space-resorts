@@ -2,7 +2,7 @@ endpoints {
 
   action-endpoints {
     action-endpoint (CommitOrder) {
-      accepted-inputs (order)
+      accepted-inputs (order, $vivContext)
       local-endpoint (book/CommitOrder.js)
     }
 
