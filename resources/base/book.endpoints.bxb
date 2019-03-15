@@ -2,7 +2,7 @@ endpoints {
 
   action-endpoints {
     action-endpoint (CommitOrder) {
-      accepted-inputs (order)
+      accepted-inputs (order, $vivContext)
       local-endpoint (book/CommitOrder.js)
     }
 
@@ -27,7 +27,7 @@ endpoints {
     }
 
     action-endpoint (FindPods) {
-      accepted-inputs (spaceResort, numberOfAstronauts, dateInterval)
+      accepted-inputs (spaceResort, numberOfAstronauts, dateInterval, $vivContext)
       local-endpoint (book/FindPods.js)
     }
 

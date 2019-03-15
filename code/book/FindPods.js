@@ -1,6 +1,5 @@
-var config = require('config')
-module.exports.function = function (spaceResort, numberOfAstronauts, dateInterval) {
-  switch (config.get("locale")) {
+module.exports.function = function (spaceResort, numberOfAstronauts, dateInterval, $vivContext) {
+  switch ($vivContext.locale.split('-')[0]) {
     case "ko" :
       return [{
         name: "허니문",
