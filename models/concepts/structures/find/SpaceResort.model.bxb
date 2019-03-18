@@ -33,4 +33,10 @@ structure (SpaceResort) {
     type (ViewAll)
     min (Required) max (One)
   }
+  features {
+    preferable {
+      preference (planet)
+    }
+  }
+
 }

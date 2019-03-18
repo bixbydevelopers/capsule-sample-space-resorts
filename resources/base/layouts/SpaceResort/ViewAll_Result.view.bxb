@@ -25,6 +25,21 @@ result-view {
         }
         highlights {
           select(pick) {
+            label {
+              template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES)
+            }
+            layout-macro (space-resort-highlight) {
+              param (spaceResort) {
+                expression(pick)
+              }
+            }
+            order-by {
+              sorting (pick) {
+                by-preferences
+              }
+            }
+          }
+          select(pick) {
             label("#{raw(pick.highlight)}")
             layout-macro (space-resort-highlight) {
               param (spaceResort) {
