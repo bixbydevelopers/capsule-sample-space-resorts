@@ -25,7 +25,7 @@ result-view {
         }
         highlights {
           select(pick) {
-            // This first highlight uses preference learning to present out a personalized recommendation based on the user's past behavior
+            // This first highlight uses preference learning to present a personalized recommendation based on the user's past behavior
             label {
               template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES)
             }
