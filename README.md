@@ -82,7 +82,7 @@ Why don't we set the goal to the `FindSpaceResorts` Action?
 Another alternative would be to set the goal to the specific `FindSpaceResorts`
 Action, making it very clear how to fulfill the request. This approach would
 simplify the match patterns for views, so we would not need to use the
-`from-property` key. However, we elect to use the property projection approach
+`from-property` key. However, we use the property projection approach
 so that our final resting context for "find" queries is the same as for property
 projection queries.  This means that we can pivot between all these states
 seamlessly, or launch the "book" flow from any of these. Example conversation:
