@@ -48,7 +48,7 @@ match {
 }
 ```
 
-Why do we treat this as a property projection instead of setting the goal to the
+Why treat this as a property projection instead of setting the goal to the
 `SpaceResort` Structure?
 
 When the user wants to book a space resort and there are many possible
@@ -152,7 +152,7 @@ has:continue`. For example:
 - What planet is it on?
 
 We train these just like the outer property projections, with the addition of a
-"Continuation of" `SpaceResort`.  This allow pivoting between inner/outer "find"
+"Continuation of" `SpaceResort`.  This allows pivoting between inner/outer "find"
 queries and inner/outer property projections.
 
 ### Booking Space Resorts
@@ -169,7 +169,7 @@ We train these to the goal `Order#commitOrder` where `commitOrder` is a
 named-consumer on the `Order`. We also add two flagged signal routes:
 `CreateItem` and `CreateOrder`.  We annotate as Values any present inputs for
 either "find" or "book", such as resort name, planet, search criteria, number of
-astronauts, etc.  All this will create a plan to first find a space resort that
+astronauts, etc.  This creates a plan to first find a space resort that
 matches the search inputs, then prepare an `Order` and pass it to the
 `CommitOrder` action, which will present the user with a Confirmation screen to
 review and agree to the reservation.
