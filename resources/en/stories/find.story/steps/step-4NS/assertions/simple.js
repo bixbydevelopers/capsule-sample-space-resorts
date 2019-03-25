@@ -1,6 +1,6 @@
 /**
  * Step assertions documentation
- * https://qa.bixbydevelopers.com/dev/docs/reference/assertions_api/step
+ * https://bixbydevelopers.com/dev/docs/reference/assertions_api/step
  */
 
 describe('simple', () => {
@@ -8,6 +8,5 @@ describe('simple', () => {
     const { results } = step.currentNode
     expect(results).toBeTruthy()
     expect(results.length).toBeGreaterThan(3)
-    expect(results[0].name).toEqual("The Mercurial")
   })
 })
