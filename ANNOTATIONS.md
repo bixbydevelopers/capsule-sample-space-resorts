@@ -7,15 +7,18 @@
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
 
-- Find space resorts Show me space hotels with crater canyoneering Search for
-- hotels around The Red Planet Look for space hotels with quantum bungee jumping
-- around Saturn
+- Find space resorts
+
+- Show me space hotels with crater canyoneering
+
+- Search for hotels around The Red Planet Look for space hotels with quantum
+- bungee jumping around Saturn
 
 We train these to have the goal `SpaceResort#all` and we annotate any resort
 names, planets and search criteria as Values. Here `SpaceResort#all` is a
 property projection to the `all` property of the `SpaceResort`. This property is
-a boolean which is always true and is used as a proxy sto signify that we want
-to display the full space resort, instead of focussing on a single property like
+a boolean which is always true and is used as a proxy to signify that we want to
+display the full space resort, instead of focussing on a single property like
 `gravity` or `planet` (see below).
 
 Why don't we set the goal to the `SpaceResort` Structure?
@@ -61,7 +64,11 @@ seamlessly, or launch the "book" flow from any of these.
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#all has:continue`. Examples:
 
-- On Jupiter With low gravity Only the ones that are kid-friendly
+- On Jupiter
+
+- With low gravity
+
+- Only the ones that are kid-friendly
 
 These are continuations of the outer "find" queries that allow users to refine
 their space resorts search by providing additional inputs. Since the goal for
@@ -78,7 +85,9 @@ You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all
 -has:continue`. For example:
 
-- What's the gravity at The Mercurial? Where is Io-Tel?
+- What's the gravity at The Mercurial?
+
+- Where is Io-Tel?
 
 Here the user is asking to know about a specific property of a space resort,
 such as the gravity or the planet.  We train the goal to be that property
@@ -94,7 +103,9 @@ You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all
 has:continue`. For example:
 
-- What's the gravity there? What planet is it on?
+- What's the gravity there?
+
+- What planet is it on?
 
 We train these just like the outer property projections, with the addition of a
 "Continuation of" `SpaceResort`.  This allow pivoting between inner/outer "find"
@@ -125,7 +136,9 @@ You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:Order#commitOrder continuation:SpaceResort`. For
 example:
 
-- Make reservation Book a pod for 2 astronauts
+- Make reservation
+
+- Book a pod for 2 astronauts
 
 We train these just like the outer "book" queries, with the addition of a
 "Continuation of" `SpaceResort`.  This is to cover cases where the users are
@@ -138,8 +151,11 @@ You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:Order#commitOrder
 continuation:Order#commitOrder`. For example:
 
-- Pick a different habitat pod Change that to 2 astronauts Select a different
-- date
+- Pick a different habitat pod
+
+- Change that to 2 astronauts
+
+- Select a different date
 
 We train these as "Continuation of" `Order#commitOrder` for cases where the
 users are at the Confirmation screen to review their order and decide that they
@@ -158,7 +174,9 @@ GetNumberOfAstronauts).
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `prompt:Confirmation`. For example:
 
-- Yes Do it
+- Yes
+
+- Do it
 
 When the user is done reviewing their Order at the Confirmation Prompt, they can
 use these utterances to move forward and proceed with the reservation. This is
@@ -170,7 +188,11 @@ itself is annotated with a boolean Value "true" or "false".
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `prompt:SpaceResort`. For example:
 
-- The one with a refueling station The Mercurial The one on Venus
+- The one with a refueling station
+
+- The Mercurial
+
+- The one on Venus
 
 The booking flow only allows a single SpaceResort at a time, so when there are
 multiple candidates the user will be presented with a `SpaceResort` Selection
@@ -182,11 +204,18 @@ the `SelectResort` Action.  This Action will take the hotels currently in
 context and attempt to filter them based on the newly provided inputs.  For
 example:
 
-- User: Book a hotel near Jupiter Bixby: Here are some hotels around Jupiter.
-- Which one would you like? User: The one with a refueling station. Bixby: There
-- are 3 hotels around Jupiter with a refueling station. Which one? (Where the 3
-- options are a subset of the previous options, not a new search) User: The
-- Ganymede Moon Motel Bixby: (Proceeds with the booking flow)
+- User: Book a hotel near Jupiter
+
+- Bixby: Here are some hotels around Jupiter. Which one would you like?
+
+- User: The one with a refueling station.
+
+- Bixby: There are 3 hotels around Jupiter with a refueling station. Which one?
+- (Where the 3 options are a subset of the previous options, not a new search)
+
+- User: The Ganymede Moon Motel
+
+- Bixby: (Proceeds with the booking flow)
 
 #### Other Selection Prompts (NumberOfAstronauts, HabitatPod, DateInterval...)
 
@@ -194,7 +223,11 @@ You can see all trained utterances and plans by entering this query in the
 training tab search bar: ` has:prompt -goal:SpaceResort -goal:Confirmation`. For
 example:
 
-- 3 astronauts The Honey Moon Suite Next weekend
+- 3 astronauts
+
+- The Honey Moon Suite
+
+- Next weekend
 
 For prompt training, the goal must always match the prompt context, so we train
 these as "At prompt for" `<Concept>` and goal `<Concept>`.  Then we annotate the
