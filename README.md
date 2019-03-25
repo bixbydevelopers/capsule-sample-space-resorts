@@ -29,7 +29,7 @@ training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
 
 - Look for space hotels with quantum bungee jumping around Saturn
 
-We train these to have the goal `SpaceResort#all` and we annotate any resort
+We train these to have the goal `SpaceResort#all` and annotate any resort
 names, planets and search criteria as Values. Here `SpaceResort#all` is a
 property projection to the `all` property of the `SpaceResort`. This property is
 a boolean of type `ViewAll`, which is always true and is used as a proxy to
