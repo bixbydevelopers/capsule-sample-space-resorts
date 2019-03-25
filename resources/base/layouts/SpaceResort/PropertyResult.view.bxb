@@ -1,6 +1,8 @@
 result-view {
+  // This view will match space resort property projection results.
+  // For example, "What is the gravity there?" is trained as a property projection (SpaceResort#gravity) where the resulting Gravity would match the "resultProperty" here:
   match {
-    _(resultProperty) {
+    _(resultProperty) { // The underscore character ('_') is a wildcard to match any Concept type. For example: Gravity or Planet
       from-property{
         SpaceResort (spaceResort)
       }
@@ -8,7 +10,9 @@ result-view {
   }
 
   render {
+    // We use the ProjectResort Action to ensure there's a single result property
     if (size(resultProperty) == 1) {
+      // We render the usual space resort details layout and answer the property projection question in the dialog
       layout-macro (space-resort-details) {
         param (spaceResort) {
           expression (spaceResort)

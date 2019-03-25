@@ -1,7 +1,8 @@
 dialog (Result) {
+  // This is the result dialog for `SpaceResort#gravity` property projections. For example: "What planet is it on?"
   match: Gravity (this)
+  // The ProjectResort Action ensures there's a single result for property projections
   if (size(this) == 1) {
     template ("The gravity is #{value(this)}.")
   }
-  // Else Unexpected
 }

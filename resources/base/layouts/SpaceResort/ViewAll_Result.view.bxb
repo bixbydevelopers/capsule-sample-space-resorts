@@ -1,4 +1,7 @@
 result-view {
+  // This view handles the Find flow space resort results. For example: "Find space resorts around Jupiter."
+  // These are trained as a property projection to the `SpaceResort#all` property to indicate that we want to present the entire space resort information (see the README for more details about this annotation pattern)
+  // We use the following match pattern to identify results with that goal, then we render the space resort result(s) accordingly in the `render` block
   match {
     ViewAll(all) {
       from-property {
@@ -15,6 +18,7 @@ result-view {
 
   render {
     if (size(result) > 1) {
+      // When there are multiple space resorts, we present them in a list of summary items
       list-of (result) {
         where-each (item) {
           layout-macro (space-resort-summary) {
@@ -23,6 +27,7 @@ result-view {
             }
           }
         }
+        // We highlight a few top results for the user with a more prominent layout
         highlights {
           select(pick) {
             // This first highlight uses preference learning to present out a personalized recommendation based on the user's past behavior
@@ -70,6 +75,7 @@ result-view {
         }
       }
     } else-if (size(result) == 1) {
+      // When there is a single result, we directly display the details layout with all the space resort information
       layout-macro (space-resort-details) {
         param (spaceResort) {
           expression (result)
