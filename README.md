@@ -48,7 +48,7 @@ match {
 }
 ```
 
-Why do we treat this as a property projection instead of setting the goal to the
+Why treat this as a property projection instead of setting the goal to the
 `SpaceResort` Structure?
 
 When the user wants to book a space resort and there were many possible
