@@ -152,7 +152,7 @@ has:continue`. For example:
 - What planet is it on?
 
 We train these just like the outer property projections, with the addition of a
-"Continuation of" `SpaceResort`.  This allow pivoting between inner/outer "find"
+"Continuation of" `SpaceResort`.  This allows pivoting between inner/outer "find"
 queries and inner/outer property projections.
 
 ### Booking Space Resorts
