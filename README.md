@@ -243,7 +243,7 @@ training tab search bar: `prompt:SpaceResort`. For example:
 - The one on Venus
 
 The booking flow only allows a single SpaceResort at a time, so when there are
-multiple candidates the user will be presented with a `SpaceResort` Selection
+multiple candidates, the user will be presented with a `SpaceResort` Selection
 Prompt.  For prompt training, the goal must always match the prompt context, so
 we train these as "At prompt for" `SpaceResort` with goal `SpaceResort`. There
 are many ways the user can answer, so we annotate any provided Value (space
