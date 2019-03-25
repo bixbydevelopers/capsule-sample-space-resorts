@@ -203,7 +203,7 @@ continuation:Order#commitOrder`. For example:
 
 We train these as "Continuation of" `Order#commitOrder` for cases where the
 users are at the Confirmation screen to review their order and decide that they
-want to make some changes.  The goal remains `Order#commitOrder` and any Values
+want to make some changes.  The goal remains `Order#commitOrder`, and any Values
 are annotated as such (ex: number of astronauts, pod name).  This time, the
 flagged signal route is to `ChangeOrder`.  This is to re-route the request to
 update the Order with the newly provided information.  For generic requests that
