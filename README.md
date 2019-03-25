@@ -77,7 +77,7 @@ we deduce that the "find" queries cannot use `SpaceResort` as a goal. Therefore,
 we use a distinct goal (`SpaceResort#all`) for the "find" queries in order to
 provide consistent annotation patterns per goal.
 
-We don't we set the goal to the `FindSpaceResorts` Action?
+Why don't we set the goal to the `FindSpaceResorts` Action?
 
 Another alternative would be to set the goal to the specific `FindSpaceResorts`
 Action, making it very clear how to fulfill the request. This approach would
