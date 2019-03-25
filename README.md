@@ -56,7 +56,7 @@ candidates in context, we have a Selection Prompt to ask the user to pick a
 single one in order to pursue with the booking (see SpaceResort Selection Prompt
 section below for full details). The context for that prompt is `SpaceResort`,
 and **Selection Prompt training must always have the same goal as its context**.
-Thus by definition the Selection Prompt for `SpaceResort` will definitely need
+Accordingly, Selection Prompt for `SpaceResort` needs
 to use `SpaceResort` as its goal.
 
 The Selection Prompt training also uses a special flagged signal to route the
