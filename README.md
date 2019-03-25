@@ -33,7 +33,7 @@ We train these to have the goal `SpaceResort#all` and annotate any resort
 names, planets and search criteria as Values. Here `SpaceResort#all` is a
 property projection to the `all` property of the `SpaceResort`. This property is
 a boolean of type `ViewAll`, which is always true and is used as a proxy to
-signify that we want to display the full space resort, instead of focussing on a
+signify that we want to display the full space resort, instead of focusing on a
 single property like `gravity` or `planet` (see property projections below). We
 use a match-pattern to then tie our views and dialogs for this property
 projection to describe the whole hotel.
