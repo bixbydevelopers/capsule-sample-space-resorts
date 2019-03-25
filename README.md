@@ -131,7 +131,7 @@ training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all
 
 - Where is Io-Tel?
 
-Here the user is asking to know about a specific property of a space resort,
+Here, the user is asking to know about a specific property of a space resort,
 such as the gravity or the planet.  We train the goal to be that property
 projection (ex: `SpaceResort#gravity`), and we annotate any resort names,
 planets and search criteria as Values.  We also add a special flagged signal
