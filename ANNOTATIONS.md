@@ -1,8 +1,10 @@
 ## Use cases
 
-### Find Space Resorts Flow
+### Finding Space Resorts
 
-#### Outer "Find" Queries
+#### Outer "find" Queries
+
+![Outer "find" Query](./assets/images/OuterFindQuery.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
@@ -11,17 +13,31 @@ training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
 
 - Show me space hotels with crater canyoneering
 
-- Search for hotels around The Red Planet Look for space hotels with quantum
-- bungee jumping around Saturn
+- Search for hotels around The Red Planet
+
+- Look for space hotels with quantum bungee jumping around Saturn
 
 We train these to have the goal `SpaceResort#all` and we annotate any resort
 names, planets and search criteria as Values. Here `SpaceResort#all` is a
 property projection to the `all` property of the `SpaceResort`. This property is
-a boolean which is always true and is used as a proxy to signify that we want to
-display the full space resort, instead of focussing on a single property like
-`gravity` or `planet` (see below).
+a boolean of type `ViewAll` which is always true and is used as a proxy to
+signify that we want to display the full space resort, instead of focussing on a
+single property like `gravity` or `planet` (see property projections below). We
+use a match-pattern to then tie our views and dialogs for this property
+projection to describe the whole hotel.
 
-Why don't we set the goal to the `SpaceResort` Structure?
+```
+match {
+  ViewAll(all) {
+    from-property {
+      SpaceResort (result)
+    }
+  }
+}
+```
+
+Why do we treat this as a property projection instead of setting the goal to the
+`SpaceResort` Structure?
 
 When the user wants to book a space resort and there were many possible
 candidates in context, we have a Selection Prompt to ask the user to pick a
@@ -54,12 +70,24 @@ We don't we set the goal to the `FindSpaceResorts` Action?
 Another alternative would be to set the goal to the specific `FindSpaceResorts`
 Action, making it very clear how to fulfill the request. This approach would
 simplify the match patterns for views, so we would not need to use the
-`from-property` key. However, we prefer using the property projection approach
+`from-property` key. However, we elect to use the property projection approach
 so that our final resting context for "find" queries is the same as for property
 projection queries.  This means that we can pivot between all these states
-seamlessly, or launch the "book" flow from any of these.
+seamlessly, or launch the "book" flow from any of these. Example conversation:
 
-#### Inner "Find" Queries (Continuations)
+1. Find space resorts
+
+2. The second one
+
+3. What planet is it on?
+
+4. What's the gravity there?
+
+5. Book it
+
+#### Inner "find" Queries (Continuations)
+
+![Inner "find" Query](./assets/images/InnerFindQuery.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#all has:continue`. Examples:
@@ -77,9 +105,11 @@ outer "find" queries is `SpaceResort#all`, we annotate both the goal and the
 planets and search criteria as Values.  This will reissue a search with the new
 inputs being added to those already in context.
 
-### Property Projection Flows
+### Property Projection Flows (Planet, Gravity)
 
 #### Outer Property Projections
+
+![Outer Property Projection](./assets/images/OuterPropertyProjection.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all
@@ -99,6 +129,8 @@ user to select a single space resort before providing the answer.
 
 #### Inner Property Projections (Continuations)
 
+![Inner Property Projection](./assets/images/OuterPropertyProjection.png)
+
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all
 has:continue`. For example:
@@ -111,15 +143,15 @@ We train these just like the outer property projections, with the addition of a
 "Continuation of" `SpaceResort`.  This allow pivoting between inner/outer "find"
 queries and inner/outer property projections.
 
-### Book Flow
+### Booking Space Resorts
 
-#### Outer "Book" Queries
+#### Outer "book" Queries
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:Order#commitOrder -has:continue`. For example:
 
 - Make a reservation for a space resort on Mars the third weekend in December
-- for 2 astronauts
+for 2 astronauts
 
 We train these to the goal `Order#commitOrder` where `commitOrder` is a
 named-consumer on the `Order`. We also add two flagged signal routes:
@@ -130,7 +162,7 @@ matches the search inputs, then prepare an `Order` and pass it to the
 `CommitOrder` Action which will present the user with a Confirmation screen to
 review and agree to the reservation.
 
-#### Inner "Book" Queries (Continuations of SpaceResort)
+#### Inner "book" Queries (Continuations of SpaceResort)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:Order#commitOrder continuation:SpaceResort`. For
@@ -167,9 +199,11 @@ do not contain a new input Value (ex: Change the number of astronauts), then we
 add an extra flagged signal route to the Action for that request (ex:
 GetNumberOfAstronauts).
 
-### Prompt Flows
+### Prompting Flows
 
 #### Confirmation Prompt
+
+![Confirmation Prompt](./assets/images/ConfirmationPrompt.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `prompt:Confirmation`. For example:
@@ -184,6 +218,8 @@ an "At prompt for" `Confirmation` with goal `Confirmation`.  The Confirmation
 itself is annotated with a boolean Value "true" or "false".
 
 #### SpaceResort Selection Prompt
+
+![SpaceResort Selection Prompt](./assets/images/SpaceResortSelectionPrompt.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `prompt:SpaceResort`. For example:
@@ -211,13 +247,15 @@ example:
 - User: The one with a refueling station.
 
 - Bixby: There are 3 hotels around Jupiter with a refueling station. Which one?
-- (Where the 3 options are a subset of the previous options, not a new search)
+(Where the 3 options are a subset of the previous options, not a new search)
 
 - User: The Ganymede Moon Motel
 
 - Bixby: (Proceeds with the booking flow)
 
 #### Other Selection Prompts (NumberOfAstronauts, HabitatPod, DateInterval...)
+
+![HabitatPod Selection Prompt](./assets/images/HabitatPodSelectionPrompt.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: ` has:prompt -goal:SpaceResort -goal:Confirmation`. For
@@ -231,4 +269,5 @@ example:
 
 For prompt training, the goal must always match the prompt context, so we train
 these as "At prompt for" `<Concept>` and goal `<Concept>`.  Then we annotate the
-Value in the utterance for that `<Concept>`.
+Value in the utterance for that `<Concept>`. For example, "At prompt for"
+`HabitatPod` has goal `HabitatPod` and the `PodName` is annotated as a value.
