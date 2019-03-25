@@ -70,7 +70,7 @@ the `FindSpaceResorts` Action instead of filtering existing results via the
 patterns compared to the "find" queries, and **annotation patterns must be
 consistent for the same goal**, this means that they must use a different goal.
 
-We have now demonstrated two points.  Firstly, that the Selection Prompt
+We have now demonstrated two points.  First, the Selection Prompt
 training must use `SpaceResort` as a goal. Secondly, that the "find" queries
 must use a different goal than the Selection Prompts. By putting these together,
 we deduce that the "find" queries cannot use `SpaceResort` as a goal. Therefore,
