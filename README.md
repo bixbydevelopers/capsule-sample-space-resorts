@@ -60,13 +60,13 @@ Accordingly, Selection Prompt for `SpaceResort` needs
 to use `SpaceResort` as its goal.
 
 The Selection Prompt training also uses a special flagged signal to route the
-plan through the `SelectResort` Action that filters the hotels currently in
+plan through the `SelectResort` action that filters the hotels currently in
 context based on the newly provided inputs. It is crucial to add the
 `SelectResort` flagged signal to the Selection Prompt training annotations to
 achieve this behavior.  However, we do not want to add the `SelectResort`
 flagged signal to the "find" queries because these should issue a new search via
-the `FindSpaceResorts` Action instead of filtering existing results via the
-`SelectResort` Action. Since the Selection Prompt requires different annotations
+the `FindSpaceResorts` action instead of filtering existing results via the
+`SelectResort` action. Since the Selection Prompt requires different annotations
 patterns compared to the "find" queries, and **annotation patterns must be
 consistent for the same goal**, this means that they must use a different goal.
 
@@ -77,10 +77,10 @@ we deduce that the "find" queries cannot use `SpaceResort` as a goal. Therefore,
 we use a distinct goal (`SpaceResort#all`) for the "find" queries in order to
 provide consistent annotation patterns per goal.
 
-Why don't we set the goal to the `FindSpaceResorts` Action?
+Why don't we set the goal to the `FindSpaceResorts` action?
 
 Another alternative would be to set the goal to the specific `FindSpaceResorts`
-Action, making it very clear how to fulfill the request. This approach would
+action, making it very clear how to fulfill the request. This approach would
 simplify the match patterns for views, so we would not need to use the
 `from-property` key. However, we use the property projection approach
 so that our final resting context for "find" queries is the same as for property
@@ -136,7 +136,7 @@ such as the gravity or the planet.  We train the goal to be that property
 projection (ex: `SpaceResort#gravity`), and we annotate any resort names,
 planets and search criteria as Values.  We also add a special flagged signal
 route to `ProjectResort`.  This is in case there were multiple space resorts
-that matched the search inputs.  Then the `ProjectResort` Action will ask the
+that matched the search inputs.  Then the `ProjectResort` action will ask the
 user to select a single space resort before providing the answer.
 
 #### Inner Property Projections (Continuations)
@@ -171,7 +171,7 @@ named-consumer on the `Order`. We also add two flagged signal routes:
 either "find" or "book", such as resort name, planet, search criteria, number of
 astronauts, etc.  All this will create a plan to first find a space resort that
 matches the search inputs, then prepare an `Order` and pass it to the
-`CommitOrder` Action which will present the user with a Confirmation screen to
+`CommitOrder` action which will present the user with a Confirmation screen to
 review and agree to the reservation.
 
 #### Inner "book" Queries (Continuations of SpaceResort)
@@ -208,7 +208,7 @@ are annotated as such (ex: number of astronauts, pod name).  This time, the
 flagged signal route is to `ChangeOrder`.  This is to re-route the request to
 update the Order with the newly provided information.  For generic requests that
 do not contain a new input Value (ex: Change the number of astronauts), we
-add an extra flagged signal route to the Action for that request (ex:
+add an extra flagged signal route to the action for that request (ex:
 GetNumberOfAstronauts).
 
 ### Prompting Flows
@@ -248,7 +248,7 @@ Prompt.  For prompt training, the goal must always match the prompt context, so
 we train these as "At prompt for" `SpaceResort` with goal `SpaceResort`. There
 are many ways the user can answer, so we annotate any provided Value (space
 resort name, planet, search criteria) and add a special flagged signal route to
-the `SelectResort` Action.  This Action will take the hotels currently in
+the `SelectResort` action.  This action will take the hotels currently in
 context and attempt to filter them based on the newly provided inputs.  For
 example:
 
