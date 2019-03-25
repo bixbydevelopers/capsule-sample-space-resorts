@@ -29,14 +29,14 @@ training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
 
 - Look for space hotels with quantum bungee jumping around Saturn
 
-We train these to have the goal `SpaceResort#all` and annotate any resort
-names, planets and search criteria as Values. Here `SpaceResort#all` is a
-property projection to the `all` property of the `SpaceResort`. This property is
-a boolean of type `ViewAll`, which is always true and is used as a proxy to
+We train these to have the goal `SpaceResort#all` and annotate any resort names,
+planets and search criteria as Values. Here `SpaceResort#all` is a property
+projection to the `all` property of the `SpaceResort`. This property is a
+boolean of type `ViewAll`, which is always true and is used as a proxy to
 signify that we want to display the full space resort, instead of focusing on a
-single property like `gravity` or `planet` (see property projections below). We
-use a match-pattern to then tie our views and dialogs for this property
-projection to describe the whole hotel.
+single property like `gravity` or `planet` (see property projections below). A
+match-pattern ties the views and dialogs for this property projection to
+describe the whole hotel.
 
 ```
 match {
@@ -51,13 +51,13 @@ match {
 Why do we treat this as a property projection instead of setting the goal to the
 `SpaceResort` Structure?
 
-When the user wants to book a space resort and there were many possible
-candidates in context, we have a selection prompt to ask the user to pick a
-single one in order to pursue with the booking (see SpaceResort Selection Prompt
-section below for full details). The context for that prompt is `SpaceResort`,
-and **selection prompt training must always have the same goal as its context**.
-Accordingly, selection prompt training for `SpaceResort` needs
-to use `SpaceResort` as its goal.
+When the user wants to book a space resort and there are many possible
+candidates in context, the user picks a single one using a selection prompt, in
+order to continue with the booking (see SpaceResort Selection Prompt selection
+below for full details). The context for that prompt is `SpaceResort`, and
+**selection prompt training must always have the same goal as its context**.
+Accordingly, selection prompt training for `SpaceResort` needs to use
+`SpaceResort` as its goal.
 
 The selection prompt training also uses a special flagged signal to route the
 plan through the `SelectResort` action that filters the hotels currently in
@@ -70,8 +70,8 @@ the `FindSpaceResorts` action instead of filtering existing results via the
 patterns compared to the "find" queries, and **annotation patterns must be
 consistent for the same goal**, this means that they must use a different goal.
 
-We have now demonstrated two points.  First, the selection prompt
-training must use `SpaceResort` as a goal. Secondly, that the "find" queries
+This example demonstrates two points.  First, the selection prompt
+training must use `SpaceResort` as a goal. Second, that the "find" queries
 must use a different goal than the selection prompts. By putting these together,
 we deduce that the "find" queries cannot use `SpaceResort` as a goal. Therefore,
 we use a distinct goal (`SpaceResort#all`) for the "find" queries in order to
@@ -113,8 +113,8 @@ training tab search bar: `goal:SpaceResort#all has:continue`. Examples:
 These are continuations of the outer "find" queries that allow users to refine
 their space resorts search by providing additional inputs. Since the goal for
 outer "find" queries is `SpaceResort#all`, we annotate both the goal and the
-"Continuation of" to also be `SpaceResort#all`.  We annotate any resort names,
-planets and search criteria as Values.  This reissues a search with the new
+"Continuation of" to also be `SpaceResort#all`.  Any resort names, planets and
+search criteria are annotated as Values.  This reissues a search with the new
 inputs being added to those already in context.
 
 ### Property Projection Flows (Planet, Gravity)
@@ -171,7 +171,7 @@ named-consumer on the `Order`. We also add two flagged signal routes:
 either "find" or "book", such as resort name, planet, search criteria, number of
 astronauts, etc.  All this will create a plan to first find a space resort that
 matches the search inputs, then prepare an `Order` and pass it to the
-`CommitOrder` action which will present the user with a Confirmation screen to
+`CommitOrder` action, which will present the user with a Confirmation screen to
 review and agree to the reservation.
 
 #### Inner "book" Queries (Continuations of SpaceResort)
