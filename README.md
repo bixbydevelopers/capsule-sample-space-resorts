@@ -52,27 +52,27 @@ Why do we treat this as a property projection instead of setting the goal to the
 `SpaceResort` Structure?
 
 When the user wants to book a space resort and there were many possible
-candidates in context, we have a Selection Prompt to ask the user to pick a
+candidates in context, we have a selection prompt to ask the user to pick a
 single one in order to pursue with the booking (see SpaceResort Selection Prompt
 section below for full details). The context for that prompt is `SpaceResort`,
-and **Selection Prompt training must always have the same goal as its context**.
-Accordingly, Selection Prompt for `SpaceResort` needs
+and **selection prompt training must always have the same goal as its context**.
+Accordingly, selection prompt training for `SpaceResort` needs
 to use `SpaceResort` as its goal.
 
-The Selection Prompt training also uses a special flagged signal to route the
+The selection prompt training also uses a special flagged signal to route the
 plan through the `SelectResort` action that filters the hotels currently in
 context based on the newly provided inputs. It is crucial to add the
-`SelectResort` flagged signal to the Selection Prompt training annotations to
+`SelectResort` flagged signal to the selection prompt training annotations to
 achieve this behavior.  However, we do not want to add the `SelectResort`
 flagged signal to the "find" queries because these should issue a new search via
 the `FindSpaceResorts` action instead of filtering existing results via the
-`SelectResort` action. Since the Selection Prompt requires different annotations
+`SelectResort` action. Since the selection prompt requires different annotations
 patterns compared to the "find" queries, and **annotation patterns must be
 consistent for the same goal**, this means that they must use a different goal.
 
-We have now demonstrated two points.  First, the Selection Prompt
+We have now demonstrated two points.  First, the selection prompt
 training must use `SpaceResort` as a goal. Secondly, that the "find" queries
-must use a different goal than the Selection Prompts. By putting these together,
+must use a different goal than the selection prompts. By putting these together,
 we deduce that the "find" queries cannot use `SpaceResort` as a goal. Therefore,
 we use a distinct goal (`SpaceResort#all`) for the "find" queries in order to
 provide consistent annotation patterns per goal.
