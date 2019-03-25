@@ -32,7 +32,7 @@ training tab search bar: `goal:SpaceResort#all -has:continue`. Examples:
 We train these to have the goal `SpaceResort#all` and we annotate any resort
 names, planets and search criteria as Values. Here `SpaceResort#all` is a
 property projection to the `all` property of the `SpaceResort`. This property is
-a boolean of type `ViewAll` which is always true and is used as a proxy to
+a boolean of type `ViewAll`, which is always true and is used as a proxy to
 signify that we want to display the full space resort, instead of focussing on a
 single property like `gravity` or `planet` (see property projections below). We
 use a match-pattern to then tie our views and dialogs for this property
