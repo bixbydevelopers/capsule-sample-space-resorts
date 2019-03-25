@@ -207,7 +207,7 @@ want to make some changes.  The goal remains `Order#commitOrder` and any Values
 are annotated as such (ex: number of astronauts, pod name).  This time, the
 flagged signal route is to `ChangeOrder`.  This is to re-route the request to
 update the Order with the newly provided information.  For generic requests that
-do not contain a new input Value (ex: Change the number of astronauts), then we
+do not contain a new input Value (ex: Change the number of astronauts), we
 add an extra flagged signal route to the Action for that request (ex:
 GetNumberOfAstronauts).
 
