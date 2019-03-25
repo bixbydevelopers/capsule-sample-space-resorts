@@ -114,7 +114,7 @@ These are continuations of the outer "find" queries that allow users to refine
 their space resorts search by providing additional inputs. Since the goal for
 outer "find" queries is `SpaceResort#all`, we annotate both the goal and the
 "Continuation of" to also be `SpaceResort#all`.  We annotate any resort names,
-planets and search criteria as Values.  This will reissue a search with the new
+planets and search criteria as Values.  This reissues a search with the new
 inputs being added to those already in context.
 
 ### Property Projection Flows (Planet, Gravity)
