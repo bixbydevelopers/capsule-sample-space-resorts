@@ -4,19 +4,14 @@ input-view {
     template-macro (HABITAT_POD_SELECTION)
   }
   render {
-    if (size(pods) > 1) {
-      selection-of (pods) {
-        where-each (pod) {
-          layout-macro (habitat-pod-summary) {
-            param (habitatPod) {
-              expression (pod)
-            }
+    selection-of (pods) {
+      where-each (pod) {
+        layout-macro (habitat-pod-summary) {
+          param (habitatPod) {
+            expression (pod)
           }
         }
       }
     }
-    // else-if (size(pods) == 1) {
-    //   // Unexpected
-    // }
   }
 }

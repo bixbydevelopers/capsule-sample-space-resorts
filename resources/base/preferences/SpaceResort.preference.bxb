@@ -1,0 +1,9 @@
+preference-support {
+  match: SpaceResort
+  // Bootstrap preference learning proposals with a few of the most popular planets
+  bootstrap (planet) {
+    value (Earth)
+    value(Jupiter)
+    value(Saturn)
+  }
+}

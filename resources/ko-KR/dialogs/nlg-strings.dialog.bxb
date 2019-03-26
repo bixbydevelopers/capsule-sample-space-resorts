@@ -91,6 +91,12 @@ template-macro-def (SPACE_RESORT_RESULT) {
   }
 }
 
+template-macro-def (HIGHLIGHT_LABEL_BY_PREFERENCES) {
+  content {
+    template ("Based on your preferences")
+  }
+}
+
 // Exception handling
 template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {

@@ -1,4 +1,0 @@
-- enabled: true
-  fatal: true
-  file: assertions/onJupiter.js
-  program: mocha

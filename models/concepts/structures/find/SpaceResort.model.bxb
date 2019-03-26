@@ -33,4 +33,11 @@ structure (SpaceResort) {
     type (ViewAll)
     min (Required) max (One)
   }
+  features {
+    // Using preference learning to observe which planets the user tends to select and then provide personalized highlights based on these
+    preferable {
+      preference (planet)
+    }
+  }
+
 }
