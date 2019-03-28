@@ -141,7 +141,7 @@ user to select a single space resort before providing the answer.
 
 #### Inner Property Projections (Continuations)
 
-![Inner Property Projection](./assets/images/OuterPropertyProjection.png)
+![Inner Property Projection](./assets/images/InnerPropertyProjection.png)
 
 You can see all trained utterances and plans by entering this query in the
 training tab search bar: `goal:SpaceResort#* -goal:SpaceResort#all
