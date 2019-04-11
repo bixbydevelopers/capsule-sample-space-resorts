@@ -160,12 +160,12 @@ queries and inner/outer property projections.
 #### Outer "book" Queries
 
 You can see all trained utterances and plans by entering this query in the
-training tab search bar: `goal:Order#commitOrder -has:continue`. For example:
+training tab search bar: `goal:CommitOrder -has:continue`. For example:
 
 - Make a reservation for a space resort on Mars the third weekend in December
 for 2 astronauts
 
-We train these to the goal `Order#commitOrder` where `commitOrder` is a
+We train these to the goal `CommitOrder` where `commitOrder` is a
 named-consumer on the `Order`. We also add two flagged signal routes:
 `CreateItem` and `CreateOrder`.  We annotate as Values any present inputs for
 either "find" or "book", such as resort name, planet, search criteria, number of
@@ -177,7 +177,7 @@ review and agree to the reservation.
 #### Inner "book" Queries (Continuations of SpaceResort)
 
 You can see all trained utterances and plans by entering this query in the
-training tab search bar: `goal:Order#commitOrder continuation:SpaceResort`. For
+training tab search bar: `goal:CommitOrder continuation:SpaceResort`. For
 example:
 
 - Make reservation
@@ -192,8 +192,8 @@ results in context.
 #### Inner "Change Order" Queries (Continuations to change the Order)
 
 You can see all trained utterances and plans by entering this query in the
-training tab search bar: `goal:Order#commitOrder
-continuation:Order#commitOrder`. For example:
+training tab search bar: `goal:CommitOrder
+continuation:CommitOrder`. For example:
 
 - Pick a different habitat pod
 
@@ -201,9 +201,9 @@ continuation:Order#commitOrder`. For example:
 
 - Select a different date
 
-We train these as "Continuation of" `Order#commitOrder` for cases where the
+We train these as "Continuation of" `CommitOrder` for cases where the
 users are at the Confirmation screen to review their order and decide that they
-want to make some changes.  The goal remains `Order#commitOrder`, and any Values
+want to make some changes.  The goal remains `CommitOrder`, and any Values
 are annotated as such (ex: number of astronauts, pod name).  This time, the
 flagged signal route is to `ChangeOrder`.  This is to re-route the request to
 update the Order with the newly provided information.  For generic requests that

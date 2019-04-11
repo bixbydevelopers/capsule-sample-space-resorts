@@ -18,7 +18,7 @@ layout-macro-def (order-details) {
           }
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: CommitOrder
               route: UpdateOrder
               route: GetNumberOfAstronauts
             }
@@ -29,7 +29,7 @@ layout-macro-def (order-details) {
           value ("[#{value(order.item.dateInterval)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: CommitOrder
               route: UpdateOrder
               route: GetDateInterval
             }
@@ -58,7 +58,7 @@ layout-macro-def (order-details) {
           }
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: CommitOrder
               route: UpdateOrder
               route: GetPod
             }
