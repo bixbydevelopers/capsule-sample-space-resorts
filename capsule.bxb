@@ -9,6 +9,9 @@ capsule {
     target (bixby-mobile-en-US)    
     target (bixby-mobile-ko-KR)
   }
+  runtime-flags {
+    support-halt-effect-in-computed-inputs
+  }
   // permissions {
   //   user-profile-access
   // }
@@ -34,7 +37,7 @@ capsule {
     }
     import (bixby.profile) {
       as (profile)
-      version (1.0.0)
+      version (1.0.1)
     }
   }
 }

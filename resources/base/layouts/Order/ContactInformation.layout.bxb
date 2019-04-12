@@ -14,7 +14,7 @@ layout-macro-def (order-contact-information) {
           value ("[#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: CommitOrder
               route: UpdateOrder
               route: GetBuyer
             }
@@ -25,7 +25,7 @@ layout-macro-def (order-contact-information) {
           value ("[#{value(order.buyer.phoneInfo.number)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: CommitOrder
               route: UpdateOrder
               route: GetBuyer
             }
@@ -36,7 +36,7 @@ layout-macro-def (order-contact-information) {
           value ("[#{value(order.buyer.emailInfo.address)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: CommitOrder
               route: UpdateOrder
               route: GetBuyer
             }

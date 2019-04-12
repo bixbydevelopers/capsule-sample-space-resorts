@@ -1,4 +1,4 @@
 train (t-bo6xk4tackwt0k8o9vwwuhamu) {
-  utterance ("[g:Order#commitOrder,r:CreateOrder, r:CreateItem] 스페이스 리조트 예약해줘\n")
+  utterance ("[g:CommitOrder,r:CreateOrder, r:CreateItem] 스페이스 리조트 예약해줘\n")
   plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
 }
