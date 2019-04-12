@@ -165,14 +165,14 @@ training tab search bar: `goal:CommitOrder -has:continue`. For example:
 - Make a reservation for a space resort on Mars the third weekend in December
 for 2 astronauts
 
-We train these to the goal `CommitOrder` where `commitOrder` is a
-named-consumer on the `Order`. We also add two flagged signal routes:
-`CreateItem` and `CreateOrder`.  We annotate as Values any present inputs for
-either "find" or "book", such as resort name, planet, search criteria, number of
-astronauts, etc.  This creates a plan to first find a space resort that
-matches the search inputs, then prepare an `Order` and pass it to the
-`CommitOrder` action, which will present the user with a Confirmation screen to
-review and agree to the reservation.
+We train these to the goal `CommitOrder`, which is the Action to finalize the
+transaction. We also add two flagged signal routes: `CreateItem` and
+`CreateOrder`.  We annotate as Values any present inputs for either "find" or
+"book", such as resort name, planet, search criteria, number of astronauts, etc.
+This creates a plan to first find a space resort that matches the search inputs,
+then prepare an `Order` and pass it to the `CommitOrder` action, which will
+present the user with a Confirmation screen to review and agree to the
+reservation.
 
 #### Inner "book" Queries (Continuations of SpaceResort)
 
