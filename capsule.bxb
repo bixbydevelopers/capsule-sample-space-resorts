@@ -2,9 +2,6 @@ capsule {
   id (example.spaceResorts)
   version (1.0.0)
   format (3)
-  runtime-flags {
-    support-halt-effect-in-computed-inputs
-  }
   targets {
     target (bixby-mobile-en-US)    
     target (bixby-mobile-ko-KR)
