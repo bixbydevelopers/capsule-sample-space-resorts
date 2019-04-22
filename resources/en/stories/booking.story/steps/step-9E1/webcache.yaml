@@ -1080,3 +1080,139 @@
         Expires=Mon, 29 Apr 2019 16:39:02 GMT; Path=/
     responseFilename: webcache/prod-default-time-service.partner-int-48-res.json
     status: 200
+- request:
+    headers:
+      Accept: application/json
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/prod-default-time-service.partner-int-49-req.json
+    url: >-
+      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Connection: close
+      Content-Length: '119'
+      Content-Type: application/json
+      Date: 'Mon, 22 Apr 2019 16:52:41 GMT'
+      Set-Cookie: >-
+        AWSALB=KzWuKl+q5PHIuZQwQ5dMbyYMcMP9i2PXHyasOmzqCD1n15bs+53sajZh8mmL2OqNa4OP6r2kb0x5eN10e56Z6Ey/V0iehSyhTkZOmWWQMVCLTcReA3VF9vd4kJ9O;
+        Expires=Mon, 29 Apr 2019 16:52:41 GMT; Path=/
+    responseFilename: webcache/prod-default-time-service.partner-int-49-res.json
+    status: 200
+- request:
+    headers:
+      Accept: application/json
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/prod-default-time-service.partner-int-50-req.json
+    url: >-
+      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Connection: close
+      Content-Length: '115'
+      Content-Type: application/json
+      Date: 'Mon, 22 Apr 2019 16:52:41 GMT'
+      Set-Cookie: >-
+        AWSALB=HfoSdhPBJpkWmnTMxzpCRY1OsfaNMqyhvd6XRHE/ufJP2yQ8nocHoNued6kmU6V+2VvcR4GAKvc6wiGNQXeGErAwC+J1uLnDRJwlNq0OvsuASFXhjOiuLMwzYqwV;
+        Expires=Mon, 29 Apr 2019 16:52:41 GMT; Path=/
+    responseFilename: webcache/prod-default-time-service.partner-int-50-res.json
+    status: 200
+- request:
+    headers:
+      Accept: application/json
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/prod-default-time-service.partner-int-51-req.json
+    url: 'http://prod-default-time-service.partner-int/time/v2/resolve/date_interval'
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Connection: close
+      Content-Length: '727'
+      Content-Type: application/json
+      Date: 'Mon, 22 Apr 2019 16:52:41 GMT'
+      Set-Cookie: >-
+        AWSALB=2ohdHAg60i40BripBvuFvY5LOamW4I/he12FieEEZ+RogGY3wbboSHx593U4z1Iu+7uRt+hAxdhumHcFTvbgI5ip93b+P4fJ+hTAUPHL4Ic61BcWT6ulkyuyOpSc;
+        Expires=Mon, 29 Apr 2019 16:52:41 GMT; Path=/
+    responseFilename: webcache/prod-default-time-service.partner-int-51-res.json
+    status: 200
+- request:
+    headers:
+      Accept: application/json
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/prod-default-time-service.partner-int-52-req.json
+    url: >-
+      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Connection: close
+      Content-Length: '119'
+      Content-Type: application/json
+      Date: 'Mon, 22 Apr 2019 16:54:38 GMT'
+      Set-Cookie: >-
+        AWSALB=JKyIbzrkibT5azaMylkBOBN9b4iB1oPibvyx3g1npFBTT6rwDur/Xap3dI1umNtlc+WS33qbGCeNkjPRA/dYwKy7k9r/IG4hnNuh8Gx6C4i+OYdfmKDezT5uRiMB;
+        Expires=Mon, 29 Apr 2019 16:54:38 GMT; Path=/
+    responseFilename: webcache/prod-default-time-service.partner-int-52-res.json
+    status: 200
+- request:
+    headers:
+      Accept: application/json
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/prod-default-time-service.partner-int-53-req.json
+    url: >-
+      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Connection: close
+      Content-Length: '115'
+      Content-Type: application/json
+      Date: 'Mon, 22 Apr 2019 16:54:38 GMT'
+      Set-Cookie: >-
+        AWSALB=m9DW6Jcw2JRlh6OOER3QUVDRMrH8kfIHSGHTGN/Cf2/2elCb6vQCYHpWnRGZG93vYQMAOMS91U0Dw/yOXBZYTJJjAcmQUze5WVPEmWfrmPkEcQh+DXmZXFgUSpOO;
+        Expires=Mon, 29 Apr 2019 16:54:38 GMT; Path=/
+    responseFilename: webcache/prod-default-time-service.partner-int-53-res.json
+    status: 200
+- request:
+    headers:
+      Accept: application/json
+      Accept-Charset: UTF-8
+      Accept-Encoding: gzip
+      Content-Type: application/json
+      User-Agent: Mozilla/5.0 (compatible) gzip
+    method: POST
+    requestBodyFilename: webcache/prod-default-time-service.partner-int-54-req.json
+    url: 'http://prod-default-time-service.partner-int/time/v2/resolve/date_interval'
+  response:
+    headers:
+      $status: HTTP/1.1 200 OK
+      Connection: close
+      Content-Length: '727'
+      Content-Type: application/json
+      Date: 'Mon, 22 Apr 2019 16:54:38 GMT'
+      Set-Cookie: >-
+        AWSALB=AeKrt9O5os8vEt8cwapm/OQnBqeEHTz/5cghk150JA0mGmr2gRQt0K7sFI5BdAU90oSwu+mCvAAAyvCgPqowQkm78I9ZbJjAQvlVjDBkza2RA+wr+Wr9/PdBkDkx;
+        Expires=Mon, 29 Apr 2019 16:54:38 GMT; Path=/
+    responseFilename: webcache/prod-default-time-service.partner-int-54-res.json
+    status: 200
