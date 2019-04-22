@@ -8,6 +8,7 @@ capsule {
   }
   runtime-flags {
     support-halt-effect-in-computed-inputs
+    modern-prompt-rejection
   }
   // permissions {
   //   user-profile-access
