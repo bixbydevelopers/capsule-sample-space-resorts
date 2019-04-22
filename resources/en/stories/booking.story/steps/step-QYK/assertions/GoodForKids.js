@@ -6,7 +6,7 @@
  */
 
 describe('GoodForKids', () => {
-  const dialogText = 'Here are seven space resorts with that option.'
+  const dialogText = 'I found these space resorts with that option.'
 
   it(`matches "${dialogText}"`, () => {
     // get the dialog from the `step` global

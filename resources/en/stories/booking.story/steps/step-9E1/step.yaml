@@ -1,0 +1,5 @@
+data:
+  aligned: >-
+    [g:DateInterval] (December 10 2019 to January 5
+    2020)[v:viv.time.DateTimeExpression]
+type: intent
