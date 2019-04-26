@@ -13,13 +13,13 @@ action (CreateOrder) {
       min (Required)
       default-init {
         intent {
-          goal: profile.GetProfile
+          goal: self.GetProfile
           //value: self.Imaginary(true)
-          value-set: profile.RequiredField {
-            profile.RequiredField(firstName)
-            profile.RequiredField(lastName)
-            profile.RequiredField(emailInfo)
-            profile.RequiredField(phoneInfo)
+          value-set: self.RequiredField {
+            self.RequiredField(firstName)
+            self.RequiredField(lastName)
+            self.RequiredField(emailInfo)
+            self.RequiredField(phoneInfo)
           }
         }
       }
