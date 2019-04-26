@@ -32,9 +32,9 @@ capsule {
       as (money)
       version (2.19.0)
     }
-    import (bixby.profile) {
-      as (profile)
-      version (1.0.1)
+    import (viv.self) {
+      as (self)
+      version (3.5.21)
     }
   }
 }

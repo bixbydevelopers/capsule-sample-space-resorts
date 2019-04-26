@@ -1,5 +1,5 @@
 structure (Buyer) {
-  role-of(profile.Profile)
+  role-of(self.Profile)
   features {
     transient
   }
