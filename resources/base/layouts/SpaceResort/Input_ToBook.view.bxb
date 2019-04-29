@@ -7,7 +7,7 @@ input-view {
   }
   render {
     selection-of (result) {
-      //has-details (true)
+      has-details (true)
       select-button-text{ template-macro (Book)}
       where-each (item) {
         layout-macro (space-resort-summary) {
