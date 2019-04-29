@@ -1,5 +1,5 @@
 train (t-3ktlcvll2yqe8v2uu5y1czlp7) {
-  utterance ("[g:CommitOrder,r:CreateItem,r:CreateOrder] make a reservation at a space resort with a (spa)[v:SearchCriteria] for (two)[v:NumberOfAstronauts:2] astronauts")
-  plan (fY/basJAFEW39dJG6we0FGyR0jf/wQtiX7ToFxyTUxzIJOHMidS/d4xSfZjIwNzW2psZ9PHGf2SLlEeuoJjX7HJRN1pzzKZQvAfpNLfW6EoSFrwGjTOrSQuT8r30pDx49hJk38oWgzvFlfARFGYnnCnLntKajgVtjZL+5Am+gsKytFuW1e/YqeQZlepqvrm5HvAZNOYmS24sh2G4iEni3VSMf7ghPKOBBzTRQhsdPOIJEbro+XtcSLMi53EijYrgf77u2n6NfLLjMzgC)
-  last-modified (1555008344996)
+  utterance ("[g:CommitOrder] make a reservation at a space resort with a (spa)[v:SearchCriteria] for (two)[v:NumberOfAstronauts:2] astronauts")
+  plan (fY/dasJAEIWPRm21+gBKoS1FvPMdqiJ6o2KfYEymdMFNwuxE9O1NoqgXG1nYv+87h1308M5Hsumexy6lkLfsElE33nLIJlV8euk0sdboWiIWDLzGhVWkhUn5WXqSnXLW97KlssXHk+JS+PIKswLHynKgfUXHgnZGSTdJhJFXWGV2x7L++3EqSUyZuopv/t4PGHqNuYmjB8vh21/EJOH/VEz+cEPoooY6AjTQRAsveEUbHbzl97iSoCSXUZBaSXCb77sgX9tF8gw=)
+  last-modified (1556576589393)
 }

@@ -4,9 +4,9 @@ train (t-p0xltp3ympg12v0v80yc3jy1o) {
   last-modified (1549558939136)
 }
 train (t-p65k12lzx32efijdjjt6n7sy7) {
-  utterance ("[g:CommitOrder,r:CreateItem,r:CreateOrder] Book a space resort on (Pluto)[v:Planet:Pluto]")
-  plan (fY/ZCsIwEEVvrbv1A1xAfRDf/AcXRF9U9AtiO0KhaUsyFf17u4j1IZWBZJJz7sCgjzE9hYwDWupYuHQhHSnWywu55MeMqZFuIil9PimPFIZGo2AVaUWC6V96nbxSNjCyA5PE5M/gXJgZhW2GQyb1EEHFjL24+Sz4HHlYGIVjIm+kTveVZhWFImFdsea1fGBuNHZ+6P1YGiOjdg5ESAwHFmqwUUcDTbTQRgdd9NJ/fIidk6IyYuUE37Ps6untpJYNvAE=)
-  last-modified (1555008352274)
+  utterance ("[g:CommitOrder] Book a space resort on (Pluto)[v:Planet:Pluto]")
+  plan (fY/ZCsIwEEWv+/4BLqA+iG/+gwuiL7bUL0jbEQpNW5Kp6N/bVlEf0hLITOacOxCMMKOHkElIG50IjxzSsWK9ccijIGEsjHQfSxmwpXxSmBiNNytJKxJMVeld+szY2MjOTBLzisWFsDQKhxxHTOouwpIdJ+EGLNiOfayNwiWVLinrttWs4kikrEu+ef09sDIaxyDy/yyNqVGzQxERY4ga6migiRba6KCLHvoYZHN8SKMg75OTWkHwvX9dPatZ7gU=)
+  last-modified (1556576787704)
 }
 train (t-p9awei12qfzo1kcgr6xmko7cl) {
   utterance ("[g:CommitOrder:continue,r:UpdateOrder] Change that to (The Lab)[v:PodName]")

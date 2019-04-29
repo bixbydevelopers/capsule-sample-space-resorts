@@ -1,7 +1,7 @@
 train (t-s4g3zknk1jr2ddr2fh8tdaht9) {
-  utterance ("[g:CommitOrder,r:CreateItem,r:CreateOrder] make a reservation for a space resort on (mars)[v:Planet:Mars] (the third weekend in december)[v:viv.time.DateTimeExpression] for (2)[v:NumberOfAstronauts] people")
-  plan (fZDLTsMwEEUvFEJbXmsoEu0Cscs38KxgQ6vCD7jJVLIU29F4EpW/xwmVmoVTWZZndM6MPcY17mirTFlQ6kuV0Yq8Y/HpijLSpWAapa/OGC0LzolxGzX+WU81kxI6VP1S/QZ2E2WfQgb3Bxq3wiwqvDXYCnGtCjz1jGa9cJVJ152zM03+ow29b0sm77WzPa/4UGstSpYux2NU+KrMmnixeQ4XOasq8T0f9b1P8BA15trmHctjEtWWhbIkmNS6TiXMkEaGucIRjjHACU6R4AxDjDDGOS5wGRh2dLCjSbsaOgwE7UYn2p9JiMahRxJqQ58/)
-  last-modified (1555008353216)
+  utterance ("[g:CommitOrder] make a reservation for a space resort on (mars)[v:Planet:Mars] (the third weekend in december)[v:viv.time.DateTimeExpression] for (2)[v:NumberOfAstronauts] people")
+  plan (fZDLbsIwEEVvC6WUvtYtlVoWVXf5hj4RbAqi/QGTDJKl2I7Gk4j+fZ2ARBYOsizP6JwZe4xbPNBWmSKnxBcqpRV5x+KTFaWkC8FTlH44Y7QsOCPGfdTYsY5qJiV0rPq9/AvsLsrmQgaPRxo3wiQqfNbYCnGlcrx2jGa9cJlK252yM3X+qw19bQsm77WzHa+YqbUWJUuX4SUqfJdmTbzYvIWLnFWl+I6P+jkkeI4aU22zluUxjmrLXFkSjCtdJRJmSCLD3OAEp+ihjzMMcI4hLjDCJa5wHRj2tLeng2bVdBgImo1WdDj7IRrtevwD)
+  last-modified (1556576691780)
 }
 train (t-sk0zgndhhzh1irhopmxe59o4c) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (The Mercurial)[v:Name]")
