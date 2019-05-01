@@ -5,6 +5,11 @@ action (ProjectResort) {
     input (spaceResort) {
       type (SpaceResort)
       min (Required) max (One)
+      default-init {
+        intent {
+          goal: FindSpaceResorts
+        }
+      }
     }
   }
   output (SpaceResort) {
