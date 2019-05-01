@@ -1,0 +1,9 @@
+data:
+  sixtree: |-
+    intent {
+      goal {
+        $ref(r-QC3-1)
+      }
+    }
+label: Click second option
+type: intent
