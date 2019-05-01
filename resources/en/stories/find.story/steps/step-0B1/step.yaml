@@ -1,8 +1,0 @@
-data:
-  sixtree: |-
-    intent { goal { viv.core.ServicePermissionResponse {
-            accessGranted { viv.core.Boolean(true) }
-            persist { viv.core.Boolean(false) }
-          } } }
-label: Grant permissions
-type: intent

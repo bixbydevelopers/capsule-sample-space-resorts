@@ -11,9 +11,9 @@ capsule {
     support-halt-effect-in-computed-inputs
     modern-prompt-rejection
   }
-  permissions {
-    user-profile-access
-  }
+  // permissions {
+  //   user-profile-access
+  // }
   capsule-imports {
     import (viv.core) {
       as (core)

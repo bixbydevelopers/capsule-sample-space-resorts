@@ -1,5 +1,0 @@
-data:
-  aligned: >-
-    [g:CommitOrder:continue:SpaceResort,r:CreateOrder,r:CreateItem] Make
-    reservation
-type: intent
