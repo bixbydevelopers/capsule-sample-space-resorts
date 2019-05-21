@@ -10,6 +10,11 @@ action (CommitOrder) {
     input (order) {
       type (Order)
       min (Required)
+      default-init {
+        intent {
+          goal: CreateOrder
+        }
+      }
     }
   }
   output (Receipt)

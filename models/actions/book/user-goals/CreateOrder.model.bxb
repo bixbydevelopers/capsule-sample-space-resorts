@@ -6,6 +6,11 @@ action (CreateOrder) {
     input (item) {
       type (Item)
       min (Required)
+      default-init {
+        intent {
+          goal: CreateItem
+        }
+      }
     }
 
     input (buyer) {
