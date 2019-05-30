@@ -1,5 +1,5 @@
 train (t-s4g3zknk1jr2ddr2fh8tdaht9) {
-  utterance ("[g:CommitOrder,r:CreateItem,r:CreateOrder] make a reservation for a space resort on (mars)[v:Planet:Mars] (the third weekend in december)[v:viv.time.DateTimeExpression] for (2)[v:NumberOfAstronauts] people")
+  utterance ("[g:MakeReservation,r:CreateItem,r:CreateOrder] make a reservation for a space resort on (mars)[v:Planet:Mars] (the third weekend in december)[v:viv.time.DateTimeExpression] for (2)[v:NumberOfAstronauts] people")
   plan (fZDLTsMwEEUvFEJbXmsoEu0Cscs38KxgQ6vCD7jJVLIU29F4EpW/xwmVmoVTWZZndM6MPcY17mirTFlQ6kuV0Yq8Y/HpijLSpWAapa/OGC0LzolxGzX+WU81kxI6VP1S/QZ2E2WfQgb3Bxq3wiwqvDXYCnGtCjz1jGa9cJVJ152zM03+ow29b0sm77WzPa/4UGstSpYux2NU+KrMmnixeQ4XOasq8T0f9b1P8BA15trmHctjEtWWhbIkmNS6TiXMkEaGucIRjjHACU6R4AxDjDDGOS5wGRh2dLCjSbsaOgwE7UYn2p9JiMahRxJqQ58/)
   last-modified (1555008353216)
 }

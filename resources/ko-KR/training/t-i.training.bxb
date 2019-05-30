@@ -1,5 +1,5 @@
 train (t-i4x6c6hbfm4h5gplv61vx8ls1) {
-  utterance ([g:CommitOrder:continue:SpaceResort,r:CreateOrder,r:CreateItem] 여기로 예약해줘)
+  utterance ([g:MakeReservation:continue:SpaceResort,r:CreateOrder,r:CreateItem] 여기로 예약해줘)
   plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
 }
 train (t-ilo1eb4ia0h7jvvhhfgd4tp4y) {

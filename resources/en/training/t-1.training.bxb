@@ -1,5 +1,5 @@
 train (t-1xcjtau1jw65tcbzzg1zp2iya) {
-  utterance ("[g:CommitOrder:continue,r:UpdateOrder] Change that to (2)[v:NumberOfAstronauts:2] astronauts")
+  utterance ("[g:MakeReservation:continue,r:UpdateOrder] Change that to (2)[v:NumberOfAstronauts:2] astronauts")
   plan (fY7BCsIwDIb/WZ17BvHgSW97B9nJi4OBD1DXqIN1LWkGPr7FXnYoS0gI//8lBBWO9NXWj1QHr3vqKDiWUHfU0+AFp6zbOGsHadkQ45AlkpfffnijhdaI5qOnN5mbkMU5TzDFG0vukuXus30St69rEHaTniWsPlyhwAYKW+xQYh8TC0XFKv5KqhQqzmXs+AE=)
   last-modified (1555008344380)
 }

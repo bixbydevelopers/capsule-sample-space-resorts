@@ -1,5 +1,5 @@
 train (t-rmv7rz9rzq7ka00by5wwgikjv) {
-  utterance ([g:CommitOrder:continue,r:UpdateOrder,r:GetBuyer] Change contact information)
+  utterance ([g:MakeReservation:continue,r:UpdateOrder,r:GetBuyer] Change contact information)
   plan (Y2BnkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yfm5tZ4l+UklrEIIVVBUQOu+7QgpTEklR8up1KK4Fysljl3FNLINL4LGZnYGRgYmBmYGFgZWADQgY4nxkowgjmQzAIMANZrECSAQA=)
   last-modified (1555008352915)
 }

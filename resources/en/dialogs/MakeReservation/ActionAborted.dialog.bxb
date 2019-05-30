@@ -1,4 +1,4 @@
 dialog (ActionAborted) {
-  match: CommitOrder
+  match: MakeReservation
   template ("Your order has been canceled.")
 }
