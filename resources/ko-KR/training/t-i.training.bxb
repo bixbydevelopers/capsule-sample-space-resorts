@@ -1,6 +1,7 @@
 train (t-i4x6c6hbfm4h5gplv61vx8ls1) {
   utterance ([g:MakeReservation:continue:SpaceResort,r:CreateOrder,r:CreateItem] 여기로 예약해줘)
-  plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
+  plan (fY/LCsIwEEVvrdbXFyiCCoK7/oOPhS60Ur8gbUcotk1JpqJ/bx+im9QEhsw9J0OCMWb0FGmekKtzEZJPWirWrk8hxTljZaQnca/OpB6CY5lharQ8FZHCwsh2igRTY5hvb4tXySZGdmRKMf8zuBaWRmFf4YyrtyctMw4iiFnwRUZYG4VzkQakvNtGs5KZKFi3fPP6azCChQ5sdNGDgz4GGJYZPqldp8226hTf2iy77Jyy4g0=)
+  last-modified (1559236397918)
 }
 train (t-ilo1eb4ia0h7jvvhhfgd4tp4y) {
   utterance ("[g:SpaceResort#all] (천왕성)[v:Planet:Uranus]에서 (카지노)[v:SearchCriteria]이 딸려 있는 숙박업소 검색해봐")
