@@ -1,9 +1,9 @@
 endpoints {
 
   action-endpoints {
-    action-endpoint (CommitOrder) {
+    action-endpoint (MakeReservation) {
       accepted-inputs (order, $vivContext)
-      local-endpoint (book/CommitOrder.js)
+      local-endpoint (book/MakeReservation.js)
     }
 
     action-endpoint (CreateOrder) {

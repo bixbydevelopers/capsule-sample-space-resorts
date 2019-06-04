@@ -1,4 +1,5 @@
 train (t-bo6xk4tackwt0k8o9vwwuhamu) {
-  utterance ("[g:CommitOrder,r:CreateOrder, r:CreateItem] 스페이스 리조트 예약해줘\n")
-  plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
+  utterance ("[g:MakeReservation,r:CreateOrder, r:CreateItem] 스페이스 리조트 예약해줘\n")
+  plan (fY/LCsIwEEVvrdbXFyiCCoK7/oOPhS60Ur8gbUcotk1JpqJ/bx+im9QEhsw9J0OCMWb0FGmekKtzEZJPWirWrk8hxTljZaQnca/OpB6CY5lharQ8FZHCwsh2igRTY5hvb4tXySZGdmRKMf8zuBaWRmFf4YyrtyctMw4iiFnwRUZYG4VzkQakvNtGs5KZKFi3fPP6azCChQ5sdNGDgz4GGJYZPqldp8226hTf2iy77Jyy4g0=)
+  last-modified (1559236397370)
 }

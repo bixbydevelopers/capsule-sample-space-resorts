@@ -1,4 +1,4 @@
-action (CommitOrder) {
+action (MakeReservation) {
   description (Commit order)
   type (Commit)
 
