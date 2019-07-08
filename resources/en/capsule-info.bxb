@@ -9,4 +9,7 @@ capsule-info {
   dispatch-aliases {
     alias (SpaceResorts)
   }
+  search-keywords {
+    keyword (space resorts)
+  }
 }

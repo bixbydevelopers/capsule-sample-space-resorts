@@ -28,8 +28,10 @@ activity-support {
           }
         }
         detail-view {
-          layout-match(this) {
-            mode(Details)
+          render {
+            layout-match (this) {
+              mode (Details)
+            }
           }
         }
       }
@@ -57,8 +59,10 @@ activity-support {
           }
         }
         detail-view {
-          layout-match(this) {
-            mode(Details)
+          render {
+            layout-match (this) {
+              mode (Details)
+            }
           }
         }
       }
@@ -89,8 +93,10 @@ activity-support {
           }
         }
         detail-view {
-          layout-match(this) {
-            mode(Details)
+          render {
+            layout-match (this) {
+              mode (Details)
+            }
           }
         }
       }
