@@ -1,7 +1,7 @@
 train (t-fbat4sw7ltxdnyzym82zcc1qn) {
   utterance ("[g:SpaceResort#all] Research space resorts on (Mercury)[v:Planet:Mercury]")
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
-  last-modified (1549558936301)
+  last-modified (1562602992818)
 }
 train (t-feh2otm01albduww5e7cvjqq2) {
   utterance ("[g:SpaceResort#all] Show me space resorts with (low gravity)[v:SearchCriteria]")

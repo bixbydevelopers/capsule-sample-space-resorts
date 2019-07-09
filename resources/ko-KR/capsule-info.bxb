@@ -9,4 +9,8 @@ capsule-info {
   dispatch-aliases {
     alias (우주여행)
   }
+  search-keywords {
+    keyword (스페이스 리조트)
+    keyword (우주 리조트)
+  }
 }
