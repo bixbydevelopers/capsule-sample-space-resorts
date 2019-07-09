@@ -1,7 +1,7 @@
 hints {
   uncategorized {
-    utterance ("[g:SpaceResort#all] Find space resorts")
-    utterance ("[g:SpaceResort#all] Find hotels near (Mars)[v:Planet:Mars]")
-    utterance ("[g:SpaceResort#all] Research space resorts on (Mercury)[v:Planet:Mercury]")
+    utterance (Find space resorts)
+    utterance (Find hotels near Mars)
+    utterance (Research space resorts on Mercury)
   }
 }
