@@ -1,6 +1,9 @@
 result-view {
   match {
-    Receipt (receipt)
+    Receipt (receipt) {
+      min (Required)
+      max (One)
+    }
   }
 
   message {

@@ -28,20 +28,22 @@ confirmation-view {
   }
 
   render {
-    layout {
-      layout-macro (receipt-header) {
-        param (receipt) {
-          expression (action.receipt)
+    if (exists(action.receipt)) { // VIV-30812 this check is not removing the "can be empty" warnings
+      layout {
+        layout-macro (receipt-header) {
+          param (receipt) {
+            expression (action.receipt)
+          }
         }
-      }
-      layout-macro (receipt-contact-information) {
-        param (receipt) {
-          expression (action.receipt)
+        layout-macro (receipt-contact-information) {
+          param (receipt) {
+            expression (action.receipt)
+          }
         }
-      }
-      layout-macro (receipt-order-total) {
-        param (receipt) {
-          expression (action.receipt)
+        layout-macro (receipt-order-total) {
+          param (receipt) {
+            expression (action.receipt)
+          }
         }
       }
     }
