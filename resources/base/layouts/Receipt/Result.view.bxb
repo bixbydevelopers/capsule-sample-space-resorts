@@ -2,7 +2,7 @@ result-view {
   match {
     Receipt (receipt)
   }
-  
+
   message {
     template-macro (RECEIPT_RESULT) {
       param (receipt) {
@@ -10,7 +10,7 @@ result-view {
       }
     }
   }
-  
+
   render {
     layout {
       layout-macro (receipt-header) {

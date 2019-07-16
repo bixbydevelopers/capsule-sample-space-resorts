@@ -1,6 +1,6 @@
 confirmation-view {
   match {
-    Confirmation {
+    CancelConfirmation {
       confirming {
         CancelCommittedOrder (action)
       }
@@ -23,6 +23,26 @@ confirmation-view {
     label {
       if (exists(action.receipt)) {
         template-macro (CancelOrder)
+      }
+    }
+  }
+
+  render {
+    layout {
+      layout-macro (receipt-header) {
+        param (receipt) {
+          expression (action.receipt)
+        }
+      }
+      layout-macro (receipt-contact-information) {
+        param (receipt) {
+          expression (action.receipt)
+        }
+      }
+      layout-macro (receipt-order-total) {
+        param (receipt) {
+          expression (action.receipt)
+        }
       }
     }
   }
