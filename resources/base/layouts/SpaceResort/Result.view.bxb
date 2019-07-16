@@ -5,6 +5,20 @@ result-view {
   }
 
   render {
+
+    // To keep intent from "Teaching Bixby Fundamentals: What You Need to Know" working properly
+    if (size(result) > 1) {
+      list-of (result) {
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+
     // We know the size is always 1 because this view is only attainable when drilling into a single item to see the details
     // Lists of space resorts are handled in the ViewAll_Result and Input files
     if (size(result) == 1) {
