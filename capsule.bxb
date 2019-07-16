@@ -10,6 +10,8 @@ capsule {
     concepts-inherit-super-type-features
     support-halt-effect-in-computed-inputs
     modern-prompt-rejection
+    no-filtering-with-validation
+    modern-default-view-behavior
   }
   // permissions {
   //   user-profile-access
