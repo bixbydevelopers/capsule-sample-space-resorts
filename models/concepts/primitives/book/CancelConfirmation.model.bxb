@@ -1,0 +1,4 @@
+boolean (CancelConfirmation) {
+  description (For canceling)
+  extends (viv.core.Confirmation)
+}

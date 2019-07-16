@@ -1,0 +1,29 @@
+confirmation-view {
+  match {
+    Confirmation {
+      confirming {
+        CancelCommittedOrder (action)
+      }
+    }
+  }
+  mode (PositiveEmphasis)
+
+  abort-options {
+    label {
+      template-macro (KeepIt)
+    }
+    on-abort {
+      intent { //The intent to execute when user aborts the confirmation
+        goal {CheckStatus}
+      }
+    }
+  }
+
+  confirm-options {
+    label {
+      if (exists(action.receipt)) {
+        template-macro (CancelOrder)
+      }
+    }
+  }
+}
