@@ -1,0 +1,57 @@
+confirmation-view {
+  match {
+    CancelConfirmation {
+      confirming {
+        CancelCommittedOrder (action)
+      }
+    }
+  }
+  mode (PositiveEmphasis)
+
+  abort-options {
+    label {
+      template-macro (KeepIt)
+    }
+    on-abort {
+      intent { //The intent to execute when user aborts the confirmation
+        goal {CheckStatus}
+      }
+    }
+  }
+
+  confirm-options {
+    label {
+      if (exists(action.receipt)) {
+        template-macro (CancelOrder)
+      }
+    }
+  }
+
+  render {
+    if (exists(action.receipt)) { // VIV-30812 this check is not removing the "can be empty" warnings
+      layout {
+        layout-macro (receipt-header) {
+          param (receipt) {
+            if (exists(action.receipt)) {
+              expression (action.receipt) 
+            }
+          }
+        }
+        layout-macro (receipt-contact-information) {
+          param (receipt) {
+            if (exists(action.receipt)) {
+              expression (action.receipt)
+            }
+          }
+        }
+        layout-macro (receipt-order-total) {
+          param (receipt) {
+            if (exists(action.receipt)) {
+              expression (action.receipt)
+            }
+          }
+        }
+      }
+    }
+  }
+}
