@@ -2,8 +2,22 @@ action (CancelCommittedOrder) {
 
   type (CancelActivity)
 
-  confirm {
-    by (CancelConfirmation)
+  confirmed-by (core.Confirmation) {
+    mode (PositiveEmphasis)
+    on-abort {
+      intent { //The intent to execute when user aborts the confirmation
+        goal {CheckStatus}
+      }
+    }
+    confirm-label {
+      if (exists(receipt)) {
+        template-macro (CancelOrder)
+      }
+    }
+
+    abort-label {
+      template-macro (KeepIt)
+    }
   }
 
   collect {

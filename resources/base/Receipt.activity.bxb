@@ -19,9 +19,7 @@ activity-support {
           details{
             template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
-                if (exists(this) && size(this) == 1) {
-                  expression (this)
-                }
+                expression (this)
               }
             }
           }
@@ -52,9 +50,7 @@ activity-support {
           details{
             template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
-                if (exists(this) && size(this) == 1) {
-                  expression (this)
-                }
+                expression (this)
               }
             }
           }
@@ -84,18 +80,14 @@ activity-support {
           details{
             template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
-                if (exists(this) && size(this) == 1) {
-                  expression (this)
-                }
+                expression (this)
               }
             }
           }
           message {
             template-macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
               param (receipt) {
-                if (exists(this) && size(this) == 1) {
-                  expression (this)
-                }
+                expression (this)
               }
             }
           }

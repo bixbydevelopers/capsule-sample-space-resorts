@@ -5,18 +5,14 @@ result-view {
   match {
     ViewAll(all) {
       from-property {
-        SpaceResort (result) {
-          min (Required)
-        }
+        SpaceResort (result)
       }
     }
   }
 
   message {
-    if (size(result) == 1) {
-      template-macro (SPACE_RESORT_RESULT) {
-        param (result) {expression (result)}
-      }
+    template-macro (SPACE_RESORT_RESULT) {
+      param (result) {expression (result)}
     }
   }
 
