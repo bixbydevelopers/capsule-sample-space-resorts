@@ -1,0 +1,6 @@
+result-view {
+  match: Order (this)
+  render {
+    nothing
+  }
+}
