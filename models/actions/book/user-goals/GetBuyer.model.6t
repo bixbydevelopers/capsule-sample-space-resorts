@@ -6,6 +6,10 @@ action (GetBuyer) {
       type (Order)
       min (Required)
     }
+    input (fieldsToUpdate) {
+      type (self.RequiredField)
+      min (Optional) max (Many)
+    }
     computed-input (buyer) {
       type (Buyer)
       min (Required)
@@ -14,12 +18,15 @@ action (GetBuyer) {
           goal: self.GetProfile
           value: self.Profile$expr(order.buyer)
           value: self.ForcePrompt(true)
-          //value: self.Imaginary(true)
-          value-set: self.RequiredField {
-            self.RequiredField(firstName)
-            self.RequiredField(lastName)
-            self.RequiredField(emailInfo)
-            self.RequiredField(phoneInfo)
+          if (!exists(fieldsToUpdate)) {
+            value-set: self.RequiredField {
+              self.RequiredField(firstName)
+              self.RequiredField(lastName)
+              self.RequiredField(emailInfo)
+              self.RequiredField(phoneInfo)
+            }
+          } else {
+            value: $expr(fieldsToUpdate)
           }
         }
       }

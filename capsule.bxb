@@ -36,7 +36,7 @@ capsule {
     }
     import (viv.self) {
       as (self)
-      version (3.5.64)
+      version (3.5.102)
     }
   }
 }

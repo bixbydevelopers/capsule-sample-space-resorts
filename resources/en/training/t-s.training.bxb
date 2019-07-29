@@ -3,6 +3,11 @@ train (t-s4g3zknk1jr2ddr2fh8tdaht9) {
   plan (fZDbTsMwDIZ/GJQxTtcwJEACcddn4DAmuIBNgxfIWiNFNEmVuNV4e5Iyab0wKIpi6/vsxMEJzmmlTF1RHmpV0IKC8xzyBRWka8a1SF/VV4rJt4q1szgTrZkvyeNSZI+eFNOvIVc/NN+RnYrshcng4p/GnXAlCpOELae3V7iTezgb2DcF992pdyblH9rQ06r2FEIaXX7Fs1pqVjx3JW5F4a0xS/Kzz/t4kbOq4fDHR71vEtyIxlTbsmcFjEVtXilLjHGr25zjDLkwzDG2sI0BdrCLDHsYYh8jHOAQR5FhTQdrmnUr0WEk6DZ60ebMYjSKPbJYG/v8AA==)
   last-modified (1559236411687)
 }
+train (t-sa512pkyiqrtuv2r3axao106z) {
+  utterance ("[g:MakeReservation,r:UpdateOrder,r:GetBuyer] Change my {[g:self.RequiredField] (email)[v:self.Field:emailInfo]}")
+  plan (fY+xCsIwEIb/2sbaxdFBFByc+xAOOolQ8AFCc0Kw2pikRd/ei4FOwYSDu+/7jxBU2NBbPkxHtTOypYZcb72rG2pJG4990p7lPfRkR+l1/8Q6mbpYRRa7pLsaJT3FRHr7MHzYbZPuRD7qfw+vRj3Wjrobf+Y1aEvqqKlTWE48zhUyzJCjgMCcb4kFMLGcqWCW/ViscAouwZPgRNjIUH4B)
+  last-modified (1564158234458)
+}
 train (t-sk0zgndhhzh1irhopmxe59o4c) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (The Mercurial)[v:Name]")
   plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBEqtKv8TcVCJcwsLAyMDEwAykGcAsRiCEAWYwBvIB)

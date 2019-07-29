@@ -28,6 +28,9 @@ layout-macro-def (order-contact-information) {
               goal: MakeReservation
               route: UpdateOrder
               route: GetBuyer
+              value-set: self.RequiredField {
+                 self.RequiredField(phoneInfo)
+              }
             }
           }
         }
@@ -39,6 +42,9 @@ layout-macro-def (order-contact-information) {
               goal: MakeReservation
               route: UpdateOrder
               route: GetBuyer
+              value-set: self.RequiredField {
+                 self.RequiredField(emailInfo)
+              }
             }
           }
         }

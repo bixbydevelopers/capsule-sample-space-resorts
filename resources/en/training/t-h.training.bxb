@@ -8,3 +8,8 @@ train (t-hsok749bc0h6h6zj24azmu3yi) {
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
   last-modified (1549558937894)
 }
+train (t-hyi4xtqcodxcrsxt8wfcjik4b) {
+  utterance ("[g:MakeReservation:continue,r:UpdateOrder,r:GetBuyer] Change my {[g:self.RequiredField] (address)[v:self.Field:addressInfo]}")
+  plan (fY+xCsIwEIb/2sbaxdFBFByc+xAOOolQ8AFCc0Kw2pikRd/ei4FOwYSDu+/7jxBU2NBbPkxHtTOypYZcb72rG2pJG4990p7lPfRkR+l1/8Q6mbpYRRa7pLsaJT3FRHr7MHzYbZPuRD7qfw+vRj3Wjrobf+Y1aEvqqKlTWE48zhUyzJCjgMCcb4kFMLGcqWCW/ViscAouwZPgRNjIUH4B)
+  last-modified (1564158787365)
+}
