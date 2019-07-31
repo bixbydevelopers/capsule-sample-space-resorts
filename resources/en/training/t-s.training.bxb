@@ -4,9 +4,9 @@ train (t-s4g3zknk1jr2ddr2fh8tdaht9) {
   last-modified (1559236411687)
 }
 train (t-sa512pkyiqrtuv2r3axao106z) {
-  utterance ("[g:MakeReservation,r:UpdateOrder,r:GetBuyer] Change my {[g:self.RequiredField] (email)[v:self.Field:emailInfo]}")
-  plan (fY+xCsIwEIb/2sbaxdFBFByc+xAOOolQ8AFCc0Kw2pikRd/ei4FOwYSDu+/7jxBU2NBbPkxHtTOypYZcb72rG2pJG4990p7lPfRkR+l1/8Q6mbpYRRa7pLsaJT3FRHr7MHzYbZPuRD7qfw+vRj3Wjrobf+Y1aEvqqKlTWE48zhUyzJCjgMCcb4kFMLGcqWCW/ViscAouwZPgRNjIUH4B)
-  last-modified (1564158234458)
+  utterance ("[g:MakeReservation,r:UpdateOrder,r:UpdateBuyer,v:self.ForcePrompt:true] Change my (email)[v:self.Field:emailInfo]")
+  plan (hY+xCgIxDIb/8zz1FicncXBw7kM4uIly4AOUXoRiz5a2Fn17W4u6FE0IJH++nxC0WNGdD0YRc4YL6shp6x3rSJA0Hpvids8vqScbuJf6imWROtieLNbF3cn03FMmyu7t7fHHnYlft+dBBuZIndlOkuqx+M7aCjpaPcQfW1QYocYYDSYxp5gBH62OasrqpeV6R1IT3UQKTw==)
+  last-modified (1564609149733)
 }
 train (t-sk0zgndhhzh1irhopmxe59o4c) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (The Mercurial)[v:Name]")

@@ -4,9 +4,9 @@ train (t-k8z3ntk5azflc0db88ytlcajx) {
   last-modified (1549562596943)
 }
 train (t-k92eyxq9yl6yt7t1n9jjza6gm) {
-  utterance ("[g:MakeReservation:continue,r:UpdateOrder,r:GetBuyer] Change my {[g:self.RequiredField] (phone number)[v:self.Field:phoneInfo]}")
-  plan (fY+xCsIwEIb/2sbaxdFBFByc+xAOOolQ8AFCc0Kw2pikRd/ei4FOwYSDu+/7jxBU2NBbPkxHtTOypYZcb72rG2pJG4990p7lPfRkR+l1/8Q6mbpYRRa7pLsaJT3FRHr7MHzYbZPuRD7qfw+vRj3Wjrobf+Y1aEvqqKlTWE48zhUyzJCjgMCcb4kFMLGcqWCW/ViscAouwZPgRNjIUH4B)
-  last-modified (1564158662894)
+  utterance ("[g:MakeReservation:continue,r:UpdateOrder,r:UpdateBuyer,v:self.ForcePrompt:true] Change my (phone number)[v:self.Field:phoneInfo]")
+  plan (hY+xCgIxDIb/8zz1FicncXBw7kM4uIly4AOUXoRiz5a2Fn17W4u6FE0IJH++nxC0WNGdD0YRc4YL6shp6x3rSJA0Hpvids8vqScbuJf6imWROtieLNbF3cn03FMmyu7t7fHHnYlft+dBBuZIndlOkuqx+M7aCjpaPcQfW1QYocYYDSYxp5gBH62OasrqpeV6R1IT3UQKTw==)
+  last-modified (1564609083078)
 }
 train (t-ko1y2ykapc33tv3t8h6gegcm7) {
   utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] Where is it?)

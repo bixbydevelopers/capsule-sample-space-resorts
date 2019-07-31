@@ -1,4 +1,4 @@
-action (GetBuyer) {
+action (UpdateBuyer) {
   description (Prompt user to enter personal data)
   type (Constructor)
   collect {
@@ -7,36 +7,43 @@ action (GetBuyer) {
       type (Order)
       min (Required)
     }
-    //This is the list of the buyer fields which user wants to updated.
+    //This is the list of the buyer fields which user wants to update
     input (fieldsToUpdate) {
-      type (self.RequiredField)
+      type (self.Field)
       min (Required) max (Many)
       default-init {
         intent {
-          goal-set: self.RequiredField {
-            self.RequiredField(firstName)
-            self.RequiredField(lastName)
-            self.RequiredField(emailInfo)
-            self.RequiredField(phoneInfo)
+          goal-set: self.Field {
+            self.Field(firstName)
+            self.Field(lastName)
+            self.Field(emailInfo)
+            self.Field(phoneInfo)
           }
          }
       }
     }
-    //the buyer fields that can be updated by user
+    //new value for first name
     input (firstName) {
       type (contact.FirstName)
       min (Optional) max (One)
     }
+    //new value for last name
     input (lastName) {
       type (contact.LastName)
       min (Optional) max (One)
     }
+    //new value for email address
     input (emailAddress) {
       type (contact.EmailAddress)
       min (Optional) max (One)
     }
+    //new value for phone number
     input (phoneNumber) {
       type (contact.PhoneNumber)
+      min (Optional) max (One)
+    }
+    input (forcePrompt) {
+      type (self.ForcePrompt)
       min (Optional) max (One)
     }
     //compute the new buyer information by calling self library
@@ -48,15 +55,15 @@ action (GetBuyer) {
           goal: self.GetProfile
           value: self.Profile$expr(order.buyer)
           //do not force a prompt if a field value is available. make sure to include all fields.
-          if (exists(firstName) || exists(lastName) || exists(emailAddress) || exists(phoneNumber)) {
-            value: $expr(firstName)
-            value: $expr(lastName)
-            value: $expr(emailAddress)
-            value: $expr(phoneNumber)
-          } else {
-            value: self.ForcePrompt(true)
+          value: $expr(firstName)
+          value: $expr(lastName)
+          value: $expr(emailAddress)
+          value: $expr(phoneNumber)
+          value: $expr(forcePrompt)
+          subplan {
+            goal: self.RequiredField
+            value: $expr(fieldsToUpdate)
           }
-          value: $expr(fieldsToUpdate)
         }
       }
     }
