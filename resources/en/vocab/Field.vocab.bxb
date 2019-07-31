@@ -2,23 +2,4 @@ vocab (self.Field) {
   "firstAndLastName" {
     "name"
   }
-  "firstName" {
-    "first name"
-    "given name"
-  }
-  "lastName" {
-    "last name"
-    "family name"
-  }
-  "emailInfo" {
-    "email"
-    "email address"
-  }
-  "phoneInfo" {
-    "phone number"
-    "number"
-  }
-  "addressInfo" {
-    "address"
-  }
 }
