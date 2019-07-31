@@ -38,5 +38,9 @@ capsule {
       as (self)
       version (3.5.102)
     }
+    import (viv.contact) {
+      as (contact)
+      version-from (self)
+    }
   }
 }
