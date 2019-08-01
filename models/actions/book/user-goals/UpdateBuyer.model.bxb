@@ -54,7 +54,6 @@ action (UpdateBuyer) {
         intent {
           goal: self.GetProfile
           value: self.Profile$expr(order.buyer)
-          //do not force a prompt if a field value is available. make sure to include all fields.
           value: $expr(firstName)
           value: $expr(lastName)
           value: $expr(emailAddress)
