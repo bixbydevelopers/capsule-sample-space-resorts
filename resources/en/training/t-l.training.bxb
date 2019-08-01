@@ -2,3 +2,8 @@ train (t-l5gxgu5w6asbonxyip40gsqm0) {
   utterance ([g:CheckStatus] Do I have an upcoming space trip?)
   plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yRmpwdXJJYUlpMQD8TAyMQMwBJRgYGGA0A)
 }
+train (t-lmysbovbw5ninaon64ophevf0) {
+  utterance ("[g:MakeReservation:continue,r:UpdateBuyer,r:UpdateOrder]change my (phone)[v:self.Field:phoneInfo] to (18005656565)[v:viv.contact.PhoneNumber]")
+  plan (hY3NCsIwEISn1qq9eBXEgwfPeQgP3vyh4APEdMVg24QkDfr2JhY9Bd1hYZn5hkWJFT14qxtiVnNBFVllnGUVCZLaYZNM9/webzKeO6k6LJPU0dRksE5mZ11zRwORbm/755/2QPz6vfDSM6E6x4Vjp5vq6NC3lxDMY2CpubKdpKZGiQwj5BijwCRoihnw9fLgRmVvb9jPRDfSRaDwAg==)
+  last-modified (1564616269331)
+}

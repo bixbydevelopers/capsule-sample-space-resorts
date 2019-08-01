@@ -3,3 +3,8 @@ train (t-updkg8112imk49ndflq2r6lx2) {
   plan (hY/bCsIwDIZ/nTrdI6gXCuLlnkHwALsQQfQByha0uK6ljWOPb4c3GxRNSMjhS0iQYEmNUKak1BmR05WctuzSK+UkDWMT7J7Fq43J1oKlrjAPUhdbkMUq2LubQjD9IvZPUT2oyJgUtmHCkt/R5dZB7uCprOL22hK78CpdObbvnLvsyWrV5jep6NgYS879e3ZRyzplz6eBwQQDDBFhhDEmiDH1OgN61cj72FfQs69EPo7aiQ8=)
   last-modified (1559236411841)
 }
+train (t-uw4h3ewtf83w4kbexcu02a29e) {
+  utterance ("[g:MakeReservation:continue,r:UpdateBuyer,r:UpdateOrder] change my (email)[v:viv.self.Field:emailInfo] to (siamak@viv.com)[v:contact.EmailAddress]")
+  plan (hY3BCsIwEESn1qq9eBbx4MFz/kFBbyIU/IAlWSE0bUMSi/69jUVPQXdYWGbesCix4Qc11rDwliRX7DsXvKhYsrYBu2R6pjre7HoKumuxTlIXp9hhm8yuVlHgkUi3D/fnn/ZI/Pq96nUvZNcGkkEcG9Jmr5Rj77GMiWdzEyfNRqFEhglyTFFgNmiOBfD18sGNyt7euJ+JbqSLgcIL)
+  last-modified (1564609344670)
+}

@@ -16,7 +16,8 @@ layout-macro-def (order-contact-information) {
             intent {
               goal: MakeReservation
               route: UpdateOrder
-              route: GetBuyer
+              route: UpdateBuyer
+              value: self.ForcePrompt(true)
             }
           }
         }
@@ -27,7 +28,9 @@ layout-macro-def (order-contact-information) {
             intent {
               goal: MakeReservation
               route: UpdateOrder
-              route: GetBuyer
+              route: UpdateBuyer
+              value: self.Field(phoneInfo)
+              value: self.ForcePrompt(true)
             }
           }
         }
@@ -38,7 +41,9 @@ layout-macro-def (order-contact-information) {
             intent {
               goal: MakeReservation
               route: UpdateOrder
-              route: GetBuyer
+              route: UpdateBuyer
+              value: self.Field(emailInfo)
+              value: self.ForcePrompt(true)
             }
           }
         }
