@@ -76,7 +76,7 @@ template-macro-def (SPACE_RESORT_RESULT) {
   params {
     param (result) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Required) max (Many)
     }
   }
   content {
