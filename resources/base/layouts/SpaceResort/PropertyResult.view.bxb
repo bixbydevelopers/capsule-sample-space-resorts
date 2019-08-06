@@ -4,7 +4,10 @@ result-view {
   match {
     _(resultProperty) { // The underscore character ('_') is a wildcard to match any Concept type. For example: Gravity or Planet
       from-property{
-        SpaceResort (spaceResort)
+        SpaceResort (spaceResort) {
+          min (Required)
+          max (One)
+        }
       }
     }
   }

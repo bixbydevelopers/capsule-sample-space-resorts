@@ -5,7 +5,9 @@ result-view {
   match {
     ViewAll(all) {
       from-property {
-        SpaceResort (result)
+        SpaceResort (result) {
+          min (Required)
+        }
       }
     }
   }
