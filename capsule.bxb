@@ -25,7 +25,7 @@ capsule {
     }
     import (viv.self) {
       as (self)
-      version (3.5.167)
+      version (3.5.172)
     }
     import (viv.contact) {
       as (contact)
@@ -45,10 +45,13 @@ capsule {
     }
     import (viv.money) {
       as (money)
-      version (2.22.20)
+      version (2.22.21)
     }
   }
   store-sections{
     section (TravelAndTransportation)
+  }
+  store-countries {
+    all
   }
 }
