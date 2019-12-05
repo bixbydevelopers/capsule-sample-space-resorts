@@ -31,17 +31,9 @@ capsule {
       as (contact)
       version-from (self)
     }
-    import (viv.entity) {
-      as (entity)
-      version-from (self)
-    }
-    import (viv.common) {
-      as (common)
-      version-from (entity)
-    }
     import (viv.time) {
       as (time)
-      version-from (entity)
+      version (3.1.23)
     }
     import (viv.money) {
       as (money)
