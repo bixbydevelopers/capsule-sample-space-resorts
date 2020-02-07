@@ -1,1 +1,1 @@
-[{"calculatedFromNow":false,"month":12,"year":2019,"day":10,"parseTree":{"year":2019,"monthName":"December","day":10}}]
+[{"start":{"calculatedFromNow":false,"month":12,"year":2018,"day":1},"end":{"calculatedFromNow":false,"month":12,"year":2018,"day":31},"parseTree":{"monthName":"December"}},{"start":{"calculatedFromNow":false,"month":12,"year":2017,"day":1},"end":{"calculatedFromNow":false,"month":12,"year":2017,"day":31},"parseTree":{"monthName":"December"}}]

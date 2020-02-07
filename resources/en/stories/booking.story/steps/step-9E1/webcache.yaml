@@ -9,17 +9,21 @@
     method: POST
     requestBodyFilename: webcache/prod-default-time-service.partner-int-1-req.json
     url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
+      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date_interval
   response:
     headers:
       $status: HTTP/1.1 200 OK
       Connection: close
-      Content-Length: '119'
+      Content-Length: '345'
       Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:17:35 GMT'
-      Set-Cookie: >-
-        AWSALB=XW+I/go/6VGoUZweW3A/8xaTPKnI6qOuk+SXjgSTWvfGbGKatHK+OuElQOMtPIp2d2G/k9mwfXzqbUSVRAET2Wbw4VhYL+UC4yJzUu4PoTx3dF5Cn6mhUBF4Oahs;
-        Expires=Mon, 05 Aug 2019 23:17:35 GMT; Path=/
+      Date: 'Fri, 07 Feb 2020 18:00:57 GMT'
+      Set-Cookie:
+        - >-
+          AWSALBCORS=1WKty52YsyOBiE6M9skYEjajVTsBJanIrtFRid/+c3i5w2yinRF0U9kD8sEQUTAHF0Asc9d1wrN5i8nd2YBJQXghNxeNgc67C4XxUn0xddOdOaqJ5pyQ4iJvnAAA;
+          Expires=Fri, 14 Feb 2020 18:00:57 GMT; Path=/; SameSite=None
+        - >-
+          AWSALB=1WKty52YsyOBiE6M9skYEjajVTsBJanIrtFRid/+c3i5w2yinRF0U9kD8sEQUTAHF0Asc9d1wrN5i8nd2YBJQXghNxeNgc67C4XxUn0xddOdOaqJ5pyQ4iJvnAAA;
+          Expires=Fri, 14 Feb 2020 18:00:57 GMT; Path=/
     responseFilename: webcache/prod-default-time-service.partner-int-1-res.json
     status: 200
 - request:
@@ -33,252 +37,20 @@
     method: POST
     requestBodyFilename: webcache/prod-default-time-service.partner-int-2-req.json
     url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
+      http://prod-default-time-service.partner-int/time/v2/resolve/relative/date_interval
   response:
     headers:
       $status: HTTP/1.1 200 OK
       Connection: close
-      Content-Length: '115'
+      Content-Length: '1293'
       Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:17:35 GMT'
-      Set-Cookie: >-
-        AWSALB=1DibS07ltARr/V6XnSVxkIhgKNvmwQZofUFf3N4Fk5NuDVzNceym82bbLnV6o2TTBziKJfCHle/TAjfp/TP1UyEQAYCOy5wTSvFQhflY/8AUKTj0RTwGCEsQwOCs;
-        Expires=Mon, 05 Aug 2019 23:17:35 GMT; Path=/
+      Date: 'Fri, 07 Feb 2020 18:00:57 GMT'
+      Set-Cookie:
+        - >-
+          AWSALBCORS=T0NNAvYgZDb/OAcQUs8MGz+PIZ2OrQSgmNUuDMDW5ttKBBL69/OrzDVKSLVgSbhWGep0yIu1huSiYp/E8P72BrQUUnthiKo8ktmOJxh+5/ptjv2dSaeB7HKV79pl;
+          Expires=Fri, 14 Feb 2020 18:00:57 GMT; Path=/; SameSite=None
+        - >-
+          AWSALB=T0NNAvYgZDb/OAcQUs8MGz+PIZ2OrQSgmNUuDMDW5ttKBBL69/OrzDVKSLVgSbhWGep0yIu1huSiYp/E8P72BrQUUnthiKo8ktmOJxh+5/ptjv2dSaeB7HKV79pl;
+          Expires=Fri, 14 Feb 2020 18:00:57 GMT; Path=/
     responseFilename: webcache/prod-default-time-service.partner-int-2-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-3-req.json
-    url: 'http://prod-default-time-service.partner-int/time/v2/resolve/date_interval'
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '727'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:17:35 GMT'
-      Set-Cookie: >-
-        AWSALB=Dd6IRcCmtmQi8UK+NAtN+HDw13fTajQsHDQG41yZjCTyQ4zqbc61QkNnDMjPcfmlfDO2oEboe4VVirEeOWqUE4ktSqnePiJr5nfisgiYW7FoVOxs5eNmY8LssR3X;
-        Expires=Mon, 05 Aug 2019 23:17:35 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-3-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-4-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '119'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:18:55 GMT'
-      Set-Cookie: >-
-        AWSALB=UQ0Xkyyt+KCB5BHexcIxxE8bgNceMoOnFJnsDReWEV8BnjFm04Ac6ORLF6dZ1tsMHl4+wX0NspkcXDbTfEfkvN0xTrF6+K7k8m3/mnb0drw9dE0QIbmS2rh21w4E;
-        Expires=Mon, 05 Aug 2019 23:18:55 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-4-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-5-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '115'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:18:55 GMT'
-      Set-Cookie: >-
-        AWSALB=9bQ2aHWaEdvb3hVo6LTISiDJnCPRGAU+esXP+yjU+N4wVEyZV10N9TNasKeuMYMRdwloa3EEqZxkjF3TJyOwRgwohfo5sxEp3JkmVRC6CHjoPtnh2scDZUUEEISX;
-        Expires=Mon, 05 Aug 2019 23:18:55 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-5-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-6-req.json
-    url: 'http://prod-default-time-service.partner-int/time/v2/resolve/date_interval'
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '727'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:18:55 GMT'
-      Set-Cookie: >-
-        AWSALB=1N5G25ygL/gepIYBYNK/KUqgCbbohNwFi478hrkKw57nAndt/0PiW5PpgNacSp5LQimLQy76KCSCfLuZPZtxQE5KFk9OYopnbiUEaVvCx2pvFkOitWKAV0Cts2/j;
-        Expires=Mon, 05 Aug 2019 23:18:55 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-6-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-7-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '119'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:19:44 GMT'
-      Set-Cookie: >-
-        AWSALB=Q8+G9sYkIx0X1jN/ZOr1LHDA2Rxg/i3KQ5r7dP/3kABdSMVk6iOUcGXE1Wp+cmCOGBZpbvw1lQLL7Rva3C6pKKZONnxSEOkHzox1M7+WMzDLeQb9xd+MLtUbHvnu;
-        Expires=Mon, 05 Aug 2019 23:19:44 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-7-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-8-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '115'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:19:44 GMT'
-      Set-Cookie: >-
-        AWSALB=rI218hJvQ0Dg/3oAZTeK6OugiFTqawtmR3EkkzDGHVvItgAkacDAY1V8ILv60bPxlH+x1vHPXxZshnf9p2VudDiAxaQHmDYZrBgDaLROufRWnB2rqKl5Y8WWIClM;
-        Expires=Mon, 05 Aug 2019 23:19:44 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-8-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-9-req.json
-    url: 'http://prod-default-time-service.partner-int/time/v2/resolve/date_interval'
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '727'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:19:44 GMT'
-      Set-Cookie: >-
-        AWSALB=L9KkimfQ/6lT05RHodzyEPctCaxNk2Fj0CLF2CFxmDE21AYZn891O3vh5ycXnG+AAHUWTPvk79xaNMcxlQcENaixOHTnoybBGHumzwvtishtuiTQDI7WFR28lsuW;
-        Expires=Mon, 05 Aug 2019 23:19:44 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-9-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-10-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '119'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:20:21 GMT'
-      Set-Cookie: >-
-        AWSALB=0/p9869PSaCkqOJ4KIUEXUE/9hoR3jTYJDEddpLWlWVBDoTKP6v46F8HnMrsIHow+nAEiRLWck78V2Gw5evrezC5wmupTD4rcFlH6uJxk0O4U0XYpsAGpK5ialJJ;
-        Expires=Mon, 05 Aug 2019 23:20:21 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-10-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-11-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/v2/resolve/ambiguous/date
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '115'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:20:21 GMT'
-      Set-Cookie: >-
-        AWSALB=spfqMlMa20F+BDkb0Dpf1F9JnVevsBeP3+qYXoa1DYMKZi1a1XeH2Q3Q5FSY2/u4+0sB8pOH+twTAAX6zjDNBPak5uuW8L0aZiuC0kqQSDmz4si4f3mG/L74u0Zp;
-        Expires=Mon, 05 Aug 2019 23:20:21 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-11-res.json
-    status: 200
-- request:
-    capsuleId: viv.time
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-12-req.json
-    url: 'http://prod-default-time-service.partner-int/time/v2/resolve/date_interval'
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '727'
-      Content-Type: application/json
-      Date: 'Mon, 29 Jul 2019 23:20:21 GMT'
-      Set-Cookie: >-
-        AWSALB=uvUQ2qBbuGN0vgPb6QoRHuy397zD55ONJ9ZM0ObixPNWFvR8q1JDgYmRvmiNboOogGXlZ83a4QpEEq3BQbvMLRb2J2WIjB9WhVYcHrGF+JEK4U4ch8+DJyIJORIY;
-        Expires=Mon, 05 Aug 2019 23:20:21 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-12-res.json
     status: 200
