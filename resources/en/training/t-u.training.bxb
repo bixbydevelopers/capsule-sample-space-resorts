@@ -4,7 +4,7 @@ train (t-updkg8112imk49ndflq2r6lx2) {
   last-modified (1559236411841)
 }
 train (t-uw4h3ewtf83w4kbexcu02a29e) {
-  utterance ("[g:MakeReservation:continue,r:UpdateBuyer,r:UpdateOrder] change my (email)[v:viv.self.Field:emailInfo] to (siamak@viv.com)[v:contact.EmailAddress]")
-  plan (hY3BCsIwEESn1qq9eBbx4MFz/kFBbyIU/IAlWSE0bUMSi/69jUVPQXdYWGbesCix4Qc11rDwliRX7DsXvKhYsrYBu2R6pjre7HoKumuxTlIXp9hhm8yuVlHgkUi3D/fnn/ZI/Pq96nUvZNcGkkEcG9Jmr5Rj77GMiWdzEyfNRqFEhglyTFFgNmiOBfD18sGNyt7euJ+JbqSLgcIL)
-  last-modified (1564609344670)
+  utterance ("[g:MakeReservation:continue,r:UpdateBuyer,r:UpdateOrder] change my (email)[v:viv.self.Field:emailInfo] to (siamak@viv.com)[v:self.EmailAddress]")
+  plan (hY2xCsIwEIb/Wqt2cXMRBwfnvIOCbiIUfIDQnBCa2pDEoG9vYrBT0DsOju++n0ONDT15rxUxq3lLDdnBOMsaaklqh132euZd3Ml47uRwxzprXYwgg232dtWCO0pGPn14vP6kk/Hr98pLzyypGzv2XKq9EIasxXLEJ0lKoEaBCUpMUWEWeo4FMLIy0NjFh6X5VqTRroKFNw==)
+  last-modified (1580928014455)
 }
