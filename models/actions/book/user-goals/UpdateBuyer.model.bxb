@@ -24,22 +24,22 @@ action (UpdateBuyer) {
     }
     //new value for first name
     input (firstName) {
-      type (contact.FirstName)
+      type (self.FirstName)
       min (Optional) max (One)
     }
     //new value for last name
     input (lastName) {
-      type (contact.LastName)
+      type (self.LastName)
       min (Optional) max (One)
     }
     //new value for email address
     input (emailAddress) {
-      type (contact.EmailAddress)
+      type (self.EmailAddress)
       min (Optional) max (One)
     }
     //new value for phone number
     input (phoneNumber) {
-      type (contact.PhoneNumber)
+      type (self.PhoneNumber)
       min (Optional) max (One)
     }
     input (forcePrompt) {
