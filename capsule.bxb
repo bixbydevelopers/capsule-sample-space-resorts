@@ -6,7 +6,8 @@ capsule {
 		target (bixby-mobile-en-US)
 		target (bixby-mobile-ko-KR)
 	}
-	runtime-version (2) {
+  
+	runtime-version (3) {
 		overrides {
 			allow-dialogs-on-detail-pages (true)
 			no-fallback-to-result-collections (true)
@@ -21,7 +22,7 @@ capsule {
 		}
 		import (viv.self) {
 			as (self)
-			version (3.5.211)
+			version (3.5.213)
 		}
 		import (viv.time) {
 			as (time)
