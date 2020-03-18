@@ -12,7 +12,7 @@ layout-macro-def (order-image-card) {
           image-url {
             template ("[#{value(order.item.spaceResort.images[0].url)}]")
           }
-          size (S)
+          aspect-ratio (Four_Three)
           title-area {
             halign (Start)
             slot1 {
