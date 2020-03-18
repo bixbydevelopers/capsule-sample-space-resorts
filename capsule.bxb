@@ -1,41 +1,47 @@
 capsule {
-  id (example.spaceResorts)
-  version (1.0.0)
-  format (3)
-  targets {
-    target (bixby-mobile-en-US)    
-    target (bixby-mobile-ko-KR)
-  }
-  // permissions {
-  //   user-profile-access
-  // }
-  capsule-imports {
-    import (viv.core) {
-      as (core)
+	id (example.spaceResorts)
+	version (1.0.0)
+	format (3)
+	targets {
+		target (bixby-mobile-en-US)
+		target (bixby-mobile-ko-KR)
+	}
+	// permissions {
+	//   user-profile-access
+	// }
+	store-countries {
+    only {
+      allow (US)
+      allow (KR)
     }
-    import (viv.entity) {
-      as (entity)
-      version (3.11.21)
-    }
-    import (viv.common) {
-      as (common)
-      version-from (entity)
-    }
-    import (viv.time) {
-      as (time)
-      version-from (entity)
-    }
-    import (viv.money) {
-      as (money)
-      version (2.18.0)
-    }
-    import (viv.self) {
-      as (self)
-      version (3.2.24)
-    }
-    import (viv.contact) {
-      as (contact)
-      version-from (self)
-    }
-  }
+	}
+	capsule-imports {
+		import (viv.core) {
+			as (core)
+		}
+		import (viv.entity) {
+			as (entity)
+			version (3.11.21)
+		}
+		import (viv.common) {
+			as (common)
+			version-from (entity)
+		}
+		import (viv.time) {
+			as (time)
+			version-from (entity)
+		}
+		import (viv.money) {
+			as (money)
+			version (2.18.0)
+		}
+		import (viv.self) {
+			as (self)
+			version (3.2.24)
+		}
+		import (viv.contact) {
+			as (contact)
+			version-from (self)
+		}
+	}
 }
