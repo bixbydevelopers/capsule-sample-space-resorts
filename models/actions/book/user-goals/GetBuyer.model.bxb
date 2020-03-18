@@ -7,14 +7,14 @@ action (GetBuyer) {
       min (Required)
       compute {
         intent {
-          goal: self.GetSelfInfo
+          goal: self.GetProfile
           value: self.ForcePrompt(true)
           value: self.Imaginary(true)
           value-set: self.RequiredField {
             self.RequiredField(firstName)
             self.RequiredField(lastName)
-            self.RequiredField(emailAddress)
-            self.RequiredField(phoneNumber)
+            self.RequiredField(emailInfo)
+            self.RequiredField(phoneInfo)
           }
         }
       }
