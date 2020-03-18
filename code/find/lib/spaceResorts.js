@@ -1,3 +1,4 @@
+var config = require('config')
 const amenities = require("./amenities.js")
 const descriptions = require("./descriptions.js")
 const highlights = require("./highlights.js")

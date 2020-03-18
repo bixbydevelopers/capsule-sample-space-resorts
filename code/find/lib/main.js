@@ -1,3 +1,5 @@
+var textLib = require('textLib')
+var config = require('config')
 const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 
