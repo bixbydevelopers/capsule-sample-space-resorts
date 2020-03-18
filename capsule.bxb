@@ -9,6 +9,7 @@ capsule {
 	// permissions {
 	//   user-profile-access
 	// }
+  runtime-version (3)
 	store-countries {
     only {
       allow (US)
