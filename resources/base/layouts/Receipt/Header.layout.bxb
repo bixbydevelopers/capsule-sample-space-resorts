@@ -21,7 +21,7 @@ layout-macro-def (receipt-header) {
             content {
               image-card {
                 image-url ("[#{value(receipt.item.spaceResort.images[0].url)}]")
-                size (S)
+                aspect-ratio (Four_Three)
                 title-area {
                   halign (Start)
                   slot1 {
