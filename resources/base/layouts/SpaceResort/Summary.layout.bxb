@@ -7,7 +7,7 @@ layout-macro-def (space-resort-summary) {
   }
   content {
     image-card {
-      size (S)
+      aspect-ratio (Four_Three)
       image-url ("[#{value(spaceResort.images[0].url)}]")
       title-area {
         halign (Start)
