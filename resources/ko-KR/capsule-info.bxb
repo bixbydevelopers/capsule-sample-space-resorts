@@ -1,13 +1,16 @@
-description {
-  name (스페이스 리조트)
-  displayName (스페이스 리조트)
-  companyName (스페이스 리조트)
-  iconUrl (/images/bixby_launcher.png)
+capsule-info {
+  display-name (스페이스 리조트)
+  developer-name (스페이스 리조트)
+  icon-asset (/images/bixby_launcher.png)
   description ("주말에 지낼만한 스페이스 리조트를 예약해보세요")
-  websiteUrl (https://example.com/)
-  termsUrl (https://example.com/terms-of-use/)
+  website-url (https://example.com/)
+  terms-url (https://example.com/terms-of-use/)
   dispatch-name (스페이스 리조트)
   dispatch-aliases {
     alias (우주여행)
+  }
+  search-keywords {
+    keyword (우주 여행)
+    keyword (스페이스 호텔)
   }
 }
