@@ -1,0 +1,34 @@
+confirmation-view {
+  match {
+    Confirmation {
+      confirming {
+        CancelCommittedOrder (action) {
+          to-output: Receipt (receipt)
+        }
+      }
+    }
+  }
+  mode (PositiveEmphasis)
+
+  // message {
+  //   template ("Are you sure you want to cancel this trip?")
+  // }
+
+  confirm-options {
+    label {
+      if (exists(receipt)) {
+        template-macro (CancelOrder)
+      }
+    }
+  }
+  abort-options {
+    label {
+      template-macro (KeepIt)
+    }
+    on-abort {
+      intent {
+        goal {CheckStatus}
+      }
+    }
+  }
+}
