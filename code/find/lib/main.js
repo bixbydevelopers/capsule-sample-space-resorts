@@ -1,5 +1,5 @@
 var textLib = require('textLib')
-const getSpaceResorts = require("./spaceResorts.js")
+const spaceResorts = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
 }
 
 function findSpaceResorts(name, planet, searchCriteria, language) {
-  var data = getSpaceResorts(language)
+  var data = spaceResorts.getSpaceResorts(language)
   return filterSpaceResorts(data, name, planet, searchCriteria, language)
 }
 

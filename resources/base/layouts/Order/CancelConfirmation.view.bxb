@@ -1,18 +1,18 @@
 confirmation-view {
   match {
-    Confirmation {
+    CancelConfirmation {
       confirming {
         CancelCommittedOrder (action) {
-          to-output: Receipt (receipt)
+          from-input: Receipt (receipt)
         }
       }
     }
   }
   mode (PositiveEmphasis)
 
-  // message {
-  //   template ("Are you sure you want to cancel this trip?")
-  // }
+  message {
+    template ("Are you sure you want to cancel this trip?")
+  }
 
   confirm-options {
     label {
@@ -28,6 +28,26 @@ confirmation-view {
     on-abort {
       intent {
         goal {CheckStatus}
+      }
+    }
+  }
+
+  render {
+    layout {
+      layout-macro (receipt-header) {
+        param (receipt) {
+          expression (receipt)
+        }
+      }
+      layout-macro (receipt-contact-information) {
+        param (receipt) {
+          expression (receipt)
+        }
+      }
+      layout-macro (receipt-order-total) {
+        param (receipt) {
+          expression (receipt)
+        }
       }
     }
   }

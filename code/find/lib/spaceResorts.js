@@ -5,7 +5,10 @@ const images = require("./images.js")
 const names = require("./names.js")
 const planets = require("./planets.js")
 
-module.exports = function getSpaceResorts(language) {
+module.exports = {
+  getSpaceResorts: getSpaceResorts
+}
+function getSpaceResorts(language) {
   function loc(data) {
     if (data) {
       return data[language]

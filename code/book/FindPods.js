@@ -1,7 +1,7 @@
 module.exports.function = function (spaceResort, numberOfAstronauts, dateInterval, $vivContext) {
   let language = "en"
-  if ($vivContext.locale === "ko-KR") langugae = "ko"
-  switch (langugae) {
+  if ($vivContext.locale === "ko-KR") language = "ko"
+  switch (language) {
     case "ko" :
       return [{
         name: "허니문",
