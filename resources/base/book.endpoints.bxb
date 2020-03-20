@@ -27,7 +27,7 @@ endpoints {
     }
 
     action-endpoint (FindPods) {
-      accepted-inputs (spaceResort, numberOfAstronauts, dateInterval)
+      accepted-inputs (spaceResort, numberOfAstronauts, dateInterval, $vivContext)
       local-endpoint (book/FindPods.js)
     }
 

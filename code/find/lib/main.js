@@ -1,6 +1,6 @@
 var textLib = require('textLib')
 var config = require('config')
-const data = require("./spaceResorts.js")
+const getSpaceResorts = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 
 module.exports = {
@@ -8,8 +8,9 @@ module.exports = {
   "selectSpaceResorts": selectSpaceResorts
 }
 
-function findSpaceResorts(name, planet, searchCriteria) {
-  return filterSpaceResorts(data, name, planet, searchCriteria)
+function findSpaceResorts(name, planet, searchCriteria, language) {
+  var data = getSpaceResorts(language)
+  return filterSpaceResorts(data, name, planet, searchCriteria, language)
 }
 
 function selectSpaceResorts(resorts, name, planet, searchCriteria) {
@@ -28,7 +29,7 @@ function selectSpaceResorts(resorts, name, planet, searchCriteria) {
   return candidates
 }
 
-function filterSpaceResorts(candidates, name, planet, searchCriteria) {
+function filterSpaceResorts(candidates, name, planet, searchCriteria, language) {
 
   if (name) {
     candidates = candidates.filter(function(candidate){
@@ -50,7 +51,7 @@ function filterSpaceResorts(candidates, name, planet, searchCriteria) {
           return amenity.keywords.find(function(keyword) {
             keyword = keyword.toLowerCase()
 
-            if (config.get("locale") == "ko") {
+            if (language == "ko") {
               return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
             }
             else {
