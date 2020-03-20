@@ -1,5 +1,3 @@
-var config = require('config')
-
 module.exports.function = function (spaceResort, numberOfAstronauts, dateInterval, $vivContext) {
   let language = "en"
   if ($vivContext.locale === "ko-KR") langugae = "ko"

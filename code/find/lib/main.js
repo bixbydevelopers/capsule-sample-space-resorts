@@ -1,5 +1,4 @@
 var textLib = require('textLib')
-var config = require('config')
 const getSpaceResorts = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 
