@@ -13,4 +13,9 @@ capsule-info {
     keyword (space hotels)
     keyword (space travel)
   }
+  // requested-permissions {
+  //   permission (user-profile-access) {
+  //     justification (Your profile will be used to complete payment information)
+  //   }
+  // }
 }
