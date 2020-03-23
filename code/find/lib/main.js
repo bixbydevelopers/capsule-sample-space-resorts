@@ -8,7 +8,7 @@ module.exports = {
 }
 
 function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
-  return filterSpaceResorts(data, name, planet, searchCriteria, $vivContext)
+  return filterSpaceResorts(data($vivContext.locale), name, planet, searchCriteria, $vivContext)
 }
 
 function selectSpaceResorts(resorts, name, planet, searchCriteria, $vivContext) {
