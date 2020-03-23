@@ -5,11 +5,11 @@ const images = require("./images.js")
 const names = require("./names.js")
 const planets = require("./planets.js")
 
-module.exports = {
-  getSpaceResorts: getSpaceResorts
-}
-function getSpaceResorts(language) {
-  function loc(data) {
+
+module.exports = function(locale) {
+  // Generate the right locale translation
+  var language = locale.split('-')[0];
+  function loc (data) {
     if (data) {
       return data[language]
     }
@@ -220,7 +220,7 @@ function getSpaceResorts(language) {
       planet: planets.Neptune,
       gravity: 0.0794,
       description: loc(descriptions.TritonWaterPark),
-      amenities: [loc(amenities.SwimmingPool), loc(amenities.KidFriendly), loc(amenities.ARSafari), loc(amenities.BuildABot), loc(amenities.PrimordialOozeSampling), loc(amenities.CaveDiving), loc(amenities.DeepSeaExploration)],
+      amenities: [loc(amenities.SwimmingPool), loc(amenities.KidFriendly),loc(amenities.ARSafari), loc(amenities.BuildABot), loc(amenities.PrimordialOozeSampling), loc(amenities.CaveDiving), loc(amenities.DeepSeaExploration)],
       highlight: loc(highlights.TritonWaterPark),
       images: images.TritonWaterPark,
       all: true

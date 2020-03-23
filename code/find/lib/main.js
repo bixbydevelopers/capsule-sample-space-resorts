@@ -1,61 +1,60 @@
-var textLib = require('textLib')
-const spaceResorts = require("./spaceResorts.js")
+const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
+var textLib = require('textLib')
 
 module.exports = {
   "findSpaceResorts": findSpaceResorts,
   "selectSpaceResorts": selectSpaceResorts
 }
 
-function findSpaceResorts(name, planet, searchCriteria, language) {
-  var data = spaceResorts.getSpaceResorts(language)
-  return filterSpaceResorts(data, name, planet, searchCriteria, language)
+function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
+  return filterSpaceResorts(data, name, planet, searchCriteria, $vivContext)
 }
 
-function selectSpaceResorts(resorts, name, planet, searchCriteria) {
-  var candidates = data;
+function selectSpaceResorts(resorts, name, planet, searchCriteria, $vivContext) {
+  var candidates = data($vivContext.locale);
   if (resorts) {
     //keep candidates that are in resorts (not a efficient!)
-    candidates = candidates.filter(function(candidate) {
-      return resorts.find(function(resort) {
+    candidates = candidates.filter(function (candidate) {
+      return resorts.find(function (resort) {
         if (candidate.name.toLowerCase() == resort.name.toLowerCase()) {
           return true
         }
       })
     })
   }
-  candidates = filterSpaceResorts(candidates, name, planet, searchCriteria)
+  candidates = filterSpaceResorts(candidates, name, planet, searchCriteria, $vivContext)
   return candidates
 }
 
-function filterSpaceResorts(candidates, name, planet, searchCriteria, language) {
+function filterSpaceResorts(candidates, name, planet, searchCriteria, $vivContext) {
 
   if (name) {
-    candidates = candidates.filter(function(candidate){
+    candidates = candidates.filter(function (candidate) {
       return candidate.name.toLowerCase() == name.toLowerCase()
     })
   }
 
   if (planet) {
-    candidates = candidates.filter(function(candidate){
+    candidates = candidates.filter(function (candidate) {
       return candidate.planet == planet
     })
   }
 
   if (searchCriteria) {
-    [].concat(searchCriteria).forEach(function(searchCriterion){
+    [].concat(searchCriteria).forEach(function (searchCriterion) {
       searchCriterion = searchCriterion.toLowerCase()
-      candidates = candidates.filter(function(candidate) {
-        return candidate.amenities.find(function(amenity) {
-          return amenity.keywords.find(function(keyword) {
+      candidates = candidates.filter(function (candidate) {
+        return candidate.amenities.find(function (amenity) {
+          return amenity.keywords.find(function (keyword) {
             keyword = keyword.toLowerCase()
 
-            if (language == "ko") {
-              return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
+            if ($vivContext.locale.split('-')[0] === "ko") {
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 1
             }
             else {
               // fuzzyMatch is too costly, so using simple levenshtein instead
-              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 
+              return textLib.levenshteinDistance(keyword, searchCriterion) < 4
             }
           })
         })
@@ -64,8 +63,8 @@ function filterSpaceResorts(candidates, name, planet, searchCriteria, language) 
   }
 
   // Flatten out the amenities to only keep the attribute as the label.
-  candidates = candidates.map(function(candidate) {
-    candidate.attributes = candidate.amenities.map(function(amenity) {
+  candidates = candidates.map(function (candidate) {
+    candidate.attributes = candidate.amenities.map(function (amenity) {
       return amenity.attribute
     })
     delete candidate.amenities
@@ -76,9 +75,9 @@ function filterSpaceResorts(candidates, name, planet, searchCriteria, language) 
 }
 
 function filterByAttribute(spaceResorts, desiredAttribute) {
-  return spaceResorts.filter(function(candidate) {
-    return candidate.amenities.find(function(amenity) {
-      return amenity.keywords.find(function(keyword) {
+  return spaceResorts.filter(function (candidate) {
+    return candidate.amenities.find(function (amenity) {
+      return amenity.keywords.find(function (keyword) {
         return textLib.fuzzyMatch(keyword, desiredAttribute, 3)
       })
     })

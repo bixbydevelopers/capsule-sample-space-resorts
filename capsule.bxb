@@ -25,10 +25,6 @@ capsule {
 		import (viv.core) {
 			as (core)
 		}
-		import (viv.common) {
-			as (common)
-      version (4.0.3)
-		}
 		import (viv.time) {
 			as (time)
       version (3.1.102)
@@ -40,10 +36,6 @@ capsule {
 		import (viv.self) {
 			as (self)
 			version (3.5.215)
-		}
-		import (viv.contact) {
-			as (contact)
-			version (2.5168.4)
 		}
 	}
 }
