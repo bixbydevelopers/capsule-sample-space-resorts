@@ -1,0 +1,5 @@
+data:
+  aligned: >-
+    [g:SpaceResort#all] Find a space resort that's (good for
+    kids)[v:SearchCriteria]
+type: intent
