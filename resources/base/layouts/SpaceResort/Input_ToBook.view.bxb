@@ -1,21 +1,30 @@
 input-view {
-  match: SpaceResort(result) {
-    to-input: CreateItem(action)
-  }
-  message {
-    template-macro (SPACE_RESORT_SELECTION)
-  }
-  render {
-    selection-of (result) {
-      //has-details (true)
-      select-button-text{ template-macro (Book)}
-      where-each (item) {
-        layout-macro (space-resort-summary) {
-          param (spaceResort) {
-            expression(item)
-          }
-        }
+	match: SpaceResort(result) {
+		to-input: CreateItem(action)
+	}
+	message {
+		template-macro (SPACE_RESORT_SELECTION)
+	}
+	render {
+		if (size(result) > 1) {
+			selection-of (result) {
+				has-details (true)
+				where-each (item) {
+					layout-macro (space-resort-summary) {
+						param (spaceResort) {
+							expression(item)
+						}
+					}
+				}
+				submit-button {
+					template-macro (Book)
+				}
+			}
+		} else-if (size(result) == 1) {
+      layout-macro (space-resort-details) {
+        param (spaceResort) {expression (result)}
+        select-button-text: template-macro (Book)
       }
-    }
-  }
+		}
+	}
 }
