@@ -1,8 +1,8 @@
 train (t-854tan9kgbfopq4u0ggu2w5hz) {
-  utterance ("[g:SpaceResort] (토성)[v:Planet:Saturn] 근처 리조트 검색해줘")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+  utterance ("[g:SpaceResort#all] (토성)[v:Planet:Saturn] 근처 리조트 검색해줘")
+  last-modified (1584991673199)
 }
 train (t-8kucxc7xmkwhdea743yyf06hb) {
-  utterance ("[g:SpaceResort] (화성)[v:Planet:Mars]에 있는 리조트 찾아줘")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+  utterance ("[g:SpaceResort#all] (화성)[v:Planet:Mars]에 있는 리조트 찾아줘")
+  last-modified (1584991673199)
 }

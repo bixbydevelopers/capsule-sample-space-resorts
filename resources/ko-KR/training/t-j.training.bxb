@@ -1,8 +1,8 @@
 train (t-j9gd9jaqq8fx1eer64lmt73t2) {
-  utterance ("[g:SpaceResort] (수성)[v:Planet:Mercury]에 (심해 탐사)[v:SearchCriteria] 있는 호텔 보여줘")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (수성)[v:Planet:Mercury]에 (심해 탐사)[v:SearchCriteria] 있는 호텔 보여줘")
+  last-modified (1584991673198)
 }
 train (t-jdtewzorvhm1zrmj1dcmsn3l7) {
-  utterance ("[g:SpaceResort] (금성)[v:Planet:Venus]에 있는 호텔 찾아줘")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+  utterance ("[g:SpaceResort#all] (금성)[v:Planet:Venus]에 있는 호텔 찾아줘")
+  last-modified (1584991673198)
 }

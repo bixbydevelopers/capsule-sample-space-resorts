@@ -1,4 +1,4 @@
 train (t-w0skufdgplgnq1bkudttslfnd) {
-  utterance ("[g:SpaceResort] (명왕성)[v:Planet:Pluto] 근처에 괜찮은 리조트 검색해봐")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagkDEwMjEDMASUYGEGCCYAA=)
+  utterance ("[g:SpaceResort#all] (명왕성)[v:Planet:Pluto] 근처에 괜찮은 리조트 검색해봐")
+  last-modified (1584991673198)
 }

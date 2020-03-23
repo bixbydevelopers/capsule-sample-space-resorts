@@ -1,4 +1,4 @@
 train (t-xchssj5m5tvcknq2twbttzqwv) {
-  utterance ([g:SpaceResort] 우주 리조트 찾아줘)
-  plan (Y2BkUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhAgBFEAAA=)
+  utterance ([g:SpaceResort#all] 우주 리조트 찾아줘)
+  last-modified (1584991673198)
 }

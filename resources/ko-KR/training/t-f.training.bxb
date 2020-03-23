@@ -1,8 +1,8 @@
 train (t-f3tp1jcvgprrpg2hhmp94r2dw) {
-  utterance ("[g:SpaceResort] (명왕성)[v:Planet:Pluto]에 (야외 수영장)[v:SearchCriteria] 있는 호텔 추천")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (명왕성)[v:Planet:Pluto]에 (야외 수영장)[v:SearchCriteria] 있는 호텔 추천")
+  last-modified (1584991673198)
 }
 train (t-fblankd45gvkwi8ay58644i6l) {
-  utterance ("[g:SpaceResort] (수성)[v:Planet:Mercury]에 (동굴 투어)[v:SearchCriteria] 있는 호텔 찾아")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (수성)[v:Planet:Mercury]에 (동굴 투어)[v:SearchCriteria] 있는 호텔 찾아")
+  last-modified (1584991673198)
 }

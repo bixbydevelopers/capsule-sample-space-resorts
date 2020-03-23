@@ -3,6 +3,6 @@ train (t-zgrpxs0i4qg38tkh7k4saobfx) {
   plan (Y2BiUE+tSMwtyEnVKy5ITE4NSi3OLyop1vMrzU1KLfJPcywuKcrPSywtKSZeISMQMjDwADETEAPZAA==)
 }
 train (t-zsyhvr6acakmb6n56k6meiiw5) {
-  utterance ("[g:SpaceResort:continue] (카지노)[v:SearchCriteria] 있는 곳은 어디야")
-  plan (Y2BmUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzKCM3aDUxKLkDOeizJLUosxEBiYGRiBmAJKMDCDABMEA)
+  utterance ("[g:SpaceResort#all:continue] (카지노)[v:SearchCriteria] 있는 곳은 어디야")
+  last-modified (1584991661742)
 }

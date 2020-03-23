@@ -1,6 +1,6 @@
 train (t-d5oo1sq3os5dylwyo9v1po8q3) {
-  utterance ("[g:SpaceResort] (금성)[v:Planet:Venus]에 (유럽식 조식)[v:SearchCriteria] 제공하는 리조트 검색해줘")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (금성)[v:Planet:Venus]에 (유럽식 조식)[v:SearchCriteria] 제공하는 리조트 검색해줘")
+  last-modified (1584991673198)
 }
 train (t-det3e8bdhulvoz6dkd3t4aduu) {
   utterance ("[g:Confirmation:prompt] (좋아)[v:Confirmation:true]")

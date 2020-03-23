@@ -7,6 +7,6 @@ train (t-3mkhp89w4ldbywerxffl9whob) {
   plan (Y2BmkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yYl5ya41+UklrEIIVVBUSOiYERiBmAJCMDA4wGAA==)
 }
 train (t-3wtgssnrygbatsltdabomju5c) {
-  utterance ("[g:SpaceResort] (금성)[v:Planet:Venus]에 (무중력 골프장)[v:SearchCriteria] 있는 리조트 보여줘봐")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (금성)[v:Planet:Venus]에 (무중력 골프장)[v:SearchCriteria] 있는 리조트 보여줘봐")
+  last-modified (1584991673199)
 }

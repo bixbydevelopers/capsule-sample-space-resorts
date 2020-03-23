@@ -1,6 +1,6 @@
 train (t-s472prb9rpwxxawhsmbjtmzwq) {
-  utterance ("[g:SpaceResort] (목성)[v:Planet:Jupiter] 근처 (주유소)[v:SearchCriteria] 있는 리조트 찾아줘")
-  plan (Y2BhUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBhUsapwy8xLQVJVzCCNVVlATmJeagmDMnZbUhOLkjOcizJLUosyExmYGRgZmIAkA5AGQQgA8cGiAA==)
+  utterance ("[g:SpaceResort#all] (목성)[v:Planet:Jupiter] 근처 (주유소)[v:SearchCriteria] 있는 리조트 찾아줘")
+  last-modified (1584991673198)
 }
 train (t-skla3dultjfzdvy3ihezlv07d) {
   utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] (4)[v:NumberOfAstronauts:4]명으로 변경해줘")
