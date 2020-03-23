@@ -1,4 +1,0 @@
-dialog (ActionAborted) {
-  match: CommitOrder
-  template ("여행이 취소되었습니다.")
-}

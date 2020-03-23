@@ -9,12 +9,14 @@ capsule {
 	// permissions {
 	//   user-profile-access
 	// }
-  runtime-version (3)
+  runtime-version (3) {
+		overrides {
+			allow-dialogs-on-detail-pages (true)
+			no-fallback-to-result-collections (true)
+		}
+	}
 	store-countries {
-    only {
-      allow (US)
-      allow (KR)
-    }
+    all
 	}
 	store-sections{
 		section (TravelAndTransportation)
