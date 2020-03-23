@@ -2,6 +2,11 @@ train (t-9dsv38aqogqbt6op3cisqr024) {
   utterance ("[g:NumberOfAstronauts:prompt] (4)[v:NumberOfAstronauts]")
   plan (Y2BiUE+tSMwtyEnVKy5ITE4NSi3OLyop1vMrzU1KLfJPcywuKcrPSywtKSZeISMQMjDwADETEAPZAA==)
 }
+train (t-9ole3o7ipa6jmi8cjakoucdz9) {
+  utterance ("[g:MakeReservation:continue,r:UpdateOrder,r:UpdateBuyer] change my (email)[v:self.Field:emailInfo] to (john.doe@yahoo.com)[v:self.EmailAddress]")
+  plan (hY2xCsIwEIb/Wqt2cXMRBwfnvIOCbiIUfIDQnBCa2pDEoG9vYrBT0DsOju++n0ONDT15rxUxq3lLDdnBOMsaaklqh132euZd3Ml47uRwxzprXYwgg232dtWCO0pGPn14vP6kk/Hr98pLzyypGzv2XKq9EIasxXLEJ0lKoEaBCUpMUWEWeo4FMLIy0NjFh6X5VqTRroKFNw==)
+  last-modified (1580927910043)
+}
 train (t-9u51kmrhkm83xj4v8k27kgt3a) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (Io-Tel)[v:Name]")
   plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBEqtKv8TcVCJcwsLAyMDEwAykGcAsRiCEAWYwBvIB)

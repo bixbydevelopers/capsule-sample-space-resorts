@@ -1,8 +1,10 @@
 train (t-mio2io4lqz5hunj07ae8pnoys) {
   utterance ([g:SpaceResort#all] 스페이스 리조트 찾아줘)
-  last-modified (1584991673198)
+  plan (Y2BikEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMDACIQMDExCDWQA=)
+  last-modified (1550019972797)
 }
 train (t-mj7q6su5z9b2n8bfcbnvcgblt) {
   utterance ("[g:SpaceResort#all:continue] (스파)[v:SearchCriteria] 있는 곳으로")
-  last-modified (1584991661743)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1550019973026)
 }

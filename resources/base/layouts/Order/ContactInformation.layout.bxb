@@ -11,34 +11,39 @@ layout-macro-def (order-contact-information) {
       content {
         input-cell {
           label {template-macro (Name)}
-          value ("[#{value(order.buyer.nameInfo.firstName)} #{value(order.buyer.nameInfo.lastName)}]")
+          value ("[#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: MakeReservation
               route: UpdateOrder
-              route: GetBuyer
+              route: UpdateBuyer
+              value: self.ForcePrompt(true)
             }
           }
         }
         input-cell {
           label {template-macro (PhoneNumber)}
-          value ("[#{value(order.buyer.phoneInfos.number)}]")
+          value ("[#{value(order.buyer.phoneInfo.number)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: MakeReservation
               route: UpdateOrder
-              route: GetBuyer
+              route: UpdateBuyer
+              value: self.Field(phoneInfo)
+              value: self.ForcePrompt(true)
             }
           }
         }
         input-cell {
           label {template-macro (Email)}
-          value ("[#{value(order.buyer.emailInfos.address)}]")
+          value ("[#{value(order.buyer.emailInfo.address)}]")
           on-click {
             intent {
-              goal: Order#commitOrder
+              goal: MakeReservation
               route: UpdateOrder
-              route: GetBuyer
+              route: UpdateBuyer
+              value: self.Field(emailInfo)
+              value: self.ForcePrompt(true)
             }
           }
         }

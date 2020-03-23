@@ -1,4 +1,10 @@
+train (t-7adh5mlv4ic4zw9lre3rgt64i) {
+  utterance ([g:SpaceResort#gravity:continue:SpaceResort,r:ProjectResort] 거기 중력은 몇이야?)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1nMvSizLLKlkUMAqG4zgMChhVRFQlJ+VmlwCVUPYFGYGRgYmIMkAppmAJAgwgXkMAA==)
+  last-modified (1550019033979)
+}
 train (t-7yxl7xvbuxqv50x718ppuzifr) {
   utterance ("[g:SpaceResort#all:continue] 그리고 (유아풀)[v:SearchCriteria] 있는데로")
-  last-modified (1584991661743)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1550019969172)
 }

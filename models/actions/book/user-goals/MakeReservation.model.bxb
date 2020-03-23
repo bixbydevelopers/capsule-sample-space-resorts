@@ -1,0 +1,16 @@
+action (MakeReservation) {
+  description (Commit order)
+  type (Commit)
+
+  confirm {
+    by (Confirmation)
+  }
+
+  collect {
+    input (order) {
+      type (Order)
+      min (Required)
+    }
+  }
+  output (Receipt)
+}

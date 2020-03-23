@@ -1,8 +1,10 @@
 train (t-a0vkwsnrayzbq2toxzypmeokz) {
   utterance ("[g:SpaceResort#all:continue] 그리고 (야외 수영장)[v:SearchCriteria] 딸린 데로")
-  last-modified (1584991661743)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
+  last-modified (1550019970033)
 }
 train (t-ak8sxtdfzwpv9vreifn99mf3z) {
-  utterance ([g:Order#commitOrder:continue:SpaceResort,r:CreateOrder,r:CreateItem] 예약해줘)
-  plan (fY/LDoIwEEUv4tsv0JioK3f8g4+FbsTgFxQYExJKSTsY/XsrGN0UZpJJes+ZSYoZlvQUsswpMKVIKCKjNJsgooSykrF20oOSMuNQp6SxcBoNa9nWJJi6tvfVy7K5k52ZJFYdh2th4xSOH1ww6YfIW26cRJyx4KtKsXUKl0rGpMP7zrBWhajYtHzz9n9gCg89+OhjgCFGGGNiM3xTv06b9uoUv9mUb72hnXgD)
+  utterance ([g:MakeReservation:continue:SpaceResort,r:CreateOrder,r:CreateItem] 예약해줘)
+  plan (fY/LCsIwEEVvrdbXFyiCCoK7/oOPhS60Ur8gbUcotk1JpqJ/bx+im9QEhsw9J0OCMWb0FGmekKtzEZJPWirWrk8hxTljZaQnca/OpB6CY5lharQ8FZHCwsh2igRTY5hvb4tXySZGdmRKMf8zuBaWRmFf4YyrtyctMw4iiFnwRUZYG4VzkQakvNtGs5KZKFi3fPP6azCChQ5sdNGDgz4GGJYZPqldp8226hTf2iy77Jyy4g0=)
+  last-modified (1559236397289)
 }

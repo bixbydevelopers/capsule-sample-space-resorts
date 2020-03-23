@@ -1,3 +1,3 @@
 boolean (Confirmation) {
-  extends (common.Confirmation)
+  extends (core.Confirmation)
 }

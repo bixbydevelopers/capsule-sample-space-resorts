@@ -1,0 +1,4 @@
+dialog (ActionAborted) {
+  match: MakeReservation
+  template ("여행이 취소되었습니다.")
+}

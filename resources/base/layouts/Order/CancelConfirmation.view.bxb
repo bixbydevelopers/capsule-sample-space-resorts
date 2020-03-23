@@ -1,54 +1,57 @@
-confirmation-view {
-  match {
-    CancelConfirmation {
-      confirming {
-        CancelCommittedOrder (action) {
-          from-input: Receipt (receipt)
-        }
-      }
-    }
-  }
-  mode (PositiveEmphasis)
+confirmation-view {	
+  match {	
+    CancelConfirmation {	
+      confirming {	
+        CancelCommittedOrder (action)	
+      }	
+    }	
+  }	
+  mode (PositiveEmphasis)	
 
-  message {
-    template ("Are you sure you want to cancel this trip?")
-  }
+   abort-options {
+    label {	
+      template-macro (KeepIt)	
+    }	
+    on-abort {	
+      intent { //The intent to execute when user aborts the confirmation	
+        goal {CheckStatus}	
+      }	
+    }	
+  }	
 
-  confirm-options {
-    label {
-      if (exists(receipt)) {
-        template-macro (CancelOrder)
-      }
+   confirm-options {
+    label {	
+      if (exists(action.receipt)) {	
+        template-macro (CancelOrder)	
+      }	
     }
-  }
-  abort-options {
-    label {
-      template-macro (KeepIt)
-    }
-    on-abort {
-      intent {
-        goal {CheckStatus}
-      }
-    }
-  }
+  }	
 
-  render {
-    layout {
-      layout-macro (receipt-header) {
-        param (receipt) {
-          expression (receipt)
-        }
-      }
-      layout-macro (receipt-contact-information) {
-        param (receipt) {
-          expression (receipt)
-        }
-      }
-      layout-macro (receipt-order-total) {
-        param (receipt) {
-          expression (receipt)
-        }
-      }
-    }
-  }
-}
+   render {	
+    if (exists(action.receipt)) {
+      layout {	
+        layout-macro (receipt-header) {	
+          param (receipt) {	
+            if (exists(action.receipt)) {	
+              expression (action.receipt) 	
+            }	
+          }	
+        }	
+        layout-macro (receipt-contact-information) {	
+          param (receipt) {	
+            if (exists(action.receipt)) {	
+              expression (action.receipt)	
+            }	
+          }	
+        }	
+        layout-macro (receipt-order-total) {	
+          param (receipt) {	
+            if (exists(action.receipt)) {	
+              expression (action.receipt)	
+            }	
+          }	
+        }	
+      }	
+    }	
+  }	
+} 

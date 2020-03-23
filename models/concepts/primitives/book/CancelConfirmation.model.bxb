@@ -1,3 +1,4 @@
 boolean (CancelConfirmation) {
-  extends (common.Confirmation)
+  description (__DESCRIPTION__)
+  extends (viv.core.Confirmation)
 }

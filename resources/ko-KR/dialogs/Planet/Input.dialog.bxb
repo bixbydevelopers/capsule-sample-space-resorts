@@ -1,32 +1,26 @@
 dialog (Input) {
   match: Planet (this)
   switch (this) {
-    case (Mercury) {
-      template ("수성에 있는")
-    }
-    case (Venus) {
-      template ("금성에 있는")
-    }
     case (Earth) {
-      template ("지구 근처에 있는")
-    }
-    case (Mars) {
-      template ("화성에 있는")
+      template ("#{value(this)} 근처에")
     }
     case (Jupiter) {
-      template ("목성의 달에 있는")
+      template ("#{value(this)}의 달에")
     }
     case (Saturn) {
-      template ("토성 주변에 있는")
+      template ("#{value(this)} 주변에")
     }
     case (Uranus) {
-      template ("천왕성 행성계에 있는")
+      template ("#{value(this)} 행성계에")
     }
     case (Neptune) {
-      template ("해왕성 주변에 있는")
+      template ("#{value(this)} 주변에")
     }
     case (Pluto) {
-      template ("명완성 근처에 있는")
+      template ("#{value(this)} 근처에")
+    }
+    default {
+      template ("#{value(this)}에")
     }
   }
 }

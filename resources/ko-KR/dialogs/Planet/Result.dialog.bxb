@@ -1,8 +1,8 @@
 dialog (Result) {
   match: Planet (this)
   if (size(this) == 1) {
-    template ("#{input(this)}있다.")
-  } else {
-    // Unexpected
+    template ("#{input(this)} 있습니다.") 
   }
+  // Else Unexpected
+  
 }

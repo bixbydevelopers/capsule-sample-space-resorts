@@ -1,0 +1,3 @@
+data:
+  aligned: '[g:DateInterval] (the third week in December)[v:viv.time.DateTimeExpression]'
+type: intent

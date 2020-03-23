@@ -1,6 +1,7 @@
 train (t-1xcjtau1jw65tcbzzg1zp2iya) {
-  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] Change that to (2)[v:NumberOfAstronauts:2] astronauts")
-  plan (fY4xDsIwDEV/CZSeATEwwdY7oE4sVKrEAUJjoFLTRI4rcXwisnSIaut7+P/ZMioc6autH6kOXvfUUXAsoe6op8ELTtm0cdYO0rIhxiFLpCy//fBGC60RzUdPbzI3IYtznmCKN5bcJcvdZ/skbl/XIOwmPUtYfbhCgQ0UttihxD42Fo6KKv5OUioV8zJO/AA=)
+  utterance ("[g:MakeReservation:continue,r:UpdateOrder] Change that to (2)[v:NumberOfAstronauts:2] astronauts")
+  plan (fY5BDoJADEU/jiJnMC5cGN1xB+PKhZKQeIAKVYgCk04xHt9RNiwmtGnz8/9LUyRY84ca++LUWSo4Z9eJujTngmur2AbTMz1/muVNWnctVkEqk5IFm2B2tSUpTxHHitoHlyflBrswIexvjLl9kLv0zY0lux+cStdSr27y4QQRZjCYY4EYS98YOcZP9HeGGcp4HfuNLw==)
+  last-modified (1559236408227)
 }
 train (t-1y714vrcu50c7icn96mjbl37y) {
   utterance ("[g:Confirmation:prompt] (Yes)[v:Confirmation:true]")

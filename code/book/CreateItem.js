@@ -1,5 +1,4 @@
 var dates = require('dates')
-
 module.exports.function = function (spaceResort, numberOfAstronauts, dateInterval, pod) {
 
   return {

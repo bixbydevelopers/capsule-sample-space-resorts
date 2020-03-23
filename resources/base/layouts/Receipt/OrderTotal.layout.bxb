@@ -14,7 +14,9 @@ layout-macro-def (receipt-order-total) {
             text {
               style (Detail_L_Soft)
               value {
-                template ("#{value(macroEach('OrderTotal', receipt.item.pod.price))}")
+                template-macro (ReceiptOrderTotal) {
+                  param (value) { dialog-template("#{value(receipt.item.pod.price)}")}
+                }
               }
             }
           }

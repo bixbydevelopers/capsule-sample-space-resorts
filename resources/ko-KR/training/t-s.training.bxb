@@ -1,8 +1,15 @@
 train (t-s472prb9rpwxxawhsmbjtmzwq) {
   utterance ("[g:SpaceResort#all] (목성)[v:Planet:Jupiter] 근처 (주유소)[v:SearchCriteria] 있는 리조트 찾아줘")
-  last-modified (1584991673198)
+  plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
+  last-modified (1550019974027)
 }
 train (t-skla3dultjfzdvy3ihezlv07d) {
-  utterance ("[g:Order#commitOrder:continue,r:UpdateOrder] (4)[v:NumberOfAstronauts:4]명으로 변경해줘")
-  plan (fY4xDsIwDEV/CZSeATEwwdY7oE4sVKrEAUJjoFLTRI4rcXwisnSIaut7+P/ZMioc6autH6kOXvfUUXAsoe6op8ELTtm0cdYO0rIhxiFLpCy//fBGC60RzUdPbzI3IYtznmCKN5bcJcvdZ/skbl/XIOwmPUtYfbhCgQ0UttihxD42Fo6KKv5OUioV8zJO/AA=)
+  utterance ("[g:MakeReservation:continue,r:UpdateOrder] (4)[v:NumberOfAstronauts:4]명으로 변경해줘")
+  plan (fY5BDoJADEU/jiJnMC5cGN1xB+PKhZKQeIAKVYgCk04xHt9RNiwmtGnz8/9LUyRY84ca++LUWSo4Z9eJujTngmur2AbTMz1/muVNWnctVkEqk5IFm2B2tSUpTxHHitoHlyflBrswIexvjLl9kLv0zY0lux+cStdSr27y4QQRZjCYY4EYS98YOcZP9HeGGcp4HfuNLw==)
+  last-modified (1559236399077)
+}
+train (t-smig8bis408u8svwftaqc6y34) {
+  utterance ("[g:SpaceResort:prompt,r:SelectResort] (무중력)[v:SearchCriteria]인 곳")
+  plan (Y2BlUEitSMwtyEnVKy5ITE4NSi3OLyop1gtGcBgUsatIzUlNLoEq0SCopK44NbEoOYNBGYdKkKRzUWZJalFmIhFuYmFgZGBiYAbSDGAWIxDCADMYA/kA)
+  last-modified (1550019872597)
 }

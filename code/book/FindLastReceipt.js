@@ -1,5 +1,4 @@
 var transaction = require('transaction')
-
 // FindLastReceipt
 exports.function = function() {
     //look up last receipt from viv cloud

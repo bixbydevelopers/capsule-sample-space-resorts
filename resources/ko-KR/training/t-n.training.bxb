@@ -1,12 +1,15 @@
 train (t-nid1p633c5i6id8a3a9mmpt8k) {
   utterance ("[g:SpaceResort#all] (화성)[v:Planet:Mars]에 (수영장)[v:SearchCriteria]이랑 (과학 본부)[v:SearchCriteria] 있는 리조트 추천해줘")
-  last-modified (1584991673198)
+  plan (Y2BnkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmUlERGwMjAxMDMwMLAyuQzQDmMQF5LECSkQEEeICQAchnBKoCqwEA)
+  last-modified (1550019973202)
 }
 train (t-noe6uwbybi1d8kmi0oxg7x0mn) {
   utterance ("[g:SpaceResort#all:continue] (지구)[v:Planet:Earth]에는")
-  last-modified (1584991661742)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
+  last-modified (1550019973404)
 }
 train (t-nu482d8liftyk5fi20nm5ldl6) {
   utterance ("[g:SpaceResort#all:continue] (금성)[v:Planet:Venus] 근처는 어떄")
-  last-modified (1584991661742)
+  plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
+  last-modified (1550019973611)
 }

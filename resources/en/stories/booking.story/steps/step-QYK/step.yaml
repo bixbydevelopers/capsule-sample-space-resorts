@@ -1,5 +1,5 @@
 data:
   aligned: >-
-    [g:example.spaceResorts.FindSpaceResorts] make a reservation at a space
-    resort that's (good for kids)[v:example.spaceResorts.SearchCriteria]
+    [g:SpaceResort#all] Find a space resort that's (good for
+    kids)[v:SearchCriteria]
 type: intent

@@ -11,9 +11,4 @@ structure (Order) {
     type(Buyer)
     visibility (Private)
   }
-  named-consumer (commitOrder) {
-    description (Buy the order)
-    action (CommitOrder)
-    input (order)
-  }
 }

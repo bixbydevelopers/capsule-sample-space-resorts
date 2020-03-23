@@ -1,7 +1,7 @@
 train (t-fbat4sw7ltxdnyzym82zcc1qn) {
   utterance ("[g:SpaceResort#all] Research space resorts on (Mercury)[v:Planet:Mercury]")
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
-  last-modified (1549558936301)
+  last-modified (1562602992818)
 }
 train (t-feh2otm01albduww5e7cvjqq2) {
   utterance ("[g:SpaceResort#all] Show me space resorts with (low gravity)[v:SearchCriteria]")
@@ -9,6 +9,7 @@ train (t-feh2otm01albduww5e7cvjqq2) {
   last-modified (1549558936474)
 }
 train (t-fkqrqt36ifvv2fh5hwzevz03d) {
-  utterance ([g:Order#commitOrder:continue,r:UpdateOrder,r:GetPod] Change the pod)
-  plan (nZBNCsIwEEa/Wmv96QlUUDe68w5SQbtRUTxA2o5aMG1JpuLxjbqoSHDhDAkZ3psJDAIM6S5keaW5LkVCe9KFYj3fU0JZyRhbaVhImfFWpaTQtxpvZu8+lqlg+mWEF5GfKY2YJKZ2Q5GZ8emNrN5axBkL3hUpBlZhRS84scKl+SPKmdRNXDGzKptKxqS2p4VmVeSiYv3HRg51gQAOGnDRhIcWfLTRQddkD/givnl75nZepD51uMZ/WngA)
+  utterance ([g:MakeReservation:continue,r:UpdateOrder,r:GetPod] Change the pod)
+  plan (nZBLCsJADIZ/36+eQAUVRHfeQRS0C61UPEC0UYv2wUwqHt+pm4oMLsyQkPB9ZJiBgz4/KUrvPNMpndhnnSjRM59PHKaCsZVu6Jb3rB4kYRKja7U8FbDC0MoOaUDCv4zFleILB65whIndUGx2fHoDq7emYygkuyRAzyqs+A1HVrg0d7ix5G+9Y2pVtll0ZOWd51pUElMm+o8f2RcDHJRQRgVV1FBHA0200DanA3yRhulrppbepMgiKmbOLbwA)
+  last-modified (1559236409708)
 }

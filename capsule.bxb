@@ -16,6 +16,9 @@ capsule {
       allow (KR)
     }
 	}
+	store-sections{
+		section (TravelAndTransportation)
+	}
 	capsule-imports {
 		import (viv.core) {
 			as (core)

@@ -1,26 +1,21 @@
 input-view {
-  match: NumberOfAstronauts(noOfAstronauts)
+  match: NumberOfAstronauts(numberOfAstronauts)
   message {
     template-macro (NUMBER_OF_ASTRONAUTS_SELECTION)
   }
   render {
-    if (size(noOfAstronauts) > 1) {
-      selection-of (noOfAstronauts) {
-        where-each (noOfAstronaut) {
-          cell-card {
-            slot2 {
-              content {
-                primary {
-                  template ("#{value (noOfAstronaut)}")
-                }
+    selection-of (numberOfAstronauts) {
+      where-each (numberOfAstronauts) {
+        cell-card {
+          slot2 {
+            content {
+              primary {
+                template ("#{value (numberOfAstronauts)}")
               }
             }
           }
         }
       }
     }
-    // else-if (size(noOfAstronauts) == 1) {
-    //   // Unexpected
-    // }
   }
 }

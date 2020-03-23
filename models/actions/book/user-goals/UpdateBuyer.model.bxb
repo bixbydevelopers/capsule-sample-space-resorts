@@ -1,0 +1,73 @@
+action (UpdateBuyer) {
+  description (Prompt user to enter personal data)
+  type (Constructor)
+  collect {
+    //Order is a structure with transaction feature that has the current buyer and product properties
+    input (order) {
+      type (Order)
+      min (Required)
+    }
+    //This is the list of the buyer fields which user wants to update
+    input (fieldsToUpdate) {
+      type (self.Field)
+      min (Required) max (Many)
+      default-init {
+        intent {
+          goal-set: self.Field {
+            self.Field(firstName)
+            self.Field(lastName)
+            self.Field(emailInfo)
+            self.Field(phoneInfo)
+          }
+         }
+      }
+    }
+    //new value for first name
+    input (firstName) {
+      type (self.FirstName)
+      min (Optional) max (One)
+    }
+    //new value for last name
+    input (lastName) {
+      type (self.LastName)
+      min (Optional) max (One)
+    }
+    //new value for email address
+    input (emailAddress) {
+      type (self.EmailAddress)
+      min (Optional) max (One)
+    }
+    //new value for phone number
+    input (phoneNumber) {
+      type (self.PhoneNumber)
+      min (Optional) max (One)
+    }
+    input (forcePrompt) {
+      type (self.ForcePrompt)
+      min (Optional) max (One)
+    }
+    //compute the new buyer information by calling self library
+    computed-input (buyer) {
+      type (Buyer)
+      min (Required)
+      compute {
+        intent {
+          goal: self.GetProfile
+          value: self.Profile$expr(order.buyer)
+          value: $expr(firstName)
+          value: $expr(lastName)
+          value: $expr(emailAddress)
+          value: $expr(phoneNumber)
+          value: $expr(forcePrompt)
+          subplan {
+            goal: self.RequiredField
+            value: $expr(fieldsToUpdate)
+          }
+        }
+      }
+    }
+  }
+  output (Buyer) {
+    evaluate { $expr(buyer) }
+  }
+}
