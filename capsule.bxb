@@ -8,16 +8,13 @@ capsule {
 	}
 	
 	runtime-version (3)
-	// permissions {
-	//   user-profile-access
-	// }
 	capsule-imports {
 		import (viv.core) {
 			as (core)
 		}
 		import (viv.self) {
 			as (self)
-			version (3.5.215)
+			version (3.5.217)
 		}
 		import (viv.time) {
 			as (time)
