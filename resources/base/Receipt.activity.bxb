@@ -19,7 +19,7 @@ activity-support {
           details{
             template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
-                expression (this) // regarding empty and cardinality warnings on this view: VIV-30857
+                expression (this) // regarding empty and cardinality warnings on this view: VBOS-5531
               }
             }
           }
