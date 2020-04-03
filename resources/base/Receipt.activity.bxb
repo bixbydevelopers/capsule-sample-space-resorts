@@ -16,10 +16,12 @@ activity-support {
           title {
             template ("[#{value(this.item.spaceResort)}]")
           }
-          details{
-            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-              param (receipt) {
-                expression (this) // regarding empty and cardinality warnings on this view: VIV-30857
+          details {
+            if (exists(this) && size(this) == 1) {
+              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+                param (receipt) {
+                  expression (this) // regarding empty and cardinality warnings on this view: VBOS-5531
+                }
               }
             }
           }
@@ -48,9 +50,11 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-              param (receipt) {
-                expression (this)
+            if (exists(this) && size(this) == 1) {
+              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+                param (receipt) {
+                  expression (this)
+                }
               }
             }
           }
@@ -78,16 +82,20 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-              param (receipt) {
-                expression (this)
+            if (exists(this) && size(this) == 1) {
+              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+                param (receipt) {
+                  expression (this)
+                }
               }
             }
           }
           message {
-            template-macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
-              param (receipt) {
-                expression (this)
+            if (exists(this) && size(this) == 1) {
+              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+                param (receipt) {
+                  expression (this)
+                }
               }
             }
           }
