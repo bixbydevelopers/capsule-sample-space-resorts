@@ -20,6 +20,9 @@ layout-macro-def (space-resort-highlight) {
           }
         }
       }
+      on-click {
+        view-for (spaceResort)
+      }
     }
   }
 }

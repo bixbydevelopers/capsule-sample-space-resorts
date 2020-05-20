@@ -8,7 +8,6 @@ input-view {
 	render {
 		if (size(result) > 1) {
 			selection-of (result) {
-				has-details (true)
 				where-each (item) {
 					layout-macro (space-resort-summary) {
 						param (spaceResort) {

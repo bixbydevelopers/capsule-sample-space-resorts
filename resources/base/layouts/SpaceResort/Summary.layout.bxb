@@ -18,6 +18,9 @@ layout-macro-def (space-resort-summary) {
           }
         }
       }
+      on-click {
+        view-for (spaceResort)
+      }
     }
   }
 }
