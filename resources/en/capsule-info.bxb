@@ -12,4 +12,9 @@ capsule-info {
   search-keywords {
     keyword (space resorts)
   }
+  requested-permissions {
+    permission (self:profile){
+      justification (Your profile information is needed to book a space resort.)
+    }
+  }
 }

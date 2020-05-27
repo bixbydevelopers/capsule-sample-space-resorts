@@ -13,4 +13,9 @@ capsule-info {
     keyword (스페이스 리조트)
     keyword (우주 리조트)
   }
+  requested-permissions {
+    permission (self:profile){
+      justification (Your profile information is needed to book a space resort.)
+    }
+  }
 }
