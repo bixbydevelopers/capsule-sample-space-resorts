@@ -14,7 +14,7 @@ capsule-info {
   }
   requested-permissions {
     permission (self:profile){
-      justification (Your profile information is needed to book a space resort)
+      justification (Your profile information is needed to book a space resort.)
     }
   }
 }
