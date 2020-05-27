@@ -39,6 +39,6 @@ capsule {
 		library-permission (self:profile)
 		// Note: While this permission is declared, it is not being used and the user will not be prompted, because we are fetching an 'imaginary' mocked profile from viv.self. 
 		// This is done by passing an 'imaginary' flag to the self.GetProfile action, which we do on line 17 of models/actions/book/user-goals/CreateOrder.model.bxb: `value: self.Imaginary(true)`
-		// Commenting out this line will cause viv.self to fetch the user's profile instead of a mocked profile, and the user will be prompted for this 'profile' permission when viv.self tries to fetch it.
+		// Commenting out that line will cause viv.self to fetch the user's profile instead of a mocked profile, and the user will be prompted for this 'profile' permission when viv.self tries to fetch it.
 	}
 }
