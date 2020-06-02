@@ -7,18 +7,14 @@ capsule {
 		target (bixby-mobile-ko-KR)
 	}
 	
-	runtime-version (7) {
-		overrides {
-			no-fallback-dialog-in-views (false)
-		}
-	}
+	runtime-version (7)
 	capsule-imports {
 		import (viv.core) {
 			as (core)
 		}
 		import (viv.self) {
 			as (self)
-			version (4.0.1)
+			version (4.0.3)
 		}
 		import (viv.time) {
 			as (time)
