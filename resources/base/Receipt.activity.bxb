@@ -4,7 +4,7 @@ activity-support {
   time {
     if (exists((this.item.dateInterval.start))) {
       expression (this.item.dateInterval.start)
-    } else {//by definition dateInterval should have a start & end, so this path is not expected
+    } else {
       expression (now())
     }
   }
