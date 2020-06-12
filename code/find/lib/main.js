@@ -1,6 +1,5 @@
 const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
-var textLib = require('textLib')
 
 module.exports = {
   "findSpaceResorts": findSpaceResorts,
@@ -48,14 +47,7 @@ function filterSpaceResorts(candidates, name, planet, searchCriteria, $vivContex
         return candidate.amenities.find(function(amenity) {
           return amenity.keywords.find(function(keyword) {
             keyword = keyword.toLowerCase()
-
-            if ($vivContext.locale.split('-')[0] === "ko") {
-              return textLib.levenshteinDistance(keyword, searchCriterion) < 1 
-            }
-            else {
-              // fuzzyMatch is too costly, so using simple levenshtein instead
-              return textLib.levenshteinDistance(keyword, searchCriterion) < 4 
-            }
+            return keyword.includes(searchCriterion)
           })
         })
       })
@@ -78,7 +70,7 @@ function filterByAttribute(spaceResorts, desiredAttribute) {
   return spaceResorts.filter(function(candidate) {
     return candidate.amenities.find(function(amenity) {
       return amenity.keywords.find(function(keyword) {
-        return textLib.fuzzyMatch(keyword, desiredAttribute, 3)
+        return keyword.includes(desiredAttribute)
       })
     })
   })
