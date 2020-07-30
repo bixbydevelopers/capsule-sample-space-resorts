@@ -1,20 +1,16 @@
 activity-support {
   match: Receipt (this)
-
+  
   time {
-    if (exists(this.item.dateInterval.start)) {
-      expression (this.item.dateInterval.start)
-    } else {
-      expression (now())
-    }
+    expression (now())
   }
-
+  
   states {
-
+    
     if ("this.canceled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
-
+      
       state (Recent) {
-
+        
         summary-view {
           image-url {
             template ("[#{raw(this.item.spaceResort.images[0].url)}]")
@@ -44,10 +40,10 @@ activity-support {
         }
       }
     } else-if (exists(this.relevantDateTime) && isFuture(this.relevantDateTime)) {
-
+      
       state (Scheduled) {
         expires(this.relevantDateTime)
-
+        
         summary-view {
           image-url {
             template ("[#{raw(this.item.spaceResort.images[0].url)}]")
@@ -79,7 +75,7 @@ activity-support {
     } else {
       state (Relevant) {
         expires(this.item.dateInterval.start)
-
+        
         summary-view {
           image-url {
             template ("[#{raw(this.item.spaceResort.images[0].url)}]")
