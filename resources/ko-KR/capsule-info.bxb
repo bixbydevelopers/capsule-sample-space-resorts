@@ -1,7 +1,7 @@
 capsule-info {
   display-name (스페이스 리조트)
   developer-name (스페이스 리조트)
-  icon-asset (/images/bixby_launcher.png)
+  icon-asset (/images/bixby-logo.png)
   description ("주말에 지낼만한 스페이스 리조트를 예약해보세요")
   website-url (https://example.com/)
   terms-url (https://example.com/terms-of-use/)
@@ -15,7 +15,7 @@ capsule-info {
   }
   requested-permissions {
     permission (self:profile){
-      justification (Your profile information is needed to book a space resort.)
+      justification (당신의 프로필 정보는 우주 리조트를 예약하는데 필요합니다.)
     }
   }
 }
