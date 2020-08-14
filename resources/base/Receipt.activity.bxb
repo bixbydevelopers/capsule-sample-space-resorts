@@ -2,7 +2,11 @@ activity-support {
   match: Receipt (this)
   
   time {
-    expression (now())
+    if(exists(this.item.dateInterval.start)){
+      expression (this.item.dateInterval.start)
+    } else {
+      expression (now())
+    }
   }
   
   states {
