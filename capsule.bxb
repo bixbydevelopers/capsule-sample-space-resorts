@@ -7,22 +7,22 @@ capsule {
 		target (bixby-mobile-ko-KR)
 	}
 	
-	runtime-version (7)
+	runtime-version (8)
 	capsule-imports {
 		import (viv.core) {
 			as (core)
 		}
 		import (viv.self) {
 			as (self)
-			version (4.0.12)
+			version (4.0.14)
 		}
 		import (viv.time) {
 			as (time)
-			version (3.1.102)
+			version (3.3.7)
 		}
 		import (viv.money) {
 			as (money)
-			version (2.22.43)
+			version (2.22.51)
 		}
 	}
 	store-sections{
