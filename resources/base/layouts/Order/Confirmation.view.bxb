@@ -13,17 +13,6 @@ confirmation-view {
 
   mode (PositiveEmphasis)
 
-  // Confirming with a `value: Confirmation(true)` doesn't work without this block. DO NOT remove confirm-options.
-  confirm-options {
-    on-confirm {
-      if (false) {
-        halt {
-          dialog ("")
-        }
-      }
-    }
-  }
-
   render {
     layout {
       layout-macro (order-image-card) {
