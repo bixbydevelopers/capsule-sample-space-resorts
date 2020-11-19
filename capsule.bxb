@@ -14,11 +14,11 @@ capsule {
 		}
 		import (viv.self) {
 			as (self)
-			version (4.0.14)
+			version (4.0.20)
 		}
 		import (viv.time) {
 			as (time)
-			version (3.3.7)
+			version (3.3.34)
 		}
 		import (viv.money) {
 			as (money)
