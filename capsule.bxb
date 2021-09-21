@@ -14,7 +14,7 @@ capsule {
 		}
 		import (viv.self) {
 			as (self)
-			version (4.0.21)
+			version (4.0.25)
 		}
 		import (viv.time) {
 			as (time)
