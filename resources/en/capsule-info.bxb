@@ -4,7 +4,6 @@ capsule-info {
   icon-asset (/images/bixby-logo.png)
   description ("Find and book your next holiday in space")
   website-url (https://example.com/)
-  terms-url (https://example.com/terms-of-use/)
   dispatch-name (Space Resorts)
   dispatch-aliases {
     alias (SpaceResorts)

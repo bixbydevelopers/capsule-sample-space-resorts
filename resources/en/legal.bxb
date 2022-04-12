@@ -1,0 +1,10 @@
+legal {
+  country-documents { 
+    privacy-policy {
+      url(https://my-capsule.com/privacy-policy)
+    }  
+    terms-and-conditions {
+      url(https://example.com/terms-of-use/)
+    }     
+  }
+}

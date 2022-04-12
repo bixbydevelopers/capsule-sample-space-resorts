@@ -6,7 +6,7 @@
 
 ## Overview
 
-This capsule is the the companion code to the Bixby [Space Resorts Sample Capsule](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/space-resorts) guide. Space Resorts is a fun capsule that allows you to book a space vacation! You can find a space resort, book a reservation, look up a reservation, and change or cancel a reservation. This advanced capsule demonstrates development and design of [searches](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/simple-search), [transactions](https://bixbydevelopers.com/dev/docs/dev-guide/developers/modeling.modeling-actions.transactional-workflows) and [UI](https://bixbydevelopers.com/dev/docs/dev-guide/developers/building-views).
+This capsule is the the companion code to the Bixby [Space Resorts Sample Capsule](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/space-resorts) guide. Space Resorts is a fun capsule that allows you to book a space vacation! You can find a space resort, book a reservation, look up a reservation, and change or cancel a reservation. This advanced capsule demonstrates development and design of [searches](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/simple-search), [transactions](https://bixbydevelopers.com/dev/docs/dev-guide/developers/modeling.modeling-actions.transactional-workflows) and [UI](https://bixbydevelopers.com/dev/docs/dev-guide/developers/creating-ui.building-views).
 
 ---
 
@@ -290,7 +290,6 @@ Value in the utterance for that `<Concept>`. For example, "At prompt for"
 
 ### Your Source for Everything Bixby
 * [Bixby Developer Center](http://bixbydevelopers.com) - Everything you need to get started with Bixby Development!
-* [Bixby News, Blogs and Tutorials](https://bixby.developer.samsung.com/) - Bixby News, Tutorials, Blogs and Events
 
 ### Guides & Best Practices
 * [Quick Start Guide](https://bixbydevelopers.com/dev/docs/get-started/quick-start) - Build your first capsule
