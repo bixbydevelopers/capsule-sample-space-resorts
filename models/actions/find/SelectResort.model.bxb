@@ -1,5 +1,5 @@
 action (SelectResort) {
-  description (Select a HabitatProd from a list by name)
+  description (Select a SpaceResort from a list by name)
   type (Calculation)
   
   collect {

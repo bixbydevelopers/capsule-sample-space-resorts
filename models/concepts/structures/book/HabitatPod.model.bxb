@@ -6,6 +6,7 @@ structure (HabitatPod) {
   }
   property (highlight) {
     type (Highlight)
+    min (Required)
     visibility (Private)
   }
   property (price) {

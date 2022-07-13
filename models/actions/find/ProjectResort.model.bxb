@@ -1,13 +1,24 @@
 action (ProjectResort) {
-  description (Project space resort properties. If there were many space resorts, it will prompt to select one.)
+  description (Project space resort properties.)
   type (Calculation)
   collect {
     input (spaceResort) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Required) max (Many)
       default-init {
         intent {
           goal: FindSpaceResorts
+        }
+      }
+      validate {
+        // On bixby-speaker we use read-one-and-next to iterate through the spaceResorts (See SpaceResort/Property_Result.view.bxb)
+        // On bixby-mobile we prompt to pick one then show the details with the property projection answered as a dialog
+        if ($can.device != 'bixby-speaker') {
+          if (size(spaceResort) > 1) {
+            prompt {
+              single-value (true)
+            }
+          }
         }
       }
     }

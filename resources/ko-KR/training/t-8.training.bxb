@@ -1,7 +1,7 @@
 train (t-854tan9kgbfopq4u0ggu2w5hz) {
   utterance ("[g:SpaceResort#all] (토성)[v:Planet:Saturn] 근처 리조트 검색해줘")
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZmBkYGJiDJAKaZgCQIgGigGAA=)
-  last-modified (1562604592616)
+  last-modified (1550017937019)
 }
 train (t-891v19ztmrbpfo4hsb0wo1xdt) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (해왕성)[v:Planet:Neptune] 주변에")

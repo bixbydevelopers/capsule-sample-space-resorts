@@ -1,7 +1,7 @@
 train (t-rmv7rz9rzq7ka00by5wwgikjv) {
-  utterance ([g:MakeReservation:continue,r:UpdateOrder,r:UpdateBuyer] Change contact information)
-  plan (hU07CgIxEH0ao1t5ALGwsM4hLOxEWPAAYfOEYHRDEoPe3khgq6AzzPDmfRh02PKl795RRa8H9oxjSFH1HGh9wr6pnvTtixmyTnZ8YNN0nYNhwK6pXbzRidXRTh+e7z/p6vj1e51tVpHuqo6WzqDDDHMILCCxLL0CJkYUTpYL09QSBcuy8QE=)
-  last-modified (1564605515144)
+  utterance ([g:CommitOrder:continue,r:UpdateOrder,r:GetBuyer] Change contact information)
+  plan (Y2BnkEmtSMwtyEnVKy5ITE4NSi3OLyop1gtKTU7NLChhUMAq65yfm5tZ4l+UklrEIIVVBUQOu+7QgpTEklR8up1KK4Fysljl3FNLINL4LGZnYGRgYmBmYGFgZWADQgY4nxkowgjmQzAIMANZrECSAQA=)
+  last-modified (1555008352915)
 }
 train (t-ru2oakdv0ef8mnscppp0q2rad) {
   utterance ("[g:SpaceResort#all] Find (kid friendly)[v:SearchCriteria] space resorts near (Pluto)[v:Planet:Pluto]")

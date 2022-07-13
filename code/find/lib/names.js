@@ -79,6 +79,10 @@ module.exports = {
     "en": "Upside Down Space Station",
     "ko": "거꾸로 우주정거장"
   },
+  "AirBB2": { // Example of a hotel chain where multiple hotels have the same name
+    "en": "Air B&B",
+    "ko": "에어 비&비"
+  },
   "TritonWaterPark": {
     "en": "Triton Water Park",
     "ko": "트리톤 워터파크"

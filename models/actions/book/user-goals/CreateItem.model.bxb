@@ -28,6 +28,7 @@ action (CreateItem) {
       type (DateInterval)
       min (Required)
       default-init {
+
         intent { // Prompt for the interval
           goal: GetDateInterval
         }

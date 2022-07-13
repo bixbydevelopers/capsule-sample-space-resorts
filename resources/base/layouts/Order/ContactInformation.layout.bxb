@@ -14,10 +14,9 @@ layout-macro-def (order-contact-information) {
           value ("[#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}]")
           on-click {
             intent {
-              goal: MakeReservation
+              goal: CommitOrder
               route: UpdateOrder
-              route: UpdateBuyer
-              value: self.ForcePrompt(true)
+              route: GetBuyer
             }
           }
         }
@@ -26,11 +25,9 @@ layout-macro-def (order-contact-information) {
           value ("[#{value(order.buyer.phoneInfo.number)}]")
           on-click {
             intent {
-              goal: MakeReservation
+              goal: CommitOrder
               route: UpdateOrder
-              route: UpdateBuyer
-              value: self.Field(phoneInfo)
-              value: self.ForcePrompt(true)
+              route: GetBuyer
             }
           }
         }
@@ -39,11 +36,9 @@ layout-macro-def (order-contact-information) {
           value ("[#{value(order.buyer.emailInfo.address)}]")
           on-click {
             intent {
-              goal: MakeReservation
+              goal: CommitOrder
               route: UpdateOrder
-              route: UpdateBuyer
-              value: self.Field(emailInfo)
-              value: self.ForcePrompt(true)
+              route: GetBuyer
             }
           }
         }

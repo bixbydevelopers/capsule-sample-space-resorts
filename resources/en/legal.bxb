@@ -1,10 +1,11 @@
 legal {
-  country-documents { 
+  country-documents {
+    store-country (US)
     privacy-policy {
-      url(https://my-capsule.com/privacy-policy)
-    }  
+      url(https://example.com/privacy-policy/)
+    }
     terms-and-conditions {
       url(https://example.com/terms-of-use/)
-    }     
+    }
   }
 }

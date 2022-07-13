@@ -6,7 +6,7 @@ train (t-5bkov3fsckxmtgqu34j75f8on) {
 train (t-5npgtmkumib25epo27catab7f) {
   utterance ("[g:SpaceResort#all] (해왕성)[v:Planet:Neptune]에 (키즈룸)[v:SearchCriteria]이 있는 호텔 찾아봐")
   plan (Y2BlkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRqrsoCcxLzUEgZl7LakJhYlZzgXZZakFmUmMrAwMDIwMTADaQYwCwQZGSCAGcgCywAA)
-  last-modified (1562604575966)
+  last-modified (1550092912216)
 }
 train (t-5zl0xdswxwuzp4o03hlh4aevk) {
   utterance ("[g:NumberOfAstronauts:prompt] (2)[v:NumberOfAstronauts]명")

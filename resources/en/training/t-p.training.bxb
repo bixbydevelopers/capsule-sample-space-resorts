@@ -4,12 +4,12 @@ train (t-p0xltp3ympg12v0v80yc3jy1o) {
   last-modified (1549558939136)
 }
 train (t-p65k12lzx32efijdjjt6n7sy7) {
-  utterance ("[g:MakeReservation,r:CreateItem,r:CreateOrder] Book a space resort on (Pluto)[v:Planet:Pluto]")
-  plan (fY/dasJAEEY/Taq22gdoLahg8c538IdSL1qDfYIxmUIw2YTdSdG3N4miXoxlYGd2z9lhBs944z2lecJTl1PIG3aZFTfdcMhxLhir9It2Vc32jyTODF5Va20jthiqbGGZhE+G/nteHEr2orKVcIrBP41rYaQKywobqWZP7vT4pG0sJEEWYaIK30W6Zbv+nTmxmaFC3J01f64XvKvGR2yiG8uhr2pBQoYFPTTQhAcfD2ihjQ4e8YRu+Y4z8Wpyioo0aoLLea38MvdKywOO)
-  last-modified (1559236411202)
+  utterance ("[g:CommitOrder,r:CreateItem,r:CreateOrder] Book a space resort on (Pluto)[v:Planet:Pluto]")
+  plan (fY/ZCsIwEEVvrbv1A1xAfRDf/AcXRF9U9AtiO0KhaUsyFf17u4j1IZWBZJJz7sCgjzE9hYwDWupYuHQhHSnWywu55MeMqZFuIil9PimPFIZGo2AVaUWC6V96nbxSNjCyA5PE5M/gXJgZhW2GQyb1EEHFjL24+Sz4HHlYGIVjIm+kTveVZhWFImFdsea1fGBuNHZ+6P1YGiOjdg5ESAwHFmqwUUcDTbTQRgdd9NJ/fIidk6IyYuUE37Ps6untpJYNvAE=)
+  last-modified (1555008352274)
 }
 train (t-p9awei12qfzo1kcgr6xmko7cl) {
-  utterance ("[g:MakeReservation:continue,r:UpdateOrder] Change that to (The Lab)[v:PodName]")
-  plan (hZDLCsIwEEVvrY/a/oGIuhCX/Qk3uvBBxQ8Y24sW+whpED/fWDddhMowyTDnZBiCCHO+pVQF40ZJyoRNrU0TJ0yZK4O1kx7k+a2pX2LyusLMaZ10Ro2Vk11VJoZ9xvYh1Z3Z3rDExm1o2hldb+n0dnLLjZhznfUuunCyCwum7du/w90/aclRSiKChwF8DDHCGBMbAaYIgU7fb1lgw2v7v0Tn9m0V2hMf)
-  last-modified (1559236411310)
+  utterance ("[g:CommitOrder:continue,r:UpdateOrder] Change that to (The Lab)[v:PodName]")
+  plan (hZDPDoIwDId/iH8Q3sAY9eSRl+CiFzUYH6CyRkmYLKMHH98FLhwaTLNu6fe1WYoMW/6SdQ3nnaOKS+5aL11ecsW1ExxUWrTW1nL1hj02qjEwvfvhDAlPGcWbPi82Z2GLo254DjPG3l71TvSsheTWmsmP7lR254arvvfvcH2LgVzIMjJEmCHGHAsssQqRYI0UGNXjniUhor4+HIzuOLzSkPED)
+  last-modified (1555008352451)
 }

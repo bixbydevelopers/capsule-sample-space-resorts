@@ -3,11 +3,6 @@ train (t-n9byevgdglkf6t465mgrr397k) {
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)
   last-modified (1549558938729)
 }
-train (t-ndxl09p56xj2wr50cmh6bibe9) {
-  utterance ("[g:MakeReservation:continue,r:UpdateBuyer,r:UpdateOrder,v:self.ForcePrompt:true] Change my (name)[v:self.Field:firstAndLastName]")
-  plan (hY+xCgIxDIb/8zz1FicncXBw7kM4uIly4AOUXoRiz5a2Fn17W4u6FE0IJH++nxC0WNGdD0YRc4YL6shp6x3rSJA0Hpvids8vqScbuJf6imWROtieLNbF3cn03FMmyu7t7fHHnYlft+dBBuZIndlOkuqx+M7aCjpaPcQfW1QYocYYDSYxp5gBH62OasrqpeV6R1IT3UQKTw==)
-  last-modified (1564609172370)
-}
 train (t-nulj1naqlp1k0fz8zadvztese) {
   utterance ("[g:SpaceResort#all:continue] with (zero gravity)[v:SearchCriteria]")
   plan (Y2BhkEmtSMwtyEnVKy5ITE4NSi3OLyop1gvLTC13zMlhUMAqG4zgMKhiVeGWmZeCpKqYQRm7QamJRckZzkWZJalFmYkMzAyMDExAkgFMMwFJEADRQDEA)

@@ -1,0 +1,4 @@
+dialog (ActionAborted) {
+  match: CommitOrder
+  template ("Your order has been canceled.")
+}

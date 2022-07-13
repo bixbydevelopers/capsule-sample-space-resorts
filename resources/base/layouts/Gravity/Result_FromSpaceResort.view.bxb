@@ -1,0 +1,67 @@
+result-view {
+  // This view will match space resort property projection results for gravity
+  // For example, "What is the gravity there?" is trained as a property projection (SpaceResort#gravity)
+  match {
+    Gravity(gravity) {
+      from-property{
+        SpaceResort (spaceResort)
+      }
+    }
+  }
+  message {
+    if ($can.device != 'bixby-speaker') {
+      // We use a prompt to ensure there's a single result (See ProjectResort.model.bxb)
+      template-macro (GRAVITY_FROM_SPACE_RESORT_RESULT) { param (spaceResort) { expression (spaceResort) } }
+    }
+  }
+  render {
+    if ($can.device == 'bixby-speaker') {
+      // There could be many results, so we allow users to iterate through the answers
+      list-of (spaceResort) {
+        navigation-mode {
+          read-one-and-next {
+            list-summary {
+              if (size(spaceResort) > 1) {
+                template-macro (SPACE_RESORT_RESULT) { param (result) { expression (spaceResort) } }
+              } else {
+                template ("")
+              }
+            }
+            page-content {
+              next-item-question {
+                template-macro (NEXT_ITEM_QUESTION)
+              }
+              overflow-statement {
+                template-macro (OVERFLOW_STATEMENT)
+              }
+              underflow-statement {
+                template-macro (UNDERFLOW_STATEMENT)
+              }
+            }
+          }
+        }
+        where-each (page) {
+          spoken-summary {
+            template-macro (GRAVITY_FROM_SPACE_RESORT_RESULT) { param (spaceResort) { expression (page) } }
+          }
+        }
+      }
+    } else {
+      // We use a prompt to ensure there's a single result (See ProjectResort.model.bxb)
+      // We render the usual space resort details layout and answer the property projection question in the dialog
+      layout-macro (space-resort-details) {
+        param (spaceResort) {
+          expression (spaceResort)
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    if ("size(spaceResort) == 1") {
+      conversation-driver {
+        template-macro (MakeReservation)
+      }
+    }
+  }
+}

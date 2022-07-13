@@ -6,11 +6,14 @@ input-view {
     template-macro (SPACE_RESORT_SELECTION)
   }
   render {
-    selection-of (result) {
-      where-each (item) {
-        layout-macro (space-resort-summary) {
-          param (spaceResort) {
-            expression(item)
+    // For bixby-speaker we never prompt in ProjectResort.model.bxb. Instead we iterate through the answers in the <property>/Result_FromSpaceResort.view.bxb files
+    if ($can.device != 'bixby-speaker') {
+      selection-of (result) {
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
           }
         }
       }

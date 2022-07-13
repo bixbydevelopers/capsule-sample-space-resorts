@@ -2,16 +2,31 @@ confirmation-view {
   match {
     Confirmation {
       confirming {
-        MakeReservation (action)
+        CommitOrder (action)
       }
     }
   }
-  
+
   message {
-    template-macro (COMMIT_ORDER_CONFIRMATION)
+    if ($can.device == 'bixby-speaker') {
+      template-macro (COMMIT_ORDER_CONFIRMATION_LONG) { param (action) { expression (action) } }
+    } else {
+      template-macro (COMMIT_ORDER_CONFIRMATION)
+    }
   }
 
   mode (PositiveEmphasis)
+
+  // Confirming with a `value: Confirmation(true)` doesn't work without this block. DO NOT remove confirm-options.
+  confirm-options {
+    on-confirm {
+      if (false) {
+        halt {
+          dialog ("")
+        }
+      }
+    }
+  }
 
   render {
     layout {

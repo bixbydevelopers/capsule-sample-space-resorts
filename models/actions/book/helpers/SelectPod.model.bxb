@@ -1,5 +1,5 @@
 action (SelectPod) {
-  description (Select a HabitatProd from a list by name)
+  description (Select a HabitatPod from a list by name)
   type (Search)
   collect {
 

@@ -7,7 +7,7 @@ layout-macro-def (space-resort-highlight) {
   }
   content {
     image-card {
-      aspect-ratio (Four_Three)
+      aspect-ratio (4:3)
       image-url {
         template ("[#{value(spaceResort.images[0].url)}]")
       }
@@ -19,9 +19,6 @@ layout-macro-def (space-resort-highlight) {
             style (Title_L)
           }
         }
-      }
-      on-click {
-        view-for (spaceResort)
       }
     }
   }

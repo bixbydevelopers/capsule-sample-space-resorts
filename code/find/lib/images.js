@@ -165,6 +165,14 @@ module.exports = {
       url: "https://www.nasa.gov/centers/jpl/images/content/523702main_pia13904-640.jpg"
     }
   ],
+  AirBB2: [
+    {
+      url: "https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA09072_ip.jpg"
+    },
+    {
+      url: "https://www.nasa.gov/images/content/717499main_image2_XL.jpg"
+    }
+  ],
   TritonWaterPark: [
     {
       url: "https://www.nasa.gov/specials/60counting/img/neptune.jpg"

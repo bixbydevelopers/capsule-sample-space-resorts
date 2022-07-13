@@ -1,17 +1,10 @@
 result-view {
   match {
-    Receipt (receipt) {
-      min (Required)
-      max (One)
-    }
+    Receipt (receipt)
   }
   
   message {
-    template-macro (RECEIPT_RESULT) {
-      param (receipt) {
-        expression (receipt)
-      }
-    }
+    template-macro (RECEIPT_RESULT) { param (receipt) { expression (receipt) } }
   }
   
   render {

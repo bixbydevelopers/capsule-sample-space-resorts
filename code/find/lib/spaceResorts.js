@@ -215,6 +215,16 @@ module.exports = function(locale) {
       all: true
     },
     {
+      name: loc(names.AirBB2), // Hotel chain example
+      planet: planets.Uranus,
+      gravity: 0.000001,
+      description: loc(descriptions.AirBB2),
+      amenities: [loc(amenities.OxygenBar), loc(amenities.CryoSpa), loc(amenities.DeepSpaceMassage), loc(amenities.ZeroGravity),  loc(amenities.HologramTeleconferencing), loc(amenities.CentrifugeGym)],
+      highlight: loc(highlights.AirBB2),
+      images: images.AirBB2,
+      all: true
+    },
+    {
       name: loc(names.TritonWaterPark),
       planet: planets.Neptune,
       gravity: 0.0794,
@@ -250,7 +260,7 @@ module.exports = function(locale) {
       gravity: 0.02936783,
       description: loc(descriptions.CharonsGrotto),
       amenities: [loc(amenities.Casino), loc(amenities.GeneTherapy), loc(amenities.GrowAClone), loc(amenities.Cantina)],
-      highlight: undefined,
+      highlight: loc(highlights.CharonsGrotto),
       images: images.CharonsGrotto,
       all: true
     }

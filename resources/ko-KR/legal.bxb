@@ -1,0 +1,11 @@
+legal {
+  country-documents {
+    store-country (KO)
+    privacy-policy {
+      url(https://example.com/privacy-policy/)
+    }
+    terms-and-conditions {
+      url(https://example.com/terms-of-use/)
+    }
+  }
+}

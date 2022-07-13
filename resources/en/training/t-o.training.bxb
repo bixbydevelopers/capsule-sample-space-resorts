@@ -7,9 +7,9 @@ train (t-o9cm329ghna15lrdfv68w9rbu) {
   plan (Y2BhkE+tSMwtyEnVKy5ITE4NSi3OLyop1vNITMosSSwJyE9hkMOqIDg1JzUZLE/QABmsCoAyfom5qQzMDIwMTECSAUiDIAQwATFQDAA=)
 }
 train (t-oarb3ywljx6o1ivq1ft1ft6l7) {
-  utterance ([g:MakeReservation,r:CreateOrder,r:CreateItem] Book a space resort)
-  plan (fY/LCsIwEEVvrdbXFyiCCoK7/oOPhS60Ur8gbUcotk1JpqJ/bx+im9QEhsw9J0OCMWb0FGmekKtzEZJPWirWrk8hxTljZaQnca/OpB6CY5lharQ8FZHCwsh2igRTY5hvb4tXySZGdmRKMf8zuBaWRmFf4YyrtyctMw4iiFnwRUZYG4VzkQakvNtGs5KZKFi3fPP6azCChQ5sdNGDgz4GGJYZPqldp8226hTf2iy77Jyy4g0=)
-  last-modified (1559236410861)
+  utterance ([g:CommitOrder,r:CreateOrder,r:CreateItem] Book a space resort)
+  plan (fY9NDoJADIUf4r8n0JioK3fcwZ+FbsTgCQaoCQnDkJli9PaOYHQz0CZN+r73mhQzLOkpZJlTYEqRUERGaTZBRAllJWPtpAclZcahTklj4XQ0rCWtSTB1pffVy7K5k52ZJFYdh2vDxmk4fnDBpB8ib7lxEnHGgq8qxdZpuFQyJh3ed4a1KkTFpuXN23/BFB568NHHAEOMMMbEaviqfq027dUqfrMp325DO/EG)
+  last-modified (1555008351533)
 }
 train (t-ofjt1uo89vogb7310kdcw9s89) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] with a (spa)[v:SearchCriteria]")
@@ -17,7 +17,7 @@ train (t-ofjt1uo89vogb7310kdcw9s89) {
   last-modified (1547753479979)
 }
 train (t-ooyyhs9uge7hpyo9du67pkjin) {
-  utterance ([g:MakeReservation:continue:SpaceResort,r:CreateOrder,r:CreateItem] Book it)
-  plan (fY/LCsIwEEVvrdbXFyiCCoK7/oOPhS60Ur8gbUcotk1JpqJ/bx+im9QEhsw9J0OCMWb0FGmekKtzEZJPWirWrk8hxTljZaQnca/OpB6CY5lharQ8FZHCwsh2igRTY5hvb4tXySZGdmRKMf8zuBaWRmFf4YyrtyctMw4iiFnwRUZYG4VzkQakvNtGs5KZKFi3fPP6azCChQ5sdNGDgz4GGJYZPqldp8226hTf2iy77Jyy4g0=)
-  last-modified (1559236411086)
+  utterance ([g:CommitOrder:continue:SpaceResort,r:CreateOrder,r:CreateItem] Book it)
+  plan (fY9NDoJADIUf4r8n0JioK3fcwZ+FbsTgCQaoCQnDkJli9PaOYHQz0CZN+r73mhQzLOkpZJlTYEqRUERGaTZBRAllJWPtpAclZcahTklj4XQ0rCWtSTB1pffVy7K5k52ZJFYdh2vDxmk4fnDBpB8ib7lxEnHGgq8qxdZpuFQyJh3ed4a1KkTFpuXN23/BFB568NHHAEOMMMbEaviqfq027dUqfrMp325DO/EG)
+  last-modified (1555008351893)
 }

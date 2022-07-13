@@ -4,6 +4,10 @@ result-view {
     SpaceResort (result)
   }
 
+  message {
+    template-macro (SPACE_RESORT_RESULT) { param (result) {expression (result) } }
+  }
+
   render {
     // We know the size is always 1 because this view is only attainable when drilling into a single item to see the details
     // Lists of space resorts are handled in the ViewAll_Result and Input files
@@ -16,6 +20,26 @@ result-view {
     }
   }
 
+  followup {
+    if ($can.device == 'bixby-speaker') {
+      prompt {
+        dialog {
+          template-macro (MAKE_RESERVATION_FOLLOWUP_PROMPT)
+        }
+        on-confirm {
+          intent {
+            goal {
+              CommitOrder
+              @context (Continuation) { SpaceResort }
+            }
+            route { CreateOrder }
+            route { CreateItem }
+          }
+        }
+      }
+    }
+  }
+  
   conversation-drivers {
     if ("size(result) == 1") {
       conversation-driver {

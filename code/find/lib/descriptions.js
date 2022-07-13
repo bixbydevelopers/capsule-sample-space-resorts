@@ -79,6 +79,10 @@ module.exports = {
     "en": "The Upside Down Space Station has all the comforts of Earth, without the gravity. It will lift all the weight off your shoulders and you will come home feeling an inch taller.",
     "ko": "천왕성 근처에 위치한 거꾸로 우주정거장을 방문해보세요. 이 곳은 지구와 다름 없는 안락함을 여러분께 선사합니다. 중력만 빼고요! 몸도 마음도 가벼워지는 이 곳에서 지내고 난 뒤 돌아가시면 키가 한 뼘은 커진 것 처럼 느껴지실거에요."
   },
+  "AirBB2": {
+    "en": "Come check out the latest addition to our famous hotel chain. This new location is built from a biosynthetic self-assembling lychen mesh that generates a rejuvenating atmosphere.",
+    "ko": "우리 우주 공항에서 우주선을 임대하고 소행성대에서 평생 모험을 떠나십시오. 우리 우주선은 수동 운전 기능을 제공하므로 옛날 처럼 장애물을 피해 직접 조종 할 수 있습니다."
+  },
   "TritonWaterPark": {
     "en": "Surrounded by nitrogen geysers, this water park is full of thrills. It orbits Neptune on its largest moon: Triton. Come jump in the wave pool, slide down the Poseidon water slide and sip an ice cold raw water on a lazy river raft.",
     "ko": "해왕성의 달 트리톤으로 여행을 떠나볼까요? 태양계 최고 규모를 자랑하는 포세이돈 슬라이드에서 환상적인 얼음 슬라이딩을 즐겨보세요."

@@ -11,6 +11,9 @@ input-view {
             expression (pod)
           }
         }
+        spoken-summary {
+          template-macro ("HABITAT_POD_SUMMARY") { param(habitatPod) { expression(pod) } }
+        }
       }
     }
   }

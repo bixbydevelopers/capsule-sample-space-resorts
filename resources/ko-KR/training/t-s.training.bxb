@@ -4,9 +4,8 @@ train (t-s472prb9rpwxxawhsmbjtmzwq) {
   last-modified (1550019974027)
 }
 train (t-skla3dultjfzdvy3ihezlv07d) {
-  utterance ("[g:MakeReservation:continue,r:UpdateOrder] (4)[v:NumberOfAstronauts:4]명으로 변경해줘")
-  plan (fY5BDoJADEU/jiJnMC5cGN1xB+PKhZKQeIAKVYgCk04xHt9RNiwmtGnz8/9LUyRY84ca++LUWSo4Z9eJujTngmur2AbTMz1/muVNWnctVkEqk5IFm2B2tSUpTxHHitoHlyflBrswIexvjLl9kLv0zY0lux+cStdSr27y4QQRZjCYY4EYS98YOcZP9HeGGcp4HfuNLw==)
-  last-modified (1559236399077)
+  utterance ("[g:CommitOrder:continue,r:UpdateOrder] (4)[v:NumberOfAstronauts:4]명으로 변경해줘")
+  plan (fY4xDsIwDEV/CZSeATEwwdY7oE4sVKrEAUJjoFLTRI4rcXwisnSIaut7+P/ZMioc6autH6kOXvfUUXAsoe6op8ELTtm0cdYO0rIhxiFLpCy//fBGC60RzUdPbzI3IYtznmCKN5bcJcvdZ/skbl/XIOwmPUtYfbhCgQ0UttihxD42Fo6KKv5OUioV8zJO/AA=)
 }
 train (t-smig8bis408u8svwftaqc6y34) {
   utterance ("[g:SpaceResort:prompt,r:SelectResort] (무중력)[v:SearchCriteria]인 곳")

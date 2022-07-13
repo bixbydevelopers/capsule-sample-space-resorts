@@ -3,11 +3,6 @@ train (t-k8z3ntk5azflc0db88ytlcajx) {
   plan (Y2BjkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRVrCrcMvNSkFQVM0hiVeaXmJvKwMrAyMDEwMzAAmQxwNlMQBYDGDMA+YxAOSYGBgA=)
   last-modified (1549562596943)
 }
-train (t-k92eyxq9yl6yt7t1n9jjza6gm) {
-  utterance ("[g:MakeReservation:continue,r:UpdateOrder,r:UpdateBuyer,v:self.ForcePrompt:true] Change my (phone number)[v:self.Field:phoneInfo]")
-  plan (hY+xCgIxDIb/8zz1FicncXBw7kM4uIly4AOUXoRiz5a2Fn17W4u6FE0IJH++nxC0WNGdD0YRc4YL6shp6x3rSJA0Hpvids8vqScbuJf6imWROtieLNbF3cn03FMmyu7t7fHHnYlft+dBBuZIndlOkuqx+M7aCjpaPcQfW1QYocYYDSYxp5gBH62OasrqpeV6R1IT3UQKTw==)
-  last-modified (1564609083078)
-}
 train (t-ko1y2ykapc33tv3t8h6gegcm7) {
   utterance ([g:SpaceResort#planet:continue:SpaceResort,r:ProjectResort] Where is it?)
   plan (Y2BhkE6tSMwtyEnVKy5ITE4NSi3OLyop1gvIScxLLWFQwCoZjOAwKGHXXpSflZpcAlVD2BRmBkYGJiDJAKaZgCQIMIF5DAA=)

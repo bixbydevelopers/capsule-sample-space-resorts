@@ -1,5 +1,5 @@
 train (t-e5vxm59rxm85bx7e76c10h1y8) {
-  utterance ([g:MakeReservation:continue,r:UpdateOrder,r:GetNumberOfAstronauts] Change number of astronauts)
-  plan (fY9BCsJADEV/rVp7BXHhQhRc9A7iQlxooeABYhu1aNshk4rHd+pGhaEJ+YT/H4EgxoxfVJkHJ9ZQzhnbRtQmGedcGsXCmx7o3u0sT9KyqTH1UqkULJh7s5MpSLmP2N6ovnKxV66w9BPC7sYvt/Jyx7Y6s6SXjVVpamrVYu0Fd6wetu+5GAEGCDHECGNEmLjGnxc6DT7ed7oK3RY5xRs=)
-  last-modified (1559236409507)
+  utterance ([g:CommitOrder:continue,r:UpdateOrder,r:GetNumberOfAstronauts] Change number of astronauts)
+  plan (fY9BCsJADEV/HbX2CuLClYKL3kG6EDcWCh5gbGMtOJ1hJgWP76gLFUIT8gk/L4Egw4oe2rg75cHpmioK1nPIK6qpc4y1OC2sMR2XviGPpUh8ZvL22TWaaYwobrpvqTkyGWxkwlO88cttRe40mAv58roP7G2vBw7YieCBWGDHnsuQYAKFKWaYI8UiJv48FTV5e996hYpdGhVP)
+  last-modified (1555008347667)
 }

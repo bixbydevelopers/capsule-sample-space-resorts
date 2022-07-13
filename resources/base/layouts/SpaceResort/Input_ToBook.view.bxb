@@ -1,29 +1,102 @@
 input-view {
-	match: SpaceResort(result) {
-		to-input: CreateItem(action)
-	}
-	message {
-		template-macro (SPACE_RESORT_SELECTION)
-	}
-	render {
-		if (size(result) > 1) {
-			selection-of (result) {
-				where-each (item) {
-					layout-macro (space-resort-summary) {
-						param (spaceResort) {
-							expression(item)
-						}
-					}
-				}
-				submit-button {
-					template-macro (Book)
-				}
-			}
-		} else-if (size(result) == 1) {
-      layout-macro (space-resort-details) {
-        param (spaceResort) {expression (result)}
-        select-button-text: template-macro (Book)
+  match: SpaceResort(result) {
+    to-input: CreateItem(action)
+  }
+  message {
+    template-macro (SPACE_RESORT_SELECTION)
+  }
+  render {
+    if ($can.device == 'bixby-speaker') {
+      selection-of (result) {
+        navigation-mode {
+          read-one {
+            list-summary {
+              template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } }
+            }
+            page-content {
+              item-selection-question {
+                template-macro (READ_ONE_ITEM_SELECTION_QUESTION)
+              }
+              overflow-statement {
+                template-macro (OVERFLOW_STATEMENT)
+              }
+              underflow-statement {
+                template-macro (UNDERFLOW_STATEMENT)
+              }
+            }
+          }
+        }
+        where-each (page) {
+          spoken-summary {
+            template-macro ("SPACE_RESORT_SUMMARY") { param(spaceResort) { expression(page) } }
+          }
+        }
+        // We highlight a few top results for the user with a more prominent layout
+        highlights {
+          // TODO: Remove labels and layout-macros when VIV-25597 is ready
+          select(pick) {
+            // This first highlight uses preference learning to present a personalized recommendation based on the user's past behavior
+            label { template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES) }
+            order-by { sorting (pick) { by-preferences } }
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+            summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } param (byPreferences) { expression (true) } } }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+        }
       }
-		}
-	}
+    } else {
+      selection-of (result) {
+        // has-details (true)
+        // select-button-text{ template-macro (Book)}
+        where-each (item) {
+          layout-macro (space-resort-summary) {
+            param (spaceResort) {
+              expression(item)
+            }
+          }
+        }
+        // We highlight a few top results for the user with a more prominent layout
+        highlights {
+          select(pick) {
+            // This first highlight uses preference learning to present a personalized recommendation based on the user's past behavior
+            label { template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES) }
+            order-by { sorting (pick) { by-preferences } }
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+          select(pick) {
+            label("#{raw(pick.highlight.label)}")
+            filter-by (exists(pick.highlight))
+            layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
+          }
+        }
+      }
+    }
+  }
 }

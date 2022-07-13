@@ -93,7 +93,7 @@ template-macro-def (Book) {
     template ("Book")
   }
 }
-template-macro-def (ReceiptOrderTotal) {
+template-macro-def (OrderTotal) {
   params{
     param (value) {
       type (viv.core.Text)

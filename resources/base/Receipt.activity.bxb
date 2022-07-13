@@ -1,53 +1,21 @@
 activity-support {
-  match: Receipt (this)
-  
+  match {
+    Receipt (this)
+  } 
+
+  // time (this.item.dateInterval.start)
+
   time {
-    if(exists(this.item.dateInterval.start)){
-      expression (this.item.dateInterval.start)
-    } else {
-      expression (now())
+    if (isFuture(this.item.dateInterval.start)) {
+      expression(this.item.dateInterval.start)
     }
   }
-  
+
   states {
-    
+
     if ("this.canceled || !exists(this.item.dateInterval.start) || (exists(this.item.dateInterval.start) && isPast(this.item.dateInterval.start))") {
-      
+
       state (Recent) {
-        
-        summary-view {
-          image-url {
-            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
-          }
-          title {
-            template ("[#{value(this.item.spaceResort)}]")
-          }
-          details {
-            if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-                param (receipt) {
-                  expression (this) // regarding empty and cardinality warnings on this view: VBOS-5531
-                }
-              }
-            }
-          }
-          message {
-            template ("")
-          }
-        }
-        detail-view {
-          render {
-            layout-match (this) {
-              mode (Details)
-            }
-          }
-        }
-      }
-    } else-if (exists(this.relevantDateTime) && isFuture(this.relevantDateTime)) {
-      
-      state (Scheduled) {
-        expires(this.relevantDateTime)
-        
         summary-view {
           image-url {
             template ("[#{raw(this.item.spaceResort.images[0].url)}]")
@@ -56,11 +24,9 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-                param (receipt) {
-                  expression (this)
-                }
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
               }
             }
           }
@@ -69,17 +35,44 @@ activity-support {
           }
         }
         detail-view {
-          render {
-            layout-match (this) {
-              mode (Details)
+          layout-match (this) {
+            mode (Details)
+          }
+        }
+      }
+    } else-if (exists(this.relevantDateTime) && isFuture(this.relevantDateTime)) {
+
+      state (Scheduled) {
+        expires(this.relevantDateTime)
+
+        summary-view {
+          image-url {
+            template ("[#{raw(this.item.spaceResort.images[0].url)}]")
+          }
+          title {
+            template ("[#{value(this.item.spaceResort)}]")
+          }
+          details{
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
+              }
             }
+          }
+          message {
+            template ("")
+          }
+        }
+        detail-view {
+          layout-match (this) {
+            mode(Details)
           }
         }
       }
     } else {
       state (Relevant) {
         expires(this.item.dateInterval.start)
-        
+
         summary-view {
           image-url {
             template ("[#{raw(this.item.spaceResort.images[0].url)}]")
@@ -88,29 +81,23 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-                param (receipt) {
-                  expression (this)
-                }
+            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              param (receipt) {
+                expression (this)
               }
             }
           }
           message {
-            if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
-                param (receipt) {
-                  expression (this)
-                }
+            template-macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+              param (receipt) {
+                expression (this)
               }
             }
           }
         }
         detail-view {
-          render {
-            layout-match (this) {
-              mode (Details)
-            }
+          layout-match (this) {
+            mode(Details)
           }
         }
       }

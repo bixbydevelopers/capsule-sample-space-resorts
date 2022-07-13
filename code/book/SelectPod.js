@@ -1,10 +1,12 @@
+// var textLib = require('textLib')
+var levenshtein = require('../find/lib/levenshtein.js')
 var console = require('console')
 var fail = require('fail')
 module.exports.function = function (pods, podName) {
   var matches = []
   //a lot can be improved here to improve matching the items
   for (var i=0; i<pods.length; i++) {
-     if (pods[i].name.includes(podName)) {
+     if (levenshtein(pods[i].name, podName)) {
        matches.push(pods[i])
      }
   }

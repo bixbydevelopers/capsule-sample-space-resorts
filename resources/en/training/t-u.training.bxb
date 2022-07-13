@@ -1,10 +1,5 @@
 train (t-updkg8112imk49ndflq2r6lx2) {
-  utterance ("[g:MakeReservation:continue,r:UpdateOrder] Change that to (December 10th)[v:viv.time.DateTimeExpression]")
-  plan (hY/bCsIwDIZ/nTrdI6gXCuLlnkHwALsQQfQByha0uK6ljWOPb4c3GxRNSMjhS0iQYEmNUKak1BmR05WctuzSK+UkDWMT7J7Fq43J1oKlrjAPUhdbkMUq2LubQjD9IvZPUT2oyJgUtmHCkt/R5dZB7uCprOL22hK78CpdObbvnLvsyWrV5jep6NgYS879e3ZRyzplz6eBwQQDDBFhhDEmiDH1OgN61cj72FfQs69EPo7aiQ8=)
-  last-modified (1559236411841)
-}
-train (t-uw4h3ewtf83w4kbexcu02a29e) {
-  utterance ("[g:MakeReservation:continue,r:UpdateBuyer,r:UpdateOrder] change my (email)[v:viv.self.Field:emailInfo] to (siamak@viv.com)[v:self.EmailAddress]")
-  plan (hY2xCsIwEIb/Wqt2cXMRBwfnvIOCbiIUfIDQnBCa2pDEoG9vYrBT0DsOju++n0ONDT15rxUxq3lLDdnBOMsaaklqh132euZd3Ml47uRwxzprXYwgg232dtWCO0pGPn14vP6kk/Hr98pLzyypGzv2XKq9EIasxXLEJ0lKoEaBCUpMUWEWeo4FMLIy0NjFh6X5VqTRroKFNw==)
-  last-modified (1580928014455)
+  utterance ("[g:CommitOrder:continue,r:UpdateOrder] Change that to (December 10th)[v:viv.time.DateTimeExpression]")
+  plan (fY/PCsIwDMY/nTrdI6gHvXjcMwhTYSdh6AOULWhh7Uobxx7fjl02qCYk5M/vCwQJ9tQJZWpKnRElFeQayy4tqCRpGIfgNmuUkny3FVlsg8SwC6ufphJM/4jsLfSLqpxJ4RQmLPkbY+4Y5C6eyjWTbUWN849ntGP7KXnM3myj+v4hFV07Y8k52ei/z+5a2abs+TQgTDDDHBEWWGKFGGvvG2AyjXyO/QSTGCzyddQrvg==)
+  last-modified (1555008353631)
 }

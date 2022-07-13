@@ -6,7 +6,7 @@
 
 ## Overview
 
-This capsule is the the companion code to the Bixby [Space Resorts Sample Capsule](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/space-resorts) guide. Space Resorts is a fun capsule that allows you to book a space vacation! You can find a space resort, book a reservation, look up a reservation, and change or cancel a reservation. This advanced capsule demonstrates development and design of [searches](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/simple-search), [transactions](https://bixbydevelopers.com/dev/docs/dev-guide/developers/modeling.modeling-actions.transactional-workflows) and [UI](https://bixbydevelopers.com/dev/docs/dev-guide/developers/creating-ui.building-views).
+This capsule is the the companion code to the Bixby [Space Resorts Sample Capsule](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/space-resorts) guide. Space Resorts is a fun capsule that allows you to book a space vacation! You can find a space resort, book a reservation, look up a reservation, and change or cancel a reservation. This advanced capsule demonstrates development and design of [searches](https://bixbydevelopers.com/dev/docs/sample-capsules/walkthroughs/simple-search), [transactions](https://bixbydevelopers.com/dev/docs/dev-guide/developers/modeling.modeling-actions.transactional-workflows) and [UI](https://bixbydevelopers.com/dev/docs/dev-guide/developers/building-views).
 
 ---
 
@@ -160,24 +160,24 @@ queries and inner/outer property projections.
 #### Outer "book" Queries
 
 You can see all trained utterances and plans by entering this query in the
-training tab search bar: `goal:MakeReservation -has:continue`. For example:
+training tab search bar: `goal:CommitOrder -has:continue`. For example:
 
 - Make a reservation for a space resort on Mars the third weekend in December
 for 2 astronauts
 
-We train these to the goal `MakeReservation`, which is the Action to finalize the
+We train these to the goal `CommitOrder`, which is the Action to finalize the
 transaction. We also add two flagged signal routes: `CreateItem` and
 `CreateOrder`.  We annotate as Values any present inputs for either "find" or
 "book", such as resort name, planet, search criteria, number of astronauts, etc.
 This creates a plan to first find a space resort that matches the search inputs,
-then prepare an `Order` and pass it to the `MakeReservation` action, which will
+then prepare an `Order` and pass it to the `CommitOrder` action, which will
 present the user with a Confirmation screen to review and agree to the
 reservation.
 
 #### Inner "book" Queries (Continuations of SpaceResort)
 
 You can see all trained utterances and plans by entering this query in the
-training tab search bar: `goal:MakeReservation continuation:SpaceResort`. For
+training tab search bar: `goal:CommitOrder continuation:SpaceResort`. For
 example:
 
 - Make reservation
@@ -192,8 +192,8 @@ results in context.
 #### Inner "Change Order" Queries (Continuations to change the Order)
 
 You can see all trained utterances and plans by entering this query in the
-training tab search bar: `goal:MakeReservation
-continuation:MakeReservation`. For example:
+training tab search bar: `goal:CommitOrder
+continuation:CommitOrder`. For example:
 
 - Pick a different habitat pod
 
@@ -201,9 +201,9 @@ continuation:MakeReservation`. For example:
 
 - Select a different date
 
-We train these as "Continuation of" `MakeReservation` for cases where the
+We train these as "Continuation of" `CommitOrder` for cases where the
 users are at the Confirmation screen to review their order and decide that they
-want to make some changes.  The goal remains `MakeReservation`, and any Values
+want to make some changes.  The goal remains `CommitOrder`, and any Values
 are annotated as such (ex: number of astronauts, pod name).  This time, the
 flagged signal route is to `ChangeOrder`.  This is to re-route the request to
 update the Order with the newly provided information.  For generic requests that
@@ -296,16 +296,9 @@ Value in the utterance for that `<Concept>`. For example, "At prompt for"
 * [Design Guides](https://bixbydevelopers.com/dev/docs/dev-guide/design-guides) - Best practices for designing your capsules
 * [Developer Guides](https://bixbydevelopers.com/dev/docs/dev-guide/developers) - Guides that take you from design and modeling all the way through deployment of your capsules
 
-### Bixby Videos
-* [Bixby Developers YouTube Channel](https://www.youtube.com/c/bixbydevelopers) - Tutorial videos, Presentations, Capsule Demos and more
-
-### Bixby Podcast
-* [Bixby Developers Chat](http://bixbydev.buzzsprout.com/) - Voice, Conversational AI and Bixby discussions 
-
-### Bixby on Social Media
-* [@BixbyDevelopers](https://twitter.com/bixbydevelopers) - Twitter
-* [Facebook](https://facebook.com/BixbyDevelopers)
-* [Instagram](https://www.instagram.com/bixbydevelopers/)
+### Video Guides
+* [Introduction to Bixby](https://youtu.be/DFvpK4PosvI) - Bixby and the New Exponential Frontier of Intelligent Assistants
+* [Bixby Fundamentals](https://bixby.developer.samsung.com/newsroom/en-us/22/01/2019/Teaching-Bixby-Fundamentals-What-You-Need-to-Know) - Bixby Fundamentals: What You Need to Know
 
 ### Need Support?
 * Have a feature request? Please suggest it in our [Support Community](https://support.bixbydevelopers.com/hc/en-us/community/topics/360000183273-Feature-Requests) to help us prioritize.

@@ -1,19 +1,11 @@
 capsule-info {
   display-name (Space Resorts)
   developer-name (Space Resorts)
-  icon-asset (/images/bixby-logo.png)
+  icon-asset (/images/bixby_launcher.png)
   description ("Find and book your next holiday in space")
   website-url (https://example.com/)
   dispatch-name (Space Resorts)
   dispatch-aliases {
     alias (SpaceResorts)
-  }
-  search-keywords {
-    keyword (space resorts)
-  }
-  requested-permissions {
-    permission (self:profile){
-      justification (Your profile information is needed to book a space resort.)
-    }
   }
 }

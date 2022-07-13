@@ -75,11 +75,23 @@ template-macro-def (COMMIT_ORDER_CONFIRMATION) {
   }
 }
 
+template-macro-def (COMMIT_ORDER_CONFIRMATION_LONG) {
+  params {
+    param (action) {
+      type (CommitOrder)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("Alright, I am ready to place your order[ for #{value(action.order.item.numberOfAstronauts)}][ in #{value(action.order.item.pod.name)}][ at #{value(action.order.item.spaceResort)}][ on #{value(action.order.item.spaceResort.planet)}][ #{input(action.order.item.dateInterval)}].[ The total cost is #{value(action.order.item.pod.price)}][ and your email is #{value(action.order.buyer.emailInfo.address)}]. Would you like me to proceed?") // TODO: translate
+  }
+}
+
 template-macro-def (SPACE_RESORT_RESULT) {
   params {
     param (result) {
       type (SpaceResort)
-      min (Required) max (Many)
+      min (Required) max (One)
     }
   }
   content {
@@ -88,6 +100,98 @@ template-macro-def (SPACE_RESORT_RESULT) {
     } else {
       template ("#{concept(result)}들을 찾았습니다.")
     }
+  }
+}
+
+template-macro-def (SPACE_RESORT_NAME_WITH_EMPHASIS) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    choose (Random) {
+      // TODO: Remove the ".name" part when VIV-25705 is ready
+      template ("#{value(spaceResort.name)} is great.")
+      template ("#{value(spaceResort.name)} sounds fun.")
+      template ("#{value(spaceResort.name)} is good.")
+      template ("#{value(spaceResort.name)} is lovely.")
+      template ("You'll love #{value(spaceResort.name)}.")
+      template ("You'll enjoy #{value(spaceResort.name)}.")
+    }
+  }
+}
+
+template-macro-def (SPACE_RESORT_SUMMARY) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort)} attributes are #{value(spaceResort.attributes)}")
+  }
+}
+
+template-macro-def (SPACE_RESORT_DETAILS) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(spaceResort.description)}")
+  }
+}
+
+template-macro-def (SPACE_RESORT_HIGHLIGHT) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+    param (byPreferences) {
+      type (core.Boolean)
+      min (Required) max (One) default (false)
+    }
+  }
+  content {
+    if (byPreferences) {
+      template ("Based on your preferences, you may enjoy #{value(spaceResort)}")
+    } else {
+      template ("#{value(spaceResort.highlight.dialog)}")
+    }
+  }
+}
+
+template-macro-def (UNDERFLOW_STATEMENT) {
+  content {
+    template ("This is the first option.")
+  }
+}
+
+template-macro-def (OVERFLOW_STATEMENT) {
+  content {
+    template ("That's all I have.")
+  }
+}
+
+template-macro-def (READ_ONE_ITEM_SELECTION_QUESTION) {
+  content {
+    choose (Random) {
+      template ("Want to pick this one?")
+      template ("Does that sound good?")
+      template ("Would you like this one?")
+    }
+  }
+}
+
+template-macro-def (READ_MANY_ITEM_SELECTION_QUESTION) {
+  content {
+    template ("Which one would you like?")
   }
 }
 
@@ -107,5 +211,53 @@ template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
 template-macro-def (UNKNOWN_ERROR) {
   content {
     template ("문제가 발생했습니다.")
+  }
+}
+
+template-macro-def (HABITAT_POD_SUMMARY) {
+  params {
+    param (habitatPod) {
+      type (HabitatPod)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{value(habitatPod.name)} costs #{value(habitatPod.price)}. #{value(habitatPod.highlight.dialog)}") // TODO: translate
+  }
+}
+
+template-macro-def (GRAVITY_FROM_SPACE_RESORT_RESULT) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("중력은 #{value(spaceResort.gravity)}입니다.")
+  }
+}
+
+template-macro-def (PLANET_FROM_SPACE_RESORT_RESULT) {
+  params {
+    param (spaceResort) {
+      type (SpaceResort)
+      min (Required) max (One)
+    }
+  }
+  content {
+    template ("#{input(spaceResort.planet)} 있습니다.") 
+  }
+}
+
+template-macro-def (NEXT_ITEM_QUESTION) {
+  content {
+    template ("Would you like to hear the next one?") // TODO: translate
+  }
+}
+
+template-macro-def (MAKE_RESERVATION_FOLLOWUP_PROMPT) {
+  content {
+    template ("Would you like to make a reservation?") // TODO: translate
   }
 }
