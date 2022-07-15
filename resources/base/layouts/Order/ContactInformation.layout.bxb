@@ -7,10 +7,10 @@ layout-macro-def (order-contact-information) {
   }
   content {
     section {
-      title {template-macro (ContactInformation)}
+      title {macro (ContactInformation)}
       content {
         input-cell {
-          label {template-macro (Name)}
+          label {macro (Name)}
           value ("[#{value(order.buyer.firstName)} #{value(order.buyer.lastName)}]")
           on-click {
             intent {
@@ -22,7 +22,7 @@ layout-macro-def (order-contact-information) {
           }
         }
         input-cell {
-          label {template-macro (PhoneNumber)}
+          label {macro (PhoneNumber)}
           value ("[#{value(order.buyer.phoneInfo.number)}]")
           on-click {
             intent {
@@ -35,7 +35,7 @@ layout-macro-def (order-contact-information) {
           }
         }
         input-cell {
-          label {template-macro (Email)}
+          label {macro (Email)}
           value ("[#{value(order.buyer.emailInfo.address)}]")
           on-click {
             intent {

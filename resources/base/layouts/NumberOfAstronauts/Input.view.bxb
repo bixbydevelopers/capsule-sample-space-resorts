@@ -1,7 +1,7 @@
 input-view {
   match: NumberOfAstronauts(numberOfAstronauts)
   message {
-    template-macro (NUMBER_OF_ASTRONAUTS_SELECTION)
+    macro (NUMBER_OF_ASTRONAUTS_SELECTION)
   }
   render {
     selection-of (numberOfAstronauts) {

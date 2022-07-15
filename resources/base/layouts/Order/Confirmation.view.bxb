@@ -8,25 +8,25 @@ confirmation-view {
   }
   
   message {
-    template-macro (COMMIT_ORDER_CONFIRMATION)
+    macro (COMMIT_ORDER_CONFIRMATION)
   }
 
   mode (PositiveEmphasis)
 
   render {
     layout {
-      layout-macro (order-image-card) {
+      macro (order-image-card) {
         param (order) {
           expression (action.order)
         }
       }
-      layout-macro (order-details) {
+      macro (order-details) {
         param (order) {
           expression (action.order)
         }
       }
       if (exists(action.order.buyer)) {
-        layout-macro (order-contact-information) {
+        macro (order-contact-information) {
           param (order) {
             expression (action.order)
           }

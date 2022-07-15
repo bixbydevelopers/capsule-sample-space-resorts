@@ -27,7 +27,7 @@ result-view {
   conversation-drivers {
     if ("size(spaceResort) == 1") {
       conversation-driver {
-        template-macro (MakeReservation)
+        macro (MakeReservation)
       }
     }
   }

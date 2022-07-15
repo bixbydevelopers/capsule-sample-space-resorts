@@ -4,7 +4,6 @@ capsule-info {
   icon-asset (/images/bixby-logo.png)
   description ("주말에 지낼만한 스페이스 리조트를 예약해보세요")
   website-url (https://example.com/)
-  terms-url (https://example.com/terms-of-use/)
   dispatch-name (스페이스 리조트)
   dispatch-aliases {
     alias (우주여행)
