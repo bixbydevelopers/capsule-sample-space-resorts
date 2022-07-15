@@ -11,7 +11,7 @@ result-view {
   }
 
   message {
-    template-macro (SPACE_RESORT_RESULT) { param (result) {expression (result) } }
+    macro (SPACE_RESORT_RESULT) { param (result) {expression (result) } }
   }
 
   render {
@@ -28,24 +28,24 @@ result-view {
           navigation-mode {
             read-one {
               list-summary {
-                template-macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } }
+                macro (SPACE_RESORT_RESULT) { param (result) { expression (result) } }
               }
               page-content {
                 item-selection-question {
-                  template-macro (READ_ONE_ITEM_SELECTION_QUESTION)
+                  macro (READ_ONE_ITEM_SELECTION_QUESTION)
                 }
                 overflow-statement {
-                  template-macro (OVERFLOW_STATEMENT)
+                  macro (OVERFLOW_STATEMENT)
                 }
                 underflow-statement {
-                  template-macro (UNDERFLOW_STATEMENT)
+                  macro (UNDERFLOW_STATEMENT)
                 }
               }
             }
           }
           where-each (page) {
             spoken-summary {
-              template-macro ("SPACE_RESORT_SUMMARY") { param(spaceResort) { expression(page) } }
+              macro ("SPACE_RESORT_SUMMARY") { param(spaceResort) { expression(page) } }
             }
           }
           // We highlight a few top results for the user with a more prominent layout
@@ -53,27 +53,27 @@ result-view {
             // TODO: Remove labels and layout-macros when VIV-25597 is ready
             select(pick) {
               // This first highlight uses preference learning to present a personalized recommendation based on the user's past behavior
-              label { template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES) }
+              label { macro (HIGHLIGHT_LABEL_BY_PREFERENCES) }
               order-by { sorting (pick) { by-preferences } }
               layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
-              summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } param (byPreferences) { expression (true) } } }
+              summary { macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } param (byPreferences) { expression (true) } } }
             }
             select(pick) {
               label("#{raw(pick.highlight.label)}")
               filter-by (exists(pick.highlight))
-              summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
+              summary { macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
               layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
             }
             select(pick) {
               label("#{raw(pick.highlight.label)}")
               filter-by (exists(pick.highlight))
-              summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
+              summary { macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
               layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
             }
             select(pick) {
               label("#{raw(pick.highlight.label)}")
               filter-by (exists(pick.highlight))
-              summary { template-macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
+              summary { macro (SPACE_RESORT_HIGHLIGHT) { param (spaceResort) { expression (pick) } } }
               layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
             }
           }
@@ -91,7 +91,7 @@ result-view {
           highlights {
             select(pick) {
               // This first highlight uses preference learning to present a personalized recommendation based on the user's past behavior
-              label { template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES) }
+              label { macro (HIGHLIGHT_LABEL_BY_PREFERENCES) }
               order-by { sorting (pick) { by-preferences } }
               layout-macro (space-resort-highlight) { param (spaceResort) { expression(pick) } }
             }
@@ -120,7 +120,7 @@ result-view {
     if ($can.device == 'bixby-speaker') {
       prompt {
         dialog {
-          template-macro (MAKE_RESERVATION_FOLLOWUP_PROMPT)
+          macro (MAKE_RESERVATION_FOLLOWUP_PROMPT)
         }
         on-confirm {
           intent {
@@ -139,7 +139,7 @@ result-view {
   conversation-drivers {
     if ("size(result) == 1") {
       conversation-driver {
-        template-macro (MakeReservation)
+        macro (MakeReservation)
       }
     }
   }

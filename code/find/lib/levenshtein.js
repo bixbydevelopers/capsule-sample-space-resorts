@@ -1,21 +1,19 @@
-module.exports = function(str1, str2) {
-   const track = Array(str2.length + 1).fill(null).map(() =>
-   Array(str1.length + 1).fill(null));
-   for (let i = 0; i <= str1.length; i += 1) {
-      track[0][i] = i;
-   }
-   for (let j = 0; j <= str2.length; j += 1) {
-      track[j][0] = j;
-   }
-   for (let j = 1; j <= str2.length; j += 1) {
-      for (let i = 1; i <= str1.length; i += 1) {
-         const indicator = str1[i - 1] === str2[j - 1] ? 0 : 1;
-         track[j][i] = Math.min(
-            track[j][i - 1] + 1,
-            track[j - 1][i] + 1,
-            track[j - 1][i - 1] + indicator
-         );
-      }
-   }
-   return track[str2.length][str1.length];
-}
+module.exports = function(s, t) {
+  if (!s.length) return t.length;
+  if (!t.length) return s.length;
+  const arr = [];
+  for (let i = 0; i <= t.length; i++) {
+    arr[i] = [i];
+    for (let j = 1; j <= s.length; j++) {
+      arr[i][j] =
+        i === 0
+          ? j
+          : Math.min(
+              arr[i - 1][j] + 1,
+              arr[i][j - 1] + 1,
+              arr[i - 1][j - 1] + (s[j - 1] === t[i - 1] ? 0 : 1)
+            );
+    }
+  }
+  return arr[t.length][s.length];
+};

@@ -3,11 +3,11 @@ activity-support {
     Receipt (this)
   } 
 
-  // time (this.item.dateInterval.start)
-
   time {
-    if (isFuture(this.item.dateInterval.start)) {
-      expression(this.item.dateInterval.start)
+    if (!empty(this.item.dateInterval.start)) {
+      if (isFuture(this.item.dateInterval.start)) {
+        expression(this.item.dateInterval.start)
+      }
     }
   }
 
@@ -24,7 +24,7 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+            macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
                 expression (this)
               }
@@ -33,10 +33,12 @@ activity-support {
           message {
             template ("")
           }
-        }
+        } 
         detail-view {
-          layout-match (this) {
-            mode (Details)
+          render {
+            layout-match (this) {
+              mode(Details)
+            }
           }
         }
       }
@@ -53,7 +55,7 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+            macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
                 expression (this)
               }
@@ -64,8 +66,10 @@ activity-support {
           }
         }
         detail-view {
-          layout-match (this) {
-            mode(Details)
+          render {
+            layout-match (this) {
+              mode(Details)
+            }
           }
         }
       }
@@ -81,14 +85,14 @@ activity-support {
             template ("[#{value(this.item.spaceResort)}]")
           }
           details{
-            template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+            macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
               param (receipt) {
                 expression (this)
               }
             }
           }
           message {
-            template-macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+            macro (RECEIPT_ACTIVITY_CARD_MESSAGE) {
               param (receipt) {
                 expression (this)
               }
@@ -96,8 +100,10 @@ activity-support {
           }
         }
         detail-view {
-          layout-match (this) {
-            mode(Details)
+          render {
+            layout-match (this) {
+              mode(Details)
+            }
           }
         }
       }

@@ -30,7 +30,7 @@ template-macro-def (RECEIPT_RESULT) {
   params {
     param (receipt) {
       type (Receipt)
-      min (Required) max (One)
+      min (Optional) max (Many)
     }
   }
   content {
@@ -91,7 +91,7 @@ template-macro-def (SPACE_RESORT_RESULT) {
   params {
     param (result) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Optional) max (Many)
     }
   }
   content {
@@ -230,7 +230,7 @@ template-macro-def (GRAVITY_FROM_SPACE_RESORT_RESULT) {
   params {
     param (spaceResort) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Optional) max (Many)
     }
   }
   content {
@@ -242,7 +242,7 @@ template-macro-def (PLANET_FROM_SPACE_RESORT_RESULT) {
   params {
     param (spaceResort) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Optional) max (Many)
     }
   }
   content {

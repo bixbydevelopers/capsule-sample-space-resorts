@@ -2,7 +2,7 @@ layout-macro-def (space-resort-details) {
   params {
     param (spaceResort) {
       type (SpaceResort)
-      min (Required) max (One)
+      min (Optional) max (Many)
     }
   }
   content {

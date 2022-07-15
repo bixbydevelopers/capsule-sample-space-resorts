@@ -2,6 +2,7 @@ const data = require("./spaceResorts.js")
 const sorts = require("./sorts.js")
 // var textLib = require('textLib')
 var levenshtein = require('./levenshtein.js')
+var console = require('console')
 
 module.exports = {
   "findSpaceResorts": findSpaceResorts,
@@ -54,8 +55,15 @@ function filterSpaceResorts(candidates, name, planet, searchCriteria, $vivContex
               return levenshtein(keyword, searchCriterion) < 1 
             }
             else {
-              // fuzzyMatch is too costly, so using simple levenshtein instead
-              return levenshtein(keyword, searchCriterion) < 4 
+              // fuzzyMatch is too costly, so using simple levenshtein instead              
+              var containsTerm = false
+              if (String(searchCriterion).length > 2) {
+                if (keyword.includes(searchCriterion)) {
+                  containsTerm = true
+                }
+              }
+              console.log("test")
+              return containsTerm || levenshtein(keyword, searchCriterion) < 4
             }
           })
         })

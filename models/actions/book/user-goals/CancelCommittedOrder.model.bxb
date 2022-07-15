@@ -36,14 +36,14 @@ action (CancelCommittedOrder) {
         if (!exists(receipt)) {
           halt {
             dialog {
-              template-macro (NotSureWhatToCancel)
+              macro (NotSureWhatToCancel)
             }
           }
         }
         if (receipt.canceled) {
           halt {
             dialog{
-              template-macro (ThisOrderIsAlreadyCanceled)
+              macro (ThisOrderIsAlreadyCanceled)
             }
           }
         }

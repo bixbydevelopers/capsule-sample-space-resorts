@@ -7,6 +7,9 @@ layout-macro-def (space-resort-summary) {
   }
   content {
     image-card {
+      on-click {
+        view-for (spaceResort)
+      }
       aspect-ratio (16:9)
       image-url ("[#{value(spaceResort.images[0].url)}]")
       title-area {

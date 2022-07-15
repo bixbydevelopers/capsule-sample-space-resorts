@@ -18,12 +18,6 @@ capsule {
     }
   }
 
-  // runtime-flags {
-  //   concepts-inherit-super-type-features
-  //   support-halt-effect-in-computed-inputs
-  //   modern-prompt-rejection
-  // }
-
   // permissions {
   //   user-profile-access
   // }
