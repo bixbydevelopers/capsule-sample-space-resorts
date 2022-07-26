@@ -10,7 +10,7 @@ confirmation-view {
 
    abort-options {
     label {	
-      template-macro (KeepIt)	
+      macro (KeepIt)	
     }	
     on-abort {	
       intent { //The intent to execute when user aborts the confirmation	
@@ -22,7 +22,7 @@ confirmation-view {
    confirm-options {
     label {	
       if (exists(action.receipt)) {	
-        template-macro (CancelOrder)	
+        macro (CancelOrder)	
       }	
     }
   }	
@@ -30,21 +30,21 @@ confirmation-view {
    render {	
     if (exists(action.receipt)) {
       layout {	
-        layout-macro (receipt-header) {	
+        macro (receipt-header) {	
           param (receipt) {	
             if (exists(action.receipt)) {	
               expression (action.receipt) 	
             }	
           }	
         }	
-        layout-macro (receipt-contact-information) {	
+        macro (receipt-contact-information) {	
           param (receipt) {	
             if (exists(action.receipt)) {	
               expression (action.receipt)	
             }	
           }	
         }	
-        layout-macro (receipt-order-total) {	
+        macro (receipt-order-total) {	
           param (receipt) {	
             if (exists(action.receipt)) {	
               expression (action.receipt)	

@@ -7,11 +7,11 @@ layout-macro-def (order-details) {
   }
   content {
     section {
-      title {template-macro (Details)}
+      title {macro (Details)}
       content {
         input-cell {
           label {
-            template-macro (NumberOfAstronauts)
+            macro (NumberOfAstronauts)
           }
           value {
             template ("[#{value(order.item.numberOfAstronauts)}]")
@@ -25,7 +25,7 @@ layout-macro-def (order-details) {
           }
         }
         input-cell {
-          label { template-macro (Dates)}
+          label { macro (Dates)}
           value ("[#{value(order.item.dateInterval)}]")
           on-click {
             intent {
@@ -39,7 +39,7 @@ layout-macro-def (order-details) {
           content {
             single-line {
               text {
-                value { template-macro (Package)}
+                value { macro (Package)}
                 style (Detail_M_Soft)
               }
             }

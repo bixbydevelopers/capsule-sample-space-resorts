@@ -3,12 +3,12 @@ input-view {
     to-input: ProjectResort(action)
   }
   message {
-    template-macro (SPACE_RESORT_SELECTION)
+    macro (SPACE_RESORT_SELECTION)
   }
   render {
     selection-of (result) {
       where-each (item) {
-        layout-macro (space-resort-summary) {
+        macro (space-resort-summary) {
           param (spaceResort) {
             expression(item)
           }

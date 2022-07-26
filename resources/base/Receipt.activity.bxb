@@ -24,7 +24,7 @@ activity-support {
           }
           details {
             if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
                 param (receipt) {
                   expression (this) // regarding empty and cardinality warnings on this view: VBOS-5531
                 }
@@ -57,7 +57,7 @@ activity-support {
           }
           details{
             if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
                 param (receipt) {
                   expression (this)
                 }
@@ -89,7 +89,7 @@ activity-support {
           }
           details{
             if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
                 param (receipt) {
                   expression (this)
                 }
@@ -98,7 +98,7 @@ activity-support {
           }
           message {
             if (exists(this) && size(this) == 1) {
-              template-macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
+              macro (RECEIPT_ACTIVITY_CARD_DETAILS) {
                 param (receipt) {
                   expression (this)
                 }

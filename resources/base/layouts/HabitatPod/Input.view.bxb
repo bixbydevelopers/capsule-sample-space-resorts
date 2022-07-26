@@ -1,12 +1,12 @@
 input-view {
   match: HabitatPod(pods)
   message {
-    template-macro (HABITAT_POD_SELECTION)
+    macro (HABITAT_POD_SELECTION)
   }
   render {
     selection-of (pods) {
       where-each (pod) {
-        layout-macro (habitat-pod-summary) {
+        macro (habitat-pod-summary) {
           param (habitatPod) {
             expression (pod)
           }

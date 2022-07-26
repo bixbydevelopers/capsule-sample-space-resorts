@@ -7,7 +7,7 @@ result-view {
   }
   
   message {
-    template-macro (RECEIPT_RESULT) {
+    macro (RECEIPT_RESULT) {
       param (receipt) {
         expression (receipt)
       }
@@ -16,17 +16,17 @@ result-view {
   
   render {
     layout {
-      layout-macro (receipt-header) {
+      macro (receipt-header) {
         param (receipt) {
           expression (receipt)
         }
       }
-      layout-macro (receipt-contact-information) {
+      macro (receipt-contact-information) {
         param (receipt) {
           expression (receipt)
         }
       }
-      layout-macro (receipt-order-total) {
+      macro (receipt-order-total) {
         param (receipt) {
           expression (receipt)
         }

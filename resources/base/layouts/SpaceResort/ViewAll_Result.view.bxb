@@ -13,7 +13,7 @@ result-view {
   }
 
   message {
-    template-macro (SPACE_RESORT_RESULT) {
+    macro (SPACE_RESORT_RESULT) {
       param (result) {expression (result)}
     }
   }
@@ -23,7 +23,7 @@ result-view {
       // When there are multiple space resorts, we present them in a list of summary items
       list-of (result) {
         where-each (item) {
-          layout-macro (space-resort-summary) {
+          macro (space-resort-summary) {
             param (spaceResort) {
               expression(item)
             }
@@ -34,9 +34,9 @@ result-view {
           select(pick) {
             // This first highlight uses preference learning to present a personalized recommendation based on the user's past behavior
             label {
-              template-macro (HIGHLIGHT_LABEL_BY_PREFERENCES)
+              macro (HIGHLIGHT_LABEL_BY_PREFERENCES)
             }
-            layout-macro (space-resort-highlight) {
+            macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
@@ -49,7 +49,7 @@ result-view {
           }
           select(pick) {
             label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
+            macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
@@ -58,7 +58,7 @@ result-view {
           }
           select(pick) {
             label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
+            macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
@@ -67,7 +67,7 @@ result-view {
           }
           select(pick) {
             label("#{raw(pick.highlight)}")
-            layout-macro (space-resort-highlight) {
+            macro (space-resort-highlight) {
               param (spaceResort) {
                 expression(pick)
               }
@@ -89,7 +89,7 @@ result-view {
   conversation-drivers {
     if ("size(result) == 1") {
       conversation-driver {
-        template-macro (MakeReservation)
+        macro (MakeReservation)
       }
     }
   }

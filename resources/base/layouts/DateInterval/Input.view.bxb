@@ -1,7 +1,7 @@
 input-view {
   match: DateInterval (this)
   message {
-    template-macro (DATE_INTERVAL_ELICITATION)
+    macro (DATE_INTERVAL_ELICITATION)
   }
   render {
     calendar {
