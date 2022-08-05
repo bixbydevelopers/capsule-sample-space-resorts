@@ -20,8 +20,10 @@ input-view {
 				}
 			}
 		} else-if (size(result) == 1) {
-      layout-macro (space-resort-details) {
-        param (spaceResort) {expression (result)}
+      layout {
+        macro (space-resort-details) {
+          param (spaceResort) {expression (result)}
+        }
         select-button-text: macro (Book)
       }
 		}

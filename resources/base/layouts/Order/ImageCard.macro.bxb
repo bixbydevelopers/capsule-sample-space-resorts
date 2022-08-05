@@ -1,4 +1,4 @@
-layout-macro-def (order-image-card) {
+macro-def (order-image-card) {
   params {
     param (order) {
       type (Order)
