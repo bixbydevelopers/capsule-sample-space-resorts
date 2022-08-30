@@ -1,4 +1,4 @@
-layout-macro-def (order-details) {
+macro-def (order-details) {
   params {
     param (order) {
       type (Order)

@@ -1,4 +1,4 @@
-layout-macro-def (space-resort-highlight) {
+macro-def (space-resort-summary) {
   params {
     param (spaceResort) {
       type (SpaceResort)
@@ -7,10 +7,8 @@ layout-macro-def (space-resort-highlight) {
   }
   content {
     image-card {
-      aspect-ratio (Four_Three)
-      image-url {
-        template ("[#{value(spaceResort.images[0].url)}]")
-      }
+      aspect-ratio (Sixteen_Nine)
+      image-url ("[#{value(spaceResort.images[0].url)}]")
       title-area {
         halign (Start)
         slot1 {

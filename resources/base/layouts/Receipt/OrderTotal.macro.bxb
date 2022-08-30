@@ -1,4 +1,4 @@
-layout-macro-def (receipt-order-total) {
+macro-def (receipt-order-total) {
   params {
     param (receipt) {
       type (Receipt)

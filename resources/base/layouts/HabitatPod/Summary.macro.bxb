@@ -1,4 +1,4 @@
-layout-macro-def (habitat-pod-summary) {
+macro-def (habitat-pod-summary) {
   params {
     param (habitatPod) {
       type (HabitatPod)

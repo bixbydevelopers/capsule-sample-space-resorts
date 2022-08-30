@@ -1,4 +1,4 @@
-template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
   params {
     param (receipt) {
       type (Receipt)
@@ -10,7 +10,7 @@ template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
   }
 }
 
-template-macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
+macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
   params {
     param (receipt) {
       type (Receipt)
@@ -26,7 +26,7 @@ template-macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
   }
 }
 
-template-macro-def (RECEIPT_RESULT) {
+macro-def (RECEIPT_RESULT) {
   params {
     param (receipt) {
       type (Receipt)
@@ -45,37 +45,37 @@ template-macro-def (RECEIPT_RESULT) {
   }
 }
 
-template-macro-def (SPACE_RESORT_SELECTION) {
+macro-def (SPACE_RESORT_SELECTION) {
   content {
     template ("어떤 리조트를 원하시나요?")
   }
 }
 
-template-macro-def (NUMBER_OF_ASTRONAUTS_SELECTION) {
+macro-def (NUMBER_OF_ASTRONAUTS_SELECTION) {
   content {
     template ("우주 여행객 수가 몇명인가요?")
   }
 }
 
-template-macro-def (HABITAT_POD_SELECTION) {
+macro-def (HABITAT_POD_SELECTION) {
   content {
     template ("원하시는 패키지를 선택해주세요.")
   }
 }
 
-template-macro-def (DATE_INTERVAL_ELICITATION) {
+macro-def (DATE_INTERVAL_ELICITATION) {
   content {
     template ("언제 방문하고 싶으신가요?")
   }
 }
 
-template-macro-def (COMMIT_ORDER_CONFIRMATION) {
+macro-def (COMMIT_ORDER_CONFIRMATION) {
   content {
     template ("이 여행을 예약하시겠습니까?")
   }
 }
 
-template-macro-def (SPACE_RESORT_RESULT) {
+macro-def (SPACE_RESORT_RESULT) {
   params {
     param (result) {
       type (SpaceResort)
@@ -91,20 +91,20 @@ template-macro-def (SPACE_RESORT_RESULT) {
   }
 }
 
-template-macro-def (HIGHLIGHT_LABEL_BY_PREFERENCES) {
+macro-def (HIGHLIGHT_LABEL_BY_PREFERENCES) {
   content {
     template ("Based on your preferences")
   }
 }
 
 // Exception handling
-template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
+macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {
     template ("지원하지 않는 검색 옵션입니다.")
   }
 }
 
-template-macro-def (UNKNOWN_ERROR) {
+macro-def (UNKNOWN_ERROR) {
   content {
     template ("문제가 발생했습니다.")
   }

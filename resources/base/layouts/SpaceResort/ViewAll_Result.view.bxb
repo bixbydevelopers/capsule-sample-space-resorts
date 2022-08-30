@@ -78,9 +78,11 @@ result-view {
       }
     } else-if (size(result) == 1) {
       // When there is a single result, we directly display the details layout with all the space resort information
-      layout-macro (space-resort-details) {
-        param (spaceResort) {
-          expression (result)
+      layout {
+        macro (space-resort-details) {
+          param (spaceResort) {
+            expression (result)
+          }
         }
       }
     }

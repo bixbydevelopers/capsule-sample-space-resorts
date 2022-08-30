@@ -1,4 +1,4 @@
-template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
+macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
   params {
     param (receipt) {
       type (Receipt)
@@ -10,7 +10,7 @@ template-macro-def (RECEIPT_ACTIVITY_CARD_MESSAGE) {
   }
 }
 
-template-macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
+macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
   params {
     param (receipt) {
       type (Receipt)
@@ -26,7 +26,7 @@ template-macro-def (RECEIPT_ACTIVITY_CARD_DETAILS) {
   }
 }
 
-template-macro-def (RECEIPT_RESULT) {
+macro-def (RECEIPT_RESULT) {
   params {
     param (receipt) {
       type (Receipt)
@@ -42,37 +42,37 @@ template-macro-def (RECEIPT_RESULT) {
   }
 }
 
-template-macro-def (SPACE_RESORT_SELECTION) {
+macro-def (SPACE_RESORT_SELECTION) {
   content {
     template("Which space resort would you like?")
   }
 }
 
-template-macro-def (NUMBER_OF_ASTRONAUTS_SELECTION) {
+macro-def (NUMBER_OF_ASTRONAUTS_SELECTION) {
   content {
     template ("How many astronauts?")
   }
 }
 
-template-macro-def (HABITAT_POD_SELECTION) {
+macro-def (HABITAT_POD_SELECTION) {
   content {
     template ("Which habitat pod would you like?")
   }
 }
 
-template-macro-def (DATE_INTERVAL_ELICITATION) {
+macro-def (DATE_INTERVAL_ELICITATION) {
   content {
     template ("When do you want to stay?")
   }
 }
 
-template-macro-def (COMMIT_ORDER_CONFIRMATION) {
+macro-def (COMMIT_ORDER_CONFIRMATION) {
   content {
     template ("Are you sure you want to book this trip?")
   }
 }
 
-template-macro-def (SPACE_RESORT_RESULT) {
+macro-def (SPACE_RESORT_RESULT) {
   params {
     param (result) {
       type (SpaceResort)
@@ -88,20 +88,20 @@ template-macro-def (SPACE_RESORT_RESULT) {
   }
 }
 
-template-macro-def (HIGHLIGHT_LABEL_BY_PREFERENCES) {
+macro-def (HIGHLIGHT_LABEL_BY_PREFERENCES) {
   content {
     template ("Based on your preferences")
   }
 }
 
 // Exception handling
-template-macro-def (UNSUPPORTED_SEARCH_OPTION) {
+macro-def (UNSUPPORTED_SEARCH_OPTION) {
   content {
     template ("Unsupported search criteria.")
   }
 }
 
-template-macro-def (UNKNOWN_ERROR) {
+macro-def (UNKNOWN_ERROR) {
   content {
     template ("Something's wrong.")
   }

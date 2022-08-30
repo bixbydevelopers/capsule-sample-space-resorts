@@ -1,4 +1,4 @@
-layout-macro-def (order-contact-information) {
+macro-def (order-contact-information) {
   params {
     param (order) {
       type (Order)

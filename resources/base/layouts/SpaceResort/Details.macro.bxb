@@ -1,4 +1,4 @@
-layout-macro-def (space-resort-details) {
+macro-def (space-resort-details) {
   params {
     param (spaceResort) {
       type (SpaceResort)

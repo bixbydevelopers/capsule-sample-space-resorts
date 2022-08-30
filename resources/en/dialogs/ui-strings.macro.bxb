@@ -1,99 +1,99 @@
-template-macro-def (MakeReservation) {
+macro-def (MakeReservation) {
   content {
     template ("Make reservation")
   }
 }
 
-template-macro-def (Details) {
+macro-def (Details) {
   content {
     template ("Details")
   }
 }
 
-template-macro-def (NumberOfAstronauts) {
+macro-def (NumberOfAstronauts) {
   content {
     template ("Number of astronauts")
   }
 }
 
-template-macro-def (Dates) {
+macro-def (Dates) {
   content {
     template ("Dates")
   }
 }
 
-template-macro-def (Package) {
+macro-def (Package) {
   content {
     template ("Package")
   }
 }
 
-template-macro-def (ContactInformation) {
+macro-def (ContactInformation) {
   content {
     template ("Contact information")
   }
 }
 
-template-macro-def (Name) {
+macro-def (Name) {
   content {
     template ("Name")
   }
 }
 
-template-macro-def (PhoneNumber) {
+macro-def (PhoneNumber) {
   content {
     template ("Phone number")
   }
 }
 
-template-macro-def (Email) {
+macro-def (Email) {
   content {
     template ("Email")
   }
 }
 
-template-macro-def (AstronautOne) {
+macro-def (AstronautOne) {
   content {
     template ("astronaut")
   }
 }
 
-template-macro-def (AstronautMany) {
+macro-def (AstronautMany) {
   content {
     template ("astronauts")
   }
 }
 
-template-macro-def (CancelOrder) {
+macro-def (CancelOrder) {
   content {
     template ("Cancel Order")
   }
 }
 
-template-macro-def (KeepIt) {
+macro-def (KeepIt) {
   content {
     template ("Keep it")
   }
 }
 
-template-macro-def (NotSureWhatToCancel) {
+macro-def (NotSureWhatToCancel) {
   content {
     template ("Not sure what to cancel. I didn't find any recent orders.")
   }
 }
 
-template-macro-def (ThisOrderIsAlreadyCanceled) {
+macro-def (ThisOrderIsAlreadyCanceled) {
   content {
     template ("This order is already canceled!")
   }
 }
 
-template-macro-def (Book) {
+macro-def (Book) {
   content{
     template ("Book")
   }
 }
-template-macro-def (ReceiptOrderTotal) {
+macro-def (ReceiptOrderTotal) {
   params{
     param (value) {
       type (viv.core.Text)
