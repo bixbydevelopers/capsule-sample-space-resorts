@@ -18,7 +18,7 @@ capsule {
 		}
 		import (viv.time) {
 			as (time)
-			version-from (self)
+			version (3.6.6)
 		}
 		import (viv.money) {
 			as (money)

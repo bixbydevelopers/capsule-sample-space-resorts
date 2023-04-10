@@ -31,25 +31,19 @@ confirmation-view {
     if (exists(action.receipt)) {
       layout {	
         macro (receipt-header) {	
-          param (receipt) {	
-            if (exists(action.receipt)) {	
-              expression (action.receipt) 	
-            }	
+          param (receipt) {
+            expression (action.receipt)
           }	
-        }	
+        }
         macro (receipt-contact-information) {	
-          param (receipt) {	
-            if (exists(action.receipt)) {	
-              expression (action.receipt)	
-            }	
+          param (receipt) {
+            expression (action.receipt)
           }	
-        }	
+        }
         macro (receipt-order-total) {	
-          param (receipt) {	
-            if (exists(action.receipt)) {	
-              expression (action.receipt)	
-            }	
-          }	
+          param (receipt) {
+            expression (action.receipt)
+          }
         }	
       }	
     }	
