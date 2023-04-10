@@ -1,15 +1,14 @@
-module.exports.function = function (order, numberOfAstronauts, dateInterval, pod) {
-
-  var changedItem = {}
-  changedItem.item = order.item
+export default function ({order, numberOfAstronauts, dateInterval, pod}) {
+  var changedItem = {};
+  changedItem.item = order.item;
   if (numberOfAstronauts) {
-    changedItem.newNumberOfAstronauts = numberOfAstronauts
+    changedItem.newNumberOfAstronauts = numberOfAstronauts;
   }
   if (dateInterval) {
-    changedItem.newDateInterval = dateInterval
+    changedItem.newDateInterval = dateInterval;
   }
   if (pod) {
-    changedItem.newPod = pod
+    changedItem.newPod = pod;
   }
-  return changedItem
-}
+  return changedItem;
+};

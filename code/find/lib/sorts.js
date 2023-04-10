@@ -1,8 +1,8 @@
-module.exports = {
-  "GravityASC": function(a, b) {
-    return a.gravity - b.gravity
+export default {
+  GravityASC: function (a, b) {
+    return a.gravity - b.gravity;
   },
-  "GravityDESC": function (a, b) {
-    return b.gravity - a.gravity
-  }
-}
+  GravityDESC: function (a, b) {
+    return b.gravity - a.gravity;
+  },
+};

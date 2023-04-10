@@ -1,6 +1,6 @@
-exports.function = function(order) {
+export default function ({order}) {
   return {
     order: order,
-    canceled: true
-  }
-}
+    canceled: true,
+  };
+};
