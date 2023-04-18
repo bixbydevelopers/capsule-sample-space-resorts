@@ -1,5 +1,5 @@
-import findResorts from "./lib/main.js";
+import main from "./lib/main.js";
 
-export default function findSpaceResorts({name, planet, searchCriteria, $vivContext}) {
-  return findResorts(name, planet, searchCriteria, $vivContext);
+export default function ({name, planet, searchCriteria, $vivContext}) {
+  return main.findSpaceResorts(name, planet, searchCriteria, $vivContext);
 }
