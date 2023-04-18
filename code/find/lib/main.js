@@ -1,12 +1,6 @@
 import data from "./spaceResorts.js";
-import sorts from "./sorts.js";
 
-export default {
-  findSpaceResorts: findSpaceResorts,
-  selectSpaceResorts: selectSpaceResorts,
-};
-
-function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
+export default function findResorts(name, planet, searchCriteria, $vivContext) {
   return filterSpaceResorts(
     data($vivContext.locale),
     name,
@@ -16,7 +10,7 @@ function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
   );
 }
 
-function selectSpaceResorts(
+export function selectResorts(
   resorts,
   name,
   planet,
