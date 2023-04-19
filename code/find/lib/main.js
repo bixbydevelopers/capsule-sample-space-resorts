@@ -1,6 +1,6 @@
 import data from "./spaceResorts.js";
 
-export default function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
+export function findSpaceResorts(name, planet, searchCriteria, $vivContext) {
   return filterSpaceResorts(
     data($vivContext.locale),
     name,
