@@ -1,4 +1,4 @@
-exports.function = function(receipt) {
-  receipt.canceled = true
-  return receipt
-}
+export default function ({receipt}) {
+  receipt.canceled = true;
+  return receipt;
+};
